@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: friday-research
   cancel-in-progress: false
@@ -42,3 +43,8 @@ jobs:
           else
             echo "No changed research output"
           fi
+
+      - name: Trigger GitHub Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
