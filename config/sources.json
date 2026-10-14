@@ -1,0 +1,33 @@
+{
+  "primary_chinese_journals": [
+    {
+      "name": "考古",
+      "priority": 1
+    },
+    {
+      "name": "考古与文物",
+      "priority": 1
+    },
+    {
+      "name": "文物",
+      "priority": 1
+    },
+    {
+      "name": "考古学报",
+      "priority": 1
+    }
+  ],
+  "international_journals": [
+    "Early China",
+    "Antiquity",
+    "Journal of Archaeological Science",
+    "Archaeometry"
+  ],
+  "supplementary_topics": [
+    "甲骨卜辞",
+    "青铜器铭文",
+    "西周宗族",
+    "商代战争与战俘",
+    "墓志与人物世系"
+  ]
+}
