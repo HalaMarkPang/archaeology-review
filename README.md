@@ -2,15 +2,16 @@
 
 **公开网站；商周优先；每周五检索；先证据后发布。**
 
-本项目实现 GitHub Pages 静态网站、每期独立 HTML、归档与 Pagefind 中文检索；另有定时学术元数据采集、机器审校、候选与审核轨迹记录以及通过严格门槛的自动刊期生成。当前仓库内的 `2026-10-14-sample.json` 只是一份**演示样刊**，不计入正式首页或正式归档。
+本项目实现 GitHub Pages 静态网站、每期独立 HTML、归档与 Pagefind 中文检索；另有定时学术元数据采集、机器审校、候选与审核轨迹记录以及通过严格门槛的自动刊期生成。首次部署时暂无正式刊期；未通过来源核验的候选不会出现在首页或正式归档。
 
 ## 一、先部署网站
 
-1. 新建 **Public** GitHub 仓库，建议命名 `archaeology-review`。
-2. 将本项目的完整文件提交到该仓库的 `main` 分支（包括隐藏目录 `.github/workflows/`）。
+1. 项目仓库：**[HalaMarkPang/archaeology-review](https://github.com/HalaMarkPang/archaeology-review)**，公开 `main` 分支；代码和工作流已经提交。
 3. `Settings → Pages → Build and deployment → Source` 选择 `GitHub Actions`。
 4. `Actions → Build and deploy archaeology review → Run workflow`，确认部署成功。
 5. 网址一般为 `https://<用户名>.github.io/archaeology-review/`。第一次部署时会显示“尚无正式刊期”，这是正确行为。
+
+**重要：** 在本仓库 `Settings → Pages → Build and deployment → Source` 选择 `GitHub Actions`；此设置不能通过当前 GitHub 连接直接修改。完成后访问 `https://halamarkpang.github.io/archaeology-review/`。配置 API Key 前不会自动生成正式研究推荐。
 
 网站构建工作流：`.github/workflows/pages.yml`，每次 `main` 更新或手动执行都会重新生成静态网站及 Pagefind 中文检索索引。静态站点不需要数据库、服务器或 Web 管理后台。
 
@@ -24,7 +25,7 @@
 | `MODEL_API_KEY` | Secret | 自动写作必需 | 模型服务的 API Key，绝不要提交进源码 |
 | `MODEL_NAME` | Variable | 自动写作必需 | API 服务实际支持的模型 ID，由所选服务商提供 |
 | `MODEL_API_BASE_URL` | Variable | 可选 | OpenAI-compatible Chat Completions 端点的 API 前缀，默认 `https://api.openai.com/v1` |
-| `PUBLISH_MODE` | Variable | 可选 | `auto_verified`（默认）允许摘要级证据通过后自动发布；`candidates_only` 只采集候选不发布 |
+| `PUBLISH_MODE` | Variable | 可选 | 默认为 `candidates_only`（仅采集和审核）；设置 `auto_verified` 才允许合格摘要自动形成刊期 |
 
 > 注意：ChatGPT 网页版订阅不等于 API 调用额度。只有仓库设置了有效的 `MODEL_API_KEY`、`MODEL_NAME`，机器摘要审校才会运行。模型必须兼容 `/chat/completions`。如所选模型输出不支持所需 JSON/格式，当前脚本会拒绝条目，不能确保零配置即能工作。
 
@@ -41,7 +42,7 @@
 
 ## 三、国内期刊覆盖边界
 
-《考古》《文物》《考古与文物》《考古学报》等中文期刊在国际元数据库中可能不完整。当前自动线索检测仅包含**已配置的公开文物出版社首页**；这些页面上的标题和期刊目录只进入候选池，**不能自动生成证据与历史结论**。
+《考古》《文物》《考古与文物》《考古学报》等中文期刊在国际元数据库中可能不完整。当前自动线索检测仅包含**已配置的两处公开出版资讯页面**；这些页面上的标题和期刊目录只进入候选池，**不能自动生成证据与历史结论**。
 
 要达到中文成果每周较完整的覆盖，还须分期加入：
 
@@ -54,7 +55,7 @@
 
 ## 四、内容结构与来源等级
 
-- `content/issues/*.json`：正式周报或明确标记的样刊，网页会自动归档。
+- `content/issues/*.json`：经过审核的正式周报，可人工新增明确标记 `is_sample` 的版式样刊；网页只把正式刊期计入归档。
 - `content/candidates/*.json`：题录候选，不能当作已核查结论。
 - `content/audits/*.json`：简化核查记录，避免公开转载全文摘要。
 - `content/status.json`：最后执行日期、采集数量和发布结果。
