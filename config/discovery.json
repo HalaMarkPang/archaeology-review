@@ -1,0 +1,99 @@
+{
+  "lookback_days": 30,
+  "top_candidates": 32,
+  "openalex_queries": [
+    "Shang dynasty oracle bones bronze inscriptions",
+    "Western Zhou dynasty bronze inscriptions kinship",
+    "Anyang Yinxu archaeology",
+    "Shang Zhou ritual sacrifice captives archaeology",
+    "excavation tomb inscription epigraphy China",
+    "ancient China archaeological discoveries genealogy"
+  ],
+  "crossref_queries": [
+    "Shang dynasty bronze inscriptions",
+    "Western Zhou archaeology",
+    "oracle bone inscriptions archaeology",
+    "ancient Chinese tomb excavation epitaph",
+    "archaeological evidence historical texts China"
+  ],
+  "shangzhou_keywords": [
+    "商代",
+    "殷墟",
+    "殷商",
+    "西周",
+    "东周",
+    "商周",
+    "甲骨",
+    "金文",
+    "青铜器铭文",
+    "周原",
+    "丰镐",
+    "安阳",
+    "郑州商城",
+    "shang dynasty",
+    "western zhou",
+    "eastern zhou",
+    "oracle bone",
+    "bronze inscription",
+    "yinxu",
+    "zhouyuan"
+  ],
+  "history_keywords": [
+    "墓志",
+    "墓葬",
+    "发掘",
+    "简牍",
+    "碑刻",
+    "世系",
+    "宗族",
+    "考古",
+    "出土",
+    "战俘",
+    "殉葬",
+    "铭文",
+    "秦汉",
+    "隋唐",
+    "魏晋",
+    "汉墓",
+    "epigraphy",
+    "excavation",
+    "archaeolog",
+    "tomb",
+    "epitaph",
+    "inscription",
+    "paleograph",
+    "ancient china",
+    "early china",
+    "bronze age",
+    "burial",
+    "ritual",
+    "kinship",
+    "ancestral"
+  ],
+  "priority_journals": [
+    "考古",
+    "文物",
+    "考古与文物",
+    "考古学报",
+    "出土文献",
+    "古文字研究",
+    "early china",
+    "antiquity",
+    "journal of archaeological science",
+    "archaeometry",
+    "asian perspectives",
+    "journal of field archaeology"
+  ],
+  "official_watch_pages": [
+    {
+      "name": "文物出版社",
+      "url": "https://www.wenwu.com/",
+      "domain": "wenwu.com"
+    },
+    {
+      "name": "文物出版社资讯",
+      "url": "https://www.zgwwcbcm.com/",
+      "domain": "zgwwcbcm.com"
+    }
+  ]
+}
