@@ -1,3 +1,4 @@
+# 运行时刻须与 config/discovery.json 的 schedule.cron、schedule.timezone 一致。
 name: Friday archaeological research
 on:
   schedule:
@@ -25,12 +26,7 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/discover.py
-      - name: Validate evidence and publish eligible abstracts
-        env:
-          MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
-          MODEL_NAME: ${{ vars.MODEL_NAME }}
-          MODEL_API_BASE_URL: ${{ vars.MODEL_API_BASE_URL }}
-          PUBLISH_MODE: ${{ vars.PUBLISH_MODE || 'candidates_only' }}
+      - name: Quote abstracts and publish eligible items
         run: python scripts/review.py
       - name: Commit metadata, audit and eligible issues
         run: |

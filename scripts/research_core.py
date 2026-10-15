@@ -8,7 +8,9 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=json.loads((ROOT/"config/discovery.json").read_text(encoding="utf-8"))
-def today_local():return datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+STANDALONE_GROUP=CONFIG.get("standalone_group") or "考古学理论"
+def local_zone():return ZoneInfo(CONFIG.get("schedule",{}).get("timezone") or "Asia/Shanghai")
+def today_local():return datetime.now(local_zone()).date().isoformat()
 def norm(s):return re.sub(r"\s+"," ",unicodedata.normalize("NFKC",unescape(s or ""))).strip()
 def slug(s):return re.sub(r"[^a-z0-9\u4e00-\u9fff]","",norm(s).lower())[:140]
 def canonical_doi(doi):return (doi or "").replace("https://doi.org/","").replace("http://dx.doi.org/","").lower().strip().lstrip("/")
@@ -16,19 +18,61 @@ def stable_id(doi,title):return hashlib.sha256((canonical_doi(doi) or slug(title
 def safe_public_url(url):
     try:
         x=urlsplit(url)
-        return x.scheme=="https" and bool(x.hostname) and not x.username and not x.password and x.hostname not in ("localhost","127.0.0.1")
+        return x.scheme in ("https","http") and bool(x.hostname) and not x.username and not x.password and x.hostname not in ("localhost","127.0.0.1")
     except ValueError:return False
-def title_score(title,abstract,journal,kind="journal-article"):
-    title,abstract,journal=(norm(x).lower() for x in (title,abstract,journal))
+ALLOWED_KINDS=("journal-article","book-chapter","book","article","report","preprint","official_lead","journal_summary","journal_toc","wechat_lead","")
+GENERIC_PERIOD_TERMS={"paleolithic","palaeolithic","neolithic"}
+def text_blob(*parts):
+    return norm(" ".join(p or "" for p in parts)).lower().replace("-"," ").replace("–"," ").replace("—"," ")
+def hit_terms(blob,terms):
+    found=[]
+    for term in terms:
+        needle=term.lower().replace("-"," ")
+        if needle and needle in blob:found.append(term)
+    return found
+def best_label(rows,title_blob,blob):
+    found=[]
+    for row in rows:
+        title_hits=hit_terms(title_blob,row["terms"])
+        any_hits=title_hits or hit_terms(blob,row["terms"])
+        if not any_hits:continue
+        term=max(any_hits,key=len)
+        found.append((1 if title_hits else 0,len(term),row["label"],term))
+    if not found:return "",""
+    found.sort(key=lambda item:(item[0],item[1]),reverse=True)
+    return found[0][2],found[0][3]
+def matched_journal(journal):
+    blob=text_blob(journal)
+    names=sorted(CONFIG.get("priority_journals",[]),key=len,reverse=True)
+    for name in names:
+        if name.lower().replace("-"," ") in blob:return name
+    return ""
+def assess(title,abstract="",journal="",kind="journal-article"):
+    """Return period, field, score, and whether the item is inside the editorial scope."""
+    blob=text_blob(title,abstract,journal)
+    title_blob=text_blob(title)
+    period,period_term=best_label(CONFIG["periods"],title_blob,blob)
+    field,field_term=best_label(CONFIG["fields"],title_blob,blob)
+    qing=bool(hit_terms(blob,CONFIG.get("exclude_qing",[])))
+    song_yuan_ming=bool(hit_terms(blob,next(row["terms"] for row in CONFIG["periods"] if row["label"]=="宋元明")))
+    china=bool(hit_terms(blob,CONFIG.get("china_anchors",[]))) or bool(re.search(r"[\u4e00-\u9fff]",field_term))
+    journal_name=matched_journal(journal)
+    core=journal_name in CONFIG.get("core_journals",[])
+    if period_term.lower().replace("-"," ") in GENERIC_PERIOD_TERMS and not (china or core):
+        period,period_term="",""
+    if kind and kind not in ALLOWED_KINDS:
+        return {"period":"","field":"","score":0,"in_scope":False,"journal":journal_name}
+    if qing and not song_yuan_ming:
+        return {"period":"","field":"","score":0,"in_scope":False,"journal":journal_name}
+    in_scope=bool(period) or bool(field and (china or core)) or bool(core and not qing)
     score=0
-    score+=10 if any(x.lower() in title for x in CONFIG["shangzhou_keywords"]) else 0
-    score+=3 if any(x.lower() in abstract for x in CONFIG["shangzhou_keywords"]) else 0
-    score+=5 if any(x.lower() in title for x in CONFIG["history_keywords"]) else 0
-    score+=2 if any(x.lower() in abstract for x in CONFIG["history_keywords"]) else 0
-    score+=4 if any(x.lower() in journal for x in CONFIG["priority_journals"]) else 0
-    score+=3 if any(x in title for x in ("发掘报告","发掘简报","铭文","墓志","甲骨","inscription","excavation")) else 0
-    score-=10 if kind and kind not in ("journal-article","book-chapter","book","article","report","preprint") else 0
-    return score
+    if period:score+=8
+    if field:score+=4
+    if journal_name:score+=4
+    if not in_scope:score=0
+    return {"period":period,"field":field,"score":score,"in_scope":in_scope,"journal":journal_name,"term":period_term or field_term}
+def title_score(title,abstract,journal,kind="journal-article"):
+    return assess(title,abstract,journal,kind)["score"]
 def reviewed_keys():
     keys=set()
     for p in (ROOT/"content/issues").glob("*.json"):

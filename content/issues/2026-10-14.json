@@ -1,0 +1,768 @@
+{
+  "id": "2026-10-14",
+  "issue_no": "研究周刊 · 9月1日—10月14日",
+  "date": "2026-10-14",
+  "period": "2026-09-01 — 2026-10-14",
+  "is_sample": false,
+  "intro": "",
+  "records": [
+    {
+      "title": "河北阳原县西白马营旧石器时代遗址2016—2019年的发掘",
+      "authors": "中国社会科学院考古研究所、河北省文物考古研究院、阳原县文物保护管理服务中心",
+      "publication": "《考古》2026年第9期，2026-09-30",
+      "period": "旧石器",
+      "kind": "发掘简报",
+      "published_date": "2026-09-30",
+      "url": "https://cbgc.scol.com.cn/news/8011128",
+      "headline": "西白马营三地点见人类活动面",
+      "core": "2016年至2019年，河北阳原西白马营遗址三个地点都发现史前人类活动面，出土大量石制品和动物化石，堆积为原地埋藏。主要文化层的年代为距今5万至4万年。\n\n发掘者认为，**3号地点可能是狩猎营地，也可能是处理食物的场所**。\n\n泥河湾盆地在距今5万至4万年已有原地埋藏的人类活动，其中3号地点可能是狩猎营地，也可能是处理食物的场所。",
+      "evidence": [
+        "三个地点均发现史前人类活动面，出土大量石制品和动物化石。",
+        "主要文化层年代为距今5万至4万年。"
+      ],
+      "analysis": "发掘者把3号地点看作可能的狩猎营地或食物处理场所。",
+      "limits": "依据《考古》2026年第9期要览，未核对期刊正文。",
+      "id": "3f59fd2ee0e375ea",
+      "doi": "",
+      "field": "",
+      "topic": "旧石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Scientific Analysis of White Pottery from Yangshao Period at Suyang Site, Central Plains of China",
+      "doi": "10.1111/arcm.70218",
+      "authors": "Xiao Wang, Guang Ren, Jihong Li, Xiangle Gu, Jian Zhang, Tianxing Cui",
+      "publication": "Archaeometry，2026-09-06，DOI：10.1111/arcm.70218",
+      "period": "新石器",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-06",
+      "url": "https://doi.org/10.1111/arcm.70218",
+      "headline": "苏羊仰韶白陶由富钙黏土烧成",
+      "core": "中原苏羊遗址仰韶时期的白陶，成分富含氧化钙和氧化镁。X射线衍射显示，二者以钙铝黄长石和透辉石存在。陶器呈黄白色，主波长为580至595纳米。\n\n作者认为，这种成分反映制陶者**有意选择了黏土原料**。\n\n苏羊仰韶白陶呈黄白色，由有意选用的富钙黏土，在含铁、高温和氧化气氛中烧成。",
+      "evidence": [
+        "白陶富含氧化钙和氧化镁，以钙铝黄长石和透辉石存在。",
+        "呈色为黄白色，主波长580至595纳米。"
+      ],
+      "analysis": "作者把呈色归于富钙黏土、铁离子、高温和氧化气氛的共同作用。",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "id": "e14f9fb22a5d6e83",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "发掘方法视域下的西阴村考古",
+      "authors": "彭小军",
+      "publication": "《考古》2026年第9期，2026-09-30",
+      "period": "考古学理论",
+      "field": "考古学理论",
+      "kind": "研究论文",
+      "published_date": "2026-09-30",
+      "url": "https://cbgc.scol.com.cn/news/8057827",
+      "headline": "西阴村先按水平层发掘，再归入自然层",
+      "core": "彭小军考察1926年李济、袁复礼在夏县西阴村的发掘记录。发掘范围划成方格。深度以一米为单位分出大层，每米之内再按土色分出小层，遗物按方号、大层和小层编号。\n\n作者认为，大层仍是当时通行的**水平层**，小层才按土色进入**自然层**。截至1930年，多数发掘仍按等深度下挖。论文引用的解释是，有的堆积可能层薄、不好分，也有人觉得按自然层划分过细。",
+      "evidence": [
+        "西阴村以每米划分大层，每米内按土色划分小层。",
+        "作者认为大层属于水平层，小层属于自然层。"
+      ],
+      "analysis": "困境是水平层仍用来发掘和记录，自然层要等发掘之后再归位。",
+      "limits": "已核对《考古》2026年第9期正文。",
+      "id": "80dc62c94ce1aacd",
+      "doi": "",
+      "topic": "考古学理论",
+      "source_status": "已核对全文",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "河南孟州市司家沟遗址龙山文化遗存发掘简报",
+      "authors": "河南大学历史文化学院、河南大学夏文化协同创新中心、焦作市文物考古研究院、孟州市文化广电和旅游局、孟州市博物馆、孟州市赵和镇文化站",
+      "publication": "《考古》2026年第9期，2026-09-30",
+      "period": "新石器",
+      "kind": "发掘简报",
+      "published_date": "2026-09-30",
+      "url": "https://cbgc.scol.com.cn/news/8011128",
+      "headline": "司家沟龙山遗存有环壕、灰坑与墓葬",
+      "core": "2021年至2022年，河南孟州司家沟发掘龙山文化遗存。遗迹有环壕、灰坑和墓葬，出土陶、石、骨、角、牙、蚌器。\n\n发掘者将这批遗存的主体年代定在**公元前2200年至前1700年**。\n\n孟州司家沟龙山遗存的主体年代为公元前2200年至前1700年，环壕、灰坑与墓葬同出。",
+      "evidence": [
+        "遗迹有环壕、灰坑、墓葬，出土陶、石、骨、角、牙、蚌器。",
+        "主体年代为公元前2200年至前1700年。"
+      ],
+      "analysis": "司家沟龙山遗存的主体年代为公元前2200年至前1700年。",
+      "limits": "依据《考古》2026年第9期要览，未核对期刊正文。",
+      "id": "4ea0b09ff850f13b",
+      "doi": "",
+      "field": "",
+      "topic": "新石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Local Continuity and Selective Technological Translation in Neolithic Pottery From Mopanshan, Lower Yangtze China",
+      "doi": "10.1111/arcm.70236",
+      "authors": "Runnong Dong, Zihan Li, Kaixun Chen, Chenghao Yan, Tong Wu, Yuhan Wang, Xuechun Wen, Dongsheng Zhao",
+      "publication": "Archaeometry，2026-10-09，DOI：10.1111/arcm.70236",
+      "period": "新石器",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-10-09",
+      "url": "https://doi.org/10.1111/arcm.70236",
+      "headline": "磨盘山陶器沿用本地原料与工序",
+      "core": "安徽东南磨盘山遗址的新石器时代陶器，地层涵盖马家浜、崧泽、良渚，地处太湖平原与皖南山地之间。作者用激光剥蚀电感耦合等离子体质谱、X射线衍射、扫描电镜能谱和气质联用，检测了22件陶器。\n\n多数陶器胎土成分接近，说明长期使用相近的本地原料。马家浜阶段两件大口器都含角闪石，做法却不同：一件胎土特殊，并掺入较粗的阳起石；另一件胎土仍接近磨盘山的主体，含透闪石和斜绿泥石。作者认为，这不是照搬外来配方，而是**把一种用料原则纳入本地原料和原有工序**。残留物显示，不同陶器分别接触动物制品、植物，或用于储存。\n\n磨盘山自马家浜至良渚沿用相近的本地原料和工序，外来用料只在部分阶段进入，没有形成一套固定配方。",
+      "evidence": [
+        "22件陶器多数胎土成分接近。",
+        "两件马家浜大口器都以角闪石入料，但胎土和掺合料不同。"
+      ],
+      "analysis": "作者把这种现象解释为选择性的技术转译，而不是整套配方的搬用。",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "id": "9f2d6821d3026b29",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Direct Evidence of the Geographic Origins of Horse in the Yaoheyuan Site From Ningxia, China",
+      "doi": "10.1111/arcm.70225",
+      "authors": "Youla Yang, Qiang Ma, Mengling Gao, Baiwei Han, Chunyan Zhao",
+      "publication": "Archaeometry，2026-09-20，DOI：10.1111/arcm.70225",
+      "period": "商周",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-20",
+      "url": "https://doi.org/10.1111/arcm.70225",
+      "headline": "姚河塬多数马匹在本地驯养",
+      "core": "作者用锶同位素分析宁夏姚河塬遗址的马。姚河塬是西周时期西北的一处重要遗址。\n\n结果是，多数马来自本地驯养，少数来自其他地区。不同祭祀地点的马来源并不相同。\n\n姚河塬西周祭祀用马多数在本地驯养，少数来自外地，来源随祭祀地点而不同。",
+      "evidence": [
+        "多数马为本地驯养，少数来自其他地区。",
+        "不同祭祀地点的马来源不同。"
+      ],
+      "analysis": "作者把锶同位素结果当作祭祀用马来源和社会网络的证据。",
+      "id": "9dbd0cba602602d6",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "Bronze Age Fire Offering Rituals in the Chengdu Plain: Archaeobotanical Evidence From the Ashy Layer of Pit No. 4 in Sanxingdui's Sacrificial Area",
+      "doi": "10.1111/arcm.70233",
+      "authors": "Yan Xue, Wang Shuzhi, Xu Danyang, Xiang Hong, Wang Rui, Zheng Xiaoqu",
+      "publication": "Archaeometry，2026-09-21，DOI：10.1111/arcm.70233",
+      "period": "商周",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-21",
+      "url": "https://doi.org/10.1111/arcm.70233",
+      "headline": "三星堆四号坑以竹为燎祭燃料",
+      "core": "三星堆祭祀区4号坑的灰烬层，被放在商代晚期燎祭的燃料行为中考察。作者分析了71份样品中的木炭、种子和植硅体。竹炭是主要燃料，楠木和黄连木只有少量。\n\n作者认为，这种狭窄的燃料组合，与同时期非仪式用火的多样薪柴明显不同。灰烬层很有可能是燎祭残留。仪式地点当时植被稀疏，或事先经过清理。火堆以去叶的竹竿为主，掺少量楠木和黄连木，点燃后以烟和香气构成仪式气氛。\n\n三星堆4号坑的灰烬属于商代晚期燎祭，燃料以去叶竹竿为主，楠木和黄连木只用于起烟和香气。",
+      "evidence": [
+        "71份样品中竹炭是主要燃料，楠木和黄连木很少。",
+        "作者认为灰烬层很有可能是燎祭残留。"
+      ],
+      "analysis": "作者把燃料的单一性解释为仪式用火，而不是日常用火。",
+      "id": "4ed7dcee9c74059a",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "images": [
+        {
+          "src": "static/figures/bamboo-fuel.jpg",
+          "alt": "坑内以烧过的竹竿为主",
+          "caption": "示意图。燎祭火堆以去叶的竹竿为主，另有少量楠木和黄连木。"
+        }
+      ]
+    },
+    {
+      "title": "Production and Circulation of Proto‐Porcelain in China During the Western Zhou Period: Evidence From Scientific Analysis of Proto‐Porcelain From Zhouyuan and Other Areas",
+      "doi": "10.1111/arcm.70232",
+      "authors": "Yongqiang Yu, Junming Wu, Maolin Zhang, Jianli Chen, Yongbin Yu",
+      "publication": "Archaeometry，2026-09-21，DOI：10.1111/arcm.70232",
+      "period": "商周",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-21",
+      "url": "https://doi.org/10.1111/arcm.70232",
+      "headline": "周原原始瓷胎料近于南方瓷石",
+      "core": "作者分析了陕西周原出土西周原始瓷的胎和釉。周原原始瓷胎的化学特征，接近南方多见的瓷石资源。西周早、中、晚三期，胎的化学组成有明显差别。\n\n作者认为，**这批原始瓷产自浙闽**。\n\n周原的西周原始瓷产自浙闽，北上经湖北、江西的长江通道进入江汉，再过随枣走廊、南阳盆地，分到陕西、甘肃、河南、山西。",
+      "evidence": [
+        "周原原始瓷胎的化学特征接近南方瓷石。",
+        "西周早、中、晚三期胎的化学组成有明显差别。"
+      ],
+      "analysis": "作者用成分数据推断由南向北的流转路线。",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "id": "3bd07d69ff2ba0c2",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Diverse Metals used for Nobles of the Chu State: Research on the Technique and Resource of Metal Artifacts Excavated From Tomb No. M1 in Wangshanqiao Cemetery, Jingzhou",
+      "doi": "10.1111/arcm.70214",
+      "authors": "Yijie Hu, Jianye Liu, Ji Zhang, Jianli Chen",
+      "publication": "Archaeometry，2026-09-04，DOI：10.1111/arcm.70214",
+      "period": "战国秦汉",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-04",
+      "url": "https://doi.org/10.1111/arcm.70214",
+      "headline": "王山桥楚墓金属矿料来源不一",
+      "core": "作者分析了荆州王山桥墓地M1出土青铜器和铅锡器的合金成分、显微组织和铅同位素。对象是楚国贵族所用金属器。\n\n青铜容器的合金比例适当，锡含量中等；未经锻打的容器，铅含量高于经过锻打的容器。附件的连接有铸造，也有焊接。其他类青铜器的生产标准化程度低于容器。锡、铅和铅锡合金也被用来制作器物。\n\n王山桥楚墓同出青铜、锡、铅和铅锡合金，矿料来源各不相同。",
+      "evidence": [
+        "未经锻打的容器铅含量高于经过锻打的容器。",
+        "附件连接既有铸造也有焊接。"
+      ],
+      "analysis": "作者由矿料的多样性推论楚国内部存在多种金属资源的流转。",
+      "id": "54ee6fc9d5292e38",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "Analysis of a Mammillated Lead‐Barium Glazed Pottery Ornament on the Pommel of a Yue‐Style Bronze Sword With Bird Script",
+      "doi": "10.1111/arcm.70230",
+      "authors": "Xuening Wang, Zheng Zhou, Youzhen Cai, Yingzhu Wang, Linlin Li, Peize Han, Zhihua Gan, Qinglin Ma",
+      "publication": "Archaeometry，2026-09-21，DOI：10.1111/arcm.70230",
+      "period": "战国秦汉",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-21",
+      "url": "https://doi.org/10.1111/arcm.70230",
+      "headline": "临淄越式剑首镶有铅钡釉陶珠",
+      "core": "2014年，山东临淄金鼎遗址三期M675出土一把带鸟篆的越式青铜剑。剑首中央镶有一枚乳突状铅钡釉陶珠。钡含量高，有少量钾，没有钠，属于铅钡系统。胎釉界面形成钡长石，胎和釉中还保留大量未熔晶相。作者据此认为烧成温度较低，大概低于900℃。釉用中国蓝着色。\n\n作者指出，这是**吴越青铜剑上首次发现铅钡釉陶饰**。\n\n战国吴越剑的剑首已镶人工铅钡釉珠，临淄这件以中国蓝着色，烧成温度低于900℃。",
+      "evidence": [
+        "剑首中央镶一枚乳突状铅钡釉陶珠，烧成温度大概低于900℃。",
+        "作者称这是吴越青铜剑上首次发现此类釉陶饰。"
+      ],
+      "analysis": "作者把这件珠饰看作战国铅钡釉陶用途的新例。",
+      "id": "b547ef759beb90e4",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "Archaeometallurgical Study of Middle to Late Western Han (c.140 BC – AD 8) Bronze Artifacts from Western Hunan, China",
+      "doi": "10.1111/arcm.70229",
+      "authors": "Xiao Hang, Yuan Wei, Mo Linheng, Yu Haixia, Chen Xiaojun, Hao Jie, Zhao Xuezhu, Li Yingfu",
+      "publication": "Archaeometry，2026-09-22，DOI：10.1111/arcm.70229",
+      "period": "战国秦汉",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-22",
+      "url": "https://doi.org/10.1111/arcm.70229",
+      "headline": "湘西汉代铜器的铅料纳入国家管控",
+      "core": "湘西出土西汉中晚期铜器21件。按文化属性分为两类：一类具有本地特征，一类具有中原特征。样品都是铅锡青铜，使用复合范或合范，未见明显的铸后加工。本地样品的纹饰多在铸造时形成，以弦纹、带纹为主；中原系统的样品有动物纹，并使用印模和鎏金。\n\n铅同位素显示，两类铜器所用铅料大体相近。作者认为，**铅料来自豫西矿源，南岭是重要产地**。本地样品的同位素特征，与西汉中晚期的典型材料相符。\n\n西汉中晚期，湘西地方铸铜与中原系统所用铅料相同，在盐铁官营之下，这些作坊可能已归入国家铸铜业。",
+      "evidence": [
+        "21件样品均为铅锡青铜，两类铅料大体相近。",
+        "作者把铅料来源定在豫西，并把南岭视为重要产地。"
+      ],
+      "analysis": "作者由铅同位素的一致性推论地方铸铜可能已纳入国家管控。",
+      "id": "be7a92cf8c5f95f8",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "四川成都双元村墓地I区战国墓发掘简报",
+      "authors": "成都市文物考古研究院",
+      "publication": "《文物》2026年第9期，2026-09-25",
+      "period": "战国秦汉",
+      "kind": "发掘简报",
+      "published_date": "2026-09-25",
+      "url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "headline": "双元村三墓定为战国蜀国低级贵族",
+      "core": "2016年3月至2018年7月，成都文物考古研究院等单位在青白江双元村清理了270余座东周墓。Ⅰ区位于墓地东北部，墓葬年代多为战国。M22、M35、M82都是南北向长方形竖穴土坑墓，葬具有船棺和木椁。陶器有鼎、釜、罐、豆、尊缶、浴缶、尖底盏、器盖，铜器有鍪、矛、剑、戈、钺、斤、凿、削刀。\n\n发掘者根据墓葬形制和出土器物，将三墓定为**战国早、中期的蜀国低级贵族墓**。\n\n双元村这三座墓属于战国早、中期的蜀国低级贵族，葬具为船棺或木椁，随葬鼎、釜、鍪、剑一类陶铜器。",
+      "evidence": [
+        "Ⅰ区M22、M35、M82为南北向竖穴土坑墓，有船棺和木椁。",
+        "发掘者定为战国早、中期蜀国低级贵族墓。"
+      ],
+      "analysis": "断代和等级来自墓葬形制与这组陶铜器。",
+      "limits": "依据《文物》2026年第9期精彩摘要，未核对期刊正文。",
+      "id": "4d1d57c4ce4afeb2",
+      "doi": "",
+      "field": "",
+      "topic": "战国秦汉",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "On Deng Sui 鄧綏, A Complex Figure",
+      "doi": "10.1017/eac.2026.10038",
+      "authors": "Michael Nylan",
+      "publication": "Early China，2026-10-01，DOI：10.1017/eac.2026.10038",
+      "period": "战国秦汉",
+      "kind": "研究论文",
+      "published_date": "2026-10-01",
+      "url": "https://doi.org/10.1017/eac.2026.10038",
+      "headline": "邓绥临朝仍守东汉的性别规范",
+      "core": "这篇讨论的是评论邓绥临朝（106至121年）的早期言论。邓绥的亲信和顾问是班昭。文中以武则天、慈禧作为后人所持刻板印象的对照，研究对象仍是东汉的邓绥。\n\n作者认为，邓绥以自觉而独立的方式，**仍然信守东汉当时的性别规范**，同时拒绝不便的宫廷惯例。她与同时代其他有学识的女性一样，懂得运用经典学问达成自己的目标。\n\n邓绥临朝遵守的是东汉当时的性别规范，朝政评价近于西汉吕后。武则天、慈禧是后人的印象。",
+      "evidence": [
+        "讨论对象是106至121年临朝的邓绥，顾问为班昭。",
+        "作者认为邓绥仍然信守东汉的性别规范。"
+      ],
+      "analysis": "武则天和慈禧在文中只是被否定的后世刻板印象，不是研究对象。",
+      "id": "d63a0e82e8ee0432",
+      "field": "",
+      "topic": "战国秦汉",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "北魏宋绍祖墓出行俑群的组成、队列与汉唐间卤簿的发展",
+      "authors": "王煜、杜京城",
+      "publication": "《考古》2026年第9期，2026-09-30",
+      "period": "魏晋南北朝",
+      "field": "美术考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-30",
+      "url": "https://cbgc.scol.com.cn/news/8011128",
+      "headline": "宋绍祖墓出行俑与卤簿相应",
+      "core": "北魏宋绍祖墓的出行俑群，以前导、主车和后殿三组车队为中心，骑吏与步卒随从，自后向前、朝墓门行进。作者对照同时期墓葬中的出行壁画。\n\n作者认为，俑群的组成和队列层次分明，兼具护卫与仪仗，**与卤簿制度相应**。\n\n宋绍祖墓的出行俑与卤簿相应，队列中的军事内容和炫耀成分在北魏已经齐备，北朝至隋唐形成制度。",
+      "evidence": [
+        "俑群以前导、主车、后殿为中心，自后向前朝墓门行进。",
+        "作者认为其队列与卤簿制度相应。"
+      ],
+      "analysis": "作者用这组俑讨论卤簿从魏晋到隋唐的制度化。",
+      "limits": "依据《考古》2026年第9期要览，未核对期刊正文。",
+      "id": "ed9d5e5b68ee7e08",
+      "doi": "",
+      "topic": "美术考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "images": [
+        {
+          "src": "static/figures/procession-gate.jpg",
+          "alt": "俑群朝墓门行进",
+          "caption": "示意图。出行俑分前导、主车、后殿，自后向前，朝墓门行进。"
+        }
+      ]
+    },
+    {
+      "title": "Livestock Management and Subsistence Strategies at the Yong'an Site (1379–1288 cal BP), Jilin Province, Northeast China: Carbon and Nitrogen Stable Isotope Evidence From Faunal Remains",
+      "doi": "10.1111/arcm.70221",
+      "authors": "Shu Wang, Zongyu Li, Dan Yu, Wuyu Zhou, Xin Yu, Hailin Liu, Xiaohong Lv, Xinyue Yu",
+      "publication": "Archaeometry，2026-09-03，DOI：10.1111/arcm.70221",
+      "period": "隋唐",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-03",
+      "url": "https://doi.org/10.1111/arcm.70221",
+      "headline": "永安家畜并非同一套饲养制度",
+      "core": "吉林永安遗址的动物骨骼，测年落在距今1379至1288年。作者将其对应到北朝晚期至唐初，并放在高句丽控制这一地区的阶段来看。动物群以家养哺乳动物为主，同时保留渔猎。碳、氮稳定同位素分析用了34件骨胶原样品。\n\n作者认为，**家畜并非在同一套供给制度下饲养**。狍、熊和猪主要依赖C3资源；猪很少见到持续的粟类C4投入，更接近放养或低投入饲养。马和牛呈C3与C4混合。狗有更多C4摄入，并通过与人相关的喂食途径消费含氮较高的食物。\n\n永安的家畜不在同一套饲养制度之下，猪主要吃本地的C3植物，与东辽河流域前后阶段一致。",
+      "evidence": [
+        "测年为距今1379至1288年，样品34件。",
+        "猪、狍、熊以C3为主，马和牛为C3与C4混合，狗的C4更高。"
+      ],
+      "analysis": "作者认为不同家畜不在同一套供给制度之下。",
+      "id": "0d3cfcac3f4f367e",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "陕西西安长安区樱花一路唐墓M51",
+      "authors": "陕西省考古研究院",
+      "publication": "中国考古网转央视新闻，2026-09-20",
+      "period": "隋唐",
+      "field": "美术考古",
+      "kind": "发掘简报",
+      "published_date": "2026-09-20",
+      "url": "http://kaogu.cssn.cn/xwzx/kgdt/202609/t20260920_6068139.shtml",
+      "headline": "长安樱花一路M51出土成组三彩",
+      "core": "2025年，为配合西安长安区一处市政工程，考古工作者清理墓葬115座，年代涵盖西汉、东汉、隋、唐、明、清。其中M51出土一批组合完整的三彩器，共16件，镇墓兽、天王俑、女俑、男俑、骆驼、马、塔式罐、灯台各2件。\n\n公布者根据墓葬形制和出土器物，将M51定为**盛唐后期**。\n\n樱花一路M51属盛唐后期，三彩成套下葬，马具按络头、衔、镳、鞍鞯装配，一件塔式罐贴有骑马男子、猎犬和野兔。",
+      "evidence": [
+        "三彩器16件，镇墓兽、天王俑、女俑、男俑、骆驼、马、塔式罐、灯台各2件。",
+        "公布者推断年代为盛唐后期。"
+      ],
+      "analysis": "马具仍成套，塔式罐贴花做出狩猎图像。",
+      "limits": "依据中国考古网2026年9月20日所转新闻，不是期刊简报正文。",
+      "id": "00974845bc72636c",
+      "doi": "",
+      "topic": "美术考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "images": [
+        {
+          "src": "static/figures/m51-chamber.png",
+          "alt": "长安区唐墓M51墓室内的三彩俑、马和陶器",
+          "caption": "墓室出土情况。中国考古网转央视新闻，2026年9月20日。"
+        },
+        {
+          "src": "static/figures/m51-horse.png",
+          "alt": "三彩马，络头、衔和鞍鞯仍在",
+          "caption": "三彩马。络头、衔、镳和鞍鞯还在。中国考古网转央视新闻，2026年9月20日。"
+        },
+        {
+          "src": "static/figures/m51-lamp.png",
+          "alt": "三彩灯台",
+          "caption": "三彩灯台。中国考古网转央视新闻，2026年9月20日。"
+        }
+      ]
+    },
+    {
+      "title": "新疆库车友谊路墓群唐代尹公墓(M138)发掘简报",
+      "authors": "新疆文物考古研究所",
+      "publication": "《文物》2026年第9期，2026-09-25",
+      "period": "隋唐",
+      "kind": "发掘简报",
+      "published_date": "2026-09-25",
+      "url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "headline": "库车M138出土唐尹公墓志",
+      "core": "2025年7月至12月，新疆文物考古研究所在库车友谊路墓群做第五次发掘，于龟兹故城东城墙外约100米清理砖室墓M138。墓为甲字形斜坡墓道，由墓道、过洞、壁龛、天井、封门、甬道、墓室组成，破坏严重。墓室西侧棺床上有两具散乱人骨。出土陶器、铜器、银器、泥俑和墓志，共17件（组）。墓志载尹公任安西副都护、四镇支度判官、侍御史，卒于唐贞元七年（791年）。\n\n发掘者认为，**此墓是目前新疆南部所发掘、纪年明确的唯一砖室墓**。\n\n库车M138的墓主尹公卒于贞元七年，官至安西副都护。墓在龟兹故城东城墙外约100米，安西都护府的治所就在这座故城。",
+      "evidence": [
+        "墓主尹公卒于贞元七年，任安西副都护、四镇支度判官、侍御史。",
+        "发掘者称此墓是新疆南部纪年明确的唯一砖室墓。"
+      ],
+      "analysis": "墓在龟兹故城东墙外约100米，治所即在这座故城。",
+      "limits": "依据《文物》2026年第9期精彩摘要，未核对期刊正文。",
+      "id": "89edab624b64909e",
+      "doi": "",
+      "field": "",
+      "topic": "隋唐",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "A Multi‐Analytical Investigation of Lacquered Gauze From a Late Tang Tomb: Weaving Structure, Material Composition, and Technological Implications",
+      "doi": "10.1111/arcm.70240",
+      "authors": "Li Ding, Lin Yan, Zonglin Qin, Qin Yang, Liuxin Zhang",
+      "publication": "Archaeometry，2026-10-08，DOI：10.1111/arcm.70240",
+      "period": "隋唐",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-10-08",
+      "url": "https://doi.org/10.1111/arcm.70240",
+      "headline": "扬州晚唐漆纱的织法与施漆",
+      "core": "江苏扬州淮南村晚唐墓出土漆纱两件。一件为双经绕单纬的纱，一件为平纹。检测使用光学显微镜、扫描电镜、显微CT、蛋白质组学、红外光谱和热裂解气质联用。\n\n分析确认织物为丝，漆料来自漆树。漆层中的樟脑和柏木油类物质，作者认为**用于调节黏度和干燥**，以便施于柔软织物。\n\n扬州淮南村晚唐墓出土两件漆纱，一件为绕经的纱，一件为平纹，唐代幞头使用的是这种漆纱。",
+      "evidence": [
+        "两件漆纱织法不同，一件双经绕单纬，一件平纹。",
+        "织物为丝，漆料来自漆树。"
+      ],
+      "analysis": "唐代幞头用这种漆纱，织法有绕经的纱，也有平纹。",
+      "id": "4c42efc3f0fd0edd",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "images": [
+        {
+          "src": "static/figures/lacquer-gauze.jpg",
+          "alt": "疏纱与较密的织物并置",
+          "caption": "示意图。左为双经绕单纬的纱，右为平纹。"
+        }
+      ]
+    },
+    {
+      "title": "Study of 16th‐Century Brass Artifacts From the No. 1 Shipwreck on the Northwest Continental Slope of the South China Sea",
+      "doi": "10.1111/arcm.70227",
+      "authors": "Tingting Jiang, Ding Ma, Yonghai Fu, Bin Li, Jianchao Yan, Yuan Lou, Naisheng Li",
+      "publication": "Archaeometry，2026-09-11，DOI：10.1111/arcm.70227",
+      "period": "宋元明",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-11",
+      "url": "https://doi.org/10.1111/arcm.70227",
+      "headline": "西北陆坡一号沉船黄铜接近隆庆钱",
+      "core": "南海西北陆坡一号沉船被放在明代海上丝绸之路中考察。作者分析了沉船上17件铜器，包括盘、烛台、臂钏和莲瓣盆。盘上有錾刻纹饰，盘沿残留木头。全部样品都是二元黄铜。\n\n微量元素分析认为，黄铜用渗碳法制成，铜料很可能来自湖北大冶，锌料来自中国南方。\n\n西北陆坡一号沉船的黄铜是二元黄铜，铜锌比例在有确切年代的明代铜合金里与隆庆钱最近。",
+      "evidence": [
+        "17件铜器均为二元黄铜。",
+        "作者认为铜料很可能来自大冶，锌料来自南方。"
+      ],
+      "analysis": "作者用铜锌比例把这批黄铜比向隆庆钱。",
+      "id": "3735d25b8415c69b",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "Analysis of Residues in Pottery Vessels Unearthed at the Zhenjiang Tiansheng Daoist Temple and a Discussion on the Daoist Alchemical Vessel ‘Yangcheng Jar’",
+      "doi": "10.1111/arcm.70223",
+      "authors": "Jingyu Li, Xue Ling, Zhecheng Sang, Zheng Li, Xu Cao, Shuning Huang, Yijun Li, Yin Yang",
+      "publication": "Archaeometry，2026-09-18，DOI：10.1111/arcm.70223",
+      "period": "宋元明",
+      "field": "科技考古",
+      "kind": "研究论文",
+      "published_date": "2026-09-18",
+      "url": "https://doi.org/10.1111/arcm.70223",
+      "headline": "镇江天胜观陶器用作炼丹丹母",
+      "core": "作者分析了镇江天胜观出土的9件特殊陶器及其残留物，方法为扫描电镜能谱和显微拉曼光谱。器形为浅腹、广口、尖底。\n\n作者认为，这种器形符合外丹长时间、可控加热的需要。残留物以氧化铅为主，并含瓷片与铅相的致密混合物。这些器物很可能用作**引导反应的丹母**。\n\n镇江天胜观出土的九件浅腹、广口、尖底陶器用作炼丹的丹母，宋元道教宫观仍用这套炼丹技术。",
+      "evidence": [
+        "9件陶器为浅腹、广口、尖底，残留物以氧化铅为主。",
+        "作者将其功能定为引导反应的丹母。"
+      ],
+      "analysis": "作者把器形和残留物放在宋元道教外丹的技术传统里解释。",
+      "id": "b77ee3d1050c1020",
+      "topic": "科技考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "医巫闾山辽陵研究的几个问题",
+      "authors": "董新林",
+      "publication": "《文物》2026年第9期，2026-09-25",
+      "period": "宋元明",
+      "kind": "研究论文",
+      "published_date": "2026-09-25",
+      "url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "headline": "显陵不宜归入乾陵",
+      "core": "辽代帝陵分大兴安岭陵区与医巫闾山陵区。后者位于辽东京辽阳府西北，包括显陵与乾陵。显陵为耶律倍之陵，由王陵升为帝陵，世宗耶律阮附葬于此。乾陵为景宗耶律贤之陵。乾陵陵园前部有新立建筑基址，其西南、西北各有大墓，编号M1、M2。\n\n作者认为，耶律倍与世宗均未按帝陵规制下葬，政治意味浓厚。乾陵则是遵循帝陵规制的独立陵园，**显陵不宜归入乾陵**。M1可能为天祚帝耶律延禧玄宫，M2应为景宗皇后萧绰玄宫。\n\n乾陵前部基址营建过两次，分别在景宗下葬和萧绰下葬时，金代早期废弃。",
+      "evidence": [
+        "显陵为耶律倍之陵，乾陵为景宗之陵。",
+        "作者认为显陵不宜归入乾陵。"
+      ],
+      "analysis": "作者把前部基址的两次营建分别系于景宗和萧绰下葬。",
+      "limits": "依据《文物》2026年第9期精彩摘要，未核对期刊正文。",
+      "id": "b2f6923ccbd635ff",
+      "doi": "",
+      "field": "",
+      "topic": "宋元明",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "images": [
+        {
+          "src": "static/figures/liao-precincts.jpg",
+          "alt": "两处分开的陵区，较大的一处自成一园",
+          "caption": "示意图。大兴安岭与医巫闾山分成两区，乾陵单独成园。"
+        }
+      ]
+    },
+    {
+      "title": "吉林安图县长白山神庙遗址2018年发掘简报",
+      "authors": "吉林大学考古学院、吉林省文物考古研究所",
+      "publication": "《考古》2026年第9期，2026-09-30",
+      "period": "宋元明",
+      "field": "建筑考古",
+      "kind": "发掘简报",
+      "published_date": "2026-09-30",
+      "url": "https://cbgc.scol.com.cn/news/8011128",
+      "headline": "长白山神庙确认东部廊庑与水井",
+      "core": "2018年发掘揭露吉林安图长白山神庙东部的外墙东北角、东侧廊庑、廊屋，以及廊院内排水系统出口和水井。出土陶建筑构件，并有铁器、铜器、瓷器、玉器和铜钱。\n\n发掘者认为，这次工作**进一步确认了上述遗迹的形制与结构**。\n\n长白山神庙东部的廊庑、廊屋和水井属于宋金时期的官式建筑。",
+      "evidence": [
+        "揭露了外墙东北角、东侧廊庑、廊屋、排水出口和水井。",
+        "出土陶建筑构件及铁、铜、瓷、玉器和铜钱。"
+      ],
+      "analysis": "发掘者把东部廊庑和水井归入宋金官式建筑。",
+      "limits": "依据《考古》2026年第9期要览，未核对期刊正文。",
+      "id": "3b4f32a343b6d163",
+      "doi": "",
+      "topic": "建筑考古",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Monastic Careers in Stone: Education, Models of Study and Practice, and Dharma Lineage Transmission in Abbots’ Stele Inscriptions of Yuan-Dynasty Jiangnan",
+      "doi": "10.3390/rel17101183",
+      "authors": "Xiaobai Li, Xinmei Wang",
+      "publication": "Religions，2026-10-09，DOI：10.3390/rel17101183",
+      "period": "宋元明",
+      "kind": "研究论文",
+      "published_date": "2026-10-09",
+      "url": "https://doi.org/10.3390/rel17101183",
+      "headline": "元代江南住持以世系取得职位",
+      "core": "材料为元代江南住持的塔铭，出自文人别集、僧人语录和寺院志。对象以五山十刹住持为主，临济宗居多。成文过程是弟子呈行状，文人撰文，再经多方改稿。\n\n作者认为，这些上层僧人多出身儒户、官宦，或早年受过儒学训练，因而**具有士大夫化的色彩**。修行路径常见藉教悟宗与舍教入禅。行脚参学既是修行，也用于建立跨地区的师承。\n\n元代江南的五山十刹住持，主要靠师徒世系和法器传授任职，并经官府认可。",
+      "evidence": [
+        "塔铭由弟子呈行状、文人撰文、多方改稿而成。",
+        "作者认为世系和法器传授被写成取得住持职位的依据。"
+      ],
+      "analysis": "这是利用已有碑铭做的研究，不是新出墓志的释文。",
+      "id": "ef25453572dca551",
+      "field": "",
+      "topic": "宋元明",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究",
+      "limits": "依据已公布的摘要，未核对期刊正文。"
+    },
+    {
+      "title": "Topographic accessibility and proto-urban settlement organization in Neolithic China",
+      "doi": "10.1038/s44284-026-00511-2",
+      "authors": "Ruoran Cheng, Xiao Yu, Dongdong Li, Hongzhi Xu, Guodong Ju, Kent Deng, Joan Rosés",
+      "publication": "Nature Cities，2026-09-08，DOI：10.1038/s44284-026-00511-2",
+      "period": "新石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-09-08",
+      "url": "https://doi.org/10.1038/s44284-026-00511-2",
+      "headline": "新石器聚落先沿可达走廊集中",
+      "core": "材料是公元前5000年至前2000年中国新石器聚落的地理坐标，以及由地形算出的陆路可达性。\n\n作者认为，前5000年至前2500年，聚落强度越来越集中在可达走廊上；前2500年至前2000年，这种对应明显减弱，聚落仍然聚集，主要集中区转向可达性居中的位置。**地形可达性组织了正式道路和国家出现之前的聚落，这层关系随后改变。**\n\n中国新石器聚落在公元前5000年至前2500年沿地形可达的走廊集中，前2500年至前2000年转向可达性居中的地带。",
+      "evidence": [
+        "Settlement intensity became increasingly concentrated along accessible corridors between 5000 and 2500 BCE.",
+        "Between 2500 and 2000 BCE, this association weakened sharply."
+      ],
+      "analysis": "作者认为地形可达性与聚落聚集的对应在前2500年之后减弱。",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "id": "59e04800ed636114",
+      "topic": "新石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "Archaeology is culture history, or it is nothing: Reframing culture history as an essential epi-paradigm for archaeological practice",
+      "doi": "10.1016/j.jaa.2026.101808",
+      "authors": "Matthew W. Betts, M. Gabriel Hrynick, Arthur W. Anderson",
+      "publication": "Journal of Anthropological Archaeology，2026-09-18，DOI：10.1016/j.jaa.2026.101808",
+      "period": "考古学理论",
+      "field": "考古学理论",
+      "kind": "研究论文",
+      "published_date": "2026-09-18",
+      "url": "https://doi.org/10.1016/j.jaa.2026.101808",
+      "headline": "文化史先于具体的变迁解释",
+      "core": "近七十年的批评把文化史考古视为过时范式，指责它把文化看成均质整体，用迁徙和传播解释变化，并把文化与人群对应，也容易被政治使用。碳十四测年和贝叶斯年代学延续了这些批评。\n\n作者认为，这些批评把文化史与规范性、传播论的范式混在一起。去掉特定的变迁学说之后，文化史是先于解释的框架。**描述、分类和分期先于具体的理论解释。**",
+      "evidence": [
+        "Culture history endures, providing the structural framework for archaeological practice worldwide.",
+        "Its core tenets—description, systematics, classification, and periodization—are logically indispensable prior to theoretical interpretation."
+      ],
+      "analysis": "作者把文化史从特定的变迁学说中分开，视为先于解释的框架。",
+      "limits": "依据已公布的摘要，未核对期刊正文。",
+      "id": "97385e54880e5bfb",
+      "topic": "考古学理论",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "走向比较考古学：中国与欧洲史前时代晚期发展轨迹的比较",
+      "doi": "",
+      "authors": "Chris Gosden",
+      "publication": "北京大学考古文博学院「中国考古学的理论与实践」主旨报告纪要，2026-09-12",
+      "period": "考古学理论",
+      "field": "考古学理论",
+      "kind": "研究论文",
+      "published_date": "2026-09-12",
+      "url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "headline": "中国的大型中心常常迁徙",
+      "core": "报告比较中国与欧洲史前时代晚期的轨迹。欧洲的雅典、罗马长期留在原地。中国古代的大型中心常常迁移，秦国都城由雍迁至栎阳，再迁至咸阳。红山、良渚、石峁和妇好墓的玉器之间有可以比较的形制。\n\n作者认为，**形成于欧洲的城市和国家分类不能直接套用于中国**。比较的作用是看出两地各自的轨迹。",
+      "evidence": [
+        "中国古代的大型中心聚落往往具有更强的迁移性。",
+        "许多形成于欧洲的社会分类和发展模式，并不能完全适用于中国。"
+      ],
+      "analysis": "作者认为欧洲的城市和国家分类不能直接套用于中国。",
+      "limits": "依据会议纪要，未核对报告全文。",
+      "id": "89708fe0ce387b35",
+      "topic": "考古学理论",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "追寻古代人类迁徙",
+      "doi": "",
+      "authors": "Peter Bellwood",
+      "publication": "北京大学考古文博学院「中国考古学的理论与实践」主旨报告纪要，2026-09-12",
+      "period": "新石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-09-12",
+      "url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "headline": "农业人群的远距离迁徙来得更晚",
+      "core": "报告讨论黄河、长江流域农业人群向东南亚和大洋洲的扩散，以及西亚农业人群向欧洲的扩展，并回顾早期农业扩散假说和农业—语言扩散假说。\n\n作者认为，**大规模农业迁徙发生在最早的农业迹象出现数千年之后**，共同因素是定居人群的持续增长。精英统治、语言转换和狩猎采集者局部采用农业，通常只产生地方性的影响。\n\n黄河、长江流域农业人群向东南亚和大洋洲的扩散，晚于当地最早的农业迹象数千年；作者认为推动这一扩散的是定居人群的持续增长。",
+      "evidence": [
+        "大规模农业迁徙往往发生在最早的农业迹象出现数千年之后。",
+        "推动农业社会扩张的一个共同因素，是定居人群的持续增长。"
+      ],
+      "analysis": "作者认为远距离的农业迁徙晚于最早的农业迹象，动力是定居人口的增长。",
+      "limits": "依据会议纪要，未核对报告全文。",
+      "id": "54a779baa28e5a10",
+      "topic": "新石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "石器时代的爱与死亡：如何确认人类遗体丧葬处理的最早证据",
+      "doi": "",
+      "authors": "Mary C. Stiner",
+      "publication": "北京大学考古文博学院「中国考古学的理论与实践」主旨报告纪要，2026-09-12",
+      "period": "旧石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-09-12",
+      "url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "headline": "更早的集中遗骸还不能认定为丧葬",
+      "core": "判断早期墓葬，要看遗骸是否位于人类反复使用的生活空间，死者是否得到相对完整和谨慎的处理，以及年龄、性别结构是否不同于自然死亡形成的样本。西班牙骨坑距今约43万年，南非 Naledi 洞穴位于难以进入的深处，两处都缺少居住痕迹和精心处理。\n\n作者认为，**悲痛本身未必留在考古记录中，纪念行为才会留下可识别的痕迹**。骨坑和 Naledi 洞穴至多说明遗体可能被有意集中，是否属于丧葬仍缺乏充分证据。\n\n目前争议较小的旧石器时代墓葬出现在距今约12万年之后的黎凡特；更早的西班牙骨坑和南非 Naledi 洞穴还不能认定为丧葬。",
+      "evidence": [
+        "悲痛本身未必能够留存于考古记录中，但纪念行为往往会留下可以识别的痕迹。",
+        "这些遗存至多能够说明遗体可能受到有意处置或集中，是否能够被认定为真正的丧葬实践，仍缺乏充分证据。"
+      ],
+      "analysis": "作者认为距今约12万年以前的集中遗骸还不能认定为丧葬。",
+      "limits": "依据会议纪要，未核对报告全文。",
+      "id": "bac7f2609425012c",
+      "topic": "旧石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "墓葬、墓地与社会的考古学研究",
+      "doi": "",
+      "authors": "秦岭",
+      "publication": "北京大学考古文博学院「中国考古学的理论与实践」闭幕式总结，2026-09-13",
+      "period": "新石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-09-13",
+      "url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+      "headline": "墓葬要按丧葬过程来看",
+      "core": "这一组有9个报告，材料包括中石器欧洲、江西老虎墩、广东岩山寨、陕西杨官寨、湖南孙家岗、浙南好川、红山积石冢和山东岗上大汶口墓地。\n\n秦岭认为，墓葬应理解为遗体处理、器物随葬和仪式行为叠加的过程。**墓葬差异不能简单等同于等级。** 等级还要结合年龄、性别、亲属、仪式角色和聚落结构来看。\n\n这些报告把墓葬从一座墓的静态分类，转到遗体处理、随葬和仪式叠在一起的过程；墓地则要连同聚落和景观一起看。",
+      "evidence": [
+        "墓葬应理解为遗体处理、器物随葬和仪式行为叠加的过程。",
+        "墓葬差异不能简单等同于等级。"
+      ],
+      "analysis": "秦岭把墓葬研究从静态分类转到丧葬过程。",
+      "limits": "依据闭幕式总结，未核对各报告全文。",
+      "id": "c3a91e0b7d4f22a1",
+      "topic": "新石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "比较视野下的旧石器时代中晚期过渡",
+      "doi": "",
+      "authors": "冯玥",
+      "publication": "北京大学考古文博学院「中国考古学的理论与实践」闭幕式总结，2026-09-13",
+      "period": "旧石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-09-13",
+      "url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+      "headline": "东亚旧石器不是单线演进",
+      "core": "报告比较蒙古、中亚、阿尔泰和中国境内的旧石器材料，包括泥河湾新庙庄、沂水跋山、丹江下游吴营、西南地区疑似勒瓦娄哇和基纳技术，以及岭南罗艮顶。\n\n冯玥认为，**东亚古人类文化不是单一线性演进，延续、变化和多样并存。** 西南地区的技术讨论说明，石器研究的技术分析还需要改进，文化分类要回到历史主义的视野。\n\n东亚旧石器时代同时有延续、变化和多样；西南地区疑似勒瓦娄哇、基纳技术的讨论，要求改进石器技术分析的方法。",
+      "evidence": [
+        "东亚古人类文化发展不是单一线性演进，而是延续性、变化性、多样性并存。",
+        "西南地区疑似勒瓦娄哇、基纳技术遗存的相关讨论提示需要改进技术分析和石器研究的方法。"
+      ],
+      "analysis": "冯玥认为东亚旧石器文化不是单线演进。",
+      "limits": "依据闭幕式总结，未核对各报告全文。",
+      "id": "a8e4c1d09b772e55",
+      "topic": "旧石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    },
+    {
+      "title": "史前治水与中国早期文明演进",
+      "doi": "",
+      "authors": "刘建国",
+      "publication": "《光明日报》2026年10月10日10版",
+      "period": "新石器",
+      "field": "",
+      "kind": "研究论文",
+      "published_date": "2026-10-10",
+      "url": "https://news.gmw.cn/2026-10/10/content_39037815.htm",
+      "headline": "石家河的堆土用于蓄水灌溉",
+      "core": "长江中下游史前聚落要同时对付梅雨洪涝和伏旱、秋旱。石家河谭家岭西北有水塘，沟渠把水引向南部和东部谷地。屈家岭文化时期，垄岗间谷地上端挖塘蓄水、堆土居住，下端改为农田。\n\n作者认为，谭家岭南侧和东侧只有自然谷地，**不应该解释为城垣**。石家河范围内有蓄水、灌溉、农田和零散居址，不是城址。屈家岭文化时期，家户小水塘难以维持干旱年份的灌溉，才在三房湾与谭家岭之间修建水坝。\n\n石家河在油子岭文化时期已经形成高蓄低灌；屈家岭文化时期以水坝扩大灌溉，谭家岭的堆土和壕沟是引水设施，不是城垣。",
+      "evidence": [
+        "谭家岭南侧和东侧只有自然谷地，未发现人类加工的迹象，所以不应该解释为城垣结构。",
+        "石家河不是城址，因为聚落群范围内有很多蓄水设施、灌溉设施、大范围农田、零散的居住地。"
+      ],
+      "analysis": "作者把石家河和谭家岭的堆土、壕沟解释为蓄水灌溉，而不是城垣。",
+      "limits": "依据《光明日报》演讲记录，未核对相关发掘报告。",
+      "id": "b71d0e5c4a883f02",
+      "topic": "新石器",
+      "source_status": "已核对公开摘要",
+      "newness": "新发表研究"
+    }
+  ]
+}

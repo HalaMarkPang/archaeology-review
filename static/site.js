@@ -10,6 +10,10 @@
       const yes=(current==='全部'||card.dataset.period===current)&&(!q||card.textContent.toLocaleLowerCase().includes(q));
       card.classList.toggle('hidden',!yes);if(yes)n++;
     }
+    for(const section of document.querySelectorAll('[data-genre]')){
+      const visible=[...section.querySelectorAll('[data-record]')].some(card=>!card.classList.contains('hidden'));
+      section.classList.toggle('hidden',!visible);
+    }
     if(empty)empty.style.display=n?'none':'block';
     const el=document.querySelector('[data-count]');if(el)el.textContent=String(n);
   }

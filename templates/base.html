@@ -1,1 +1,30 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f6f2"><meta name="description" content="商周考古、出土文献、人物与家族史研究周刊。"><title>{{ title }}｜考古与历史研究周刊</title><link rel="stylesheet" href="{{ base }}static/site.css"></head><body><div class="site"><aside class="side"><a class="identity" href="{{ base }}index.html"><span class="emblem">A.</span><span><strong>考古与历史研究周刊</strong><small>ARCHAEOLOGY REVIEW</small></span></a><div class="group-caption">刊物索引</div><nav><a class="nav-link {{ 'active' if page=='home' else '' }}" href="{{ base }}index.html">本期研究</a><a class="nav-link {{ 'active' if page=='archive' else '' }}" href="{{ base }}archive/index.html">往期归档</a><a class="nav-link" href="{{ base }}index.html#research">研究条目</a><a class="nav-link" href="{{ base }}index.html#method">证据标准</a></nav><div class="group-caption">研究重点</div><nav><a class="nav-link" href="{{ base }}index.html#research">商周考古</a><a class="nav-link" href="{{ base }}index.html#research">出土文字</a><a class="nav-link" href="{{ base }}index.html#research">墓志与家族</a></nav><div class="sidebar-bottom">计划每周五更新 · 北京时间<br>仅收录可核查的学术成果<br>个人研究索引 · 定时归档</div></aside><div class="main"><div class="topbar"><span class="breadcrumbs">研究资料 / {{ location }}</span><div class="top-actions"><a href="{{ base }}archive/index.html">归档</a><a href="{{ base }}index.html#method">编选方法 ↗</a></div></div><main class="content" {% if page=='issue' and not issue.is_sample %}data-pagefind-body{% endif %}>{% block content %}{% endblock %}</main><footer class="footer"><span>考古与历史研究周刊 · 学术阅读索引</span><span>以原始发表文献为准</span><span>本站不转载付费论文全文</span></footer></div></div><script src="{{ base }}static/site.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e5e1d8">
+  <title>{{ title }}｜考古与历史研究周刊</title>
+  <link rel="stylesheet" href="{{ base }}static/site.css?v=20261015q">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="page-{{ page }}">
+  <header class="masthead">
+    <a class="brand" href="{{ base }}index.html">
+      <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 38" fill="currentColor" aria-hidden="true">
+        <path d="M1 2h9v3.2H6.6V27H10v3.2H1V27h2.6V5.2H1V2z"/>
+        <path fill-rule="evenodd" d="M6.6 2H15.6c6.4 0 10.2 3.7 10.2 8.6 0 5-3.9 8.6-10.2 8.6H6.6V2zm2.8 3.2v9.8h5.6c3.6 0 5.8-2 5.8-4.9s-2.2-4.9-5.8-4.9H9.4z"/>
+        <path fill-rule="evenodd" d="M28 16a12 12 0 1 0 24 0 12 12 0 1 0-24 0zm4.2 0a7.8 7.8 0 1 1 15.6 0 7.8 7.8 0 1 1-15.6 0z"/>
+        <path d="M46.2 22.4 60.8 36.2h-4.3L43.4 24.6z"/>
+      </svg>
+      <span>考古与历史研究周刊</span>
+    </a>
+    <nav>
+      <a class="{{ 'active' if page in ('home', 'issue') else '' }}" href="{{ base }}index.html">本期</a>
+      <a class="{{ 'active' if page == 'archive' else '' }}" href="{{ base }}archive/index.html">往期</a>
+    </nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <script src="{{ base }}static/site.js"></script>
+</body>
+</html>
