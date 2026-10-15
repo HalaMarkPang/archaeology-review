@@ -19,4 +19,34 @@
   }
   for(const b of buttons)b.addEventListener('click',()=>{current=b.dataset.filter;for(const x of buttons){x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))}apply()});
   if(search)search.addEventListener('input',apply);
+  const toc=document.querySelector('.toc');
+  const layout=document.querySelector('.issue-layout');
+  if(toc&&layout){
+    let lock=0;
+    const doc=document.scrollingElement;
+    function span(){
+      const start=Math.max(0,layout.offsetTop-76);
+      const end=Math.max(start,layout.offsetTop+layout.offsetHeight-doc.clientHeight);
+      return {start,end};
+    }
+    toc.addEventListener('scroll',()=>{
+      if(lock)return;
+      const room=toc.scrollHeight-toc.clientHeight;
+      if(room<=0)return;
+      const {start,end}=span();
+      lock=1;
+      doc.scrollTop=start+(end-start)*(toc.scrollTop/room);
+      lock=0;
+    },{passive:true});
+    document.addEventListener('scroll',()=>{
+      if(lock)return;
+      const room=toc.scrollHeight-toc.clientHeight;
+      if(room<=0)return;
+      const {start,end}=span();
+      const ratio=end===start?0:(doc.scrollTop-start)/(end-start);
+      lock=1;
+      toc.scrollTop=Math.min(1,Math.max(0,ratio))*room;
+      lock=0;
+    },{passive:true});
+  }
 })();
