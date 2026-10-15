@@ -185,12 +185,7 @@ main { width: min(920px, calc(100% - 56px)); margin: 0 auto; padding: 48px 0 96p
   font-size: 16px;
 }
 .out-link:hover { color: var(--ink); }
-.toc {
-  position: sticky;
-  top: 76px;
-  max-height: calc(100svh - 96px);
-  overflow-y: auto;
-}
+.toc { position: sticky; top: 76px; }
 .toc a { display: block; padding: 8px 0; font-size: 15px; color: var(--muted); }
 .toc a:hover { color: var(--ink); }
 
