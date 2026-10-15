@@ -2,7 +2,7 @@
   "lookback_days": 30,
   "schedule": {
     "timezone": "Asia/Shanghai",
-    "cron": "37 18 * * 5"
+    "cron": "0 12 * * 5"
   },
   "genres": ["发掘简报", "调查简报", "发掘报告", "出土文献", "馆藏研究", "研究论文"],
   "standalone_group": "考古学理论",

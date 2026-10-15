@@ -179,7 +179,7 @@ def main():
         dump_json(ROOT/"content/status.json",{"date":args.date,"mode":mode,"source_window":data.get("window",{}),
             "candidates":len(records),"qualified_recommendations":len(accepted),"published":newly,
             "warnings":data.get("warnings",[]),
-            "message":"已发布新一期。" if newly else "本次没有发表。"})
+            "message":"已发布新一期。" if newly else "本期无新刊。"})
         dump_json(ROOT/"content/audits"/f"{args.date}.json",{"date":args.date,"checks":audit})
     print(f"处理{len(records)}条，符合基础校验{len(accepted)}条，新发布{newly}条")
 if __name__=="__main__":main()

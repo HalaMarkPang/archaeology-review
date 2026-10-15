@@ -371,7 +371,7 @@ def main():
         x={k:r.get(k) for k in ("id","doi","title","authors","journal","published_date","url","kind","provider","priority","period_guess","field")}
         x["watched_journal"]=bool(r.get("watched_journal"))
         x["abstract_available"]=bool(r.get("abstract"));public.append(x)
-    dump_json(ROOT/"content/candidates"/f"{args.date}.json",{"date":args.date,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"note":"候选元数据不等于学术结论；出版社目录仅供核查，不能自动发表。公众号未核完不等于该号没有文章。"})
+    dump_json(ROOT/"content/candidates"/f"{args.date}.json",{"date":args.date,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"note":"候选记录为题录，尚非已发表结论。出版社目录供核查。公众号未核完，表示该号检索尚未完成。"})
     print(f"候选 {len(records)} 条；有摘要 {sum(bool(x.get('abstract')) for x in records)} 条；警告 {len(warnings)} 条")
     for w in warnings:print("WARN:",w,file=sys.stderr)
 if __name__=="__main__":main()
