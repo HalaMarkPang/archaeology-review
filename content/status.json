@@ -1,11 +1,435 @@
 {
+  "date": "2026-10-16",
+  "state": "awaiting_editorial",
+  "mode": "reviewed_drafts",
+  "source_window": {
+    "start": "2026-09-17",
+    "end": "2026-10-16"
+  },
+  "candidates": 76,
+  "qualified_recommendations": 0,
+  "published": 0,
+  "warnings": [
+    "公众号「北京大学考古文博学院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「东南文化」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「杜伦考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「国家博物馆」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「汉唐考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「汉唐考古札记」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「华域考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「惠生盘古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「吉大考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「考古大家谈」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「考古陕西」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「考古研史」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「理寓物内」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「南山供秀」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「澎湃私家历史」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「人工智能与文化遗产」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「山大考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「商周考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「穴居的猎人」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「浙江考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「中国考古网」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「中国魏晋南北朝史学会」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「中国文物报」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「河南考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「考古邦」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「城市考古与保护」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「考古与文物」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「文博中国」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「文物陕西」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「河北考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「江汉考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「海岱考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「成都文物考古研究院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "公众号「大众考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
+    "Crossref Paleolithic China archaeology: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Paleolithic+China+archaeology&filter=from-pub-date%3A2026-09-17%2Cunti)",
+    "Crossref Neolithic China Yangshao Longshan archaeology: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Neolithic+China+Yangshao+Longshan+archaeology&filter=from-pub-date%3A2)",
+    "Crossref Shang Zhou oracle bone bronze inscription archaeology: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Shang+Zhou+oracle+bone+bronze+inscription+archaeology&filter=from-pub-)",
+    "Crossref Warring States Qin Han archaeology China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Warring+States+Qin+Han+archaeology+China&filter=from-pub-date%3A2026-0)",
+    "Crossref Six Dynasties Northern Wei archaeology China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Six+Dynasties+Northern+Wei+archaeology+China&filter=from-pub-date%3A20)",
+    "Crossref Tang dynasty archaeology Chang'an: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Tang+dynasty+archaeology+Chang%27an&filter=from-pub-date%3A2026-09-17%)",
+    "Crossref Song Yuan Ming archaeology China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Song+Yuan+Ming+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cu)",
+    "Crossref archaeological science isotope radiocarbon China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+science+isotope+radiocarbon+China&filter=from-pub-date%)",
+    "Crossref architectural archaeology China palace city: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=architectural+archaeology+China+palace+city&filter=from-pub-date%3A202)",
+    "Crossref mural sculpture tomb figurine archaeology China Dunhuang: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=mural+sculpture+tomb+figurine+archaeology+China+Dunhuang&filter=from-p)",
+    "Crossref archaeological theory China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+theory+China&filter=from-pub-date%3A2026-09-17%2Cuntil-)",
+    "Crossref Chinese archaeological theory settlement: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Chinese+archaeological+theory+settlement&filter=from-pub-date%3A2026-0)",
+    "Crossref archaeological interpretation China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+interpretation+China&filter=from-pub-date%3A2026-09-17%)",
+    "Crossref history of Chinese archaeology: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=history+of+Chinese+archaeology&filter=from-pub-date%3A2026-09-17%2Cunt)",
+    "Crossref social archaeology China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=social+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cuntil-pub)",
+    "Crossref comparative archaeology China: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=comparative+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cunti)",
+    "Crossref Chinese archaeology: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Chinese+archaeology&filter=from-pub-date%3A2026-09-17%2Cuntil-pub-date)",
+    "Crossref China archaeological excavation: failed (400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=China+archaeological+excavation&filter=from-pub-date%3A2026-09-17%2Cun)",
+    "Crossref Early China: partial (page_budget)",
+    "Crossref Journal of Archaeological Method and Theory: partial (page_budget)",
+    "Crossref World Archaeology: partial (page_budget)",
+    "OPENALEX_API_KEY未配置，未检索OpenAlex",
+    "文物出版社工作动态：覆盖尚未核完（no_verified_next_link）",
+    "《考古》：覆盖尚未核完（no_verified_next_link）",
+    "《考古学报》：覆盖尚未核完（no_verified_next_link）",
+    "文物出版社：覆盖尚未核完（no_verified_next_link）",
+    "文物出版社资讯：覆盖尚未核完（HTTPSConnectionPool(host='www.zgwwcbcm.com', port=443): Read timed out.）",
+    "中国考古网学术论文：覆盖尚未核完（no_verified_next_link）",
+    "北京大学考古文博学院：覆盖尚未核完（page_budget）"
+  ],
+  "coverage": [
+    {
+      "source": "Crossref",
+      "query": "Paleolithic China archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Paleolithic+China+archaeology&filter=from-pub-date%3A2026-09-17%2Cunti"
+    },
+    {
+      "source": "Crossref",
+      "query": "Neolithic China Yangshao Longshan archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Neolithic+China+Yangshao+Longshan+archaeology&filter=from-pub-date%3A2"
+    },
+    {
+      "source": "Crossref",
+      "query": "Shang Zhou oracle bone bronze inscription archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Shang+Zhou+oracle+bone+bronze+inscription+archaeology&filter=from-pub-"
+    },
+    {
+      "source": "Crossref",
+      "query": "Warring States Qin Han archaeology China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Warring+States+Qin+Han+archaeology+China&filter=from-pub-date%3A2026-0"
+    },
+    {
+      "source": "Crossref",
+      "query": "Six Dynasties Northern Wei archaeology China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Six+Dynasties+Northern+Wei+archaeology+China&filter=from-pub-date%3A20"
+    },
+    {
+      "source": "Crossref",
+      "query": "Tang dynasty archaeology Chang'an",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Tang+dynasty+archaeology+Chang%27an&filter=from-pub-date%3A2026-09-17%"
+    },
+    {
+      "source": "Crossref",
+      "query": "Song Yuan Ming archaeology China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Song+Yuan+Ming+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cu"
+    },
+    {
+      "source": "Crossref",
+      "query": "archaeological science isotope radiocarbon China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+science+isotope+radiocarbon+China&filter=from-pub-date%"
+    },
+    {
+      "source": "Crossref",
+      "query": "architectural archaeology China palace city",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=architectural+archaeology+China+palace+city&filter=from-pub-date%3A202"
+    },
+    {
+      "source": "Crossref",
+      "query": "mural sculpture tomb figurine archaeology China Dunhuang",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=mural+sculpture+tomb+figurine+archaeology+China+Dunhuang&filter=from-p"
+    },
+    {
+      "source": "Crossref",
+      "query": "archaeological theory China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+theory+China&filter=from-pub-date%3A2026-09-17%2Cuntil-"
+    },
+    {
+      "source": "Crossref",
+      "query": "Chinese archaeological theory settlement",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Chinese+archaeological+theory+settlement&filter=from-pub-date%3A2026-0"
+    },
+    {
+      "source": "Crossref",
+      "query": "archaeological interpretation China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=archaeological+interpretation+China&filter=from-pub-date%3A2026-09-17%"
+    },
+    {
+      "source": "Crossref",
+      "query": "history of Chinese archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=history+of+Chinese+archaeology&filter=from-pub-date%3A2026-09-17%2Cunt"
+    },
+    {
+      "source": "Crossref",
+      "query": "social archaeology China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=social+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cuntil-pub"
+    },
+    {
+      "source": "Crossref",
+      "query": "comparative archaeology China",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=comparative+archaeology+China&filter=from-pub-date%3A2026-09-17%2Cunti"
+    },
+    {
+      "source": "Crossref",
+      "query": "Chinese archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=Chinese+archaeology&filter=from-pub-date%3A2026-09-17%2Cuntil-pub-date"
+    },
+    {
+      "source": "Crossref",
+      "query": "China archaeological excavation",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "400 Client Error: Bad Request for url: https://api.crossref.org/works?query.bibliographic=China+archaeological+excavation&filter=from-pub-date%3A2026-09-17%2Cun"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古学报",
+      "pages": 4,
+      "retrieved": 396,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古与文物",
+      "pages": 5,
+      "retrieved": 453,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "文物",
+      "pages": 2,
+      "retrieved": 123,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "华夏考古",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Early China",
+      "pages": 5,
+      "retrieved": 500,
+      "status": "partial",
+      "reason": "page_budget"
+    },
+    {
+      "source": "Crossref",
+      "query": "Antiquity",
+      "pages": 1,
+      "retrieved": 51,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Archaeological Science",
+      "pages": 1,
+      "retrieved": 15,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Archaeometry",
+      "pages": 1,
+      "retrieved": 16,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Field Archaeology",
+      "pages": 3,
+      "retrieved": 296,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "南方文物",
+      "pages": 2,
+      "retrieved": 134,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Archaeological Method and Theory",
+      "pages": 5,
+      "retrieved": 500,
+      "status": "partial",
+      "reason": "page_budget"
+    },
+    {
+      "source": "Crossref",
+      "query": "东南文化",
+      "pages": 2,
+      "retrieved": 147,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "江汉考古",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "中原文物",
+      "pages": 2,
+      "retrieved": 176,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "World Archaeology",
+      "pages": 5,
+      "retrieved": 500,
+      "status": "partial",
+      "reason": "page_budget"
+    },
+    {
+      "source": "Crossref",
+      "query": "Cambridge Archaeological Journal",
+      "pages": 3,
+      "retrieved": 228,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Anthropological Archaeology",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "敦煌研究",
+      "pages": 4,
+      "retrieved": 343,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "OpenAlex",
+      "status": "skipped",
+      "reason": "missing_key"
+    },
+    {
+      "source": "文物出版社工作动态",
+      "url": "https://www.wenwu.com/gzdt",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "《考古》",
+      "url": "http://kaogu.cssn.cn/xsqy/xskw/kg/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "《考古学报》",
+      "url": "http://kaogu.cssn.cn/xsqy/xskw/kgxb/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "文物出版社",
+      "url": "https://www.wenwu.com/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "文物出版社资讯",
+      "url": "https://www.zgwwcbcm.com/",
+      "pages": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='www.zgwwcbcm.com', port=443): Read timed out."
+    },
+    {
+      "source": "中国考古网学术论文",
+      "url": "http://kaogu.cssn.cn/xsqy/kycg/xslw/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "北京大学考古文博学院",
+      "url": "https://archaeology.pku.edu.cn/xyzx/xwdt.htm",
+      "pages": 5,
+      "status": "partial",
+      "reason": "page_budget"
+    }
+  ],
+  "message": "候选材料已登记，待取得原文、撰写或复核。",
   "latest_issue": {
     "id": "2026-10-14",
     "records": 31,
-    "window": "2026-09-01 — 2026-10-14",
-    "corrected_at": "2026-10-16"
-  },
-  "last_discovery": null,
-  "state": "historical_issue_migrated",
-  "message": "首期已完成表述修订。历史采集未保留完整运行记录，不据此声称检索已完成。"
+    "window": "2026-09-01 — 2026-10-14"
+  }
 }
