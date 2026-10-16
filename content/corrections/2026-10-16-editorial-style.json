@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-16",
+  "issue": "2026-10-14",
+  "revision": "explain-context-and-practice",
+  "reason": "前稿统一压成短句，部分评述缺少前因后果，理论贡献与实际工作关系不清。",
+  "changes": [
+    "31条评述按内容调整详略，减少抽象断语，说明证据与解释之间的关系。",
+    "理论组3条改为“对研究实践的启示”，分别讨论旧发掘资料核读、分类分期与历史解释、聚落调查与区域比较。",
+    "文化史条目补出争论背景；文化史与比较考古的正文、3条科技研究的说明同步调整。",
+    "苏羊与永安的部分技术数据移入核验要点；原有材料程度及限制保留。"
+  ],
+  "reviewer": "Codex",
+  "reviewer_type": "model",
+  "source_scope": "依据已取得公开摘要、原始发布、会议纪要及作者会议摘要复核；不新增全文核对声明。",
+  "records": [
+    {
+      "id": "3f59fd2ee0e375ea",
+      "record_digest": "8774863a9cd80aa694e167e0ce02b7a518127188eb626737b5cc8584e4132b19"
+    },
+    {
+      "id": "e14f9fb22a5d6e83",
+      "record_digest": "053d54f3367b044b7cee7c6aac598294e6f783a58be11138cea9247a2a9b2b67"
+    },
+    {
+      "id": "80dc62c94ce1aacd",
+      "record_digest": "dd870f52dd0faa28fd56a86758c08a9aaba22e2081cc4049783fd0ab212f5c7c"
+    },
+    {
+      "id": "4ea0b09ff850f13b",
+      "record_digest": "bd6912a6610cf92482f4d2eb9312f1fee043b8b64c5721ad934d28e3d7902164"
+    },
+    {
+      "id": "9f2d6821d3026b29",
+      "record_digest": "f8bb303482e4cedfc295c6ed5de116dc76ae575d4caad1d3278c65938ce39bad"
+    },
+    {
+      "id": "9dbd0cba602602d6",
+      "record_digest": "c4c5c39084289221da048f7604bc2c83a31ee78ac750172dabe2798c34d9d60b"
+    },
+    {
+      "id": "4ed7dcee9c74059a",
+      "record_digest": "e805c7b6df5c12b396f16ef815402ae00d6ecb375ca19bfbe698f8c29f8056d4"
+    },
+    {
+      "id": "3bd07d69ff2ba0c2",
+      "record_digest": "45a5b7734497cd236a8bcafa0170ebae52fbec5374221c454a85adeaf4a3ab20"
+    },
+    {
+      "id": "54ee6fc9d5292e38",
+      "record_digest": "9780101205a74fa8a7dc0b02a9fd4ada0329f61a4ef7479d7777315036019e5c"
+    },
+    {
+      "id": "b547ef759beb90e4",
+      "record_digest": "b8a98668d3da3b3f42c8d31cc736898a445e17bf55f5e4cdd3237834471b8320"
+    },
+    {
+      "id": "be7a92cf8c5f95f8",
+      "record_digest": "a843b1238316382c65e9e035877bf52e6b21f4d62f7faba4165f0e1ce0e946eb"
+    },
+    {
+      "id": "4d1d57c4ce4afeb2",
+      "record_digest": "08b3ebdfc72ba21322974df3fe8f579f76076f5d9f794ff90e4c2335688364df"
+    },
+    {
+      "id": "d63a0e82e8ee0432",
+      "record_digest": "12e7a9e71a7a65902712377b67a213f53b98bee449f216fdeb877d17c7a218e2"
+    },
+    {
+      "id": "ed9d5e5b68ee7e08",
+      "record_digest": "b00a623cafaff8a414025900cd71b4df49f1b882c89f8338a2e883a55e7920a5"
+    },
+    {
+      "id": "0d3cfcac3f4f367e",
+      "record_digest": "02b9b632a0719aafaf2cb809bc34f6ba12c844862ec7c871365c99386d383ddd"
+    },
+    {
+      "id": "00974845bc72636c",
+      "record_digest": "3b7b298e71fe1ba6d3c24a28c346a5d7fc4191205af8f5554a3fe772cf8b6a52"
+    },
+    {
+      "id": "89edab624b64909e",
+      "record_digest": "bcba6d88110545d668fd4776e9e6205ee67f4de62aa73e8e30543942240c31d6"
+    },
+    {
+      "id": "4c42efc3f0fd0edd",
+      "record_digest": "a24b6f898fe8d5bf21f36ac939198e39fd4df2881336b35cbe6ede0d3414150e"
+    },
+    {
+      "id": "3735d25b8415c69b",
+      "record_digest": "8bad4514a3c4cdf77601047ad249b2a8d4bbee6c9d61ee8bdc78959580d068a8"
+    },
+    {
+      "id": "b77ee3d1050c1020",
+      "record_digest": "af7c152b88fa552b26c5b5c09b5eda2ba6bada36d3f9659317dc6b492276a2a0"
+    },
+    {
+      "id": "b2f6923ccbd635ff",
+      "record_digest": "360c0698d48161f7f7f3393ce96c82e66773ee4f227a7329028ab8cf21b0b775"
+    },
+    {
+      "id": "3b4f32a343b6d163",
+      "record_digest": "8354567ffc977240ca24d2f275930be4ed52327216298db97bf972f86aed2b15"
+    },
+    {
+      "id": "ef25453572dca551",
+      "record_digest": "3b0a0bd7596ce9b430740a760d0cc3d17ab8d829c48f28bf83c91e73baabb9ee"
+    },
+    {
+      "id": "59e04800ed636114",
+      "record_digest": "fccb12864a5c4551be113b027e5aa4c819061a71e4765d7bcc9c4b81bc0b1ef8"
+    },
+    {
+      "id": "97385e54880e5bfb",
+      "record_digest": "008210c7fc322cf5508d2088f4b33ba1afca0c60c72c0d88675b37505e13f91c"
+    },
+    {
+      "id": "89708fe0ce387b35",
+      "record_digest": "190e2565ed6b0f095e60c541c99d0f70d324576b3886fad598405ceb2daf5249"
+    },
+    {
+      "id": "54a779baa28e5a10",
+      "record_digest": "bccfebbb7d92c36d5bdde0591d3f0198476dbc2a692a7e116bc9ff967172a3a9"
+    },
+    {
+      "id": "bac7f2609425012c",
+      "record_digest": "87dc5c83b8a171d4eabaa162e7896320306ae2df7defe3fb2b37bdf7f4cc2974"
+    },
+    {
+      "id": "c3a91e0b7d4f22a1",
+      "record_digest": "c77b62f7100a91feb5fa48e7ea61f0ccfc46a7769d61aacf0dfaf2f6ae96d9de"
+    },
+    {
+      "id": "a8e4c1d09b772e55",
+      "record_digest": "d09de2fe1481bea15cc9ebba4060f699cdd1af960e73e18b82f383669c864cf4"
+    },
+    {
+      "id": "b71d0e5c4a883f02",
+      "record_digest": "b23f100aa52bdfa27e64ecb93f0a8b81aa7df431514f793946460fa919abc2ed"
+    }
+  ]
+}

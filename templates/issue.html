@@ -37,7 +37,8 @@
         {% if r.headline %}<p class="citation">{{ r.title }}</p>{% endif %}
         <p class="citation">{{ r.authors }} · {{ r.publication }}</p>
         {% for para in r.core.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
-        <div class="significance" aria-label="研究意义"><p class="significance-label">研究意义</p>{% for para in r.significance.split('\n\n') %}<p>{{ para|emphasize }}</p>{% endfor %}</div>
+        {% set commentary_label = '对研究实践的启示' if r.period == edition.theory else '研究意义' %}
+        <div class="significance" aria-label="{{ commentary_label }}"><p class="significance-label">{{ commentary_label }}</p>{% for para in r.significance.split('\n\n') %}<p>{{ para|emphasize }}</p>{% endfor %}</div>
         {% if r.images %}<div class="plates">{% for im in r.images %}<figure class="plate"><img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}" loading="lazy"><figcaption>{{ im.caption }}</figcaption></figure>{% endfor %}</div>{% endif %}
         <details class="source-note">
           <summary>来源与核验</summary>

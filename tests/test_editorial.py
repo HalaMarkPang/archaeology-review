@@ -96,6 +96,13 @@ class EditorialTests(unittest.TestCase):
         self.assertIn(self.record['significance'],page)
         self.assertIn('aria-label="研究意义"',page)
         self.assertNotIn(issue['edition_type'],page);self.assertNotIn(issue['intro'],page)
+    def test_theory_uses_practice_label_with_same_commentary(self):
+        record=dict(self.record,period='考古学理论')
+        issue=build.prepare({'period':'2026-10-01 — 2026-10-16','records':[record]})
+        page=build.ENV.get_template('issue.html').render(issue=issue,edition=build.EDITION,base='',title='本期',page='home')
+        self.assertIn('aria-label="对研究实践的启示"',page)
+        self.assertNotIn('aria-label="研究意义"',page)
+        self.assertIn(record['significance'],page)
     def test_cross_year_display_has_years(self):
         self.assertEqual(build.display_span('2025-12-30 — 2026-01-05'),'2025年12月30日—2026年1月5日')
 
