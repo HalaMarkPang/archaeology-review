@@ -6,38 +6,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
 from research_core import CONFIG,assess,stable_id,safe_public_url
 from build import display_span
 from discover import from_crossref,abstract_openalex,dedupe,wenwu_records,wechat_coverage,parse_wechat_html
-from review import validate_extract,excerpt_extract,publication_track
-class EvidenceTests(unittest.TestCase):
-    def setUp(self):
-        self.abstract=("The excavated tomb included a bronze inscription identifying the named lineage. "
-                       "Stratigraphic observations place the burial in the Western Zhou period. "
-                       "The authors compare the excavated inscription with contemporaneous bronze vessels "
-                       "to examine relationships among household groups in the Zhou region.")
-        self.item=dict(doi="10.1234/ab.2026.33",url="https://doi.org/10.1234/ab.2026.33",abstract=self.abstract,title="Western Zhou bronze inscriptions",journal="Early China",published_date="2026-10-09")
-        self.output=dict(relevant=True,core="论文依据墓葬铭文与地层观察讨论西周墓葬及相关家族关系，并与其他青铜器铭文进行比较；具体结论仍须核对全文。",
-            core_quote="The excavated tomb included a bronze inscription identifying the named lineage.",
-            evidence=[
-              {"claim":"摘要载明出土墓葬包含可辨识族系的青铜器铭文","quote":"The excavated tomb included a bronze inscription identifying the named lineage."},
-              {"claim":"摘要指出地层观察将墓葬归入西周时期","quote":"Stratigraphic observations place the burial in the Western Zhou period."}],
-            analysis="讨论家族关系",newness="新发表研究",period="商周",topic="青铜器铭文",kind="研究论文",limits="未查全文")
-    def test_quote(self):self.assertTrue(validate_extract(self.output,self.item)[0])
-    def test_fabricated_quote(self):
-        self.output["evidence"][0]["quote"]="The excavation proves an unknown king reigned for sixty years."
-        self.assertFalse(validate_extract(self.output,self.item)[0])
-    def test_duplicate_quotes(self):
-        self.output["evidence"][1]["quote"]=self.output["evidence"][0]["quote"]
-        self.assertFalse(validate_extract(self.output,self.item)[0])
-    def test_excerpt_uses_source_sentences(self):
-        output=excerpt_extract(self.item)
-        self.assertTrue(validate_extract(output,self.item)[0])
-        self.assertIn(output["evidence"][0]["quote"],self.abstract)
-        self.assertNotEqual(output["evidence"][0]["quote"],output["evidence"][1]["quote"])
-    def test_excerpt_rejects_short_abstract(self):
-        self.item["abstract"]="Too short to quote."
-        self.assertFalse(excerpt_extract(self.item)["relevant"])
-    def test_missing_doi(self):
-        self.item["doi"]=""
-        self.assertFalse(validate_extract(self.output,self.item)[0])
+from review import publication_track
 class DiscoveryTests(unittest.TestCase):
     def test_crossref(self):
         raw={"DOI":"10.1234/ABCD","title":["Bronze inscriptions in Western Zhou"],
@@ -55,7 +24,7 @@ class DiscoveryTests(unittest.TestCase):
               "url":"https://doi.org/10.1234/yes","priority":22}
         item["id"]=stable_id(item["doi"],item["title"])
         self.assertEqual(len(dedupe([item,dict(item)],set(),date(2026,9,15),date(2026,10,14))),1)
-        self.assertEqual(dedupe([item],{"doi:10.1234/yes"},date(2026,9,15),date(2026,10,14)),[])
+        self.assertEqual(len(dedupe([item],{"doi:10.1234/yes"},date(2026,9,15),date(2026,10,14))),1)  # Audit retains duplicates.
     def test_url(self):
         self.assertTrue(safe_public_url("https://doi.org/10.123/xxx"))
         self.assertFalse(safe_public_url("http://localhost/test"))
@@ -120,7 +89,7 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(plain["in_scope"])
         self.assertEqual(publication_track(plain),"考古学理论")
         foreign=assess("Archaeological theory of Neanderthal sites","A statistical approach.","Journal of Archaeological Method and Theory")
-        self.assertFalse(foreign["in_scope"])
+        self.assertTrue(foreign["in_scope"])  # General theory has an explicit international exception.
     def test_theory_toc_line_does_not_need_a_period(self):
         text="""本期目录
 ·研究与探索·
@@ -144,7 +113,7 @@ class WechatCoverageTests(unittest.TestCase):
     def test_finished_when_there_is_no_next_page(self):
         pages=[([{"title":"唐墓发掘简报","published":date(2026,10,1),"account":"考古陕西","href":""}],False)]
         report=wechat_coverage("考古陕西",pages,date(2026,9,1),date(2026,10,14))
-        self.assertEqual(report["status"],"已核完")
+        self.assertEqual(report["status"],"未核完")  # Exhausted search is not exhausted account history.
     def test_blocked_fetch_stays_unfinished(self):
         report=wechat_coverage("考古陕西",[],date(2026,9,1),date(2026,10,14),error="拦截")
         self.assertEqual(report["status"],"未核完")

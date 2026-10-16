@@ -6,131 +6,56 @@
       <span class="line"><span data-line style="--i:0">考古-周刊</span></span>
       <span class="line"><span data-line style="--i:1">{{ issue.display_span }}</span></span>
     </h1>
+    {% if issue.edition_type %}<p class="edition-type">{{ issue.edition_type }}</p>{% endif %}
   </div>
   <img class="hero-ding" src="{{ base }}static/figures/houmuwu.png?v=4" alt="">
 </section>
+{% if issue.intro %}<section class="issue-intro" aria-label="本期导读"><p>{{ issue.intro }}</p></section>{% endif %}
 <section class="facts" aria-label="本期规模">
   <p><strong>{{ issue.records|length }}</strong><span>篇</span></p>
-  {% set genres = edition.genres %}
-  {% set theory_label = edition.theory %}
-  {% for g in genres %}
-  {% set n = issue.records|selectattr('kind','equalto',g)|rejectattr('period','equalto',theory_label)|list|length %}
-  {% if n %}<p><strong>{{ n }}</strong><span>{{ g }}</span></p>{% endif %}
-  {% endfor %}
-  {% set theory_n = issue.records|selectattr('period','equalto',theory_label)|list|length %}
-  {% if theory_n %}<p><strong>{{ theory_n }}</strong><span>{{ theory_label }}</span></p>{% endif %}
+  {% for group in issue.groups %}<p><strong>{{ group.records|length }}</strong><span>{{ group.label }}</span></p>{% endfor %}
 </section>
 <div class="tools">
   <div class="filters" aria-label="时代">
     <button class="filter active" data-filter="全部" aria-pressed="true">全部</button>
-    {% set order = edition.periods %}
     {% set present = issue.records|map(attribute='period')|list %}
-    {% for era in order if era in present %}
+    {% for era in edition.periods + [edition.theory] if era in present %}
     <button class="filter" data-filter="{{ era }}" aria-pressed="false">{{ era }}</button>
     {% endfor %}
-    {% if theory_label in present %}
-    <button class="filter" data-filter="{{ theory_label }}" aria-pressed="false">{{ theory_label }}</button>
-    {% endif %}
   </div>
-  <div class="search-row">
-    <input class="search" data-record-search placeholder="检索">
-  </div>
+  <div class="search-row"><label class="sr-only" for="record-search">检索本期文献</label><input id="record-search" class="search" data-record-search placeholder="检索本期文献" type="search"></div>
+  <p class="match-count" role="status">显示 <span data-count>{{ issue.records|length }}</span> / {{ issue.records|length }} 篇</p>
 </div>
 <p class="empty" data-empty>没有匹配的文献</p>
 <div class="issue-layout">
   <div>
-    {% for g in genres %}
-    {% set items = issue.records|selectattr('kind','equalto',g)|rejectattr('period','equalto',theory_label)|list %}
-    {% if items %}
+    {% for group in issue.groups %}
     <section class="genre" data-genre>
-      <h2 class="genre-title">{{ g }}</h2>
-    {% for r in items %}
-    <article class="record" id="{{ r.id }}" data-record data-period="{{ r.period }}">
-      <div class="record-header">
-        <div class="tags">
-          <span class="tag">{{ r.period }}</span>
-          {% if r.field and r.field != r.period %}<span class="tag">{{ r.field }}</span>{% endif %}
-        </div>
-      </div>
-      <h2>{{ r.headline or r.title }}</h2>
-      {% if r.headline %}<p class="citation">{{ r.title }}</p>{% endif %}
-      <p class="citation">{{ r.authors }} · {{ r.publication }}</p>
-      {% for para in (r.core or '').split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
-      {% set plates = r.images|default([r.image] if r.image else [], true) %}
-      {% if plates %}
-      <div class="plates">
-        {% for im in plates %}
-        <figure class="plate">
-          <img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}">
-          <figcaption>{{ im.caption }}</figcaption>
-        </figure>
-        {% endfor %}
-      </div>
-      {% endif %}
-      <a class="out-link" href="{{ r.url }}" target="_blank" rel="noopener noreferrer">原文</a>
-    </article>
-    {% endfor %}
-    </section>
-    {% endif %}
-    {% endfor %}
-    {% set theory = issue.records|selectattr('period','equalto',theory_label)|list %}
-    {% if theory %}
-    <section class="genre" data-genre>
-      <h2 class="genre-title">{{ theory_label }}</h2>
-      {% for r in theory %}
-      <article class="record" id="{{ r.id }}" data-record data-period="{{ theory_label }}">
-        <div class="record-header">
-          <div class="tags"><span class="tag">{{ theory_label }}</span></div>
-        </div>
-        <h2>{{ r.headline or r.title }}</h2>
+      <h2 class="genre-title">{{ group.label }}</h2>
+      {% for r in group.records %}
+      <article class="record" id="{{ r.id }}" data-record data-period="{{ r.period }}">
+        <div class="record-header"><div class="tags"><span class="tag">{{ r.period }}</span>{% if r.field and r.field != r.period %}<span class="tag">{{ r.field }}</span>{% endif %}</div></div>
+        <h3>{{ r.headline or r.title }}</h3>
         {% if r.headline %}<p class="citation">{{ r.title }}</p>{% endif %}
         <p class="citation">{{ r.authors }} · {{ r.publication }}</p>
-        {% for para in (r.core or '').split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
-        {% set plates = r.images|default([r.image] if r.image else [], true) %}
-        {% if plates %}
-        <div class="plates">
-          {% for im in plates %}
-          <figure class="plate">
-            <img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}">
-            <figcaption>{{ im.caption }}</figcaption>
-          </figure>
-          {% endfor %}
-        </div>
-        {% endif %}
+        {% for para in r.core.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
+        {% if r.images %}<div class="plates">{% for im in r.images %}<figure class="plate"><img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}" loading="lazy"><figcaption>{{ im.caption }}</figcaption></figure>{% endfor %}</div>{% endif %}
+        <details class="source-note">
+          <summary>来源与核验</summary>
+          <p>{{ r.material_type }} · {{ r.source_status }}</p>
+          <p>{{ r.limits }}</p>
+          {% if r.verification_note %}<p>{{ r.verification_note }}</p>{% endif %}
+          {% if r.evidence %}<ul>{% for point in r.evidence %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}
+        </details>
         <a class="out-link" href="{{ r.url }}" target="_blank" rel="noopener noreferrer">原文</a>
       </article>
       {% endfor %}
     </section>
-    {% endif %}
+    {% endfor %}
   </div>
-  <aside class="toc">
-    {% for g in genres %}
-    {% set items = issue.records|selectattr('kind','equalto',g)|rejectattr('period','equalto',theory_label)|list %}
-    {% if items %}
-    <p class="toc-label">{{ g }}</p>
-    {% for r in items %}
-    <a href="#{{ r.id }}">{{ r.headline or r.title }}</a>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
-    {% if theory %}
-    <p class="toc-label">{{ theory_label }}</p>
-    {% for r in theory %}
-    <a href="#{{ r.id }}">{{ r.headline or r.title }}</a>
-    {% endfor %}
-    {% endif %}
+  <aside class="toc" aria-label="本期目录">
+    {% for group in issue.groups %}<div data-toc-group><p class="toc-label">{{ group.label }}</p>{% for r in group.records %}<a href="#{{ r.id }}" data-toc-id="{{ r.id }}">{{ r.headline or r.title }}</a>{% endfor %}</div>{% endfor %}
   </aside>
 </div>
-<footer class="close">
-  <div class="close-inner">
-    <div>
-      <p class="close-kicker">考古-周刊</p>
-      <p class="close-issue">{{ issue.display_span }}</p>
-    </div>
-    <nav class="close-nav" aria-label="页尾">
-      <a href="#top">页首</a>
-      <a href="{{ base }}archive/index.html">往期</a>
-    </nav>
-  </div>
-</footer>
+<footer class="close"><div class="close-inner"><div><p class="close-kicker">考古-周刊</p><p class="close-issue">{{ issue.display_span }}</p></div><nav class="close-nav" aria-label="页尾"><a href="#top">页首</a><a href="{{ base }}archive/index.html">往期</a></nav></div></footer>
 {% endblock %}

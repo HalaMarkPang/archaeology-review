@@ -1,65 +1,28 @@
 # 考古-周刊
 
-公开静态网站。仓库：[HalaMarkPang/archaeology-review](https://github.com/HalaMarkPang/archaeology-review)。地址：[https://halamarkpang.github.io/archaeology-review/](https://halamarkpang.github.io/archaeology-review/)。
+编选旧石器至宋元明的新公布考古材料、研究与理论讨论。网站：[考古-周刊](https://halamarkpang.github.io/archaeology-review/)。
 
-站点由 GitHub Pages 与 GitHub Actions 的免费额度托管。
+## 内容与范围
 
-## 检索与产出
+中国考古为主要对象，兼收与其研究问题有关的国际理论和比较研究。辽、金材料归入宋元明；专论清代及以后者不进入正式刊期。时代、专业领域和体裁分别标注，会议纪要与学术演讲说明其真实材料类型。
 
-每周五 12:00（上海时间）运行 [`.github/workflows/research.yml`](.github/workflows/research.yml)。Actions 中亦可手动执行。检索窗口为运行日向前 `lookback_days` 天。时刻、窗口、时代、领域、期刊与公众号，均以 [`config/discovery.json`](config/discovery.json) 为准。
+本期31条由其他模型撰写。历史说明曾标注Grok 4.7 High，但没有逐条模型运行记录；不能据此还原每条的生成和核验过程。2026年10月16日对正文、出处说明及分类作了有限复核与修订，保留尚未重新取得材料的明确说明。首期覆盖2026年9月1日至10月14日，作为回溯编选，不套用后续普通刊期的篇数上限。
 
-检索范围如下。
+## 工作流程
 
-- 时代分为旧石器、新石器、商周、战国秦汉、魏晋南北朝、隋唐、宋元明。辽代、辽金、宋金归入宋元明。时代下限为宋元明。
-- 专业领域为科技考古、建筑考古、美术考古。考古学理论独立成组，所收文章以学科本身为对象。
-- 体裁为发掘简报、调查简报、发掘报告、出土文献、馆藏研究、研究论文。
-- 来源为配置所列期刊、机构页面、目录与公众号，以及 Crossref。配置免费密钥 `OPENALEX_API_KEY` 后，同时采集 OpenAlex。总检索式与指定 DOI 见 `umbrella_queries`、`pinned_dois`。
+采集题录与公开材料 → 导出本地证据包 → 模型撰写 → 复核最终正文 → 导入并发布。
 
-一次运行的产物如下。
+每周五12:00（Asia/Shanghai），`research.yml`采集前30个日期范围内的材料，保留全部候选、来源覆盖与逐条处理状态。该工作流不调用模型，不把摘要摘句冒充中文编选稿。证据包作为有保留期限的运行附件保存，撰写时下载使用；没有稿件或复核文件时不会新增正式刊期。
 
-| 产物 | 内容 |
-|---|---|
-| `content/candidates/日期.json` | 候选题录，含题名、作者、期刊、日期、链接，以及时代与领域的初步归类。摘要原文存于本地缓存。 |
-| `content/audits/日期.json`、`content/status.json` | 各条核验结果，以及本期候选条数、达标条数与新刊条数。 |
-| `content/issues/日期.json` | 正式刊期。摘录与摘要原文逐字相符、且达到收录标准时写入。同日刊期已存在者，维持原文件。 |
-| GitHub Pages | 上述变更推送至 `main` 后，[`.github/workflows/pages.yml`](.github/workflows/pages.yml) 据正式刊期生成静态页面与 Pagefind 中文检索，并发布至站点。 |
+模型可使用本地或交互式工具，项目不绑定付费API。撰写与复核按[编选规范](config/research-policy.md)执行，导入格式见[稿件与证据合同](docs/editorial-contract.md)。复核记录必须绑定最终正文；正文、标题或证据变化后，旧记录不再有效。程序检查结构、版本和引文匹配；断言是否得到支持仍须阅读原文判断。
 
-一期条数见 `max_issue_items`。同一时代或考古学理论一组的条数见 `max_per_period`。编选细则见 [`config/research-policy.md`](config/research-policy.md)。各期中文说明的分段与表述，依该文件「中文说明」执行。发掘简报、调查简报、发掘报告、出土文献、馆藏研究与研究论文为三段，依次写所据材料、作者的判断，以及该材料对所在领域的影响。考古学理论独立成组，不套用这三段，段落随论证确定，但须写清所处理的问题、作者的判断及其影响。
+## 检索与覆盖
 
-## 模型
+唯一生效配置为`config/discovery.json`。API使用cursor翻页；达到预算、访问失败或页面解析受限时，记录部分完成，不宣称已经查全。中文目录中未识别时代的条目仍进入候选。搜狗微信只作搜索补充，不代表公众号完整历史列表。
 
-Skill 的构建与周刊的产出使用 **Grok 4.7 High**。不同模型的成稿效果可能有所差异，可依自身要求更换模型，并相应调整编选规范。
+`journal_identifiers`指定可确认的ISSN。未配置标识的期刊按刊名检索并严格核对刊名，仍可能受数据库收录情况限制。机构目录跟随可确认的下一页链接，不能识别分页边界时保留未核完状态。新来源应同时配置访问路径与核对方式，不能只增加名称。
 
-Skill 指编选规范、检索配置与页面结构的编写；周刊产出指各期中文说明的撰写。更换模型后，同一批材料在分段、用词与去留上可能不同。
-
-中文期刊、发掘报告与会议纪要取自已发表原文。模型据已核对材料撰写周刊正文。`scripts/discover.py` 与 `scripts/review.py` 承担采集与校验，摘录与摘要原句保持一致。
-
-## 可配置项
-
-检索周期与关注内容均在 [`config/discovery.json`](config/discovery.json)。页面上的时代、体裁与独立分组，由构建程序读取该文件。刊期起讫由各期 JSON 的 `period` 生成。
-
-| 键 | 作用 |
-|---|---|
-| `schedule.timezone`、`schedule.cron` | 定时检索的时区与时刻。与 [`.github/workflows/research.yml`](.github/workflows/research.yml) 中的 `timezone`、`cron` 保持一致。测试核对此二者。 |
-| `lookback_days` | 自运行日向前追溯的天数。 |
-| `max_issue_items` | 一期收录上限。 |
-| `max_per_period` | 同一时代或独立分组的上限。 |
-| `periods` | 时代、识别词与检索式。 |
-| `fields` | 专业领域、识别词与检索式。 |
-| `standalone_group` | 独立成组的领域。当前为考古学理论。 |
-| `genres` | 体裁名称与页面顺序。 |
-| `journal_watches`、`priority_journals`、`core_journals` | 关注期刊。 |
-| `wechat_accounts` | 关注的公众号。翻页未尽者记为未核完。 |
-| `official_watch_pages`、`chinese_toc_indexes`、`chinese_issue_lists` | 机构页面、目录页与出刊信息。 |
-| `umbrella_queries`、`china_anchors`、`pinned_dois` | 总检索式、中国相关锚点、指定 DOI。 |
-
-运行时刻在 `schedule` 与 `research.yml` 两处使用同一组时区与 cron。
-
-## 发布
-
-Pages 的 Source 设为 GitHub Actions。推送至 `main` 后，`pages.yml` 执行 `scripts/build.py`，生成静态页面与中文检索索引，并发布。
-
-`content/issues/` 中的正式刊期进入首页与归档。`is_sample` 为真的文件用作版式样刊。候选、审计与状态文件记录检索与核验过程。
+题录去重使用DOI与规范题名，已经发表的作品也保留于本次处理记录；跨期再次发表须有实质更新说明。普通刊期默认最多12篇、每组最多4篇，最终数量取决于材料和复核结果。
 
 ## 本地运行
 
@@ -70,22 +33,38 @@ python scripts/build.py
 python -m http.server 8000 --directory site
 ```
 
-浏览器打开 `http://localhost:8000`。
+打开`http://localhost:8000`。全站检索使用构建时生成的条目索引，无需另装索引工具；结果直接定位到固定刊期内的条目。
 
-联网采集：
+采集与准备撰写：
 
 ```bash
 python scripts/discover.py
+python scripts/editorial.py
 python scripts/review.py
+```
+
+完成模型稿和独立复核后，按采集日期导入。`--date`必须与证据包日期相同：
+
+```bash
+python scripts/review.py --date 2026-10-16 --drafts .cache/drafts.json --review-file .cache/review.json --dry-run
+python scripts/review.py --date 2026-10-16 --drafts .cache/drafts.json --review-file .cache/review.json --publish
 python scripts/build.py
 ```
 
-离线运行用于数据校验与静态构建。外部检索是否完成，以联网采集的结果为准。GitHub 定时工作流依平台队列执行，完成时刻可能晚于设定时刻。公开仓库长期无提交时，平台暂停定时任务。
+上述日期是命令示例，不会创建该日期刊期。正式文件写入`content/issues/`，同日刊期不会被覆盖。更正已有刊期须保留更正说明；首期历史迁移另有内容指纹，不能绕过更新校验。
 
-## 依据
+## 产物与部署
 
-- Crossref API: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
-- OpenAlex API: https://help.openalex.org/api/
-- GitHub Actions 调度: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
-- GitHub Pages 自定义工作流: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
-- Pagefind 中文检索: https://github.com/Pagefind/pagefind/blob/main/docs/content/docs/multilingual.md
+| 位置 | 内容 |
+|---|---|
+| `content/candidates/` | 题录、来源覆盖及警告，不包含完整摘要 |
+| `.cache/` | 原始摘要、补充原文、模型稿和本地证据包，不提交到公开仓库 |
+| `content/audits/` | 每条候选的去向与处理原因 |
+| `content/status.json` | 本次处理状态；历史刊期与运行状态分别理解 |
+| `content/issues/` | 完成复核的正式刊期 |
+| `content/corrections/` | 更正记录 |
+| `content/migrations/` | 首期历史迁移指纹与有限复核范围 |
+
+推送main后，Pages工作流先运行测试与统一内容校验，再构建并发布。采集工作流的bot提交通过显式dispatch触发Pages，保留原有部署方式。GitHub队列可能延迟定时任务，来源覆盖以运行记录为准。
+
+参考：[Crossref REST API](https://www.crossref.org/documentation/retrieve-metadata/rest-api/)、[GitHub Actions调度](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)。

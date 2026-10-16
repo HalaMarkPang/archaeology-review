@@ -1,22 +1,4 @@
 {
-  "primary_chinese_journals": [
-    {"name": "考古", "priority": 1},
-    {"name": "考古与文物", "priority": 1},
-    {"name": "文物", "priority": 1},
-    {"name": "考古学报", "priority": 1},
-    {"name": "华夏考古", "priority": 1}
-  ],
-  "international_journals": [
-    "Early China",
-    "Antiquity",
-    "Journal of Archaeological Science",
-    "Archaeometry",
-    "Journal of Field Archaeology",
-    "Asian Perspectives"
-  ],
-  "specialty_journals": [
-    {"field": "科技考古", "names": ["Archaeometry", "Journal of Archaeological Science"]},
-    {"field": "建筑考古", "names": ["考古", "文物"]},
-    {"field": "美术考古", "names": ["文物", "敦煌研究"]}
-  ]
+  "configuration": "discovery.json",
+  "note": "本文件仅保留历史配置位置。期刊、机构、目录与公众号的唯一运行配置为discovery.json。"
 }

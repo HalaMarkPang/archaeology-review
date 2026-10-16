@@ -4,72 +4,264 @@
     "timezone": "Asia/Shanghai",
     "cron": "0 12 * * 5"
   },
-  "genres": ["发掘简报", "调查简报", "发掘报告", "出土文献", "馆藏研究", "研究论文"],
+  "genres": [
+    "发掘简报",
+    "发掘动态",
+    "调查简报",
+    "发掘报告",
+    "出土文献",
+    "馆藏研究",
+    "研究论文",
+    "会议纪要",
+    "学术演讲"
+  ],
   "standalone_group": "考古学理论",
-  "top_candidates": 40,
   "max_issue_items": 12,
   "max_per_period": 4,
-  "umbrella_queries": ["Chinese archaeology", "China archaeological excavation"],
+  "umbrella_queries": [
+    "Chinese archaeology",
+    "China archaeological excavation"
+  ],
   "pinned_dois": [],
-  "china_anchors": ["中国", "中原", "黄河", "长江", "遗址", "墓葬", "china", "chinese"],
-  "core_journals": ["考古学报", "考古与文物", "考古", "文物"],
+  "china_anchors": [
+    "中国",
+    "中原",
+    "黄河",
+    "长江",
+    "遗址",
+    "墓葬",
+    "china",
+    "chinese"
+  ],
+  "core_journals": [
+    "考古学报",
+    "考古与文物",
+    "考古",
+    "文物"
+  ],
   "periods": [
     {
       "label": "旧石器",
-      "terms": ["旧石器", "旧石器时代", "paleolithic", "palaeolithic"],
-      "queries": ["Paleolithic China archaeology"]
+      "terms": [
+        "旧石器",
+        "旧石器时代",
+        "paleolithic",
+        "palaeolithic"
+      ],
+      "queries": [
+        "Paleolithic China archaeology"
+      ]
     },
     {
       "label": "新石器",
-      "terms": ["新石器", "新石器时代", "仰韶", "龙山", "良渚", "河姆渡", "西阴村", "neolithic", "yangshao", "longshan", "liangzhu"],
-      "queries": ["Neolithic China Yangshao Longshan archaeology"]
+      "terms": [
+        "新石器",
+        "新石器时代",
+        "仰韶",
+        "龙山",
+        "良渚",
+        "河姆渡",
+        "西阴村",
+        "neolithic",
+        "yangshao",
+        "longshan",
+        "liangzhu"
+      ],
+      "queries": [
+        "Neolithic China Yangshao Longshan archaeology"
+      ]
     },
     {
       "label": "商周",
-      "terms": ["商代", "殷墟", "殷商", "西周", "东周", "商周", "甲骨", "金文", "周原", "丰镐", "郑州商城", "shang dynasty", "western zhou", "eastern zhou", "oracle bone", "yinxu", "zhouyuan", "bronze inscription"],
-      "queries": ["Shang Zhou oracle bone bronze inscription archaeology"]
+      "terms": [
+        "商代",
+        "殷墟",
+        "殷商",
+        "西周",
+        "东周",
+        "商周",
+        "甲骨",
+        "金文",
+        "周原",
+        "丰镐",
+        "郑州商城",
+        "shang dynasty",
+        "western zhou",
+        "eastern zhou",
+        "oracle bone",
+        "yinxu",
+        "zhouyuan",
+        "bronze inscription"
+      ],
+      "queries": [
+        "Shang Zhou oracle bone bronze inscription archaeology"
+      ]
     },
     {
       "label": "战国秦汉",
-      "terms": ["战国", "秦代", "秦汉", "汉代", "汉墓", "西汉", "东汉", "warring states", "qin dynasty", "han dynasty", "western han", "eastern han"],
-      "queries": ["Warring States Qin Han archaeology China"]
+      "terms": [
+        "战国",
+        "秦代",
+        "秦汉",
+        "汉代",
+        "汉墓",
+        "西汉",
+        "东汉",
+        "warring states",
+        "qin dynasty",
+        "han dynasty",
+        "western han",
+        "eastern han"
+      ],
+      "queries": [
+        "Warring States Qin Han archaeology China"
+      ]
     },
     {
       "label": "魏晋南北朝",
-      "terms": ["魏晋", "南北朝", "六朝", "北魏", "北朝", "南朝", "six dynasties", "northern wei", "northern and southern dynasties"],
-      "queries": ["Six Dynasties Northern Wei archaeology China"]
+      "terms": [
+        "魏晋",
+        "南北朝",
+        "六朝",
+        "北魏",
+        "北朝",
+        "南朝",
+        "six dynasties",
+        "northern wei",
+        "northern and southern dynasties"
+      ],
+      "queries": [
+        "Six Dynasties Northern Wei archaeology China"
+      ]
     },
     {
       "label": "隋唐",
-      "terms": ["隋唐", "唐代", "唐墓", "隋代", "长安", "安西", "唐《", "tang dynasty", "sui dynasty", "tang tomb"],
-      "queries": ["Tang dynasty archaeology Chang'an"]
+      "terms": [
+        "隋唐",
+        "唐代",
+        "唐墓",
+        "隋代",
+        "长安",
+        "安西",
+        "唐《",
+        "tang dynasty",
+        "sui dynasty",
+        "tang tomb"
+      ],
+      "queries": [
+        "Tang dynasty archaeology Chang'an"
+      ]
     },
     {
       "label": "宋元明",
-      "terms": ["宋代", "元代", "明代", "宋元", "北宋", "南宋", "元墓", "辽代", "辽墓", "辽陵", "辽金", "宋金", "song dynasty", "yuan dynasty", "ming dynasty"],
-      "queries": ["Song Yuan Ming archaeology China"]
+      "terms": [
+        "宋代",
+        "元代",
+        "明代",
+        "宋元",
+        "北宋",
+        "南宋",
+        "元墓",
+        "辽代",
+        "辽墓",
+        "辽陵",
+        "辽金",
+        "宋金",
+        "song dynasty",
+        "yuan dynasty",
+        "ming dynasty",
+        "明清",
+        "ming qing",
+        "ming and qing"
+      ],
+      "queries": [
+        "Song Yuan Ming archaeology China"
+      ]
     }
   ],
   "fields": [
     {
       "label": "科技考古",
-      "terms": ["科技考古", "同位素", "碳十四", "古代dna", "残留物", "冶金考古", "archaeometry", "isotopic", "radiocarbon", "ancient dna", "residue analysis"],
-      "queries": ["archaeological science isotope radiocarbon China"]
+      "terms": [
+        "科技考古",
+        "同位素",
+        "碳十四",
+        "古代dna",
+        "残留物",
+        "冶金考古",
+        "archaeometry",
+        "isotopic",
+        "radiocarbon",
+        "ancient dna",
+        "residue analysis"
+      ],
+      "queries": [
+        "archaeological science isotope radiocarbon China"
+      ]
     },
     {
       "label": "建筑考古",
-      "terms": ["建筑考古", "都城", "宫殿遗址", "营造", "城市考古", "architectural archaeology", "palace site"],
-      "queries": ["architectural archaeology China palace city"]
+      "terms": [
+        "建筑考古",
+        "都城",
+        "宫殿遗址",
+        "营造",
+        "城市考古",
+        "architectural archaeology",
+        "palace site"
+      ],
+      "queries": [
+        "architectural archaeology China palace city"
+      ]
     },
     {
       "label": "美术考古",
-      "terms": ["美术考古", "壁画", "画像石", "画像砖", "造像", "陶俑", "敦煌", "tomb mural", "dunhuang"],
-      "queries": ["mural sculpture tomb figurine archaeology China Dunhuang"]
+      "terms": [
+        "美术考古",
+        "壁画",
+        "画像石",
+        "画像砖",
+        "造像",
+        "陶俑",
+        "敦煌",
+        "tomb mural",
+        "dunhuang"
+      ],
+      "queries": [
+        "mural sculpture tomb figurine archaeology China Dunhuang"
+      ]
     },
     {
       "label": "考古学理论",
-      "terms": ["考古学理论", "考古学的理论", "考古理论", "理论考古", "聚落考古", "聚落组织", "后过程", "纠缠理论", "文化史考古", "考古学史", "社会考古", "比较考古", "阐释考古", "田野考古方法", "公众考古", "culture history", "settlement organization", "archaeological theory", "social archaeology"],
-      "queries": ["archaeological theory China", "Chinese archaeological theory settlement", "archaeological interpretation China", "history of Chinese archaeology", "social archaeology China", "comparative archaeology China"]
+      "terms": [
+        "考古学理论",
+        "考古学的理论",
+        "考古理论",
+        "理论考古",
+        "聚落考古",
+        "聚落组织",
+        "后过程",
+        "纠缠理论",
+        "文化史考古",
+        "考古学史",
+        "社会考古",
+        "比较考古",
+        "阐释考古",
+        "田野考古方法",
+        "公众考古",
+        "culture history",
+        "settlement organization",
+        "archaeological theory",
+        "social archaeology"
+      ],
+      "queries": [
+        "archaeological theory China",
+        "Chinese archaeological theory settlement",
+        "archaeological interpretation China",
+        "history of Chinese archaeology",
+        "social archaeology China",
+        "comparative archaeology China"
+      ]
     }
   ],
   "priority_journals": [
@@ -85,7 +277,9 @@
     "asian perspectives",
     "journal of field archaeology",
     "南方文物",
-    "journal of archaeological method and theory"
+    "journal of archaeological method and theory",
+    "journal of anthropological archaeology",
+    "敦煌研究"
   ],
   "journal_watches": [
     "考古学报",
@@ -104,7 +298,9 @@
     "江汉考古",
     "中原文物",
     "World Archaeology",
-    "Cambridge Archaeological Journal"
+    "Cambridge Archaeological Journal",
+    "Journal of Anthropological Archaeology",
+    "敦煌研究"
   ],
   "chinese_issue_lists": [
     {
@@ -128,40 +324,142 @@
     }
   ],
   "wechat_accounts": [
-    {"name": "北京大学考古文博学院", "query": "北京大学考古文博学院"},
-    {"name": "东南文化", "query": "东南文化"},
-    {"name": "杜伦考古", "query": "杜伦考古"},
-    {"name": "国家博物馆", "query": "国家博物馆"},
-    {"name": "汉唐考古", "query": "汉唐考古"},
-    {"name": "汉唐考古札记", "query": "汉唐考古札记"},
-    {"name": "华域考古", "query": "华域考古"},
-    {"name": "惠生盘古", "query": "惠生盘古"},
-    {"name": "吉大考古", "query": "吉大考古"},
-    {"name": "考古大家谈", "query": "考古大家谈"},
-    {"name": "考古陕西", "query": "考古陕西"},
-    {"name": "考古研史", "query": "考古研史"},
-    {"name": "理寓物内", "query": "理寓物内"},
-    {"name": "南山供秀", "query": "南山供秀"},
-    {"name": "澎湃私家历史", "query": "澎湃私家历史"},
-    {"name": "人工智能与文化遗产", "query": "人工智能与文化遗产"},
-    {"name": "山大考古", "query": "山大考古"},
-    {"name": "商周考古", "query": "商周考古"},
-    {"name": "穴居的猎人", "query": "穴居的猎人"},
-    {"name": "浙江考古", "query": "浙江考古"},
-    {"name": "中国考古网", "query": "中国考古网"},
-    {"name": "中国魏晋南北朝史学会", "query": "中国魏晋南北朝史学会"},
-    {"name": "中国文物报", "query": "中国文物报"},
-    {"name": "河南考古", "query": "河南考古"},
-    {"name": "考古邦", "query": "考古邦"},
-    {"name": "城市考古与保护", "query": "城市考古与保护"},
-    {"name": "考古与文物", "query": "考古与文物"},
-    {"name": "文博中国", "query": "文博中国"},
-    {"name": "文物陕西", "query": "文物陕西"},
-    {"name": "河北考古", "query": "河北考古"},
-    {"name": "江汉考古", "query": "江汉考古"},
-    {"name": "海岱考古", "query": "海岱考古"},
-    {"name": "成都文物考古研究院", "query": "成都文物考古研究院"},
-    {"name": "大众考古", "query": "大众考古"}
+    {
+      "name": "北京大学考古文博学院",
+      "query": "北京大学考古文博学院"
+    },
+    {
+      "name": "东南文化",
+      "query": "东南文化"
+    },
+    {
+      "name": "杜伦考古",
+      "query": "杜伦考古"
+    },
+    {
+      "name": "国家博物馆",
+      "query": "国家博物馆"
+    },
+    {
+      "name": "汉唐考古",
+      "query": "汉唐考古"
+    },
+    {
+      "name": "汉唐考古札记",
+      "query": "汉唐考古札记"
+    },
+    {
+      "name": "华域考古",
+      "query": "华域考古"
+    },
+    {
+      "name": "惠生盘古",
+      "query": "惠生盘古"
+    },
+    {
+      "name": "吉大考古",
+      "query": "吉大考古"
+    },
+    {
+      "name": "考古大家谈",
+      "query": "考古大家谈"
+    },
+    {
+      "name": "考古陕西",
+      "query": "考古陕西"
+    },
+    {
+      "name": "考古研史",
+      "query": "考古研史"
+    },
+    {
+      "name": "理寓物内",
+      "query": "理寓物内"
+    },
+    {
+      "name": "南山供秀",
+      "query": "南山供秀"
+    },
+    {
+      "name": "澎湃私家历史",
+      "query": "澎湃私家历史"
+    },
+    {
+      "name": "人工智能与文化遗产",
+      "query": "人工智能与文化遗产"
+    },
+    {
+      "name": "山大考古",
+      "query": "山大考古"
+    },
+    {
+      "name": "商周考古",
+      "query": "商周考古"
+    },
+    {
+      "name": "穴居的猎人",
+      "query": "穴居的猎人"
+    },
+    {
+      "name": "浙江考古",
+      "query": "浙江考古"
+    },
+    {
+      "name": "中国考古网",
+      "query": "中国考古网"
+    },
+    {
+      "name": "中国魏晋南北朝史学会",
+      "query": "中国魏晋南北朝史学会"
+    },
+    {
+      "name": "中国文物报",
+      "query": "中国文物报"
+    },
+    {
+      "name": "河南考古",
+      "query": "河南考古"
+    },
+    {
+      "name": "考古邦",
+      "query": "考古邦"
+    },
+    {
+      "name": "城市考古与保护",
+      "query": "城市考古与保护"
+    },
+    {
+      "name": "考古与文物",
+      "query": "考古与文物"
+    },
+    {
+      "name": "文博中国",
+      "query": "文博中国"
+    },
+    {
+      "name": "文物陕西",
+      "query": "文物陕西"
+    },
+    {
+      "name": "河北考古",
+      "query": "河北考古"
+    },
+    {
+      "name": "江汉考古",
+      "query": "江汉考古"
+    },
+    {
+      "name": "海岱考古",
+      "query": "海岱考古"
+    },
+    {
+      "name": "成都文物考古研究院",
+      "query": "成都文物考古研究院"
+    },
+    {
+      "name": "大众考古",
+      "query": "大众考古"
+    }
   ],
   "official_watch_pages": [
     {
@@ -184,5 +482,34 @@
       "url": "https://archaeology.pku.edu.cn/xyzx/xwdt.htm",
       "domain": "archaeology.pku.edu.cn"
     }
-  ]
+  ],
+  "exclude_qing": [
+    "清代",
+    "清朝",
+    "qing dynasty",
+    "民国",
+    "近现代",
+    "当代"
+  ],
+  "theory_terms": [
+    "考古学理论",
+    "考古学的理论",
+    "考古理论",
+    "文化史考古",
+    "考古学史",
+    "比较考古",
+    "田野考古方法",
+    "archaeological theory",
+    "culture history",
+    "archaeological practice",
+    "history of archaeology"
+  ],
+  "api_page_size": 100,
+  "api_max_pages": 5,
+  "web_max_pages": 5,
+  "journal_identifiers": {
+    "Archaeometry": "1475-4754",
+    "Journal of Archaeological Science": "0305-4403",
+    "Journal of Anthropological Archaeology": "0278-4165"
+  }
 }

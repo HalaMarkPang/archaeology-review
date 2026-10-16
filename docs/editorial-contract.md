@@ -1,0 +1,45 @@
+# 模型稿与证据合同
+
+`python scripts/editorial.py`将`.cache/discovery.json`导出为`.cache/editorial-packet.json`。每个item包含原始candidate和sources；sources包含公开摘要的原文、url、材料类型及指纹。需要全文或纪要时，可在采集记录的`source_materials`补充真实取得的材料，字段为`url`、`text`和`material_type`；再次导出会计算指纹。允许类型为公开摘要、全文、会议纪要、新闻披露、报刊文章。目录不能作为摘要补入。
+
+完整证据包仅用于本地撰写和复核，不提交到公开仓库。
+
+## 撰写文件
+
+`.cache/drafts.json`包含`intro`和`records`。每条必须保留candidate的id、title、doi、url和published_date；书目需要更正时先更正采集依据，不能在稿件中无说明替换。
+
+正文记录必须包含：
+
+| 字段 | 内容 |
+|---|---|
+| id、title、doi、authors | 条目标识、原题名、DOI、完整作者。非DOI材料的doi可为空 |
+| publication、published_date、url | 刊载信息、实际发表日期及精度、出处 |
+| headline、core | 中文题名与正文，段落以两个换行分隔，不留空段 |
+| period、kind、material_type | 配置内的时代/理论分组与体裁，以及真实材料性质 |
+| source_status、limits | 所取得的材料程度与核对范围。目录不得发布 |
+| evidence | 可公开的简短核对要点；不冒称逐字引文 |
+| generation | model、prompt_version、generated_at，均按实际执行填写 |
+| claims | 顺序对应headline（存在时）及core的每段 |
+
+claims的每项包含`text`和`supports`。text必须与对应的完整标题/段落一致。supports的每项包含`quote`、`url`、`source_hash`：quote为12—240个字符的原文片段；url和source_hash分别对应证据包中的来源地址和指纹。每段可引用多个片段。形式匹配不代表该片段一定支持整段，语义关系由复核步骤检查。
+
+## 最终稿复核
+
+复核执行者阅读原文与最终稿，在`.cache/review.json`的records对象中，以条目id为键写入：
+
+| 字段 | 要求 |
+|---|---|
+| status | reviewed |
+| reviewer_type | model或human，如实填写 |
+| reviewer、reviewed_at | 实际复核执行者与日期 |
+| record_digest | 最终记录指纹，由`editorial.record_digest(record)`计算 |
+| claims_supported | 每项断言有来源支持，true才可发布 |
+| uncertainty_preserved | 推测程度未被升级，true才可发布 |
+| scope_confirmed | 分类及适用范围已核对，true才可发布 |
+| sources_checked | 所列来源已经实际阅读，true才可发布 |
+
+不得用脚本把四项一律写true以代替阅读复核。没有完成检查时保持待复核。任何标题、正文、证据或书目信息变更后，必须重新核对并更新指纹。
+
+先用`review.py --dry-run`检查，再使用同一稿件和复核文件加`--publish`导入。所有候选均记录去向，篇数和分组上限只影响最后选刊；新刊期写入前通过与build相同的验证器。
+
+首期的历史迁移记录只用于保留既有31条及其有限复核说明，不作为后续稿件的发布途径。

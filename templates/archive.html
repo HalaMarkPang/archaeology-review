@@ -1,64 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<header class="page-head">
-  <h1>往期</h1>
-</header>
-<div class="search-row">
-  <input class="search" id="site-search" placeholder="检索" autocomplete="off">
-</div>
+<header class="page-head"><h1>往期</h1></header>
+<div class="search-row"><label class="sr-only" for="site-search">检索全部文献</label><input class="search" id="site-search" placeholder="检索题名、作者或正文" type="search" autocomplete="off" data-global-search="../search-index.json"></div>
 <div id="global-results" aria-live="polite" class="global-results"></div>
 <section class="issue-list">
-  {% for item in issues %}
-  <a class="archive-row" href="../issues/{{ item.id }}.html">
-    <time>{{ item.date }}</time>
-    <span>{{ item.issue_no }}</span>
-    <span class="count">{{ item.records|length }}</span>
-  </a>
-  {% else %}
-  <p class="empty shown">尚无刊期</p>
-  {% endfor %}
+  {% for item in issues %}<a class="archive-row" href="../issues/{{ item.id }}.html"><time>{{ item.date }}</time><span>{{ item.issue_no }}</span><span class="count">{{ item.records|length }}篇</span></a>{% endfor %}
 </section>
-{% if samples %}
-<section class="issue-list samples">
-  {% for item in samples %}
-  <a class="archive-row" href="../issues/{{ item.id }}.html">
-    <time>{{ item.date }}</time>
-    <span>{{ item.issue_no }}</span>
-    <span class="count">样刊</span>
-  </a>
-  {% endfor %}
-</section>
-{% endif %}
-<script type="module">
-const input = document.getElementById('site-search');
-const out = document.getElementById('global-results');
-let pf;
-try {
-  pf = await import('../pagefind/pagefind.js');
-  await pf.options({ baseUrl: new URL('../', location.href).pathname });
-} catch (e) {
-  input.disabled = true;
-}
-let serial = 0;
-input.addEventListener('input', async () => {
-  if (!pf) return;
-  const n = ++serial;
-  const q = input.value.trim();
-  out.replaceChildren();
-  if (!q) return;
-  try {
-    const results = await pf.search(q);
-    if (n !== serial) return;
-    const items = await Promise.all(results.results.slice(0, 12).map((x) => x.data()));
-    if (n !== serial) return;
-    for (const item of items) {
-      const a = document.createElement('a');
-      a.href = item.url;
-      a.className = 'search-result';
-      a.textContent = item.meta.title || item.url;
-      out.appendChild(a);
-    }
-  } catch (e) {}
-});
-</script>
+{% if samples %}<section class="issue-list samples">{% for item in samples %}<a class="archive-row" href="../issues/{{ item.id }}.html"><time>{{ item.date }}</time><span>{{ item.issue_no }}</span><span class="count">样刊</span></a>{% endfor %}</section>{% endif %}
 {% endblock %}

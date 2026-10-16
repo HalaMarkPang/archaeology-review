@@ -1,6 +1,6 @@
 """Utilities for archaeological bibliography discovery and audit."""
 from __future__ import annotations
-import hashlib,json,re,unicodedata
+import hashlib,json,re,unicodedata,ipaddress
 from datetime import datetime
 from pathlib import Path
 from html import unescape
@@ -18,7 +18,9 @@ def stable_id(doi,title):return hashlib.sha256((canonical_doi(doi) or slug(title
 def safe_public_url(url):
     try:
         x=urlsplit(url)
-        return x.scheme in ("https","http") and bool(x.hostname) and not x.username and not x.password and x.hostname not in ("localhost","127.0.0.1")
+        if x.scheme not in ("https","http") or not x.hostname or x.username or x.password or x.hostname.lower()=="localhost":return False
+        try:return ipaddress.ip_address(x.hostname).is_global
+        except ValueError:return "." in x.hostname
     except ValueError:return False
 ALLOWED_KINDS=("journal-article","book-chapter","book","article","report","preprint","official_lead","journal_summary","journal_toc","wechat_lead","")
 GENERIC_PERIOD_TERMS={"paleolithic","palaeolithic","neolithic"}
@@ -45,7 +47,7 @@ def matched_journal(journal):
     blob=text_blob(journal)
     names=sorted(CONFIG.get("priority_journals",[]),key=len,reverse=True)
     for name in names:
-        if name.lower().replace("-"," ") in blob:return name
+        if name.lower().replace("-"," ")==blob or (name in CONFIG.get("core_journals",[]) and re.fullmatch(r"《?"+re.escape(name)+r"》?(?:\d{4}年第\d+期)?",blob)):return name
     return ""
 def assess(title,abstract="",journal="",kind="journal-article"):
     """Return period, field, score, and whether the item is inside the editorial scope."""
@@ -53,6 +55,10 @@ def assess(title,abstract="",journal="",kind="journal-article"):
     title_blob=text_blob(title)
     period,period_term=best_label(CONFIG["periods"],title_blob,blob)
     field,field_term=best_label(CONFIG["fields"],title_blob,blob)
+    # Applying spatial methods to one dataset does not make it a theory paper.
+    theory_terms=CONFIG.get("theory_terms",[])
+    if field==STANDALONE_GROUP and not hit_terms(title_blob,theory_terms) and not hit_terms(blob,["考古学理论","archaeological theory"]):
+        field,field_term="",""
     qing=bool(hit_terms(blob,CONFIG.get("exclude_qing",[])))
     song_yuan_ming=bool(hit_terms(blob,next(row["terms"] for row in CONFIG["periods"] if row["label"]=="宋元明")))
     china=bool(hit_terms(blob,CONFIG.get("china_anchors",[]))) or bool(re.search(r"[\u4e00-\u9fff]",field_term))
@@ -64,7 +70,8 @@ def assess(title,abstract="",journal="",kind="journal-article"):
         return {"period":"","field":"","score":0,"in_scope":False,"journal":journal_name}
     if qing and not song_yuan_ming:
         return {"period":"","field":"","score":0,"in_scope":False,"journal":journal_name}
-    in_scope=bool(period) or bool(field and (china or core)) or bool(core and not qing)
+    theory=field==STANDALONE_GROUP
+    in_scope=bool(period) or bool(field and (china or core)) or bool(core and not qing) or theory
     score=0
     if period:score+=8
     if field:score+=4

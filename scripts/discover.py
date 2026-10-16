@@ -13,6 +13,8 @@ from bs4 import BeautifulSoup
 from research_core import CONFIG,ROOT,STANDALONE_GROUP,assess,canonical_doi,dump_json,reviewed_keys,is_duplicate,norm,safe_public_url,slug,stable_id,today_local
 SESSION=requests.Session()
 SESSION.headers.update({"User-Agent":"ArchaeologyResearchWeekly/1.0 (scholarly bibliography metadata)","Accept":"application/json, text/html;q=0.8"})
+COVERAGE=[]
+SESSION.mount("http://",HTTPAdapter(max_retries=Retry(total=2,backoff_factor=1,status_forcelist=[429,500,502,503,504])))
 SESSION.mount("https://",HTTPAdapter(max_retries=Retry(total=3,backoff_factor=1,status_forcelist=[429,500,502,503,504])))
 def get_json(url,params):
     response=SESSION.get(url,params=params,timeout=24)
@@ -26,11 +28,11 @@ def publication_date(value):
             return "-".join([str(parts[0])]+[f"{x:02d}" for x in parts[1:]]),len(parts)
     return "",0
 def from_crossref(msg):
-    title=norm((msg.get("title") or [""])[0]);doi=canonical_doi(msg.get("DOI",""))
+    title=norm(BeautifulSoup((msg.get("title") or [""])[0],"html.parser").get_text(" ",strip=True));doi=canonical_doi(msg.get("DOI",""))
     if not title or not doi:return None
     abstract=norm(BeautifulSoup(msg.get("abstract") or "","html.parser").get_text(" ",strip=True))
     published,precision=publication_date(msg)
-    authors=", ".join(" ".join(filter(None,[a.get("given",""),a.get("family","")])) for a in msg.get("author",[])[:8])
+    authors=", ".join(" ".join(filter(None,[a.get("given",""),a.get("family","")])) for a in msg.get("author",[]))
     journal=norm((msg.get("container-title") or [""])[0])
     kind=msg.get("type","journal-article")
     scope=assess(title,abstract,journal,kind)
@@ -48,7 +50,7 @@ def from_openalex(msg):
     if not title or not doi:return None
     abstract=abstract_openalex(msg.get("abstract_inverted_index"))
     journal=norm((((msg.get("primary_location") or {}).get("source")) or {}).get("display_name") or "")
-    authors=", ".join(a.get("author",{}).get("display_name","") for a in msg.get("authorships",[])[:8])
+    authors=", ".join(a.get("author",{}).get("display_name","") for a in msg.get("authorships",[]))
     kind=msg.get("type","journal-article")
     scope=assess(title,abstract,journal,kind)
     return dict(id=stable_id(doi,title),doi=doi,title=title,authors=authors or "未提供",journal=journal,published_date=msg.get("publication_date") or "",url=f"https://doi.org/{doi}",abstract=abstract,provider="OpenAlex",kind=kind,priority=scope["score"],period_guess=scope["period"],field=scope["field"],in_scope=scope["in_scope"],published_precision=3)
@@ -59,46 +61,89 @@ def search_queries():
     queries.extend(CONFIG.get("umbrella_queries",[]))
     return queries
 SELECT="DOI,title,abstract,author,container-title,published-online,published-print,published,issued,type"
+def error_message(exc):
+    return re.sub(r"(?i)(api_key|token|authorization)(=|%3D|:)[^&\s]+",r"\1=[redacted]",str(exc))[:160]
+
+def api_pages(url,params,provider,label,warnings):
+    """Consume a cursor, explicitly recording any budget/response boundary."""
+    cursor="*";visited=set();count=0;pages=0;state="partial";reason="page_budget"
+    size=int(CONFIG.get("api_page_size",100))
+    try:
+        for page in range(int(CONFIG.get("api_max_pages",5))):
+            if cursor in visited:reason="repeated_cursor";break
+            visited.add(cursor);args=dict(params,cursor=cursor)
+            args["rows" if provider=="Crossref" else "per_page"]=size
+            data=get_json(url,args);pages+=1
+            block=data.get("message",{}) if provider=="Crossref" else data
+            key="items" if provider=="Crossref" else "results"
+            if key not in block or not isinstance(block[key],list):raise ValueError("API response schema changed")
+            rows=block[key];count+=len(rows)
+            yield from rows
+            next_cursor=block.get("next-cursor") if provider=="Crossref" else block.get("meta",{}).get("next_cursor")
+            if len(rows)<size or not next_cursor:
+                state="complete";reason="response_exhausted";break
+            cursor=next_cursor
+    except (requests.RequestException,ValueError,KeyError) as exc:
+        state="failed" if not pages else "partial";reason=error_message(exc)
+    if state!="complete":warnings.append(f"{provider} {label}: {state} ({reason})")
+    COVERAGE.append({"source":provider,"query":label,"pages":pages,"retrieved":count,"status":state,"reason":reason})
+
 def collect_crossref(start,end,warnings):
     collected=[]
     for term in search_queries():
-        try:
-            params={"query.bibliographic":term,"filter":f"from-pub-date:{start},until-pub-date:{end}","rows":20,"sort":"published","order":"desc","select":SELECT}
-            data=get_json("https://api.crossref.org/works",params)
-            collected.extend(x for item in data.get("message",{}).get("items",[]) if (x:=from_crossref(item)))
-        except (requests.RequestException,ValueError,KeyError) as e:
-            warnings.append(f"Crossref {term}: {type(e).__name__}: {str(e)[:130]}")
+        params={"query.bibliographic":term,"filter":f"from-pub-date:{start},until-pub-date:{end}","sort":"published","order":"desc","select":SELECT}
+        collected.extend(x for item in api_pages("https://api.crossref.org/works",params,"Crossref",term,warnings) if (x:=from_crossref(item)))
     return collected
+
 def collect_journal_watch(start,end,warnings):
-    """New articles in watched journals, including titles that miss the keyword list."""
     collected=[]
     for name in CONFIG.get("journal_watches",[]):
-        try:
-            params={"query.container-title":name,"filter":f"from-pub-date:{start},until-pub-date:{end},type:journal-article","rows":15,"select":SELECT}
-            data=get_json("https://api.crossref.org/works",params)
-            for item in data.get("message",{}).get("items",[]):
-                row=from_crossref(item)
-                if not row or name.lower() not in row["journal"].lower() or not row.get("in_scope"):continue
-                row["watched_journal"]=True
-                row["priority"]=max(row["priority"],8)
-                collected.append(row)
-        except (requests.RequestException,ValueError,KeyError) as e:
-            warnings.append(f"期刊 {name}: {type(e).__name__}: {str(e)[:130]}")
+        params={"filter":f"from-pub-date:{start},until-pub-date:{end},type:journal-article","select":SELECT}
+        issn=CONFIG.get("journal_identifiers",{}).get(name)
+        url=f"https://api.crossref.org/journals/{issn}/works" if issn else "https://api.crossref.org/works"
+        if not issn:params["query.container-title"]=name
+        for item in api_pages(url,params,"Crossref",name,warnings):
+            row=from_crossref(item)
+            if not row or norm(row["journal"]).casefold()!=norm(name).casefold():continue
+            row["watched_journal"]=True;row["priority"]=max(row["priority"],8);collected.append(row)
     return collected
+
 def collect_openalex(start,end,warnings):
     key=os.environ.get("OPENALEX_API_KEY","").strip()
     if not key:
-        warnings.append("OPENALEX_API_KEY 未配置：跳过 OpenAlex")
-        return []
+        warnings.append("OPENALEX_API_KEY未配置，未检索OpenAlex")
+        COVERAGE.append({"source":"OpenAlex","status":"skipped","reason":"missing_key"});return []
     collected=[]
     for term in search_queries():
-        try:
-            params={"search":term,"filter":f"from_publication_date:{start},to_publication_date:{end}","per_page":35,"api_key":key}
-            data=get_json("https://api.openalex.org/works",params)
-            collected.extend(x for item in data.get("results",[]) if (x:=from_openalex(item)))
-        except (requests.RequestException,ValueError,KeyError) as e:
-            warnings.append(f"OpenAlex {term}: {type(e).__name__}: {str(e)[:130]}")
+        params={"search":term,"filter":f"from_publication_date:{start},to_publication_date:{end}","api_key":key}
+        collected.extend(x for item in api_pages("https://api.openalex.org/works",params,"OpenAlex",term,warnings) if (x:=from_openalex(item)))
     return collected
+
+def web_pages(source,warnings):
+    """Follow only an explicit same-site next link. No guessed pagination URLs."""
+    url=source["url"];seen=set();count=0;state="partial";reason="page_budget"
+    try:
+        for _ in range(int(CONFIG.get("web_max_pages",5))):
+            if url in seen:reason="repeated_page";break
+            seen.add(url)
+            r=SESSION.get(url,timeout=20,headers={"User-Agent":"Mozilla/5.0","Accept":"text/html"});r.raise_for_status()
+            r.encoding=r.apparent_encoding or "utf-8"
+            soup=BeautifulSoup(r.text,"html.parser");count+=1
+            yield soup,url
+            next_link=soup.select_one('a[rel="next"]')
+            if next_link is None:
+                next_link=next((a for a in soup.select("a[href]") if norm(a.get_text()) in ("下一页","下页","Next",">")),None)
+            if next_link is None:
+                # Absence of recognised pagination cannot prove that a site is exhausted.
+                reason="no_verified_next_link";break
+            candidate=urljoin(url,next_link.get("href") or "")
+            if not safe_public_url(candidate) or urlparse(candidate).hostname!=urlparse(source["url"]).hostname:reason="unverified_next_link";break
+            url=candidate
+    except requests.RequestException as exc:
+        state="failed" if not count else "partial";reason=error_message(exc)
+    COVERAGE.append({"source":source["name"],"url":source["url"],"pages":count,"status":state,"reason":reason})
+    if state!="complete":warnings.append(f"{source['name']}：覆盖尚未核完（{reason}）")
+
 def collect_pinned_dois(warnings):
     """Pull works the keyword net missed, when a DOI is already known."""
     collected=[]
@@ -108,27 +153,19 @@ def collect_pinned_dois(warnings):
             row=from_crossref(data.get("message",{}))
             if row:collected.append(row)
         except (requests.RequestException,ValueError,KeyError) as e:
-            warnings.append(f"DOI {doi}: {type(e).__name__}: {str(e)[:130]}")
+            warnings.append(f"DOI {doi}: {type(e).__name__}: {error_message(e)}")
     return collected
 def collect_official_leads(warnings):
     leads=[]
     for source in CONFIG.get("official_watch_pages",[]):
-        try:
-            r=SESSION.get(source["url"],timeout=18,headers={"Accept":"text/html"});r.raise_for_status()
-            soup=BeautifulSoup(r.text,"html.parser")
+        for soup,page_url in web_pages(source,warnings):
             for a in soup.select("a[href]"):
-                title=norm(a.get_text(" ",strip=True))
-                href=urljoin(source["url"],a.get("href",""))
+                title=norm(a.get_text(" ",strip=True));href=urljoin(page_url,a.get("href", ""))
                 host=(urlparse(href).hostname or "").lower()
                 if not title or not (host==source["domain"] or host.endswith("."+source["domain"])) or not safe_public_url(href):continue
-                if not 8<=len(title)<=90:continue
-                issue=bool(re.search(r"《(?:考古|文物|考古与文物|考古学报)》?.{0,18}(?:第.{1,5}期|目录|出刊)",title))
-                scope=assess(title,"","")
-                if not issue and scope["score"]<8 and scope.get("field")!=STANDALONE_GROUP:continue
-                if any(x in title for x in ("招生","培训","招聘","开班")):continue
-                leads.append(dict(id=stable_id("",href),title=title,url=href,provider=source["name"],kind="official_lead",priority=max(scope["score"],8 if issue else 0),period_guess=scope["period"],field=scope["field"],doi="",authors="",journal="",published_date="",abstract=""))
-        except requests.RequestException as e:
-            warnings.append(f"{source['name']} 页面无法访问：{type(e).__name__}: {str(e)[:80]}")
+                if not 8<=len(title)<=120 or any(x in title for x in ("招生","培训","招聘","开班")):continue
+                scope=assess(title,"", "")
+                leads.append(dict(id=stable_id("",href),title=title,url=href,provider=source["name"],kind="official_lead",priority=scope["score"],period_guess=scope["period"],field=scope["field"],doi="",authors="",journal="",published_date="",abstract=""))
     return leads
 def plain_lines(text):
     text=(text or "").replace("\u3000"," ").replace("\xa0"," ")
@@ -206,51 +243,34 @@ def wenwu_records(text,page_url):
         if title in seen:continue
         seen.add(title)
         scope=assess(title,"",journal,"journal_toc")
-        if not scope["period"] and scope.get("field")!=STANDALONE_GROUP:continue
         found.append(dict(id=stable_id("",title+label),doi="",title=title,authors=author,journal=label,published_date=published,url=page_url,abstract="",provider="文物出版社",kind="journal_toc",priority=8,period_guess=scope["period"],field=scope["field"],in_scope=scope["in_scope"]))
     return found
 def collect_wenwu_issues(start,end,warnings):
-    collected=[]
+    collected=[];seen=set()
     for source in CONFIG.get("chinese_issue_lists",[]):
-        try:
-            page=SESSION.get(source["url"],timeout=20,headers={"Accept":"text/html"})
-            page.raise_for_status();page.encoding=page.apparent_encoding or "utf-8"
-            soup=BeautifulSoup(page.text,"html.parser")
-            seen=set()
+        for soup,page_url in web_pages(source,warnings):
             for a in soup.select("a[href]"):
-                title=norm(a.get_text(" ",strip=True))
-                href=urljoin(source["url"],a.get("href") or "")
+                title=norm(a.get_text(" ",strip=True));href=urljoin(page_url,a.get("href") or "")
                 if href in seen or "出刊" not in title or not re.search(r"《(?:文物|考古与文物)》",title):continue
-                if not safe_public_url(href):continue
+                if not safe_public_url(href) or urlparse(href).hostname!=urlparse(source["url"]).hostname:continue
                 seen.add(href)
-                article=SESSION.get(href,timeout=20,headers={"Accept":"text/html"})
-                article.raise_for_status();article.encoding=article.apparent_encoding or "utf-8"
-                for row in wenwu_records(article.text,href):
-                    if date_within(row["published_date"],start,end):collected.append(row)
-        except requests.RequestException as e:
-            warnings.append(f"{source['name']} 页面无法访问：{type(e).__name__}: {str(e)[:80]}")
+                try:
+                    article=SESSION.get(href,timeout=20,headers={"Accept":"text/html"});article.raise_for_status();article.encoding=article.apparent_encoding or "utf-8"
+                    collected.extend(row for row in wenwu_records(article.text,href) if date_within(row["published_date"],start,end))
+                except requests.RequestException as exc:warnings.append(f"出刊页{href}: {error_message(exc)}")
     return collected
+
 def collect_kaogu_indexes(start,end,warnings):
-    """New issue pages. The contents are often an image, so this records the issue, not guessed titles."""
     collected=[]
     for source in CONFIG.get("chinese_toc_indexes",[]):
-        try:
-            page=SESSION.get(source["url"],timeout=20,headers={"User-Agent":"Mozilla/5.0","Accept":"text/html"})
-            page.raise_for_status()
-            soup=BeautifulSoup(page.content.decode("utf-8","replace"),"html.parser")
+        for soup,page_url in web_pages(source,warnings):
             for a in soup.select("a[href]"):
-                title=norm(a.get_text(" ",strip=True))
-                dated=re.search(r"(\d{4})年第(\d+)期目录\s+(\d{4}-\d{2}-\d{2})",title)
-                if not dated:continue
-                published=dated.group(3)
-                if not date_within(published,start,end):continue
-                href=urljoin(source["url"],a.get("href") or "")
+                title=norm(a.get_text(" ",strip=True));dated=re.search(r"(\d{4})年第(\d+)期目录\s+(\d{4}-\d{2}-\d{2})",title)
+                if not dated or not date_within(dated.group(3),start,end):continue
+                href=urljoin(page_url,a.get("href") or "")
                 if not safe_public_url(href):continue
                 label=f"《{source['journal']}》{dated.group(1)}年第{int(dated.group(2))}期目录"
-                scope=assess(label,"",source["journal"],"official_lead")
-                collected.append(dict(id=stable_id("",href),doi="",title=label,authors="",journal=source["journal"],published_date=published,url=href,abstract="",provider="中国考古网",kind="official_lead",priority=max(scope["score"],8),period_guess=scope["period"],field=scope["field"],in_scope=True))
-        except requests.RequestException as e:
-            warnings.append(f"{source['name']} 目录页无法访问：{type(e).__name__}: {str(e)[:80]}")
+                collected.append(dict(id=stable_id("",href),doi="",title=label,authors="",journal=source["journal"],published_date=dated.group(3),url=href,abstract="",provider="中国考古网",kind="official_lead",priority=8,period_guess="",field="",in_scope=True))
     return collected
 SKIP_WECHAT=re.compile(r"会议|讲座|展览|招生|书讯|招聘|开班|培训")
 def parse_wechat_date(text,today):
@@ -258,7 +278,9 @@ def parse_wechat_date(text,today):
     full=re.search(r"(\d{4})[-年/.](\d{1,2})[-月/.](\d{1,2})",text)
     if full:return date(int(full.group(1)),int(full.group(2)),int(full.group(3)))
     short=re.search(r"(\d{1,2})月(\d{1,2})日",text)
-    if short:return date(today.year,int(short.group(1)),int(short.group(2)))
+    if short:
+        parsed=date(today.year,int(short.group(1)),int(short.group(2)))
+        return parsed.replace(year=today.year-1) if parsed>today else parsed
     days=re.search(r"(\d+)\s*天前",text)
     if days:return today-timedelta(days=int(days.group(1)))
     if "昨天" in text:return today-timedelta(days=1)
@@ -278,57 +300,40 @@ def parse_wechat_html(html,account,today):
         shown=norm(account_node.get_text(" ",strip=True) if account_node else "")
         time_node=box.select_one(".s2, span.time, .account + span")
         stamp=norm(time_node.get_text(" ",strip=True) if time_node else box.get_text(" ",strip=True))
-        found.append({"title":title,"account":shown or account,"published":parse_wechat_date(stamp,today),"href":link.get("href") or ""})
+        found.append({"title":title,"account":shown,"published":parse_wechat_date(stamp,today),"href":link.get("href") or ""})
     next_page=bool(soup.select_one("#sogou_next, a#sogou_next, a.np"))
     return found,next_page
 def wechat_coverage(account,pages,start,end,error=""):
-    """An account is finished only when its list is exhausted or a page falls before the window."""
-    if error:return {"name":account,"status":"未核完","error":error,"articles":[]}
-    articles=[];exhausted=False
+    articles=[];seen=set()
     for rows,has_next in pages:
         for row in rows:
-            published=row.get("published")
-            if published and published<start:
-                exhausted=True
-                continue
-            if published and published>end:continue
-            if not published:continue
-            articles.append(row)
-        if exhausted or not has_next:
-            exhausted=True
-            break
-    status="已核完" if exhausted else "未核完"
-    return {"name":account,"status":status,"articles":articles}
+            stamp=row.get("published")
+            if row.get("account")!=account or not stamp or not start<=stamp<=end:continue
+            key=(row["title"],stamp)
+            if key not in seen:articles.append(row);seen.add(key)
+    return {"name":account,"status":"未核完","method":"搜狗搜索补充","reason":"搜索结果不能证明账号文章列表完整","articles":articles,**({"error":error} if error else {})}
+
 def collect_wechat_accounts(start,end,warnings,fetch=None,today=None):
-    """Page every configured account. A failed or unfinished list is 未核完, never an empty account."""
-    today=today or date.today()
-    coverage=[]
-    leads=[]
-    accounts=CONFIG.get("wechat_accounts",[])
-    for account in accounts:
-        name=account["name"];query=account.get("query") or name
-        pages=[];error=""
+    today=today or date.fromisoformat(today_local());coverage=[];leads=[]
+    for account in CONFIG.get("wechat_accounts",[]):
+        name=account["name"];query=account.get("query") or name;pages=[];error=""
         try:
-            for page in range(1,9):
+            for page in range(1,int(CONFIG.get("wechat_max_pages",8))+1):
                 html=fetch(query,page) if fetch else fetch_wechat_page(query,page,start,end)
                 rows,has_next=parse_wechat_html(html,name,today)
-                own=[row for row in rows if not row["account"] or name in row["account"] or row["account"] in name]
-                pages.append((own,has_next))
-                if any(row.get("published") and row["published"]<start for row in own) or not has_next:break
-            report=wechat_coverage(name,pages,start,end)
-        except (requests.RequestException,ValueError,OSError) as e:
-            report=wechat_coverage(name,[],start,end,error=f"{type(e).__name__}: {str(e)[:80]}")
-        entry={"name":name,"status":report["status"],"articles":[{"title":row["title"],"published_date":row["published"].isoformat()} for row in report["articles"]]}
-        if report.get("error"):entry["error"]=report["error"]
-        coverage.append(entry)
-        if report["status"]!="已核完":
-            warnings.append(f"公众号「{name}」未核完"+(f"：{report['error']}" if report.get("error") else "：列表未翻完"))
+                if not rows:raise ValueError("页面未识别到有效搜索结果")
+                pages.append(([row for row in rows if row["account"]==name],has_next))
+                if not has_next:break
+        except (requests.RequestException,ValueError,OSError) as exc:error=f"{type(exc).__name__}: {error_message(exc)}"
+        report=wechat_coverage(name,pages,start,end,error=error)
+        entry={k:v for k,v in report.items() if k!="articles"}
+        entry["pages"]=len(pages);entry["articles"]=[{"title":x["title"],"published_date":x["published"].isoformat()} for x in report["articles"]]
+        coverage.append(entry);warnings.append(f"公众号「{name}」仅作搜索补充，尚未核完账号列表"+(f"：{error}" if error else ""))
         for row in report["articles"]:
             scope=assess(row["title"],"",name,"wechat_lead")
             if SKIP_WECHAT.search(row["title"]) and scope.get("field")!=STANDALONE_GROUP:continue
-            if not scope["in_scope"] and not scope["period"]:continue
-            href=row["href"] if safe_public_url(row["href"]) else ""
-            leads.append(dict(id=stable_id("",name+row["title"]),doi="",title=row["title"],authors=name,journal=name,published_date=row["published"].isoformat(),url=href,abstract="",provider=name,kind="wechat_lead",priority=max(scope["score"],8),period_guess=scope["period"],field=scope["field"],in_scope=scope["in_scope"]))
+            href=urljoin("https://weixin.sogou.com/",row["href"])
+            leads.append(dict(id=stable_id("",name+row["title"]),doi="",title=row["title"],authors=name,journal=name,published_date=row["published"].isoformat(),url=href if safe_public_url(href) else "",abstract="",provider=name,kind="wechat_lead",priority=scope["score"],period_guess=scope["period"],field=scope["field"],in_scope=scope["in_scope"]))
     return leads,coverage
 def fetch_wechat_page(query,page,start,end):
     response=SESSION.get("https://weixin.sogou.com/weixin",params={"type":"2","query":query,"ie":"utf8","page":page,"tsn":"5","ft":start.isoformat(),"et":end.isoformat()},timeout=20,headers={"Accept":"text/html","User-Agent":"Mozilla/5.0"})
@@ -339,39 +344,48 @@ def date_within(value,start,end):
     try:return len(value)>=10 and start<=date.fromisoformat(value[:10])<=end
     except ValueError:return False
 def dedupe(items,published_keys,start,end):
-    papers={};leads={}
+    papers=[];leads={};by_title={};by_doi={}
     for item in items:
-        if is_duplicate(item,published_keys):continue
-        if item.get("kind")!="official_lead" and not date_within(item.get("published_date",""),start,end):continue
-        if item["priority"]<(7 if item.get("kind")=="official_lead" else 8):continue
         if item.get("kind") in ("official_lead","wechat_lead"):
-            leads[item.get("url") or item["id"]]=item;continue
-        key=canonical_doi(item.get("doi","")) or "title:"+slug(item.get("title",""))
-        old=papers.get(key)
-        if not old or (bool(item.get("abstract")),len(item.get("abstract","")),item.get("priority",0))>(bool(old.get("abstract")),len(old.get("abstract","")),old.get("priority",0)):
-            papers[key]=item
-    return sorted(papers.values(),key=lambda x:(-x["priority"],not bool(x["abstract"]),x["title"]))[:CONFIG["top_candidates"]]+sorted(leads.values(),key=lambda x:-x["priority"])[:20]
+            if item.get("kind")=="official_lead" or date_within(item.get("published_date",""),start,end):leads[item.get("url") or item["id"]]=item
+            continue
+        # Keep unclassified, lower-scoring and previously published candidates for the audit.
+        value=item.get("published_date","")
+        if not date_within(value,start,end) and not (len(value)==7 and start.isoformat()[:7]<=value<=end.isoformat()[:7]) and not (len(value)==4 and str(start.year)<=value<=str(end.year)):continue
+        doi=canonical_doi(item.get("doi", ""));title=slug(item.get("title", ""))
+        old=by_doi.get(doi) if doi else None
+        old=old or by_title.get(title)
+        if old:
+            if item.get("abstract") and not old.get("abstract"):
+                identity={k:old.get(k) for k in ("id","doi","url") if old.get(k)}
+                old.update(item)
+                if identity.get("doi"):old.update(identity)
+            elif doi and not old.get("doi"):old["doi"]=doi
+        else:old=dict(item);papers.append(old)
+        by_title[title]=old
+        if doi:by_doi[doi]=old
+    return sorted(papers,key=lambda x:(-x.get("priority",0),not bool(x.get("abstract")),x["title"]))+sorted(leads.values(),key=lambda x:-x.get("priority",0))
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--date",default=today_local())
     p.add_argument("--offline-fixture",help="Synthetic fixture, never for live publication")
     args=p.parse_args()
     end=date.fromisoformat(args.date)
-    start=end-timedelta(days=CONFIG["lookback_days"])
-    warnings=[]
+    start=end-timedelta(days=CONFIG["lookback_days"]-1)
+    warnings=[];COVERAGE.clear()
     if args.offline_fixture:items=json.loads(Path(args.offline_fixture).read_text(encoding="utf-8"))
     else:
         wechat_leads,wechat_checked=collect_wechat_accounts(start,end,warnings)
         items=collect_crossref(start,end,warnings)+collect_journal_watch(start,end,warnings)+collect_openalex(start,end,warnings)+collect_pinned_dois(warnings)+collect_wenwu_issues(start,end,warnings)+collect_kaogu_indexes(start,end,warnings)+collect_official_leads(warnings)+wechat_leads
     if args.offline_fixture:wechat_checked=[]
     records=dedupe(items,reviewed_keys(),start,end)
-    dump_json(ROOT/".cache/discovery.json",{"date":args.date,"window":{"start":str(start),"end":str(end)},"records":records,"warnings":warnings,"wechat_accounts":wechat_checked})
+    dump_json(ROOT/".cache/discovery.json",{"date":args.date,"window":{"start":str(start),"end":str(end)},"records":records,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture)})
     public=[]
     for r in records:
         x={k:r.get(k) for k in ("id","doi","title","authors","journal","published_date","url","kind","provider","priority","period_guess","field")}
         x["watched_journal"]=bool(r.get("watched_journal"))
         x["abstract_available"]=bool(r.get("abstract"));public.append(x)
-    dump_json(ROOT/"content/candidates"/f"{args.date}.json",{"date":args.date,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"note":"候选记录为题录，尚非已发表结论。出版社目录供核查。公众号未核完，表示该号检索尚未完成。"})
+    dump_json(ROOT/"content/candidates"/f"{args.date}.json",{"date":args.date,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture),"note":"候选记录为题录，尚非已发表结论。出版社目录供核查。公众号未核完，表示该号检索尚未完成。"})
     print(f"候选 {len(records)} 条；有摘要 {sum(bool(x.get('abstract')) for x in records)} 条；警告 {len(warnings)} 条")
     for w in warnings:print("WARN:",w,file=sys.stderr)
 if __name__=="__main__":main()
