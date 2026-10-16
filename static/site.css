@@ -89,6 +89,7 @@ main { width: min(920px, calc(100% - 56px)); margin: 0 auto; padding: 48px 0 96p
   color: #8a7b70;
   font-size: clamp(64px, 8.2vw, 128px);
 }
+.lines .line:last-child { margin-top: clamp(20px, 2.4vw, 40px); }
 .lines .line:last-child [data-line] {
   color: var(--ink);
   font-size: clamp(32px, 4vw, 64px);
