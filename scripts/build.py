@@ -75,7 +75,7 @@ def main():
     sf=ROOT/"content"/"status.json"
     status=json.loads(sf.read_text(encoding="utf-8")) if sf.exists() else {"date":"尚未执行","message":"尚无正式刊期","candidates":0,"published":0}
     if latest: render("issue.html",OUT/"index.html",issue=latest,edition=EDITION,base="",title="本期",location="本期",page="home")
-    else:render("landing.html",OUT/"index.html",base="",title="研究周刊",location="首页",page="home",status=status)
+    else:render("landing.html",OUT/"index.html",base="",title="考古-周刊",location="首页",page="home",status=status)
     for issue in issues:
         render("issue.html",OUT/"issues"/f"{issue['id']}.html",issue=issue,edition=EDITION,base="../",title=issue["issue_no"],location="研究精选",page="issue")
     render("archive.html",OUT/"archive"/"index.html",issues=formal,samples=[x for x in issues if x.get("is_sample")],base="../",title="往期归档",location="往期",page="archive")

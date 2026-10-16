@@ -1,4 +1,4 @@
-# 考古与历史研究周刊
+# 考古-周刊
 
 公开静态网站。仓库：[HalaMarkPang/archaeology-review](https://github.com/HalaMarkPang/archaeology-review)。地址：[https://halamarkpang.github.io/archaeology-review/](https://halamarkpang.github.io/archaeology-review/)。
 

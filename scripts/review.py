@@ -170,7 +170,7 @@ def main():
     newly=0
     path=ROOT/"content/issues"/f"{args.date}.json"
     if mode=="auto_verified" and not args.dry_run and accepted and not path.exists():
-        dump_json(path,{"id":args.date,"issue_no":"研究周刊 · "+args.date,"date":args.date,
+        dump_json(path,{"id":args.date,"issue_no":"考古-周刊 · "+args.date,"date":args.date,
             "period":f"{data['window']['start']} — {data['window']['end']}","is_sample":False,
             "intro":"",
             "records":[r for _,r,_ in accepted]})
