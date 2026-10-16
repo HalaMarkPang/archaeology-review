@@ -24,7 +24,7 @@
 | `content/issues/日期.json` | 正式刊期。摘录与摘要原文逐字相符、且达到收录标准时写入。同日刊期已存在者，维持原文件。 |
 | GitHub Pages | 上述变更推送至 `main` 后，[`.github/workflows/pages.yml`](.github/workflows/pages.yml) 据正式刊期生成静态页面与 Pagefind 中文检索，并发布至站点。 |
 
-一期条数见 `max_issue_items`。同一时代或考古学理论一组的条数见 `max_per_period`。编选细则见 [`config/research-policy.md`](config/research-policy.md)。各期中文说明的分段与表述，依该文件「中文说明」执行。发掘简报、调查简报、发掘报告、出土文献、馆藏研究与研究论文为三段。考古学理论独立成组，不套用这三段。
+一期条数见 `max_issue_items`。同一时代或考古学理论一组的条数见 `max_per_period`。编选细则见 [`config/research-policy.md`](config/research-policy.md)。各期中文说明的分段与表述，依该文件「中文说明」执行。发掘简报、调查简报、发掘报告、出土文献、馆藏研究与研究论文为三段，依次写所据材料、作者的判断，以及该材料对所在领域的影响。考古学理论独立成组，不套用这三段，段落随论证确定，但须写清所处理的问题、作者的判断及其影响。
 
 ## 模型
 
