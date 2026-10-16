@@ -1,0 +1,211 @@
+{
+  "date": "2026-10-16",
+  "issue": "2026-10-14",
+  "revision": "restore-field-significance",
+  "reason": "前次删减重复内容时压缩了学术意义，未充分说明材料与对应领域研究问题的关系。",
+  "changes": [
+    {
+      "scope": "页面",
+      "change": "移除标题下方的首期回溯副标题和导读；刊期元数据保留。"
+    },
+    {
+      "scope": "31条正文",
+      "change": "逐条补写简洁的研究意义，只保留具体认识增量或新问题，删除研究计划式清单；不机械宣称颠覆。"
+    },
+    {
+      "scope": "编选与发布",
+      "change": "研究意义设为必填内容，纳入段落证据映射、最终正文指纹及检索。"
+    }
+  ],
+  "reviewer": "Codex",
+  "reviewer_type": "model",
+  "source_scope": "补取苏羊、姚河塬与周原三篇Crossref原始摘要；其余依据已取得公开摘要、原始发布及会议纪要。既有图像正文和文化史论文核验限制保留。另补核同三位作者的加拿大考古学会会议报告摘要（第70页），不替代文化史期刊论文全文。",
+  "records": [
+    {
+      "id": "3f59fd2ee0e375ea",
+      "headline": "西白马营三地点见人类活动面",
+      "source_url": "https://cbgc.scol.com.cn/news/8011128",
+      "significance_digest": "60bb6d27d97299afd515d17f6845e22d6d25eca83d3eefb405cde48c8afac261"
+    },
+    {
+      "id": "e14f9fb22a5d6e83",
+      "headline": "苏羊仰韶白陶由富钙黏土烧成",
+      "source_url": "https://doi.org/10.1111/arcm.70218",
+      "significance_digest": "9b0243e5eb211de169dc368b6981b841c3d9d49e22e94bb2c68503641d254fb3"
+    },
+    {
+      "id": "80dc62c94ce1aacd",
+      "headline": "西阴村先按水平层发掘，再归入自然层",
+      "source_url": "https://cbgc.scol.com.cn/news/8057827",
+      "significance_digest": "b1277166f7307844f4cc82511e5dc9ccfdfc0211781d2e4b8d824b05fd012cbe"
+    },
+    {
+      "id": "4ea0b09ff850f13b",
+      "headline": "司家沟龙山遗存有环壕、灰坑与墓葬",
+      "source_url": "https://cbgc.scol.com.cn/news/8011128",
+      "significance_digest": "22b6220c4730ff24515ae670dc292dd189a45e09cb6c0a61056e3e2fa24bc171"
+    },
+    {
+      "id": "9f2d6821d3026b29",
+      "headline": "磨盘山陶器沿用本地原料与工序",
+      "source_url": "https://doi.org/10.1111/arcm.70236",
+      "significance_digest": "89a3a1b2e249475620c80f5e467f5924571a2c1165406b2ac03e9b63810a9c15"
+    },
+    {
+      "id": "9dbd0cba602602d6",
+      "headline": "姚河塬祭祀用马的来源存在差异",
+      "source_url": "https://doi.org/10.1111/arcm.70225",
+      "significance_digest": "53311869b5cc8ef538c13ddceddbe4067104de84414e659bd18808086066ce30"
+    },
+    {
+      "id": "4ed7dcee9c74059a",
+      "headline": "三星堆四号坑灰烬层可能与燎祭有关",
+      "source_url": "https://doi.org/10.1111/arcm.70233",
+      "significance_digest": "6b2da947eda1c90dbae10ad5c65dd67579675fce5cb08a2b0eca131dd5e9bf72"
+    },
+    {
+      "id": "3bd07d69ff2ba0c2",
+      "headline": "周原原始瓷胎料近于南方瓷石",
+      "source_url": "https://doi.org/10.1111/arcm.70232",
+      "significance_digest": "b05aeae55270f46dadfe2a8699f26f39228662d6e4ecce738293958d7cb374bc"
+    },
+    {
+      "id": "54ee6fc9d5292e38",
+      "headline": "王山桥楚墓金属矿料来源不一",
+      "source_url": "https://doi.org/10.1111/arcm.70214",
+      "significance_digest": "b55fb4c63ffc587ac23360e3e9303d75278fb30c5d73f7a8302fefe522e71c65"
+    },
+    {
+      "id": "b547ef759beb90e4",
+      "headline": "临淄越式剑首镶有铅钡釉陶珠",
+      "source_url": "https://doi.org/10.1111/arcm.70230",
+      "significance_digest": "1d11a828cfce34b4625d058ba790eab8926aff63f734fc503acc159539b19c0d"
+    },
+    {
+      "id": "be7a92cf8c5f95f8",
+      "headline": "湘西西汉铜器的铅料或受国家管控",
+      "source_url": "https://doi.org/10.1111/arcm.70229",
+      "significance_digest": "e818a8a8bcb01ff68d6664d7a6e59d0c8891899199b0715029e25af21c174c99"
+    },
+    {
+      "id": "4d1d57c4ce4afeb2",
+      "headline": "双元村三墓被判断为战国蜀国贵族墓",
+      "source_url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "significance_digest": "32ece2ab680d974115e9d27e0a27c749b2ae0e3b9653d96e7f122fe8a12dee80"
+    },
+    {
+      "id": "d63a0e82e8ee0432",
+      "headline": "邓绥临朝仍守东汉的性别规范",
+      "source_url": "https://doi.org/10.1017/eac.2026.10038",
+      "significance_digest": "12ff7f85ed2e0773c0f693029e87c7acce2496177625949125e987ec4eef0528"
+    },
+    {
+      "id": "ed9d5e5b68ee7e08",
+      "headline": "宋绍祖墓出行俑与卤簿相应",
+      "source_url": "https://cbgc.scol.com.cn/news/8011128",
+      "significance_digest": "75759803949e85ad5c8710e5411c25fb5731f452d638f17397621f6d1f9f12bc"
+    },
+    {
+      "id": "0d3cfcac3f4f367e",
+      "headline": "永安家畜并非同一套饲养制度",
+      "source_url": "https://doi.org/10.1111/arcm.70221",
+      "significance_digest": "50f0e4ea32b874c5c101bcdcee080ff18b5be69ce0252de28962caeec81f76a5"
+    },
+    {
+      "id": "00974845bc72636c",
+      "headline": "长安樱花一路M51出土成组三彩",
+      "source_url": "http://kaogu.cssn.cn/xwzx/kgdt/202609/t20260920_6068139.shtml",
+      "significance_digest": "7d97c5041f2f544fd76efa65d4909e12b7650b4cadfe89ed212ad270d2cf57b7"
+    },
+    {
+      "id": "89edab624b64909e",
+      "headline": "库车M138出土唐尹公墓志",
+      "source_url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "significance_digest": "ad311ba3ff9ee85f6075927eb043634bc2cfff766a9df705c4f8924c22d769cc"
+    },
+    {
+      "id": "4c42efc3f0fd0edd",
+      "headline": "扬州晚唐漆纱的织法与施漆",
+      "source_url": "https://doi.org/10.1111/arcm.70240",
+      "significance_digest": "f1537e8d0f58491651d0e4ab98c573740ea5c6c77ca9c0314fff31fdf03e4195"
+    },
+    {
+      "id": "3735d25b8415c69b",
+      "headline": "西北陆坡一号沉船黄铜接近隆庆钱",
+      "source_url": "https://doi.org/10.1111/arcm.70227",
+      "significance_digest": "daa116c5554e4d29878b0a1071a4c21041a5bdcd06d158bf1581ba243c4f428f"
+    },
+    {
+      "id": "b77ee3d1050c1020",
+      "headline": "天胜观陶器可能与外丹活动有关",
+      "source_url": "https://doi.org/10.1111/arcm.70223",
+      "significance_digest": "6860a5c61a16c4f271fdab50afa38e5738a1ea6ce8400b76b3bd401d69d18ef2"
+    },
+    {
+      "id": "b2f6923ccbd635ff",
+      "headline": "显陵不宜归入乾陵",
+      "source_url": "https://www.wenwu.com/newsinfo/11340222.html",
+      "significance_digest": "98b93dbca5f8afd970d0ef089cd7157e6d57dab2814e3c310d9277c68754740f"
+    },
+    {
+      "id": "3b4f32a343b6d163",
+      "headline": "长白山神庙确认东部廊庑与水井",
+      "source_url": "https://cbgc.scol.com.cn/news/8011128",
+      "significance_digest": "3bcc7f81fede9651cf08e77d87de0f0b6858089c64b92918f6604a129c30a231"
+    },
+    {
+      "id": "ef25453572dca551",
+      "headline": "元代江南住持塔铭中的法统与任职合法性",
+      "source_url": "https://doi.org/10.3390/rel17101183",
+      "significance_digest": "fc38846f73e256a7e8ea27ecf7e4fc0786c904da00d24a300e827f5020f0a4aa"
+    },
+    {
+      "id": "59e04800ed636114",
+      "headline": "新石器聚落先沿可达走廊集中",
+      "source_url": "https://doi.org/10.1038/s44284-026-00511-2",
+      "significance_digest": "14665071ed4884ad4d03dd38b48bfa9899ef035493428283a824c0c749f04c26"
+    },
+    {
+      "id": "97385e54880e5bfb",
+      "headline": "文化史的分类框架与变迁解释应作区分",
+      "source_url": "https://doi.org/10.1016/j.jaa.2026.101808",
+      "significance_digest": "bfe165f312da2d5b721d1d902a13dce757cf5142ea15fcb091536adf9a48a0a9"
+    },
+    {
+      "id": "89708fe0ce387b35",
+      "headline": "中国与欧洲大型中心的发展轨迹比较",
+      "source_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "significance_digest": "0e65a8a18b374f30af938f64b56ee79806bf132cf3b017377760f3a20a2f0bb4"
+    },
+    {
+      "id": "54a779baa28e5a10",
+      "headline": "农业人群的远距离迁徙来得更晚",
+      "source_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "significance_digest": "42d08ef1b61e794437fdeade4cb8d7a0c27d0421ecb59b648a5e6b210862dbbc"
+    },
+    {
+      "id": "bac7f2609425012c",
+      "headline": "早期集中遗骸与丧葬认定的证据边界",
+      "source_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+      "significance_digest": "49a2e9ffaaaa1095c59ee7da08c8c61b41f9e07f32b110613e341a85f595499e"
+    },
+    {
+      "id": "c3a91e0b7d4f22a1",
+      "headline": "从丧葬过程理解墓葬差异",
+      "source_url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+      "significance_digest": "df1170a2fd67b3a75c8d2d2156c424072af83b596106c2cc00bb37a15bea8970"
+    },
+    {
+      "id": "a8e4c1d09b772e55",
+      "headline": "东亚旧石器不是单线演进",
+      "source_url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+      "significance_digest": "6046603cc1ed3eef9a4c7bd78cc0ef22259c105b9d47777e6dfc1e66ddd48c42"
+    },
+    {
+      "id": "b71d0e5c4a883f02",
+      "headline": "刘建国对石家河治水设施的解释",
+      "source_url": "https://news.gmw.cn/2026-10/10/content_39037815.htm",
+      "significance_digest": "e95639bf2b449ed1dfea4863604f8e9db8bdad455fd3d6a57204c6cae4dd0c9d"
+    }
+  ]
+}

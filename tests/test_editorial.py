@@ -11,26 +11,26 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 import discover
 import review
-from editorial import REVIEW_CHECKS, digest, record_digest, prepare_packet, validate_record, validate_issue
+from editorial import REVIEW_CHECKS, blocks, digest, record_digest, prepare_packet, validate_record, validate_issue
 from research_core import assess,norm
 
 class EditorialTests(unittest.TestCase):
     def setUp(self):
         self.text='The authors studied two Western Zhou bronze vessels. Their origin may be local, but a precise workshop attribution remains uncertain.'
         self.item={'id':'test-work','doi':'10.1234/test','title':'Western Zhou bronze vessels','authors':'Fixture Author','journal':'Early China','published_date':'2026-10-16','url':'https://doi.org/10.1234/test','kind':'journal-article','abstract':self.text,'priority':12}
-        self.record={**{k:self.item[k] for k in ('id','doi','title','authors','published_date','url')},'publication':'Early China，2026-10-16','period':'商周','kind':'研究论文','material_type':'期刊论文','source_status':'已核对公开摘要','limits':'仅核对公开摘要，未核对全文。','headline':'西周铜器的来源比较','core':'研究比较了两件西周铜器。\n\n作者认为，它们可能来自本地，具体作坊仍不确定。','evidence':['比较对象为两件西周铜器。'],'generation':{'model':'fixture-model','prompt_version':'fixture-v1','generated_at':'2026-10-16'}}
+        self.record={**{k:self.item[k] for k in ('id','doi','title','authors','published_date','url')},'publication':'Early China，2026-10-16','period':'商周','kind':'研究论文','material_type':'期刊论文','source_status':'已核对公开摘要','limits':'仅核对公开摘要，未核对全文。','headline':'西周铜器的来源比较','core':'研究比较了两件西周铜器。\n\n作者认为，它们可能来自本地，具体作坊仍不确定。','significance':'对西周铜器生产研究而言，本地来源与具体作坊归属需要分别检验。后续可扩大样本，比较本地资源是否由不同作坊使用。','evidence':['比较对象为两件西周铜器。'],'generation':{'model':'fixture-model','prompt_version':'fixture-v1','generated_at':'2026-10-16'}}
         support={'quote':self.text,'url':self.item['url'],'source_hash':digest(norm(self.text))}
-        self.record['claims']=[{'text':text,'supports':[dict(support)]} for text in [self.record['headline']]+self.record['core'].split('\n\n')]
+        self.record['claims']=[{'text':text,'supports':[dict(support)]} for text in blocks(self.record)]
         self.approval={**{k:True for k in REVIEW_CHECKS},'status':'reviewed','reviewer':'fixture-reviewer','reviewer_type':'model','reviewed_at':'2026-10-16','record_digest':record_digest(self.record)}
         self.packet={'sources':[{'url':self.item['url'],'text':self.text}]}
         self.data={'date':'2026-10-16','window':{'start':'2026-09-17','end':'2026-10-16'},'records':[self.item]}
     def test_final_review_accepts_mapped_record(self):
         validate_record(self.record,packet=self.packet,approval=self.approval)
     def test_genuine_quote_does_not_authorize_unreviewed_body(self):
-        bad=copy.deepcopy(self.record);bad['core']='本文凭空宣称发现一位新帝王，在位六十年。';bad['claims']=[{'text':bad['headline'],'supports':bad['claims'][0]['supports']},{'text':bad['core'],'supports':bad['claims'][0]['supports']}]
+        bad=copy.deepcopy(self.record);bad['core']='本文凭空宣称发现一位新帝王，在位六十年。';bad['claims']=[{'text':text,'supports':bad['claims'][0]['supports']} for text in blocks(bad)]
         with self.assertRaisesRegex(ValueError,'复核'):validate_record(bad,packet=self.packet)
     def test_change_after_review_invalidates_approval(self):
-        bad=copy.deepcopy(self.record);bad['core']=bad['core'].replace('可能','确定');bad['claims'][-1]['text']=bad['core'].split('\n\n')[-1]
+        bad=copy.deepcopy(self.record);bad['core']=bad['core'].replace('可能','确定');bad['claims'][2]['text']=bad['core'].split('\n\n')[-1]
         with self.assertRaisesRegex(ValueError,'审后'):validate_record(bad,packet=self.packet,approval=self.approval)
     def test_title_requires_evidence_mapping(self):
         bad=copy.deepcopy(self.record);bad['claims']=bad['claims'][1:]
@@ -77,6 +77,25 @@ class EditorialTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'重复作品'):validate_issue({'id':'2026-10-16','date':'2026-10-16','period':'2026-10-01 — 2026-10-16','records':[one,two],'intro':'两篇比较'},root=Path('/tmp'))
     def test_empty_body_paragraph_rejected(self):
         with self.assertRaisesRegex(ValueError,'空段'):validate_record(dict(self.record,core='中文第一段\n\n\n\n中文末段'))
+    def test_significance_is_required_including_historical_records(self):
+        for value in (None, '', '   '):
+            bad=dict(self.record,significance=value)
+            with self.subTest(value=value),self.assertRaisesRegex(ValueError,'significance'):
+                validate_record(bad,legacy={bad['id']:record_digest(bad)})
+    def test_significance_cannot_skip_evidence_mapping(self):
+        bad=copy.deepcopy(self.record);bad['claims']=bad['claims'][:-1]
+        with self.assertRaisesRegex(ValueError,'完整映射'):validate_record(bad,packet=self.packet,approval=self.approval)
+    def test_significance_change_requires_new_review(self):
+        bad=copy.deepcopy(self.record);bad['significance']='该发现推翻了全部西周铜器生产研究。';bad['claims'][-1]['text']=bad['significance']
+        with self.assertRaisesRegex(ValueError,'审后'):validate_record(bad,packet=self.packet,approval=self.approval)
+    def test_significance_does_not_allow_blank_paragraphs(self):
+        with self.assertRaisesRegex(ValueError,'空段'):validate_record(dict(self.record,significance='中文意义\n\n  '))
+    def test_significance_is_visible_and_cover_note_is_removed(self):
+        issue=build.prepare({'period':'2026-10-01 — 2026-10-16','records':[self.record],'edition_type':'不应显示的副标题','intro':'不应显示的导读'})
+        page=build.ENV.get_template('issue.html').render(issue=issue,edition=build.EDITION,base='',title='本期',page='home')
+        self.assertIn(self.record['significance'],page)
+        self.assertIn('aria-label="研究意义"',page)
+        self.assertNotIn(issue['edition_type'],page);self.assertNotIn(issue['intro'],page)
     def test_cross_year_display_has_years(self):
         self.assertEqual(build.display_span('2025-12-30 — 2026-01-05'),'2025年12月30日—2026年1月5日')
 

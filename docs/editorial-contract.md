@@ -15,13 +15,16 @@
 | id、title、doi、authors | 条目标识、原题名、DOI、完整作者。非DOI材料的doi可为空 |
 | publication、published_date、url | 刊载信息、实际发表日期及精度、出处 |
 | headline、core | 中文题名与正文，段落以两个换行分隔，不留空段 |
+| significance | 必填的研究意义；把发现置于对应领域，说明认识修正、新方向或可检验的新问题。段数按论证需要确定 |
 | period、kind、material_type | 配置内的时代/理论分组与体裁，以及真实材料性质 |
 | source_status、limits | 所取得的材料程度与核对范围。目录不得发布 |
 | evidence | 可公开的简短核对要点；不冒称逐字引文 |
 | generation | model、prompt_version、generated_at，均按实际执行填写 |
-| claims | 顺序对应headline（存在时）及core的每段 |
+| claims | 顺序对应headline（存在时）、core的每段、significance的每段 |
 
 claims的每项包含`text`和`supports`。text必须与对应的完整标题/段落一致。supports的每项包含`quote`、`url`、`source_hash`：quote为12—240个字符的原文片段；url和source_hash分别对应证据包中的来源地址和指纹。每段可引用多个片段。形式匹配不代表该片段一定支持整段，语义关系由复核步骤检查。
+
+研究意义不必复述原文结论。原文支持的事实可作为编者分析的起点，但须在正文中明确哪些是进一步的比较方向或问题；supports对应其事实前提。涉及“修正此前认识”时，还须有此前认识的出处，不能仅凭新材料反推学界过去的观点。补读材料按同样方式加入证据包。程序拒绝缺失或空白的significance；是否具体、有解释力，由最终稿复核负责。
 
 ## 最终稿复核
 
@@ -33,7 +36,7 @@ claims的每项包含`text`和`supports`。text必须与对应的完整标题/�
 | reviewer_type | model或human，如实填写 |
 | reviewer、reviewed_at | 实际复核执行者与日期 |
 | record_digest | 最终记录指纹，由`editorial.record_digest(record)`计算 |
-| claims_supported | 每项断言有来源支持，true才可发布 |
+| claims_supported | 标题、发现正文和研究意义的事实有来源支持；编者推论与其依据相符，true才可发布 |
 | uncertainty_preserved | 推测程度未被升级，true才可发布 |
 | scope_confirmed | 分类及适用范围已核对，true才可发布 |
 | sources_checked | 所列来源已经实际阅读，true才可发布 |

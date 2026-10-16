@@ -85,7 +85,7 @@ def main():
     index=[]
     for issue in formal:
         for r in issue["records"]:
-            index.append({"title":r.get("headline") or r["title"],"original_title":r["title"],"citation":r["authors"]+" · "+r["publication"],"body":re.sub(r"\*\*|__","",r["core"]),"url":f"issues/{issue['id']}.html#{r['id']}"})
+            index.append({"title":r.get("headline") or r["title"],"original_title":r["title"],"citation":r["authors"]+" · "+r["publication"],"body":re.sub(r"\*\*|__","",r["core"]+"\n\n"+r["significance"]),"url":f"issues/{issue['id']}.html#{r['id']}"})
     (OUT/"search-index.json").write_text(json.dumps(index,ensure_ascii=False),encoding="utf-8")
     (OUT/".nojekyll").touch()
     print(f"Generated {len(formal)} formal issues and {len(issues)-len(formal)} samples")

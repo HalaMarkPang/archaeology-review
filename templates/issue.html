@@ -6,11 +6,9 @@
       <span class="line"><span data-line style="--i:0">考古-周刊</span></span>
       <span class="line"><span data-line style="--i:1">{{ issue.display_span }}</span></span>
     </h1>
-    {% if issue.edition_type %}<p class="edition-type">{{ issue.edition_type }}</p>{% endif %}
   </div>
   <img class="hero-ding" src="{{ base }}static/figures/houmuwu.png?v=4" alt="">
 </section>
-{% if issue.intro %}<section class="issue-intro" aria-label="本期导读"><p>{{ issue.intro }}</p></section>{% endif %}
 <section class="facts" aria-label="本期规模">
   <p><strong>{{ issue.records|length }}</strong><span>篇</span></p>
   {% for group in issue.groups %}<p><strong>{{ group.records|length }}</strong><span>{{ group.label }}</span></p>{% endfor %}
@@ -39,12 +37,14 @@
         {% if r.headline %}<p class="citation">{{ r.title }}</p>{% endif %}
         <p class="citation">{{ r.authors }} · {{ r.publication }}</p>
         {% for para in r.core.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
+        <div class="significance" aria-label="研究意义"><p class="significance-label">研究意义</p>{% for para in r.significance.split('\n\n') %}<p>{{ para|emphasize }}</p>{% endfor %}</div>
         {% if r.images %}<div class="plates">{% for im in r.images %}<figure class="plate"><img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}" loading="lazy"><figcaption>{{ im.caption }}</figcaption></figure>{% endfor %}</div>{% endif %}
         <details class="source-note">
           <summary>来源与核验</summary>
           <p>{{ r.material_type }} · {{ r.source_status }}</p>
           <p>{{ r.limits }}</p>
           {% if r.verification_note %}<p>{{ r.verification_note }}</p>{% endif %}
+          {% if r.significance_review and r.significance_review.basis_title %}<p>补充依据：<a href="{{ r.significance_review.basis_url }}" target="_blank" rel="noopener noreferrer">{{ r.significance_review.basis_title }}</a></p>{% endif %}
           {% if r.evidence %}<ul>{% for point in r.evidence %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}
         </details>
         <a class="out-link" href="{{ r.url }}" target="_blank" rel="noopener noreferrer">原文</a>

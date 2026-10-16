@@ -9,7 +9,7 @@ from pathlib import Path
 from research_core import CONFIG, ROOT, STANDALONE_GROUP, canonical_doi, dump_json, norm, safe_public_url, slug
 
 REVIEW_CHECKS = ("claims_supported", "uncertainty_preserved", "scope_confirmed", "sources_checked")
-REQUIRED = ("id", "title", "authors", "publication", "published_date", "source_status", "core", "limits", "url", "period", "kind", "material_type")
+REQUIRED = ("id", "title", "authors", "publication", "published_date", "source_status", "core", "significance", "limits", "url", "period", "kind", "material_type")
 LEVELS = {"已核对公开摘要", "已核对全文", "已核对会议纪要", "已核对新闻披露", "已核对报刊文章"}
 
 def digest(value):
@@ -20,7 +20,7 @@ def record_digest(record):
     return digest({k:v for k,v in record.items() if k != "review"})
 
 def blocks(record):
-    return ([record["headline"]] if record.get("headline") else [])+[x.strip() for x in record["core"].split("\n\n") if x.strip()]
+    return ([record["headline"]] if record.get("headline") else [])+[x.strip() for key in ("core", "significance") for x in record[key].split("\n\n") if x.strip()]
 
 def validate_record(record, *, packet=None, approval=None, root=ROOT, legacy=None):
     for key in REQUIRED:
@@ -38,9 +38,13 @@ def validate_record(record, *, packet=None, approval=None, root=ROOT, legacy=Non
     stamp=record["published_date"]
     if not re.fullmatch(r"\d{4}(?:-\d{2})?(?:-\d{2})?",stamp):raise ValueError("发表日期格式无效")
     date.fromisoformat(stamp+("-01-01" if len(stamp)==4 else "-01" if len(stamp)==7 else ""))
-    if not re.search(r"[\u4e00-\u9fff]",record["core"]):raise ValueError("缺少中文正文")
-    if any(not x.strip() for x in record["core"].split("\n\n")):raise ValueError("正文包含空段")
+    for key in ("core", "significance"):
+        if not re.search(r"[\u4e00-\u9fff]",record[key]):raise ValueError(f"缺少中文正文: {key}")
+        if any(not x.strip() for x in record[key].split("\n\n")):raise ValueError(f"正文包含空段: {key}")
     if not record.get("evidence"):raise ValueError("缺少证据说明")
+    significance_review=record.get("significance_review",{})
+    if not isinstance(significance_review,dict):raise ValueError("研究意义复核记录无效")
+    if significance_review.get("basis_title") and not safe_public_url(significance_review.get("basis_url","")):raise ValueError("研究意义补充来源无效")
     for im in record.get("images",[]):
         src=Path(im.get("src",""))
         if src.is_absolute() or ".." in src.parts or not (root/src).is_file():raise ValueError("图片路径无效")

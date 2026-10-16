@@ -284,13 +284,13 @@ main { width: min(920px, calc(100% - 56px)); margin: 0 auto; padding: 48px 0 96p
 [hidden] { display: none !important; }
 .hero { min-height: 330px; padding-bottom: 32px; }
 .hero-ding { bottom: 24px; right: var(--edge); width: min(200px, 21vw); max-height: 200px; }
-.edition-type { color: var(--muted); margin: 20px 0 0; font-size: 16px; }
-.issue-intro { width: min(1180px, calc(100% - 2 * var(--edge))); margin: 0 auto 32px; max-width: 1180px; }
-.issue-intro p { max-width: 820px; margin: 0; }
 .facts { flex-wrap: wrap; justify-content: flex-start; gap: 32px 48px; padding-top: 36px; padding-bottom: 36px; }
 .record h3 { margin: 8px 0 0; font: 600 32px/1.35 var(--serif); }
 .record, .citation, .source-note { overflow-wrap: anywhere; }
 .record { scroll-margin-top: 88px; }
+.significance { margin-top: 24px; }
+.significance .significance-label { margin: 0 0 6px; color: var(--accent); font-size: 15px; font-weight: 600; }
+.significance p { margin-top: 0; }
 .match-count { flex-basis: 100%; margin: 0; font-size: 15px; color: var(--muted); }
 .source-note { font-size: 15px; color: var(--muted); margin-top: 18px; }
 .source-note summary { cursor: pointer; color: var(--accent); }
@@ -303,7 +303,6 @@ main { width: min(920px, calc(100% - 56px)); margin: 0 auto; padding: 48px 0 96p
 @media (max-width: 720px) {
   .hero { min-height: 270px; }
   .hero-ding { width: 100px; max-height: 115px; right: 20px; bottom: 16px; }
-  .issue-intro { width: calc(100% - 40px); }
   .record h3 { font-size: 26px; }
   .genre + .genre { padding-left: 0; padding-right: 0; }
 }

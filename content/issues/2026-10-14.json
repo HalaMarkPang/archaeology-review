@@ -34,6 +34,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "原地埋藏的价值在于保留石器与动物遗存的空间关系。泥河湾晚更新世研究由此可以检验一个具体问题：狩猎与食物处理是否在同一地点完成，还是已有不同的活动场所。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://cbgc.scol.com.cn/news/8011128",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -64,6 +72,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "“白陶”是外观分类，并不等于同一种制作技术。苏羊的富钙配方表明，跨地区白陶的颜色相似，不能直接作为技术同源或文化传播的证据。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70218",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -94,6 +110,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "修正的是中国地层学方法起点的叙述：记录中有自然层，不等于现场按自然层发掘。西阴村的事后分层整理，不能直接作为1926年已实行自然层发掘的证据。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://cbgc.scol.com.cn/news/8057827",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -124,6 +148,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "环壕、灰坑与墓葬的组合，使豫西北龙山聚落的内部组织获得了具体观察对象：聚落边界圈定什么，埋葬活动与日常活动如何分隔。其价值在于空间关系，不能仅由环壕推定防御或权力集中。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://cbgc.scol.com.cn/news/8011128",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -162,6 +194,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "它支持“选择性吸收”的技术传播模式：接受外来用料原则，并不意味着本地原料和生产工序被整体替换。技术相似因而不能直接作为整套生产传统迁移的证据。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70236",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -192,6 +232,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "祭祀地点之间的差别可能涉及不同的供给关系，而不只是礼仪形式。马匹来源把西周边地社会网络的讨论，落实为“哪些群体为哪些祭祀提供牲畜”的问题。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70225",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -230,6 +278,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "择用少数燃料，为三星堆仪式用火区别于日常用火提供了植物遗存证据。祭祀研究因此能够讨论用火是否遵循特定规范，而不仅依靠器物造型推测信仰。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70233",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -260,6 +316,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "早、中、晚期的成分差异，提示周原原始瓷的供给关系可能发生调整。西周南北交流由此需要按阶段重建，不能只用一条固定路线概括整个西周的器物流通。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70232",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -298,6 +362,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "同一贵族墓中，器类的工艺标准不同，矿料也呈多样性。“楚式用器”因此未必对应统一的生产体系，贵族需求如何连接不同制作与资源网络，成为更具体的冶金社会史问题。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70214",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -336,6 +408,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "这件剑首将铅钡釉陶和中国蓝的已知用途扩展到吴越兵器装饰。它为讨论青铜制作与人工着色材料之间的工艺联系提供了实物依据，说明剑的装饰创新可以来自多种手工业的结合。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70230",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -374,6 +454,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "地方风格与共同铅料并存，说明文化传统的延续可以与原料供应的整合同时发生。研究汉代地方生产是否纳入国家体系，不能只看器物是否“中原化”，还须区分资源流通与行政控制。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70229",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -404,6 +492,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "这组材料为战国蜀地葬制提供了一个被判为低级贵族的比较基点。它有助于区分船棺、木椁及随葬组合中，哪些体现地方共同习俗，哪些可能与身份等级有关。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://www.wenwu.com/newsinfo/11340222.html",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -442,6 +538,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "文章修正了将成功女主一概理解为突破性别规范的解释。邓绥的例子显示，经典学问和遵守规范也可成为女性行使政治权力的资源，女主的能动性须放回具体时代判断。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1017/eac.2026.10038",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -472,6 +576,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "俑群的整体编排，把北魏墓葬表现与卤簿制度的形成联系起来。礼仪变化由此可以从前导、主车、后殿的组织关系考察，而不只依据单类车马俑的出现与否。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://cbgc.scol.com.cn/news/8011128",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -510,6 +622,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "不同家畜的供给差异，限定了以粟作概括东北畜牧的解释。猪食性的跨期延续还提示，政治格局变化未必立即改写地方日常生产方式。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70221",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -560,6 +680,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "八类器物各成一对，使唐三彩能够作为一套葬仪配置研究。成对陈设是否具有稳定的礼仪含义，由此成为可以比较的问题；单件器物的造型分析无法替代这种组合关系。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "http://kaogu.cssn.cn/xwzx/kgdt/202609/t20260920_6068139.shtml",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -590,6 +718,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "尹公卒于791年的记载与龟兹城外墓址相结合，使唐中后期安西行政史获得了可定位的考古材料。墓志同时为新疆南部砖室墓的形制分期提供了纪年参照。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://www.wenwu.com/newsinfo/11340222.html",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -628,6 +764,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "漆纱把唐代服饰史中的材料名称，落实为丝织、漆料与添加物共同组成的制作技术。幞头的形制研究由此可与材料性能联系起来，解释柔软织物如何获得所需的成形和干燥条件。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70240",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -666,6 +810,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "沉船黄铜与隆庆钱的合金相似性，为海贸器物与国内金属生产体系建立了比较线索。它提出的问题是商品制造与铸币是否共享配方或原料渠道，成分相似本身尚不能回答这一点，也不能单独用于断代。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70227",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -704,6 +856,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "若用途判断成立，天胜观表明宋元制度化道观仍保留具体的外丹操作传统。器形与残留物的对应，也使炼丹器具能够按实际加热和反应功能重新识别。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1111/arcm.70223",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -734,6 +894,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "显陵与乾陵若属独立陵园，辽陵布局就不能再按一个整体解释。王陵追尊、帝后附葬与建筑改建的关系，成为理解皇室身份变化如何塑造陵制的关键。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://www.wenwu.com/newsinfo/11340222.html",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -764,6 +932,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "廊庑与供排水设施为长白山神庙的范围和运行方式增加了空间证据。神庙由此可作为容纳祭祀、通行与维护的建筑群研究，建筑形制之外的日常运行也进入了讨论。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://cbgc.scol.com.cn/news/8011128",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -802,6 +978,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "塔铭的协作撰写表明，法统并非被动记录的师承事实，也是在任职竞争中确立合法性的叙述。元代佛教社会史因而需要同时研究铭文记载了什么，以及弟子、文人与官府为何认可这种记载。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.3390/rel17101183",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -840,6 +1024,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "交通便利并非聚落成长的恒定优势：公元前2500年后，聚落仍然集中，与陆路可达性的关联却减弱了。城市形成研究因而需要解释，社会复杂化过程中哪些力量重新安排了区位选择。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://doi.org/10.1038/s44284-026-00511-2",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -855,21 +1047,30 @@
       "headline": "文化史的分类框架与变迁解释应作区分",
       "core": "文章针对将文化史考古视为过时范式的批评，区分文化史的描述、分类与分期实践，以及特定的文化变迁解释。\n\nBetts、Hrynick与Anderson认为，文化史可作为先于具体解释理论的框架。其论证将文化史的基础实践与具体的解释范式分开讨论。",
       "evidence": [
-        "Culture history endures, providing the structural framework for archaeological practice worldwide.",
-        "Its core tenets—description, systematics, classification, and periodization—are logically indispensable prior to theoretical interpretation."
+        "作者会议摘要将描述、分类和分期与特定文化变迁理论分开，称其为先于解释理论的框架。",
+        "会议摘要回应文化同质性、迁徙传播解释及文化与生物群体对应等批评；不将会议摘要冒称期刊论文摘要。"
       ],
       "limits": "原稿列2026年9月18日在线首发；本次题录仅见12月卷期，尚未复验在线首发日期及摘要，保留为历史记录。",
       "id": "97385e54880e5bfb",
       "topic": "考古学理论",
       "source_status": "已核对公开摘要",
       "material_type": "期刊论文",
-      "verification_note": "保留原稿所列摘要依据；本次未能重新取得摘要或全文，不提升核验程度。",
+      "verification_note": "本次核对期刊题录及同三位作者的2026年会议报告摘要；后者支持分类框架与解释理论之区分，但不能替代期刊论文全文。",
       "generation": {
         "original_author_type": "model",
         "original_model_record": "原稿模型的逐条运行记录未保存",
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "作者试图保留文化史的分类、分期功能，同时解除它与规范—传播论解释的绑定。这意味着，对文化同质性或迁徙解释的批评，并不自动否定文化序列作为比较基础的价值。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://canadianarchaeology.com/sites/default/files/annual-meeting/2026/CAA-ACA_ASA_ConferenceProgram_digitalfinal_v2_small.pdf",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。",
+        "basis_title": "同三位作者的加拿大考古学会会议报告摘要（2026年会议手册，第70页）"
       }
     },
     {
@@ -900,6 +1101,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "中心频繁迁移不宜直接视为城市发展的不足。中国与欧洲的比较，应解释中心为何能够重建、哪些政治和礼仪联系跨越迁移而延续，而非以城市长期定址作为唯一尺度。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -930,6 +1139,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "农业出现与大规模农民迁徙之间存在时间差，早期作物遗存不能直接证明移民到来。农业传播、人口扩张与语言更替因此需要分别建立年代，再判断它们是否由同一过程推动。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -960,6 +1177,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "更早的遗体集中，不等于更早的丧葬仪式。区分遗体处置与持续纪念，改变了“最早丧葬”的认定标准，也限定了用集中遗骸证明古人类象征行为的解释。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://archaeology.pku.edu.cn/info/1043/43895.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -990,6 +1215,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "墓葬差异不能直接换算为生前等级：同样的随葬差别，也可能来自年龄、亲属关系或葬仪选择。社会分层研究须先区分这些机制，才能判断财富差异究竟说明什么。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -1020,6 +1253,14 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "勒瓦娄哇、基纳等技术标签不能直接充当人群标签。把技术过程与年代背景分开核对，才可能区分独立趋同与知识传播，进而判断东亚旧石器变化是否涉及人群迁徙。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://archaeology.pku.edu.cn/info/1043/43875.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     },
     {
@@ -1050,10 +1291,19 @@
         "revised_by": "Codex",
         "revised_at": "2026-10-16",
         "policy_version": "2026-10-16"
+      },
+      "significance": "若部分“城垣”应改释为治水设施，以围垣规模衡量石家河防御与权力的解释就需调整。集体用水如何组织生产和居住，将成为认识当地社会复杂化的另一条路径。",
+      "significance_review": {
+        "reviewer": "Codex",
+        "reviewer_type": "model",
+        "reviewed_at": "2026-10-16",
+        "basis_url": "https://news.gmw.cn/2026-10/10/content_39037815.htm",
+        "scope": "区分材料支持的认识增量与编者提出的问题；保留原有材料核验限制。"
       }
     }
   ],
   "edition_type": "首期回溯 · 2026年",
   "legacy_migration": true,
-  "correction_date": "2026-10-16"
+  "correction_date": "2026-10-16",
+  "significance_revision_date": "2026-10-16"
 }
