@@ -7,6 +7,7 @@ import re
 from datetime import date
 from pathlib import Path
 from research_core import CONFIG, ROOT, STANDALONE_GROUP, canonical_doi, dump_json, norm, safe_public_url, slug
+from publication_window import publication_membership
 
 REVIEW_CHECKS = ("claims_supported", "uncertainty_preserved", "scope_confirmed", "sources_checked")
 REQUIRED = ("id", "title", "authors", "publication", "published_date", "source_status", "core", "significance", "limits", "url", "period", "kind", "material_type")
@@ -73,6 +74,8 @@ def validate_issue(issue, *, root=ROOT):
     date.fromisoformat(issue["id"]);date.fromisoformat(issue["date"])
     start,end=re.split(r"\s*[—–]\s*",issue["period"])
     if date.fromisoformat(start)>date.fromisoformat(end):raise ValueError("刊期窗口倒置")
+    window=issue.get("source_window",{})
+    if window and (window.get("start")!=start or window.get("end")!=end):raise ValueError("刊期日期与发表窗口不一致")
     if not issue["records"]:raise ValueError("正式刊期不能没有正文")
     legacy=None
     if issue.get("legacy_migration"):
@@ -83,6 +86,7 @@ def validate_issue(issue, *, root=ROOT):
     ids=set();titles=set();dois=set();per={}
     for r in issue["records"]:
         validate_record(r,root=root,legacy=legacy)
+        if window and publication_membership(r,window)!="inside":raise ValueError("实际发表时间未确认在本期窗口内")
         title=slug(r["title"]);doi=canonical_doi(r.get("doi",""))
         if r["id"] in ids or title in titles or (doi and doi in dois):raise ValueError("同一期存在重复作品")
         ids.add(r["id"]);titles.add(title)

@@ -4,6 +4,8 @@
 
 完整证据包仅用于本地撰写和复核，不提交到公开仓库。
 
+新刊期以证据包window中的start_at、end_at为发表时间范围：起点之后至截止时刻及以前，使用北京时间。只有日期且处于窗口边界的候选，须补核实际时刻；数据库收录时间不得替代。导入后source_window保留精确范围，构建网页时再次检查。历史刊期保留原有日期范围。
+
 ## 撰写文件
 
 `.cache/drafts.json`包含`intro`和`records`。每条必须保留candidate的id、title、doi、url和published_date；书目需要更正时先更正采集依据，不能在稿件中无说明替换。
@@ -14,6 +16,7 @@
 |---|---|
 | id、title、doi、authors | 条目标识、原题名、DOI、完整作者。非DOI材料的doi可为空 |
 | publication、published_date、url | 刊载信息、实际发表日期及精度、出处 |
+| published_at、published_at_source | 起止两个周五须补充带时区的实际发表时刻与原始来源地址，例如2026-10-23T11:30:00+08:00。中间各日只标日期的材料可不填 |
 | headline、core | 中文题名与正文，段落以两个换行分隔，不留空段 |
 | significance | 必填评述。材料研究显示为“研究意义”；理论组显示为“对研究实践的启示”，说明观点对实际工作及解释方法的影响。篇幅按问题确定，不统一字数或句数 |
 | period、kind、material_type | 配置内的时代/理论分组与体裁，以及真实材料性质 |

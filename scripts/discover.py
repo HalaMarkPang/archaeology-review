@@ -11,6 +11,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 from research_core import CONFIG,ROOT,STANDALONE_GROUP,assess,canonical_doi,dump_json,reviewed_keys,is_duplicate,norm,safe_public_url,slug,stable_id,today_local
+from publication_window import weekly_window, publication_membership
 SESSION=requests.Session()
 SESSION.headers.update({"User-Agent":"ArchaeologyResearchWeekly/1.0 (scholarly bibliography metadata)","Accept":"application/json, text/html;q=0.8"})
 COVERAGE=[]
@@ -367,11 +368,15 @@ def dedupe(items,published_keys,start,end):
     return sorted(papers,key=lambda x:(-x.get("priority",0),not bool(x.get("abstract")),x["title"]))+sorted(leads.values(),key=lambda x:-x.get("priority",0))
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument("--date",default=today_local())
+    p.add_argument("--date",help="原定周五的日期；补跑时保持原刊期窗口")
+    p.add_argument("--show-window",action="store_true",help="仅显示本期窗口，不检索或写文件")
     p.add_argument("--offline-fixture",help="Synthetic fixture, never for live publication")
     args=p.parse_args()
-    end=date.fromisoformat(args.date)
-    start=end-timedelta(days=CONFIG["lookback_days"]-1)
+    window=weekly_window(args.date)
+    if args.show_window:
+        print(json.dumps(window,ensure_ascii=False,indent=2));return
+    issue_date=window["end"]
+    start=date.fromisoformat(window["start"]);end=date.fromisoformat(window["end"])
     warnings=[];COVERAGE.clear()
     if args.offline_fixture:items=json.loads(Path(args.offline_fixture).read_text(encoding="utf-8"))
     else:
@@ -379,13 +384,14 @@ def main():
         items=collect_crossref(start,end,warnings)+collect_journal_watch(start,end,warnings)+collect_openalex(start,end,warnings)+collect_pinned_dois(warnings)+collect_wenwu_issues(start,end,warnings)+collect_kaogu_indexes(start,end,warnings)+collect_official_leads(warnings)+wechat_leads
     if args.offline_fixture:wechat_checked=[]
     records=dedupe(items,reviewed_keys(),start,end)
-    dump_json(ROOT/".cache/discovery.json",{"date":args.date,"window":{"start":str(start),"end":str(end)},"records":records,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture)})
+    for record in records:record["window_status"]=publication_membership(record,window)
+    dump_json(ROOT/".cache/discovery.json",{"date":issue_date,"window":window,"records":records,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture)})
     public=[]
     for r in records:
-        x={k:r.get(k) for k in ("id","doi","title","authors","journal","published_date","url","kind","provider","priority","period_guess","field")}
+        x={k:r.get(k) for k in ("id","doi","title","authors","journal","published_date","published_at","published_at_source","window_status","url","kind","provider","priority","period_guess","field")}
         x["watched_journal"]=bool(r.get("watched_journal"))
         x["abstract_available"]=bool(r.get("abstract"));public.append(x)
-    dump_json(ROOT/"content/candidates"/f"{args.date}.json",{"date":args.date,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture),"note":"候选记录为题录，尚非已发表结论。出版社目录供核查。公众号未核完，表示该号检索尚未完成。"})
+    dump_json(ROOT/"content/candidates"/f"{issue_date}.json",{"date":issue_date,"window":window,"records":public,"warnings":warnings,"wechat_accounts":wechat_checked,"coverage":COVERAGE,"synthetic":bool(args.offline_fixture),"note":"候选记录为题录，尚非已发表结论。起止日无发表时刻者待核对。出版社目录供核查。公众号未核完，表示该号检索尚未完成。"})
     print(f"候选 {len(records)} 条；有摘要 {sum(bool(x.get('abstract')) for x in records)} 条；警告 {len(warnings)} 条")
     for w in warnings:print("WARN:",w,file=sys.stderr)
 if __name__=="__main__":main()

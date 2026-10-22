@@ -1,5 +1,5 @@
 {
-  "lookback_days": 30,
+  "publication_window": "between_weekly_cutoffs",
   "schedule": {
     "timezone": "Asia/Shanghai",
     "cron": "0 12 * * 5"
