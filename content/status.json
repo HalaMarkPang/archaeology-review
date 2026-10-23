@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "state": "published",
+  "state": "awaiting_editorial",
   "mode": "reviewed_drafts",
   "source_window": {
     "start": "2026-10-16",
@@ -11,9 +11,9 @@
     "start_exclusive": true,
     "end_inclusive": true
   },
-  "candidates": 4061,
-  "qualified_recommendations": 3,
-  "published": 3,
+  "candidates": 4054,
+  "qualified_recommendations": 0,
+  "published": 0,
   "warnings": [
     "公众号「北京大学考古文博学院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「东南文化」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
@@ -74,8 +74,7 @@
     "文物出版社：覆盖尚未核完（no_verified_next_link）",
     "文物出版社资讯：覆盖尚未核完（no_verified_next_link）",
     "中国考古网学术论文：覆盖尚未核完（no_verified_next_link）",
-    "北京大学考古文博学院：覆盖尚未核完（page_budget）",
-    "补核两期图像目录12篇；仅有题录，未进入正文。起止周五只有日期的候选继续待核对。"
+    "北京大学考古文博学院：覆盖尚未核完（page_budget）"
   ],
   "coverage": [
     {
@@ -234,7 +233,7 @@
       "source": "Crossref",
       "query": "考古与文物",
       "pages": 2,
-      "retrieved": 130,
+      "retrieved": 134,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -266,7 +265,7 @@
       "source": "Crossref",
       "query": "Early China",
       "pages": 1,
-      "retrieved": 61,
+      "retrieved": 69,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -274,7 +273,7 @@
       "source": "Crossref",
       "query": "Antiquity",
       "pages": 1,
-      "retrieved": 11,
+      "retrieved": 12,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -314,7 +313,7 @@
       "source": "Crossref",
       "query": "Journal of Archaeological Method and Theory",
       "pages": 3,
-      "retrieved": 227,
+      "retrieved": 240,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -346,7 +345,7 @@
       "source": "Crossref",
       "query": "World Archaeology",
       "pages": 4,
-      "retrieved": 371,
+      "retrieved": 378,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -354,7 +353,7 @@
       "source": "Crossref",
       "query": "Cambridge Archaeological Journal",
       "pages": 1,
-      "retrieved": 19,
+      "retrieved": 21,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -370,7 +369,7 @@
       "source": "Crossref",
       "query": "敦煌研究",
       "pages": 1,
-      "retrieved": 7,
+      "retrieved": 8,
       "status": "complete",
       "reason": "response_exhausted"
     },
@@ -427,21 +426,9 @@
       "pages": 5,
       "status": "partial",
       "reason": "page_budget"
-    },
-    {
-      "source": "中国考古网图像目录补核",
-      "pages": 2,
-      "status": "partial",
-      "reason": "已核读两期目录并登记12篇；尚未取得单篇摘要或全文，《考古》边界日时刻未确认"
-    },
-    {
-      "source": "本任务补充原始来源核对",
-      "pages": 4,
-      "status": "complete",
-      "reason": "已核对两篇Antiquity全文及两篇中新社原始报道；只表示这4篇的核读已完成"
     }
   ],
-  "message": "已发布完成复核的新刊期。",
+  "message": "候选材料已登记，待取得原文、撰写或复核。",
   "latest_issue": {
     "id": "2026-10-23",
     "records": 3,
