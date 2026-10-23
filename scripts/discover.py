@@ -92,7 +92,9 @@ def api_pages(url,params,provider,label,warnings):
 def collect_crossref(start,end,warnings):
     collected=[]
     for term in search_queries():
-        params={"query.bibliographic":term,"filter":f"from-pub-date:{start},until-pub-date:{end}","sort":"published","order":"desc","select":SELECT}
+        # Crossref rejects publication-date sorting with cursor pagination.
+        # The date filter fixes the window; consume the cursor in its default order.
+        params={"query.bibliographic":term,"filter":f"from-pub-date:{start},until-pub-date:{end}","select":SELECT}
         collected.extend(x for item in api_pages("https://api.crossref.org/works",params,"Crossref",term,warnings) if (x:=from_crossref(item)))
     return collected
 

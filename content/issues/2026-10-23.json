@@ -1,0 +1,259 @@
+{
+  "id": "2026-10-23",
+  "date": "2026-10-23",
+  "issue_no": "考古-周刊 · 2026-10-23",
+  "period": "2026-10-16 — 2026-10-23",
+  "source_window": {
+    "start": "2026-10-16",
+    "end": "2026-10-23",
+    "start_at": "2026-10-16T12:00:00+08:00",
+    "end_at": "2026-10-23T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "start_exclusive": true,
+    "end_inclusive": true
+  },
+  "intro": "本期编选石峁报告述评、反山建筑复原与西阴材料研究，说明主要发现、作者解释及其对具体研究问题的意义。",
+  "is_sample": false,
+  "records": [
+    {
+      "id": "46be2d5932ef4c7e",
+      "title": "Excavations of the city of Shimao and its monuments",
+      "doi": "10.15184/aqy.2026.10458",
+      "authors": "Jessica Rawson",
+      "published_date": "2026-10-21",
+      "url": "https://doi.org/10.15184/aqy.2026.10458",
+      "publication": "Antiquity，2026年10月21日",
+      "headline": "石峁报告述评：北方城市怎样形成",
+      "core": "Jessica Rawson评介新出版的《石峁》前三卷，分别涉及全城调查、外城东门发掘和多学科研究。她强调，石峁并非单纯的“石头城”：皇城台以天然山体为核心，向外扩筑夯土台地，再以石墙护面；城墙也结合黄土、石料与崖壁设置。城门、居址群和墓地的空间关系，使这一约4平方公里的聚落可以作为有内部组织的城市来研究。\n\n作者将本地传统与外部联系放在同一条解释中。陶器、年代和古DNA资料支持石峁与黄土高原既有人群的联系；牛羊饲养以及东门部分结构的跨区域比较，则提示来自更远地区的影响。她转述报告中关于东门可能借鉴欧亚西部建筑因素的观点，同时明确传播路线仍缺证据。城门的相似构件因而是一项待检验的联系线索，尚不足以确定建筑技术的来源。",
+      "significance": "石峁使中国早期城市的比较必须纳入黄土高原的本地发展：大型礼仪中心与周边居址的组合，可以通过当地的黄土、石料和工程经验建成。依据述评提出的联系，可进一步把石峁与李家崖时期遗址的台地、居址和生计资料并置，判断北方中心延续了哪些组织方式，又吸收了哪些外来资源。这有助于讨论各地区如何参与早期城市形成；建筑形制的沿用与社会组织的延续，则仍须分别验证。",
+      "period": "新石器",
+      "kind": "研究论文",
+      "material_type": "发掘报告述评",
+      "source_status": "已核对全文",
+      "limits": "已核读Rawson述评全文，未将其等同于三卷发掘报告的逐页核验。欧亚西部建筑联系及人口、生计变化的解释保留作者的推测程度。",
+      "evidence": [
+        "出版社标注在线发表日期为2026年10月21日。",
+        "前三卷依次为调查、外城东门发掘与多学科研究；述评指出皇城台详细材料仍待后续出版。",
+        "意义部分的后续比较问题为编者据述评提出的研究方向。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-16/editorial-contract/weekly-2026-10-23",
+        "generated_at": "2026-10-23T12:16:10+08:00"
+      },
+      "claims": [
+        {
+          "text": "石峁报告述评：北方城市怎样形成",
+          "supports": [
+            {
+              "quote": "city of Shimao",
+              "url": "https://www.cambridge.org/core/journals/antiquity/article/excavations-of-the-city-of-shimao-and-its-monuments/AD1050E0DB5579F9DE2835ED5489752A",
+              "source_hash": "fb49bc466048016755047a49ef7c06e9ce39c7e9fef23b6f709a50ae916494a2"
+            }
+          ]
+        },
+        {
+          "text": "Jessica Rawson评介新出版的《石峁》前三卷，分别涉及全城调查、外城东门发掘和多学科研究。她强调，石峁并非单纯的“石头城”：皇城台以天然山体为核心，向外扩筑夯土台地，再以石墙护面；城墙也结合黄土、石料与崖壁设置。城门、居址群和墓地的空间关系，使这一约4平方公里的聚落可以作为有内部组织的城市来研究。",
+          "supports": [
+            {
+              "quote": "rammed loess combined with innovative",
+              "url": "https://www.cambridge.org/core/journals/antiquity/article/excavations-of-the-city-of-shimao-and-its-monuments/AD1050E0DB5579F9DE2835ED5489752A",
+              "source_hash": "fb49bc466048016755047a49ef7c06e9ce39c7e9fef23b6f709a50ae916494a2"
+            }
+          ]
+        },
+        {
+          "text": "作者将本地传统与外部联系放在同一条解释中。陶器、年代和古DNA资料支持石峁与黄土高原既有人群的联系；牛羊饲养以及东门部分结构的跨区域比较，则提示来自更远地区的影响。她转述报告中关于东门可能借鉴欧亚西部建筑因素的观点，同时明确传播路线仍缺证据。城门的相似构件因而是一项待检验的联系线索，尚不足以确定建筑技术的来源。",
+          "supports": [
+            {
+              "quote": "while awaiting more evidence of routes",
+              "url": "https://www.cambridge.org/core/journals/antiquity/article/excavations-of-the-city-of-shimao-and-its-monuments/AD1050E0DB5579F9DE2835ED5489752A",
+              "source_hash": "fb49bc466048016755047a49ef7c06e9ce39c7e9fef23b6f709a50ae916494a2"
+            }
+          ]
+        },
+        {
+          "text": "石峁使中国早期城市的比较必须纳入黄土高原的本地发展：大型礼仪中心与周边居址的组合，可以通过当地的黄土、石料和工程经验建成。依据述评提出的联系，可进一步把石峁与李家崖时期遗址的台地、居址和生计资料并置，判断北方中心延续了哪些组织方式，又吸收了哪些外来资源。这有助于讨论各地区如何参与早期城市形成；建筑形制的沿用与社会组织的延续，则仍须分别验证。",
+          "supports": [
+            {
+              "quote": "contributions to the rise",
+              "url": "https://www.cambridge.org/core/journals/antiquity/article/excavations-of-the-city-of-shimao-and-its-monuments/AD1050E0DB5579F9DE2835ED5489752A",
+              "source_hash": "fb49bc466048016755047a49ef7c06e9ce39c7e9fef23b6f709a50ae916494a2"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务）",
+        "reviewed_at": "2026-10-23",
+        "record_digest": "2a125a805b4cf197aa2effd671cd09ace7afdaadea905d3502ebffe00a0eda37",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "a6fb27863bc376eb",
+      "title": "良渚考古新进展：王陵东侧三座五千年前建筑完成复原",
+      "doi": "",
+      "authors": "林波",
+      "published_date": "2026-10-18",
+      "url": "https://www.chinanews.com/sh/2026/10-18/10716828.shtml",
+      "publication": "中国新闻网，2026年10月18日",
+      "headline": "反山东侧建筑复原：“享殿”解释仍待验证",
+      "core": "中新社报道，良渚考古队依据反山墓地东侧的120个柱洞，将建筑遗迹划分为F1、F2、F3三座。椭圆形主体建筑F1东西长25.2米、南北宽16米，外围有廊，地板架高；柱洞与红烧土痕迹还显示，廊道将它与圆形建筑F2相连，F3则为体量较小的方形建筑。平面柱网主要依据发掘遗存，上部梁架参考同期陶屋模型和陶器房屋纹样复原，两者的证据直接程度不同。\n\n王宁远据建筑紧邻高等级墓地的位置、形制和体量，提出F1可能是供祭祀使用的“享殿”，院墙与建筑群或与早期陵寝制度有关。他同时说明，这还是假说。是否存在灶台、生活垃圾等居住活动痕迹，将影响建筑功能的判断；复原出建筑形态并不等于已经确认其用途。",
+      "significance": "这组建筑把反山的研究对象从墓葬与随葬玉器，扩展到可能长期使用的仪式空间。它使两个问题可以具体讨论：下葬之后是否仍有持续祭祀，墓地、廊道与建筑如何安排参与者的活动。如果功能得到证实，良渚礼制的研究就能把墓葬等级与仪式设施联系起来；目前这一联系仍是待检验的解释。",
+      "period": "新石器",
+      "kind": "发掘动态",
+      "material_type": "考古新进展的新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "依据中新社对考古队的现场采访，未取得正式发掘报告。柱网与上部建筑复原区分表述；“享殿”和陵寝制度均保留为待验证解释。",
+      "evidence": [
+        "中新社原始报道发表于2026年10月18日。",
+        "120个柱洞及F1—F3划分见现场披露；上部梁架为参考同类材料的复原。",
+        "意义部分提出的后续问题是基于建筑与墓地关系的编者分析。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-16/editorial-contract/weekly-2026-10-23",
+        "generated_at": "2026-10-23T12:16:10+08:00"
+      },
+      "claims": [
+        {
+          "text": "反山东侧建筑复原：“享殿”解释仍待验证",
+          "supports": [
+            {
+              "quote": "考古队制作的反山三座建筑复原效果图",
+              "url": "https://www.chinanews.com/sh/2026/10-18/10716828.shtml",
+              "source_hash": "b4301810394df2aaa93ca45c49db8c8570f24568b9cae1dd17c4edcd902e45b6"
+            }
+          ]
+        },
+        {
+          "text": "中新社报道，良渚考古队依据反山墓地东侧的120个柱洞，将建筑遗迹划分为F1、F2、F3三座。椭圆形主体建筑F1东西长25.2米、南北宽16米，外围有廊，地板架高；柱洞与红烧土痕迹还显示，廊道将它与圆形建筑F2相连，F3则为体量较小的方形建筑。平面柱网主要依据发掘遗存，上部梁架参考同期陶屋模型和陶器房屋纹样复原，两者的证据直接程度不同。",
+          "supports": [
+            {
+              "quote": "是土层中清理出的120个柱洞",
+              "url": "https://www.chinanews.com/sh/2026/10-18/10716828.shtml",
+              "source_hash": "b4301810394df2aaa93ca45c49db8c8570f24568b9cae1dd17c4edcd902e45b6"
+            }
+          ]
+        },
+        {
+          "text": "王宁远据建筑紧邻高等级墓地的位置、形制和体量，提出F1可能是供祭祀使用的“享殿”，院墙与建筑群或与早期陵寝制度有关。他同时说明，这还是假说。是否存在灶台、生活垃圾等居住活动痕迹，将影响建筑功能的判断；复原出建筑形态并不等于已经确认其用途。",
+          "supports": [
+            {
+              "quote": "上述推测目前系考古假说，并非定论",
+              "url": "https://www.chinanews.com/sh/2026/10-18/10716828.shtml",
+              "source_hash": "b4301810394df2aaa93ca45c49db8c8570f24568b9cae1dd17c4edcd902e45b6"
+            }
+          ]
+        },
+        {
+          "text": "这组建筑把反山的研究对象从墓葬与随葬玉器，扩展到可能长期使用的仪式空间。它使两个问题可以具体讨论：下葬之后是否仍有持续祭祀，墓地、廊道与建筑如何安排参与者的活动。如果功能得到证实，良渚礼制的研究就能把墓葬等级与仪式设施联系起来；目前这一联系仍是待检验的解释。",
+          "supports": [
+            {
+              "quote": "为探寻中国早期陵寝制度提供重要线索",
+              "url": "https://www.chinanews.com/sh/2026/10-18/10716828.shtml",
+              "source_hash": "b4301810394df2aaa93ca45c49db8c8570f24568b9cae1dd17c4edcd902e45b6"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务）",
+        "reviewed_at": "2026-10-23",
+        "record_digest": "69fe381fe64534f5d4f0eb548d3212a0c84cb299b77eba28eb1b5d1a0dd9a869",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "a98abad3ec3f14c7",
+      "title": "聚焦山西夏县西阴村遗址发掘百年 中国考古学大会专题交流研讨",
+      "doi": "",
+      "authors": "孙自法",
+      "published_date": "2026-10-19",
+      "url": "https://www.chinanews.com/cul/2026/10-19/10717458.shtml",
+      "publication": "中国新闻网，2026年10月19日",
+      "headline": "西阴新材料：颜料加工与动物资源利用",
+      "core": "第五届中国考古学大会西阴专题公布了一批材料研究进展。中新社报道，张登毅团队在调色盘、研磨器等遗物上识别出赤铁矿红色颜料，并辨认出研磨盘、研磨石、研磨棒和研磨球等加工工具；同位素组分指向运城盆地的矿源特征。宋国定团队介绍，石器多出于壕沟和灰坑，尚未发现明确居住区与专门石器加工场所，因此以家庭为基本单位的生产组织仍是推测。\n\n动物遗存提供了另一组生计资料。赵静芳团队报告，2025年发掘出土动物骨骼6000余件，目前可鉴定标本3350件，包含超过29种动物。猪在可鉴定标本中最多，同时存在兔、鹿科动物、雉科和狗等。整理尚未完成，骨骼件数反映的是现阶段可辨认遗存的构成，不能直接换算成各类肉食的消费比例。",
+      "significance": "颜料、加工工具与矿源线索相互衔接，使西阴彩陶研究能够追查原料从哪里来、在遗址中怎样加工，进而讨论制作是否集中于特定作业区。动物资料则为农业聚落如何兼用家畜与野生资源提供了比较基础。两类遗存分别指向手工业组织与肉食获取；它们同具体居址和活动区的对应关系，将决定家庭生产与聚落分工等解释能否成立。",
+      "period": "新石器",
+      "kind": "会议纪要",
+      "material_type": "会议研究进展的新闻报道",
+      "source_status": "已核对新闻披露",
+      "limits": "已核读中新社会议报道，未取得各报告的论文全文或完整数据表。本条只编述新公布的材料研究，不重复首期“发掘方法视域下的西阴村考古”。",
+      "evidence": [
+        "原始报道发表于2026年10月19日，而转载页日期为10月20日，采用原始日期。",
+        "颜料及矿源结论分别归于张登毅团队，生产组织判断归于宋国定团队。",
+        "3350件为报道所列可鉴定标本数，研究仍在整理阶段。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-16/editorial-contract/weekly-2026-10-23",
+        "generated_at": "2026-10-23T12:16:10+08:00"
+      },
+      "claims": [
+        {
+          "text": "西阴新材料：颜料加工与动物资源利用",
+          "supports": [
+            {
+              "quote": "西阴遗址出土赭石颜料及相关遗物初步研究",
+              "url": "https://www.chinanews.com/cul/2026/10-19/10717458.shtml",
+              "source_hash": "540c0dca128d06bdc049cf805931c8271260a15ecb33c522cbb5b43a8e851d27"
+            }
+          ]
+        },
+        {
+          "text": "第五届中国考古学大会西阴专题公布了一批材料研究进展。中新社报道，张登毅团队在调色盘、研磨器等遗物上识别出赤铁矿红色颜料，并辨认出研磨盘、研磨石、研磨棒和研磨球等加工工具；同位素组分指向运城盆地的矿源特征。宋国定团队介绍，石器多出于壕沟和灰坑，尚未发现明确居住区与专门石器加工场所，因此以家庭为基本单位的生产组织仍是推测。",
+          "supports": [
+            {
+              "quote": "红色颜料呈色矿物为赤铁矿即赭石",
+              "url": "https://www.chinanews.com/cul/2026/10-19/10717458.shtml",
+              "source_hash": "540c0dca128d06bdc049cf805931c8271260a15ecb33c522cbb5b43a8e851d27"
+            }
+          ]
+        },
+        {
+          "text": "动物遗存提供了另一组生计资料。赵静芳团队报告，2025年发掘出土动物骨骼6000余件，目前可鉴定标本3350件，包含超过29种动物。猪在可鉴定标本中最多，同时存在兔、鹿科动物、雉科和狗等。整理尚未完成，骨骼件数反映的是现阶段可辨认遗存的构成，不能直接换算成各类肉食的消费比例。",
+          "supports": [
+            {
+              "quote": "目前可鉴定标本3350件",
+              "url": "https://www.chinanews.com/cul/2026/10-19/10717458.shtml",
+              "source_hash": "540c0dca128d06bdc049cf805931c8271260a15ecb33c522cbb5b43a8e851d27"
+            }
+          ]
+        },
+        {
+          "text": "颜料、加工工具与矿源线索相互衔接，使西阴彩陶研究能够追查原料从哪里来、在遗址中怎样加工，进而讨论制作是否集中于特定作业区。动物资料则为农业聚落如何兼用家畜与野生资源提供了比较基础。两类遗存分别指向手工业组织与肉食获取；它们同具体居址和活动区的对应关系，将决定家庭生产与聚落分工等解释能否成立。",
+          "supports": [
+            {
+              "quote": "为厘清仰韶文化晋南地区矿物颜料的获取",
+              "url": "https://www.chinanews.com/cul/2026/10-19/10717458.shtml",
+              "source_hash": "540c0dca128d06bdc049cf805931c8271260a15ecb33c522cbb5b43a8e851d27"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务）",
+        "reviewed_at": "2026-10-23",
+        "record_digest": "af6cfcae86771a23aa964fcd3e8dd2466a31c938b25553d6ddebac3c74996eec",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    }
+  ]
+}

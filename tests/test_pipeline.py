@@ -1,5 +1,6 @@
 """Deterministic local checks; do not prove third-party API access."""
 import sys,unittest
+from unittest.mock import patch
 from datetime import date
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
@@ -8,6 +9,13 @@ from build import display_span
 from discover import from_crossref,abstract_openalex,dedupe,wenwu_records,wechat_coverage,parse_wechat_html
 from review import publication_track
 class DiscoveryTests(unittest.TestCase):
+    def test_crossref_cursor_uses_supported_sorting(self):
+        from discover import collect_crossref
+        with patch('discover.search_queries',return_value=['Chinese archaeology']), patch('discover.api_pages',return_value=[]) as pages:
+            collect_crossref(date(2026,10,16),date(2026,10,23),[])
+        params=pages.call_args.args[1]
+        self.assertEqual(params['filter'],'from-pub-date:2026-10-16,until-pub-date:2026-10-23')
+        self.assertNotIn(params.get('sort'),('issued','published','published-print','published-online'))
     def test_crossref(self):
         raw={"DOI":"10.1234/ABCD","title":["Bronze inscriptions in Western Zhou"],
              "container-title":["Early China"],"author":[{"given":"A","family":"B"}],
