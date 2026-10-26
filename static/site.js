@@ -1,4 +1,61 @@
 (function () {
+  if (!('IntersectionObserver' in window)) return;
+  const masthead = document.querySelector('[data-masthead]');
+  const hero = document.querySelector('.hero');
+  const toTop = document.querySelector('[data-to-top]');
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none';
+  document.body.prepend(sentinel);
+  new IntersectionObserver(([entry]) => masthead?.classList.toggle('scrolled', !entry.isIntersecting)).observe(sentinel);
+  if (hero && toTop) new IntersectionObserver(([entry]) => toTop.classList.toggle('shown', !entry.isIntersecting)).observe(hero);
+
+  const reveal = [...document.querySelectorAll('.genre-title, .record')];
+  const revealer = new IntersectionObserver(entries => {
+    for (const entry of entries) if (entry.isIntersecting) { entry.target.classList.add('in'); revealer.unobserve(entry.target); }
+  }, { rootMargin: '0px 0px -4% 0px' });
+  for (const el of reveal) { el.classList.add('reveal'); revealer.observe(el); }
+  if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.classList.add('in');
+
+  const links = new Map([...document.querySelectorAll('[data-toc-id]')].map(a => [a.dataset.tocId, a]));
+  if (links.size) {
+    const spy = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const a of links.values()) a.classList.remove('current');
+        links.get(entry.target.id)?.classList.add('current');
+      }
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    for (const id of links.keys()) { const el = document.getElementById(id); if (el) spy.observe(el); }
+  }
+})();
+
+(function () {
+  const plates = document.querySelectorAll('.plate img');
+  if (!plates.length || typeof HTMLDialogElement !== 'function') return;
+  const dialog = document.createElement('dialog');
+  dialog.className = 'lightbox';
+  const close = document.createElement('button'); close.type = 'button'; close.setAttribute('aria-label', '关闭'); close.textContent = '×';
+  const img = document.createElement('img');
+  const caption = document.createElement('p');
+  dialog.append(close, img, caption);
+  document.body.append(dialog);
+  dialog.addEventListener('click', () => dialog.close());
+  for (const plate of plates) {
+    const open = () => {
+      img.src = plate.currentSrc || plate.src; img.alt = plate.alt;
+      caption.textContent = plate.closest('figure')?.querySelector('figcaption')?.textContent || '';
+      caption.hidden = !caption.textContent;
+      dialog.showModal();
+    };
+    plate.tabIndex = 0;
+    plate.setAttribute('role', 'button');
+    plate.addEventListener('click', open);
+    plate.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  }
+})();
+
+(function () {
   const buttons = [...document.querySelectorAll('[data-filter]')];
   const search = document.querySelector('[data-record-search]');
   const cards = [...document.querySelectorAll('[data-record]')];

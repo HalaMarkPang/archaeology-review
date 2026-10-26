@@ -2,7 +2,7 @@
 
 考古-周刊编选新近公布的考古材料、研究论文与理论讨论，介绍其主要发现、研究背景与学术意义。
 
-网站：[考古-周刊](https://halamarkpang.github.io/archaeology-review/)。本期文献可按时代筛选与检索；「往期」收录历史刊期，支持跨期检索。每条均附原文链接。
+网站：[考古-周刊](https://halamarkpang.github.io/archaeology-review/)。本期文献可按时代筛选与检索，宽屏页面的侧栏目录标示当前阅读条目，配图可点击放大；「往期」收录历史刊期，支持跨期检索。每条均附原文链接与来源核验说明。
 
 ## 收录范围
 
@@ -93,6 +93,8 @@ python3 scripts/build.py
 | `content/corrections/` | 旧刊期的更正说明 |
 | `content/migrations/` | 首期旧稿的校验记录与核验范围 |
 | `.cache/` | 撰写所用原文、模型稿与复核文件，不提交至公开仓库 |
+| `templates/` | 网页模板 |
+| `static/` | 网页样式、交互脚本、图标与配图 |
 
 ### 检索设置
 

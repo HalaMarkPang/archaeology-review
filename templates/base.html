@@ -2,14 +2,21 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#e5e1d8">
+  <meta name="description" content="考古-周刊。编选旧石器至宋元明的发掘简报&研究论文与考古学理论认知。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="考古-周刊">
+  <meta property="og:title" content="{{ title }}｜考古-周刊">
+  <meta property="og:description" content="考古-周刊。编选旧石器至宋元明的发掘简报&研究论文与考古学理论认知。">
   <title>{{ title }}｜考古-周刊</title>
-  <link rel="stylesheet" href="{{ base }}static/site.css?v=20261016significance">
+  <link rel="icon" href="{{ base }}static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ base }}static/site.css?v=20261026ui">
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body class="page-{{ page }}">
-  <header class="masthead">
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="masthead" data-masthead>
     <a class="brand" href="{{ base }}index.html">
       <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 38" fill="currentColor" aria-hidden="true">
         <path d="M1 2h9v3.2H6.6V27H10v3.2H1V27h2.6V5.2H1V2z"/>
@@ -19,12 +26,14 @@
       </svg>
       <span>考古-周刊</span>
     </a>
-    <nav>
-      <a class="{{ 'active' if page in ('home', 'issue') else '' }}" href="{{ base }}index.html">本期</a>
-      <a class="{{ 'active' if page == 'archive' else '' }}" href="{{ base }}archive/index.html">往期</a>
+    <nav aria-label="主导航">
+      <a class="{{ 'active' if page in ('home', 'issue') else '' }}" href="{{ base }}index.html"{% if page in ('home', 'issue') %} aria-current="page"{% endif %}>本期</a>
+      <a class="{{ 'active' if page == 'archive' else '' }}" href="{{ base }}archive/index.html"{% if page == 'archive' %} aria-current="page"{% endif %}>往期</a>
     </nav>
+    {% if page in ('home', 'issue') %}<span class="progress" aria-hidden="true"></span>{% endif %}
   </header>
-  <main>{% block content %}{% endblock %}</main>
-  <script src="{{ base }}static/site.js?v=20261016review"></script>
+  <main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+  {% if page in ('home', 'issue') %}<a class="to-top" href="#top" aria-label="回到页首" data-to-top><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>{% endif %}
+  <script src="{{ base }}static/site.js?v=20261026ui"></script>
 </body>
 </html>
