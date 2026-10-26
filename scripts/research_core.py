@@ -9,6 +9,13 @@ from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=json.loads((ROOT/"config/discovery.json").read_text(encoding="utf-8"))
 STANDALONE_GROUP=CONFIG.get("standalone_group") or "考古学理论"
+def issue_limit(name,config=None):
+    """Return a configured per-issue cap, or None when the setting is null or absent."""
+    value=(CONFIG if config is None else config).get(name)
+    if value is None:return None
+    if isinstance(value,bool) or not isinstance(value,int) or value<1:raise ValueError(f"{name} 须为正整数或 null")
+    return value
+issue_limit("max_issue_items");issue_limit("max_per_period")
 def local_zone():return ZoneInfo(CONFIG.get("schedule",{}).get("timezone") or "Asia/Shanghai")
 def today_local():return datetime.now(local_zone()).date().isoformat()
 def norm(s):return re.sub(r"\s+"," ",unicodedata.normalize("NFKC",unescape(s or ""))).strip()

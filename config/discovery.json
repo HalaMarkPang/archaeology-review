@@ -16,8 +16,8 @@
     "学术演讲"
   ],
   "standalone_group": "考古学理论",
-  "max_issue_items": 12,
-  "max_per_period": 4,
+  "max_issue_items": null,
+  "max_per_period": null,
   "umbrella_queries": [
     "Chinese archaeology",
     "China archaeological excavation"

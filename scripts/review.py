@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 from editorial import digest, prepare_packet, validate_record, validate_issue
-from research_core import CONFIG, ROOT, STANDALONE_GROUP, add_seen, dump_json, is_duplicate, reviewed_keys
+from research_core import CONFIG, ROOT, STANDALONE_GROUP, add_seen, dump_json, is_duplicate, issue_limit, reviewed_keys
 from publication_window import publication_membership
 
 def publication_track(scope):
@@ -17,6 +17,7 @@ def run(data, drafts, approvals, *, root=ROOT, publish=False):
     if len(draft_by)!=len(drafts.get('records',[])):raise ValueError('模型稿中存在重复标识')
     if set(draft_by)-{i['candidate']['id'] for i in packet['items']}:raise ValueError('模型稿含本次采集以外的标识')
     accepted=[];checks=[];seen=reviewed_keys();per={}
+    cap,group_cap=issue_limit('max_issue_items'),issue_limit('max_per_period')
     for item in packet['items']:
         c=item['candidate'];r=draft_by.get(c['id']);result='waiting_for_draft';reason='已取得材料，待模型撰写'
         window_status=publication_membership(r if r is not None else c,data['window'])
@@ -29,7 +30,7 @@ def run(data, drafts, approvals, *, root=ROOT, publish=False):
                 if any(r.get(k,'')!=c.get(k,'') for k in ('title','doi','url','published_date')):raise ValueError('稿件书目与采集记录不一致')
                 approval=approvals.get('records',{}).get(c['id'],{})
                 validate_record(r,packet=item,approval=approval,root=root)
-                if len(accepted)>=CONFIG['max_issue_items'] or per.get(r['period'],0)>=CONFIG['max_per_period']:
+                if (cap is not None and len(accepted)>=cap) or (group_cap is not None and per.get(r['period'],0)>=group_cap):
                     result,reason='qualified_not_selected','稿件已复核，本期篇数或分组达到上限'
                 else:
                     r=dict(r,review=approval);accepted.append(r);add_seen(r,seen);per[r['period']]=per.get(r['period'],0)+1

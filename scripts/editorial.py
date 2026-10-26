@@ -6,7 +6,7 @@ import json
 import re
 from datetime import date
 from pathlib import Path
-from research_core import CONFIG, ROOT, STANDALONE_GROUP, canonical_doi, dump_json, norm, safe_public_url, slug
+from research_core import CONFIG, ROOT, STANDALONE_GROUP, canonical_doi, dump_json, issue_limit, norm, safe_public_url, slug
 from publication_window import publication_membership
 
 REVIEW_CHECKS = ("claims_supported", "uncertainty_preserved", "scope_confirmed", "sources_checked")
@@ -82,7 +82,8 @@ def validate_issue(issue, *, root=ROOT):
         migration=json.loads((root/"content/migrations"/f"{issue['id']}.json").read_text())
         if migration.get("issue_digest")!=digest(issue):raise ValueError("历史刊期已变化，须重新核对")
         legacy=migration["records"]
-    elif len(issue["records"])>CONFIG["max_issue_items"]:raise ValueError("普通刊期超出篇数上限")
+    elif (cap:=issue_limit("max_issue_items")) is not None and len(issue["records"])>cap:raise ValueError("普通刊期超出篇数上限")
+    group_cap=issue_limit("max_per_period")
     ids=set();titles=set();dois=set();per={}
     for r in issue["records"]:
         validate_record(r,root=root,legacy=legacy)
@@ -93,7 +94,7 @@ def validate_issue(issue, *, root=ROOT):
         if doi:dois.add(doi)
         if r["published_date"][:7]<start[:7] or r["published_date"][:7]>end[:7] or (len(r["published_date"])==10 and not start<=r["published_date"]<=end):raise ValueError("发表日期不在刊期窗口内")
         per[r["period"]]=per.get(r["period"],0)+1
-        if legacy is None and per[r["period"]]>CONFIG["max_per_period"]:raise ValueError("同组条目超出上限")
+        if legacy is None and group_cap is not None and per[r["period"]]>group_cap:raise ValueError("同组条目超出上限")
 
 def prepare_packet(data):
     items=[]

@@ -12,6 +12,7 @@ import build
 import discover
 import review
 from editorial import REVIEW_CHECKS, blocks, digest, record_digest, prepare_packet, validate_record, validate_issue
+import research_core
 from research_core import assess,norm
 
 class EditorialTests(unittest.TestCase):
@@ -38,6 +39,36 @@ class EditorialTests(unittest.TestCase):
     def test_fabricated_source_quote_rejected(self):
         bad=copy.deepcopy(self.record);bad['claims'][0]['supports'][0]['quote']='A statement not contained in the source material.'
         with self.assertRaisesRegex(ValueError,'不在本次'):validate_record(bad,packet=self.packet,approval=self.approval)
+    def second_work(self):
+        item=dict(self.item,id='test-work-2',doi='10.1234/test2',title='Western Zhou bronze vessels II',url='https://doi.org/10.1234/test2')
+        rec=copy.deepcopy(self.record);rec.update({k:item[k] for k in ('id','doi','title','url')});rec['headline']='西周铜器的来源再比较'
+        support={'quote':self.text,'url':item['url'],'source_hash':digest(norm(self.text))}
+        rec['claims']=[{'text':text,'supports':[dict(support)]} for text in blocks(rec)]
+        return item,rec,dict(self.approval,record_digest=record_digest(rec))
+    def run_two(self,limits):
+        item,rec,approval=self.second_work()
+        data=dict(self.data,records=[self.item,item])
+        with patch.dict(research_core.CONFIG,limits),patch.object(review,'reviewed_keys',return_value=set()):
+            return review.run(data,{'records':[self.record,rec]},{'records':{'test-work':self.approval,'test-work-2':approval}})
+    def test_issue_limits_accept_null_or_positive_integers(self):
+        self.assertIsNone(research_core.issue_limit('max_issue_items',{'max_issue_items':None}))
+        self.assertIsNone(research_core.issue_limit('max_issue_items',{}))
+        self.assertEqual(research_core.issue_limit('max_per_period',{'max_per_period':3}),3)
+        for bad in (0,-1,'12',True,2.5):
+            with self.assertRaisesRegex(ValueError,'正整数或 null'):research_core.issue_limit('max_issue_items',{'max_issue_items':bad})
+    def test_null_limits_select_every_qualified_draft(self):
+        issue,audit,status=self.run_two({'max_issue_items':None,'max_per_period':None})
+        self.assertEqual([c['result'] for c in audit['checks']],['accepted','accepted']);self.assertEqual(len(issue['records']),2)
+    def test_configured_limits_hold_back_qualified_drafts(self):
+        for limits in ({'max_issue_items':1,'max_per_period':None},{'max_issue_items':None,'max_per_period':1}):
+            issue,audit,status=self.run_two(limits)
+            self.assertEqual([c['result'] for c in audit['checks']],['accepted','qualified_not_selected']);self.assertEqual(len(issue['records']),1)
+    def test_validator_enforces_configured_issue_limit(self):
+        issue,audit,status=self.run_two({'max_issue_items':None,'max_per_period':None})
+        with patch.dict(research_core.CONFIG,{'max_issue_items':1}):
+            with self.assertRaisesRegex(ValueError,'篇数上限'):validate_issue(issue)
+        with patch.dict(research_core.CONFIG,{'max_issue_items':None,'max_per_period':1}):
+            with self.assertRaisesRegex(ValueError,'同组条目超出上限'):validate_issue(issue)
     def test_toc_cannot_be_promoted_by_having_a_draft(self):
         data=copy.deepcopy(self.data);data['records'][0]['abstract']='';data['records'][0]['kind']='journal_toc'
         with patch.object(review,'reviewed_keys',return_value=set()):
