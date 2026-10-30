@@ -1,9 +1,6 @@
-# 运行时刻须与 config/discovery.json 的 schedule.cron、schedule.timezone 一致。
+# 每周定时运行由 Cursor 自动化按 config/discovery.json 的 schedule 执行；此处只供手动补跑，不另设定时。
 name: Friday archaeological research
 on:
-  schedule:
-    - cron: '0 12 * * 5'
-      timezone: 'Asia/Shanghai'
   workflow_dispatch:
 permissions:
   contents: write

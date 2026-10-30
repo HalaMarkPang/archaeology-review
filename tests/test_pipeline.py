@@ -134,13 +134,13 @@ class WechatCoverageTests(unittest.TestCase):
         self.assertEqual(rows[0]["published"],date(2026,9,30))
         self.assertEqual(rows[0]["account"],"考古陕西")
 class ConfigTests(unittest.TestCase):
-    def test_schedule_matches_workflow(self):
+    def test_workflow_has_no_competing_schedule(self):
         text=(Path(__file__).resolve().parents[1]/".github/workflows/research.yml").read_text(encoding="utf-8")
         import re
-        cron=re.search(r"cron:\s*'([^']+)'",text).group(1)
-        zone=re.search(r"timezone:\s*'([^']+)'",text).group(1)
-        self.assertEqual(cron,CONFIG["schedule"]["cron"])
-        self.assertEqual(zone,CONFIG["schedule"]["timezone"])
+        self.assertIsNone(re.search(r"^\s*schedule:",text,re.M))
+        self.assertIn("workflow_dispatch:",text)
+        self.assertEqual(len(CONFIG["schedule"]["cron"].split()),5)
+        self.assertTrue(CONFIG["schedule"]["timezone"])
     def test_display_span_comes_from_the_issue_window(self):
         self.assertEqual(display_span("2026-09-01 — 2026-10-14"),"9月1日—10月14日")
 if __name__=="__main__":unittest.main()
