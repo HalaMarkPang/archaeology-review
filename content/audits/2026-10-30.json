@@ -4,20 +4,20 @@
     {
       "id": "74eacc93e10cacdd",
       "title": "Unveiling Genetic Sex, Ancestry, Kinship, and Osteopetrosis Genetic Disease Through Ancient DNA From Highly Degraded Remains",
-      "result": "waiting_for_draft",
-      "reason": "已取得材料，待模型撰写"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "4e31404fe1c4b9b9",
       "title": "装饰视阈下唐长沙窑外销与内销的转型研究",
-      "result": "waiting_for_draft",
-      "reason": "已取得材料，待模型撰写"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "3283540c2acae5dd",
       "title": "陕西宝鸡周原遗址西周墓(IIC3M11)发掘简报",
-      "result": "waiting_for_draft",
-      "reason": "已取得材料，待模型撰写"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "d7990dd98648eda0",
@@ -28,8 +28,8 @@
     {
       "id": "7530c118959d6f26",
       "title": "Glass Beads From the Yuezhi Period at Rabat Cemetery, Uzbekistan: Geochemical Evidence for Early Ancient Silk Road Interactions",
-      "result": "waiting_for_draft",
-      "reason": "已取得材料，待模型撰写"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "926a24e5a25a9ba8",
@@ -64,8 +64,8 @@
     {
       "id": "d0507bf9ec3d3274",
       "title": "乌兹别克斯坦拜松市拉巴特墓地2023年南区发掘简报",
-      "result": "waiting_for_draft",
-      "reason": "已取得材料，待模型撰写"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "86fc36090f92b1ca",
@@ -76,8 +76,8 @@
     {
       "id": "4f2426a40e56791c",
       "title": "Lithic miniaturization, ochre utilization and composite tools at the Late Paleolithic Xinlipoding site, South China (25−9 ka)",
-      "result": "waiting_for_source",
-      "reason": "仅有题录或线索，须取得摘要或全文"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "c85697a50115d92a",
@@ -136,8 +136,8 @@
     {
       "id": "160ca094ee260186",
       "title": "Dionysus in China: cultural transmission and transformation in Dunhuang’s Grape Harvest Worshipping Festival",
-      "result": "waiting_for_source",
-      "reason": "仅有题录或线索，须取得摘要或全文"
+      "result": "accepted",
+      "reason": "最终正文与所列材料已完成复核"
     },
     {
       "id": "1825a6c31b26f012",
@@ -25982,5 +25982,5 @@
       "reason": "发表时间不足以确认本期归属，须核对原始来源"
     }
   ],
-  "packet_digest": "40fd032dfb6ebd85b89495064b64078e775517a97b64667ae902018be3c0a3b8"
+  "packet_digest": "8bc76d945cc967db28caf7ed71b6e4b2a26a5b5a892b008e888d2b11a042ebb0"
 }

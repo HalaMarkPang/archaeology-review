@@ -1,0 +1,824 @@
+{
+  "id": "2026-10-30",
+  "date": "2026-10-30",
+  "issue_no": "考古-周刊 · 2026-10-30",
+  "period": "2026-10-23 — 2026-10-30",
+  "source_window": {
+    "start": "2026-10-23",
+    "end": "2026-10-30",
+    "start_at": "2026-10-23T12:00:00+08:00",
+    "end_at": "2026-10-30T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "start_exclusive": true,
+    "end_inclusive": true
+  },
+  "intro": "本期编选周原西周铭文铜器墓、广西晚更新世石器、长沙窑装饰与市场、淮安宋代古DNA、拉巴特墓地的发掘与玻璃珠分析，以及敦煌葡萄节庆研究，说明主要发现、作者解释及其对具体研究问题的意义。",
+  "is_sample": false,
+  "records": [
+    {
+      "id": "74eacc93e10cacdd",
+      "title": "Unveiling Genetic Sex, Ancestry, Kinship, and Osteopetrosis Genetic Disease Through Ancient DNA From Highly Degraded Remains",
+      "doi": "10.1111/arcm.70243",
+      "authors": "Yuntao Sun, Qingxin Fu, Tianze Qin, Libo Zhao, Mengshan Wang, Quanchao Zhang",
+      "published_date": "2026-10-25",
+      "url": "https://doi.org/10.1111/arcm.70243",
+      "publication": "Archaeometry，2026年10月25日在线发表",
+      "headline": "淮安Zhangliu遗址宋代遗骸的古DNA：性别、祖源与父母子家系",
+      "core": "江苏淮安Zhangliu遗址出土的三具宋代遗骸保存极差，完全无法进行形态学性别鉴定。研究团队仍从中提取到DNA，得到了可靠的遗传性别结果。群体基因组分析显示，三人与黄河流域新石器时代晚期的粟作农人在遗传上连续；作者据此认为，曾有人群由北向南进入淮河地区，其后来自长江流域稻作相关人群的混合有限。\n\n结合全基因组亲缘关系估算和单亲遗传标记，三人被重建为父亲、母亲和儿子组成的一级亲属家系。母子二人共有一个与骨硬化症相关的LEMD3变异，其分布与常染色体显性遗传及所重建的家庭关系完全一致。研究还识别出东亚特有的变异，包括与铲形门齿相关的EDAR rs3827760-G，以及与耳垢类型相关的ABCC11 rs17822931-T。",
+      "significance": "这项研究首先是方法上的示范：形态学无从下手的遗骸，仍能给出性别、祖源和亲属关系。三人被确认为一个核心家庭，墓葬单位中的人际关系就可以直接讨论，而不必只凭埋葬位置推测；母子共有的LEMD3变异，则使与骨硬化症相关的遗传变异可以在考古家系中追踪。\n\n关于人群来源，结果只来自三个个体，所说的由北向南扩散、少量混入长江稻作相关人群，首先描述的是这一家人的祖源构成。它能否代表宋代淮河地区更大范围的人群，需要同地区更多样本检验。",
+      "period": "宋元明",
+      "kind": "研究论文",
+      "material_type": "研究论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读期刊公布的英文摘要，未取得论文全文、测序数据和墓葬背景描述。遗址中文名称未见于所读材料，正文保留原拼写。",
+      "evidence": [
+        "期刊记录的在线发表日期为2026年10月25日。",
+        "样本为三名宋代个体，扩散与混合判断归于作者。",
+        "人群代表性的限定为编者依据样本数作出的说明。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "淮安Zhangliu遗址宋代遗骸的古DNA：性别、祖源与父母子家系",
+          "supports": [
+            {
+              "quote": "we successfully retrieved DNA from three individuals of the Song Dynasty period from the Zhangliu site in Huai'an City, Jiangsu Province, China",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "we reconstructed a first‐degree pedigree comprising a father, mother, and their son",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            }
+          ]
+        },
+        {
+          "text": "江苏淮安Zhangliu遗址出土的三具宋代遗骸保存极差，完全无法进行形态学性别鉴定。研究团队仍从中提取到DNA，得到了可靠的遗传性别结果。群体基因组分析显示，三人与黄河流域新石器时代晚期的粟作农人在遗传上连续；作者据此认为，曾有人群由北向南进入淮河地区，其后来自长江流域稻作相关人群的混合有限。",
+          "supports": [
+            {
+              "quote": "Despite the extremely poor preservation of these three individuals, which completely precluded morphological sex assessment",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "we successfully determined their genetic ancestry and obtained reliable genetic sex identification using a genetic approach",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "these individuals are genetically continuous with Late Neolithic Yellow River millet farmers, indicating a north‐to‐south dispersal into the Huai River region with limited subsequent admixture from Yangtze River rice‐related populations",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            }
+          ]
+        },
+        {
+          "text": "结合全基因组亲缘关系估算和单亲遗传标记，三人被重建为父亲、母亲和儿子组成的一级亲属家系。母子二人共有一个与骨硬化症相关的LEMD3变异，其分布与常染色体显性遗传及所重建的家庭关系完全一致。研究还识别出东亚特有的变异，包括与铲形门齿相关的EDAR rs3827760-G，以及与耳垢类型相关的ABCC11 rs17822931-T。",
+          "supports": [
+            {
+              "quote": "Through genome‐wide relatedness estimation combined with uniparental markers, we reconstructed a first‐degree pedigree comprising a father, mother, and their son",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "the mother and son share an osteopetrosis‐associated LEMD3 variant, a pattern fully consistent with autosomal dominant inheritance and the reconstructed familial relationships",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "including EDAR rs3827760‐G associated with shovel‐shaped incisors and ABCC11 ‐rs17822931‐T associated with earwax",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            }
+          ]
+        },
+        {
+          "text": "这项研究首先是方法上的示范：形态学无从下手的遗骸，仍能给出性别、祖源和亲属关系。三人被确认为一个核心家庭，墓葬单位中的人际关系就可以直接讨论，而不必只凭埋葬位置推测；母子共有的LEMD3变异，则使与骨硬化症相关的遗传变异可以在考古家系中追踪。",
+          "supports": [
+            {
+              "quote": "which completely precluded morphological sex assessment",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "the mother and son share an osteopetrosis‐associated LEMD3 variant",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "Our findings demonstrate the power of aDNA analysis in overcoming challenges posed by degraded remains and in linking genetic variants to inherited diseases in archeological contexts",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            }
+          ]
+        },
+        {
+          "text": "关于人群来源，结果只来自三个个体，所说的由北向南扩散、少量混入长江稻作相关人群，首先描述的是这一家人的祖源构成。它能否代表宋代淮河地区更大范围的人群，需要同地区更多样本检验。",
+          "supports": [
+            {
+              "quote": "we successfully retrieved DNA from three individuals of the Song Dynasty period",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            },
+            {
+              "quote": "indicating a north‐to‐south dispersal into the Huai River region with limited subsequent admixture from Yangtze River rice‐related populations",
+              "url": "https://doi.org/10.1111/arcm.70243",
+              "source_hash": "65315f0ebb823aed085f74dbaad9494f7cedb1eca747a5b13482f2077d926237"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "952b242c78193908119843793c3ae7a400a0450f0dfcfb69f5c7ea9ce41a8715",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "4e31404fe1c4b9b9",
+      "title": "装饰视阈下唐长沙窑外销与内销的转型研究",
+      "doi": "",
+      "authors": "李建毛 郭三娟",
+      "published_date": "2026-10-25",
+      "url": "https://www.wenwu.com/newsinfo/11369093.html",
+      "publication": "《文物》2026年第10期",
+      "headline": "从装饰技法与纹样看长沙窑市场重心的转移",
+      "core": "作者认为，唐代长沙窑既是最早的外销型瓷窑，也是内销型瓷窑。论文从长沙窑最具特色的装饰技法和纹样演变入手，结合发掘地层，考察其市场重心的变化及转型机理。\n\n按作者的分期，长沙窑前期以外销为主要驱动，分早、晚两段。早段被认为由粟特商人主导，模印贴花以胡人乐舞等粟特文化元素为主，另有褐绿彩相间的连珠纹；晚段被认为由阿拉伯商人主导，出现大量褐绿彩绘，模印贴花多见椰枣纹。后期转为内外市场并重的复合经营，内销产品借用了外销产品的装饰技法，但都作了适配性调整。",
+      "significance": "这项研究把装饰当作市场的指标来读：模印贴花题材由胡人乐舞转向椰枣纹，褐绿彩由连珠纹发展为大量彩绘，被解释为主导客商由粟特人转为阿拉伯人。由于分段结合了发掘地层，这些纹样变化有了相对早晚，不只是风格归类。\n\n内销产品借用外销技法又加以调整，说明同一窑场的装饰技术在两种市场之间转用。编者认为，若把这一分段与海外出土长沙窑瓷器的年代相对照，可以检验客商更替与纹样转换是否同步，也能看清“适配性调整”具体改变了哪些题材和工艺。",
+      "period": "隋唐",
+      "kind": "研究论文",
+      "material_type": "研究论文摘要（期刊官网公布）",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读文物出版社官网公布的论文摘要，未取得全文、地层材料与纹样统计。粟特商人、阿拉伯商人主导的判断为作者解释；海外出土瓷器的对照为编者提出的检验路径，原文摘要未涉及。",
+      "evidence": [
+        "论文刊于《文物》2026年第10期，官网公布于2026年10月25日。",
+        "分段与商人主导的判断归于作者。",
+        "第二段研究意义中的对照路径明确标为编者意见。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "从装饰技法与纹样看长沙窑市场重心的转移",
+          "supports": [
+            {
+              "quote": "从长沙窑最具特色的装饰技法和纹样演变视角,结合发掘地层来考察,可以窥见其市场重心变迁及其转型机理",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            }
+          ]
+        },
+        {
+          "text": "作者认为，唐代长沙窑既是最早的外销型瓷窑，也是内销型瓷窑。论文从长沙窑最具特色的装饰技法和纹样演变入手，结合发掘地层，考察其市场重心的变化及转型机理。",
+          "supports": [
+            {
+              "quote": "唐代长沙窑既是最早的外销型瓷窑,也是内销型瓷窑",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            },
+            {
+              "quote": "从长沙窑最具特色的装饰技法和纹样演变视角,结合发掘地层来考察,可以窥见其市场重心变迁及其转型机理",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            }
+          ]
+        },
+        {
+          "text": "按作者的分期，长沙窑前期以外销为主要驱动，分早、晚两段。早段被认为由粟特商人主导，模印贴花以胡人乐舞等粟特文化元素为主，另有褐绿彩相间的连珠纹；晚段被认为由阿拉伯商人主导，出现大量褐绿彩绘，模印贴花多见椰枣纹。后期转为内外市场并重的复合经营，内销产品借用了外销产品的装饰技法，但都作了适配性调整。",
+          "supports": [
+            {
+              "quote": "早段为粟特商人主导,模印贴花以胡人乐舞等粟特文化元素为主,另有褐绿彩相间的连珠纹",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            },
+            {
+              "quote": "后段由阿拉伯商人主导,出现大量褐绿彩绘,模印贴花多见椰枣纹",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            },
+            {
+              "quote": "后期转为内外市场并重的复合经营模式,内销产品虽借用了外销产品的装饰技法,但均做了适配性调整",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            }
+          ]
+        },
+        {
+          "text": "这项研究把装饰当作市场的指标来读：模印贴花题材由胡人乐舞转向椰枣纹，褐绿彩由连珠纹发展为大量彩绘，被解释为主导客商由粟特人转为阿拉伯人。由于分段结合了发掘地层，这些纹样变化有了相对早晚，不只是风格归类。",
+          "supports": [
+            {
+              "quote": "早段为粟特商人主导,模印贴花以胡人乐舞等粟特文化元素为主",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            },
+            {
+              "quote": "后段由阿拉伯商人主导,出现大量褐绿彩绘,模印贴花多见椰枣纹",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            },
+            {
+              "quote": "从长沙窑最具特色的装饰技法和纹样演变视角,结合发掘地层来考察",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            }
+          ]
+        },
+        {
+          "text": "内销产品借用外销技法又加以调整，说明同一窑场的装饰技术在两种市场之间转用。编者认为，若把这一分段与海外出土长沙窑瓷器的年代相对照，可以检验客商更替与纹样转换是否同步，也能看清“适配性调整”具体改变了哪些题材和工艺。",
+          "supports": [
+            {
+              "quote": "内销产品虽借用了外销产品的装饰技法,但均做了适配性调整",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "6590760e6ccd30b94615b973f089d16cc350cf4be2589b287e403c4611dac615"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "9f9d7aaee1702b2e404a2c92b80948b614090bdbdc8317634a5c4eb6cb1bd34d",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "3283540c2acae5dd",
+      "title": "陕西宝鸡周原遗址西周墓(IIC3M11)发掘简报",
+      "doi": "",
+      "authors": "周原考古队",
+      "published_date": "2026-10-25",
+      "url": "https://www.wenwu.com/newsinfo/11369093.html",
+      "publication": "《文物》2026年第10期",
+      "headline": "周原凤雏城址中心的一座西周早中期之际铭文铜器墓",
+      "core": "2014年，周原考古队在凤雏建筑基址群西南的董家东发掘区揭露了一批商周居址与墓葬，其中西周墓IIC3M11保存完好、规模较大，出土较多铭文铜器。简报公布，该墓为长方形竖穴土坑墓，墓向朝西，设腰坑和二层台，葬具为一椁两棺；二层台及椁盖上有殉牲，腰坑内殉狗。随葬铜器、陶器、原始瓷器、玉器等70余件（组），铜器包括容器、车马器、兵器和工具。\n\n发掘者综合铜器与陶器特征，将M11定在西周早中期之际；又依据铜器铭文和葬俗，推断墓主为昔鸡，与西周王室关系密切，族属为殷遗民。",
+      "significance": "这座墓把铭文所示的人物关系、腰坑殉狗等葬俗和墓葬位置放在了同一个单位里。按作者的判断，一位与周王室关系密切的殷遗民葬在凤雏城址区的中心位置；周原核心区内殷遗民居住和埋葬在哪里、与凤雏建筑群是什么关系，由此可以落到具体墓葬和发掘区上讨论。简报也把居葬关系、人群结构和凤雏建筑群性质列为这座墓有助于研究的问题。\n\n墓葬保存完好、年代明确，葬具、殉牲和70余件（组）随葬品的情况俱在，使M11可以作为讨论西周早中期之际墓葬器用制度的一个定点：铜容器、车马器、兵器与工具怎样搭配，又与墓主的身份怎样对应。",
+      "period": "商周",
+      "kind": "发掘简报",
+      "material_type": "发掘简报摘要（期刊官网公布）",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读文物出版社官网公布的简报摘要，未取得简报全文、器物登记表和铭文释文。墓主名、与王室的关系及殷遗民族属均为发掘者依据铭文和葬俗作出的判断，本条按原意转述。",
+      "evidence": [
+        "发掘时间为2014年，简报刊于《文物》2026年第10期，官网公布于2026年10月25日。",
+        "年代、墓主与族属判断均归于发掘者。",
+        "器物数量按摘要所记70余件（组）。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "周原凤雏城址中心的一座西周早中期之际铭文铜器墓",
+          "supports": [
+            {
+              "quote": "其中一座西周墓(编号IIC3M11)保存完好、规模较大,出土有较多铭文铜器",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "综合铜器与陶器特征判断,M11的年代应属西周早中期之际",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            }
+          ]
+        },
+        {
+          "text": "2014年，周原考古队在凤雏建筑基址群西南的董家东发掘区揭露了一批商周居址与墓葬，其中西周墓IIC3M11保存完好、规模较大，出土较多铭文铜器。简报公布，该墓为长方形竖穴土坑墓，墓向朝西，设腰坑和二层台，葬具为一椁两棺；二层台及椁盖上有殉牲，腰坑内殉狗。随葬铜器、陶器、原始瓷器、玉器等70余件（组），铜器包括容器、车马器、兵器和工具。",
+          "supports": [
+            {
+              "quote": "2014年,周原考古队在周原凤雏建筑基址群西南董家东发掘区内,揭露了一批商周居址与墓葬遗存",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "该墓为长方形竖穴土坑墓,墓向朝西,设有腰坑及二层台,葬具为一椁两棺",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "出土器物70余件(组),包括铜器、陶器、原始瓷器、玉器等,其中铜器有容器、车马器、兵器及工具等",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            }
+          ]
+        },
+        {
+          "text": "发掘者综合铜器与陶器特征，将M11定在西周早中期之际；又依据铜器铭文和葬俗，推断墓主为昔鸡，与西周王室关系密切，族属为殷遗民。",
+          "supports": [
+            {
+              "quote": "综合铜器与陶器特征判断,M11的年代应属西周早中期之际",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "由铜器铭文和葬俗可推断,墓主为昔鸡,与西周王室关系密切,其族属为殷遗民",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            }
+          ]
+        },
+        {
+          "text": "这座墓把铭文所示的人物关系、腰坑殉狗等葬俗和墓葬位置放在了同一个单位里。按作者的判断，一位与周王室关系密切的殷遗民葬在凤雏城址区的中心位置；周原核心区内殷遗民居住和埋葬在哪里、与凤雏建筑群是什么关系，由此可以落到具体墓葬和发掘区上讨论。简报也把居葬关系、人群结构和凤雏建筑群性质列为这座墓有助于研究的问题。",
+          "supports": [
+            {
+              "quote": "M11位于周原凤雏城址区中心位置",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "该墓的发掘有助于西周时期周原核心区居葬关系、人群结构、凤雏建筑群性质等问题的深入研究",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            }
+          ]
+        },
+        {
+          "text": "墓葬保存完好、年代明确，葬具、殉牲和70余件（组）随葬品的情况俱在，使M11可以作为讨论西周早中期之际墓葬器用制度的一个定点：铜容器、车马器、兵器与工具怎样搭配，又与墓主的身份怎样对应。",
+          "supports": [
+            {
+              "quote": "也为西周早中期墓葬器用制度研究提供了重要材料",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "其中一座西周墓(编号IIC3M11)保存完好、规模较大",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            },
+            {
+              "quote": "二层台及椁盖上有殉牲,腰坑内殉狗",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "43cbe0276f9de0ff190963f803b84943e730c16dc1f82ef8c785a35643e46276"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "79140ed3057293c392a7f2a96920e7717a67b053c3d0cae952f02ecb5722db99",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "7530c118959d6f26",
+      "title": "Glass Beads From the Yuezhi Period at Rabat Cemetery, Uzbekistan: Geochemical Evidence for Early Ancient Silk Road Interactions",
+      "doi": "10.1111/arcm.70245",
+      "authors": "Jingwen Guo, Shiyuan Cao, Chen Wu, Weiwei Li, Berdimurodov Amridin Ergashovich, Khasanov Mutallib Khasanovich, Khujamov Sanat Khayitboyevich, Arziyev Komiljon Daniyorovich, Yun Liang, Jianxin Wang",
+      "published_date": "2026-10-25",
+      "url": "https://doi.org/10.1111/arcm.70245",
+      "publication": "Archaeometry，2026年10月25日在线发表",
+      "headline": "拉巴特墓地玻璃珠的多元产地",
+      "core": "研究用激光剥蚀电感耦合等离子体质谱（LA-ICP-MS）分析了乌兹别克斯坦北巴克特里亚拉巴特墓地出土的19枚玻璃珠，墓地属月氏时期，年代为公元前2世纪至公元1世纪。样品中识别出泡碱玻璃、植物灰玻璃、钾玻璃和1枚早期IPAN玻璃，植物灰玻璃又可分为低铝、高铝两组。\n\n微量元素显示，这些玻璃来源多样，包括东地中海、西亚和南亚，也可能有中亚本地生产。作者据此认为，北巴克特里亚已纳入跨区域的丝绸之路网络，是贸易汇聚的地区；同时说明，本地生产玻璃的证据仍然有限。",
+      "significance": "19枚珠子包含至少四类玻璃配方，说明一处墓地出土的玻璃珠汇集了东地中海至南亚的产品，“交流”由此落到了可测的原料来源上。作者的“汇聚区”判断主要依据产地的多样性；中亚本地是否制作玻璃尚缺证据，墓地人群是自行加工输入的玻璃，还是直接获得成品珠，仍有待回答。与本期拉巴特南区简报所记的串饰对读，还可以进一步看不同墓葬、不同阶段使用的玻璃类型是否有别。",
+      "period": "战国秦汉",
+      "kind": "研究论文",
+      "material_type": "研究论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读期刊公布的英文摘要，未取得论文全文、样品出土单位和元素数据。未确认这19枚样品是否出自2023年南区发掘；两条的对读为编者建议。",
+      "evidence": [
+        "期刊记录的在线发表日期为2026年10月25日。",
+        "四类玻璃按摘要列举的泡碱、植物灰、钾玻璃和早期IPAN玻璃计。",
+        "本地生产证据有限为作者原有说明。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "拉巴特墓地玻璃珠的多元产地",
+          "supports": [
+            {
+              "quote": "This study employs LA‐ICP‐MS to analyze 19 glass beads from the Yuezhi‐period Rabat Cemetery",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "Trace elements indicate diverse sources, including the eastern Mediterranean, West and South Asia",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            }
+          ]
+        },
+        {
+          "text": "研究用激光剥蚀电感耦合等离子体质谱（LA-ICP-MS）分析了乌兹别克斯坦北巴克特里亚拉巴特墓地出土的19枚玻璃珠，墓地属月氏时期，年代为公元前2世纪至公元1世纪。样品中识别出泡碱玻璃、植物灰玻璃、钾玻璃和1枚早期IPAN玻璃，植物灰玻璃又可分为低铝、高铝两组。",
+          "supports": [
+            {
+              "quote": "This study employs LA‐ICP‐MS to analyze 19 glass beads from the Yuezhi‐period Rabat Cemetery (2nd century bce –1st century ce ) in Northern Bactria, Uzbekistan",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "Natron, plant ash, potash glass, and one Early IPAN glass were identified, with the plant‐ash glasses further divided into low‐ and high‐alumina groups",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            }
+          ]
+        },
+        {
+          "text": "微量元素显示，这些玻璃来源多样，包括东地中海、西亚和南亚，也可能有中亚本地生产。作者据此认为，北巴克特里亚已纳入跨区域的丝绸之路网络，是贸易汇聚的地区；同时说明，本地生产玻璃的证据仍然有限。",
+          "supports": [
+            {
+              "quote": "Trace elements indicate diverse sources, including the eastern Mediterranean, West and South Asia, and possibly Central Asia production",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "These results suggest Northern Bactria was integrated into transregional Silk Road networks, acting as a convergence area for trade",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "although evidence for local production remains limited",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            }
+          ]
+        },
+        {
+          "text": "19枚珠子包含至少四类玻璃配方，说明一处墓地出土的玻璃珠汇集了东地中海至南亚的产品，“交流”由此落到了可测的原料来源上。作者的“汇聚区”判断主要依据产地的多样性；中亚本地是否制作玻璃尚缺证据，墓地人群是自行加工输入的玻璃，还是直接获得成品珠，仍有待回答。与本期拉巴特南区简报所记的串饰对读，还可以进一步看不同墓葬、不同阶段使用的玻璃类型是否有别。",
+          "supports": [
+            {
+              "quote": "Natron, plant ash, potash glass, and one Early IPAN glass were identified",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "acting as a convergence area for trade",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            },
+            {
+              "quote": "although evidence for local production remains limited",
+              "url": "https://doi.org/10.1111/arcm.70245",
+              "source_hash": "e7a2c1c823d5cf00a138e89e96c8550781c75778e0ded97e4e2f6d9920756c8c"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "b1df02b54afbb67245f4e1d773f003d32d923f42ae97e7b637163d54140fcfa8",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "d0507bf9ec3d3274",
+      "title": "乌兹别克斯坦拜松市拉巴特墓地2023年南区发掘简报",
+      "doi": "",
+      "authors": "西北大学中亚考古队等",
+      "published_date": "2026-10-25",
+      "url": "https://www.wenwu.com/newsinfo/11369093.html",
+      "publication": "《文物》2026年第10期",
+      "headline": "乌兹别克斯坦拉巴特墓地南区的43座月氏文化墓葬",
+      "core": "拉巴特墓地位于乌兹别克斯坦苏尔汉河州拜松市拉巴特村，地处西天山南麓山间盆地、拜松河西岸的台地上。2023年4至6月，联合考古队在拉巴特I号墓地西南部的南部发掘区清理墓葬43座，其中偏洞室墓30座、竖穴土坑墓11座，另有2座形制不明。\n\n墓葬多为南北向，流行头向北的单人仰身直肢葬，只有1例为南向的侧身屈肢葬。随葬器物有陶器、铜器、铁器，以及大量由不同质地饰件组成的串饰。发掘者判断，这批墓葬几乎都属中亚月氏文化，年代集中于墓地的早、中期。",
+      "significance": "简报称这是拉巴特墓地保存最好的一批墓葬材料。偏洞室墓占多数、葬式高度统一而仅有1例屈肢葬，这些规律使研究者可以讨论墓地的整体面貌和结构布局，并据以分析月氏文化的人群构成与发展演变。大量串饰为原料与来源分析提供了实物，本期另收录对该墓地月氏时期玻璃珠的成分研究，可与之对读。",
+      "period": "战国秦汉",
+      "kind": "发掘简报",
+      "material_type": "发掘简报摘要（期刊官网公布）",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读文物出版社官网公布的简报摘要，未取得简报全文、墓葬登记表与具体年代数据。墓地早、中期的绝对年代摘要未列；本条归入战国秦汉组，依据为同墓地玻璃珠研究所记的月氏时期年代（公元前2世纪至公元1世纪）。",
+      "evidence": [
+        "发掘时间为2023年4至6月，简报刊于《文物》2026年第10期，官网公布于2026年10月25日。",
+        "墓葬数量与形制按摘要所记。",
+        "文化属性与年代判断归于发掘者。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "乌兹别克斯坦拉巴特墓地南区的43座月氏文化墓葬",
+          "supports": [
+            {
+              "quote": "联合考古队在拉巴特I号墓地西南部的南部发掘区清理墓葬43座",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            },
+            {
+              "quote": "墓葬性质几乎都属中亚月氏文化",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            }
+          ]
+        },
+        {
+          "text": "拉巴特墓地位于乌兹别克斯坦苏尔汉河州拜松市拉巴特村，地处西天山南麓山间盆地、拜松河西岸的台地上。2023年4至6月，联合考古队在拉巴特I号墓地西南部的南部发掘区清理墓葬43座，其中偏洞室墓30座、竖穴土坑墓11座，另有2座形制不明。",
+          "supports": [
+            {
+              "quote": "拉巴特(Rabat)墓地位于乌兹别克斯坦苏尔汉河州拜松市拉巴特村,地处西天山南麓山间盆地拜松河西岸台地上",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            },
+            {
+              "quote": "联合考古队在拉巴特I号墓地西南部的南部发掘区清理墓葬43座,包括偏洞室墓30座、竖穴土坑墓11座,另外2座形制不明",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            }
+          ]
+        },
+        {
+          "text": "墓葬多为南北向，流行头向北的单人仰身直肢葬，只有1例为南向的侧身屈肢葬。随葬器物有陶器、铜器、铁器，以及大量由不同质地饰件组成的串饰。发掘者判断，这批墓葬几乎都属中亚月氏文化，年代集中于墓地的早、中期。",
+          "supports": [
+            {
+              "quote": "墓葬多为南北向,流行头向北的单人仰身直肢葬,仅1例为南向的侧身屈肢葬",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            },
+            {
+              "quote": "随葬器物包括陶器、铜器、铁器以及大量由各种质地饰件组成的串饰等",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            },
+            {
+              "quote": "墓葬性质几乎都属中亚月氏文化,年代集中于拉巴特墓地早、中期",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            }
+          ]
+        },
+        {
+          "text": "简报称这是拉巴特墓地保存最好的一批墓葬材料。偏洞室墓占多数、葬式高度统一而仅有1例屈肢葬，这些规律使研究者可以讨论墓地的整体面貌和结构布局，并据以分析月氏文化的人群构成与发展演变。大量串饰为原料与来源分析提供了实物，本期另收录对该墓地月氏时期玻璃珠的成分研究，可与之对读。",
+          "supports": [
+            {
+              "quote": "此次发掘收获了拉巴特墓地保存最好的一批墓葬材料,为研究墓地整体面貌、结构布局以及月氏文化的人群构成、发展演变等提供了重要资料",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            },
+            {
+              "quote": "大量由各种质地饰件组成的串饰",
+              "url": "https://www.wenwu.com/newsinfo/11369093.html",
+              "source_hash": "dff2146b75294f3937ae5e41b627fc3a0ef2224bc99913558e79179dfa9d1ab4"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "8c7453edfbe59a0eb4dc0ab87cf1b13f4381f28192b407fd7f2437a42472a305",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "4f2426a40e56791c",
+      "title": "Lithic miniaturization, ochre utilization and composite tools at the Late Paleolithic Xinlipoding site, South China (25−9 ka)",
+      "doi": "10.1007/s12520-026-02590-7",
+      "authors": "Chun Tian, Yanyan Yao, Hua Liang, Zhixing Yi, Jun Chen, Christopher J. Bae, Wei Liao, Wei Wang",
+      "published_date": "2026-10-24",
+      "url": "https://doi.org/10.1007/s12520-026-02590-7",
+      "publication": "Archaeological and Anthropological Sciences，2026年10月24日在线发表",
+      "headline": "广西Bubing盆地晚更新世晚期遗址中的小型化石器、赭石与装柄工具",
+      "core": "Xinlipoding遗址位于广西Bubing盆地，年代约为距今2.5万至0.9万年。作者报告，这里的石器组合以小型化石器为主，与当地以砾石工具为主的传统明显不同。通过技术—类型学、微痕和残留物分析，研究识别出装柄复合工具和使用赭石的证据。\n\n作者认为，这些现象反映了华南晚更新世晚期明确的行为与技术创新，并提出Xinlipoding的技术模式可能源自华南更早的晚更新世遗址。结合Bubing盆地年代更晚的遗址材料，论文建立了该盆地从晚更新世晚期到全新世早期石器技术演变的初步框架。",
+      "significance": "作者指出，华南晚更新世石器技术的区内差异明显，但受材料数量和既往研究范围所限，技术演变框架与区域分布尚未确立。Xinlipoding的价值在于，小型化石器、装柄复合工具和赭石使用出现在同一组合中，又被放进同一盆地延续到全新世早期的序列里，砾石工具传统之外的技术变化由此有了一个可以定年、可以与后续遗址对照的节点。作者认为这一技术模式可能来自华南更早的遗址；检验这一点，需要在更早的遗址中找到同样的小型化与装柄证据。",
+      "period": "旧石器",
+      "kind": "研究论文",
+      "material_type": "研究论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读出版社页面公布的英文摘要，未取得论文全文、测年数据和微痕、残留物分析的具体结果。遗址与盆地的中文名称未见于所读材料，正文保留原拼写。",
+      "evidence": [
+        "出版社页面标注在线发表日期为2026年10月24日。",
+        "技术来源用“可能”转述，盆地框架按作者表述称为初步。",
+        "摘要由出版社文章页补取，采集记录原无摘要。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "广西Bubing盆地晚更新世晚期遗址中的小型化石器、赭石与装柄工具",
+          "supports": [
+            {
+              "quote": "the Late Paleolithic Xinlipoding site (25 − 9 ka) in the Bubing Basin in Guangxi Zhuang Autonomous Region",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "evidence has been identified for the use of hafted composite tools and ochre",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            }
+          ]
+        },
+        {
+          "text": "Xinlipoding遗址位于广西Bubing盆地，年代约为距今2.5万至0.9万年。作者报告，这里的石器组合以小型化石器为主，与当地以砾石工具为主的传统明显不同。通过技术—类型学、微痕和残留物分析，研究识别出装柄复合工具和使用赭石的证据。",
+          "supports": [
+            {
+              "quote": "The lithic assemblage at Xinlipoding is characterized predominantly by miniaturized stone tools, representing a notable shift away from the local cobble-tool tradition",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "Through integrated techno-typological, use-wear, and residue analyses, evidence has been identified for the use of hafted composite tools and ochre",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            }
+          ]
+        },
+        {
+          "text": "作者认为，这些现象反映了华南晚更新世晚期明确的行为与技术创新，并提出Xinlipoding的技术模式可能源自华南更早的晚更新世遗址。结合Bubing盆地年代更晚的遗址材料，论文建立了该盆地从晚更新世晚期到全新世早期石器技术演变的初步框架。",
+          "supports": [
+            {
+              "quote": "These findings reflect clear behavioral and technological innovations during the late Late Pleistocene in South China",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "we propose that the technological patterns observed at Xinlipoding likely originated from earlier Late Pleistocene sites within South China",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "we have constructed a preliminary framework tracing the evolution of lithic technology in the basin from the late Late Pleistocene to the early Holocene",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            }
+          ]
+        },
+        {
+          "text": "作者指出，华南晚更新世石器技术的区内差异明显，但受材料数量和既往研究范围所限，技术演变框架与区域分布尚未确立。Xinlipoding的价值在于，小型化石器、装柄复合工具和赭石使用出现在同一组合中，又被放进同一盆地延续到全新世早期的序列里，砾石工具传统之外的技术变化由此有了一个可以定年、可以与后续遗址对照的节点。作者认为这一技术模式可能来自华南更早的遗址；检验这一点，需要在更早的遗址中找到同样的小型化与装柄证据。",
+          "supports": [
+            {
+              "quote": "a coherent framework for technological evolution and a systematic regional distribution of lithic technologies have not yet been firmly established",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "alongside pronounced intra-regional technological diversity",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            },
+            {
+              "quote": "we propose that the technological patterns observed at Xinlipoding likely originated from earlier Late Pleistocene sites within South China",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02590-7",
+              "source_hash": "d4fc3d3e94f09f2dc4efff3615e48263c829c0ceb6f8f1ec80037fd8156a6db9"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "10e2f7daaaf97d1a631125d2d5e36ec6c75c07425744035a5f19c535ee9b7bf3",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    },
+    {
+      "id": "160ca094ee260186",
+      "title": "Dionysus in China: cultural transmission and transformation in Dunhuang’s Grape Harvest Worshipping Festival",
+      "doi": "10.1057/s41599-026-09548-z",
+      "authors": "Hongjuan Zhao, Mark Bender, Fuxue Yang, Shuxuan Wu, Meng Jiang, Shijia Wang",
+      "published_date": "2026-10-26",
+      "url": "https://doi.org/10.1057/s41599-026-09548-z",
+      "publication": "Humanities and Social Sciences Communications，2026年10月26日在线发表",
+      "headline": "敦煌“结葡萄赛神节”与狄奥尼索斯象征的本地化",
+      "core": "论文讨论唐代归义军时期敦煌的“结葡萄赛神节”。这一节庆以农业丰收和葡萄祭祀为中心。作者综合敦煌写本、视觉图像和仪式比较，认为它似乎回响着希腊狄奥尼索斯崇拜的遥远影响，其传播可能以粟特人为中介。\n\n作者的核心论点是：这一节庆是狄奥尼索斯象征在中国农业与宇宙观体系中的本地化重新表述。论文借用仪式混合、文化互化和象征转译等研究视角，把敦煌的仪式文化放进更大的丝绸之路交流格局中讨论。",
+      "significance": "这项研究把一个地方性的农事节庆作为外来象征本地化的个案，问题由“有没有外来影响”转向“外来象征怎样被纳入本地的农业与宇宙观体系”。作者对传播本身的措辞是“似乎”和“可能”，因此它提供的是一条比较路径，而非已经确认的传播史。要把相似性推进为可追溯的传播，需要敦煌写本对节庆内容的具体记载，以及能够证明粟特人参与其中的文字或图像材料。",
+      "period": "隋唐",
+      "kind": "研究论文",
+      "material_type": "研究论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "已核读出版社页面公布的英文摘要，未取得全文及所用写本编号、图像目录。节庆名称按摘要所附汉字转写为简体。本条依摘要“唐代归义军”的表述归入隋唐组。",
+      "evidence": [
+        "出版社页面标注在线发表日期为2026年10月26日。",
+        "传播关系按原文“appears”“possibly”转述为“似乎”“可能”。",
+        "摘要由出版社文章页补取，采集记录原无摘要。"
+      ],
+      "generation": {
+        "model": "Cursor Agent（本任务）",
+        "prompt_version": "research-policy-2026-10-26/editorial-contract/weekly-2026-10-30",
+        "generated_at": "2026-10-30T17:47:00+08:00"
+      },
+      "claims": [
+        {
+          "text": "敦煌“结葡萄赛神节”与狄奥尼索斯象征的本地化",
+          "supports": [
+            {
+              "quote": "Dunhuang’s Grape Harvest Worshipping Festival 敦煌結葡萄賽神節",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "this paper argues that the festival represents a localized rearticulation of Dionysian symbolism within the Chinese agrarian and cosmological system",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            }
+          ]
+        },
+        {
+          "text": "论文讨论唐代归义军时期敦煌的“结葡萄赛神节”。这一节庆以农业丰收和葡萄祭祀为中心。作者综合敦煌写本、视觉图像和仪式比较，认为它似乎回响着希腊狄奥尼索斯崇拜的遥远影响，其传播可能以粟特人为中介。",
+          "supports": [
+            {
+              "quote": "exemplified by Dunhuang’s Grape Harvest Worshipping Festival 敦煌結葡萄賽神節 under the Tang Dynasty’s Guiyi Army 歸義軍",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "This festival, focused on agricultural abundance and the ritual worship of grapes, appears to reflect distant resonances of Greek Dionysian practices, possibly transmitted via Sogdian intermediaries",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "Through a comprehensive study of Dunhuang manuscripts, visual iconography, and comparative ritual analysis",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            }
+          ]
+        },
+        {
+          "text": "作者的核心论点是：这一节庆是狄奥尼索斯象征在中国农业与宇宙观体系中的本地化重新表述。论文借用仪式混合、文化互化和象征转译等研究视角，把敦煌的仪式文化放进更大的丝绸之路交流格局中讨论。",
+          "supports": [
+            {
+              "quote": "this paper argues that the festival represents a localized rearticulation of Dionysian symbolism within the Chinese agrarian and cosmological system",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "engaging recent scholarship on ritual hybridization, transculturation, and symbolic translation, this research situates Dunhuang’s ritual culture within a broader matrix of Silk Road exchanges",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            }
+          ]
+        },
+        {
+          "text": "这项研究把一个地方性的农事节庆作为外来象征本地化的个案，问题由“有没有外来影响”转向“外来象征怎样被纳入本地的农业与宇宙观体系”。作者对传播本身的措辞是“似乎”和“可能”，因此它提供的是一条比较路径，而非已经确认的传播史。要把相似性推进为可追溯的传播，需要敦煌写本对节庆内容的具体记载，以及能够证明粟特人参与其中的文字或图像材料。",
+          "supports": [
+            {
+              "quote": "this paper argues that the festival represents a localized rearticulation of Dionysian symbolism within the Chinese agrarian and cosmological system",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "appears to reflect distant resonances of Greek Dionysian practices, possibly transmitted via Sogdian intermediaries",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            },
+            {
+              "quote": "Through a comprehensive study of Dunhuang manuscripts, visual iconography, and comparative ritual analysis",
+              "url": "https://www.nature.com/articles/s41599-026-09548-z",
+              "source_hash": "3d6b3610ced5a200b07249383a33b3056f04e45b137e283e570aa04e37e045ec"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "Cursor Agent（本任务）",
+        "reviewed_at": "2026-10-30",
+        "record_digest": "379991d501d7954597a8f5113a94e5fb7b95e409d19f6f7a05e9dd4b08f241fe",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true
+      }
+    }
+  ]
+}

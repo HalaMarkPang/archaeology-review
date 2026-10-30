@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "state": "awaiting_editorial",
+  "state": "published",
   "mode": "reviewed_drafts",
   "source_window": {
     "start": "2026-10-23",
@@ -12,8 +12,8 @@
     "end_inclusive": true
   },
   "candidates": 4330,
-  "qualified_recommendations": 0,
-  "published": 0,
+  "qualified_recommendations": 7,
+  "published": 7,
   "warnings": [
     "公众号「北京大学考古文博学院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「东南文化」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
@@ -428,10 +428,10 @@
       "reason": "page_budget"
     }
   ],
-  "message": "候选材料已登记，待取得原文、撰写或复核。",
+  "message": "已发布完成复核的新刊期。",
   "latest_issue": {
-    "id": "2026-10-23",
-    "records": 3,
-    "window": "2026-10-16 — 2026-10-23"
+    "id": "2026-10-30",
+    "records": 7,
+    "window": "2026-10-23 — 2026-10-30"
   }
 }
