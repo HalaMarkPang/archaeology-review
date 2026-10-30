@@ -25,7 +25,7 @@
       "publication": "Archaeometry，2026年10月25日在线发表",
       "headline": "宋代三具遗骸重建出父母子家系",
       "core": "江苏淮安Zhangliu遗址三具宋代遗骸保存极差，无法做形态学性别鉴定。研究从中提取古DNA，确定了遗传性别，并结合全基因组亲缘估算与单亲遗传标记，重建出父亲、母亲和儿子的一级亲属家系；母子共有一个与骨硬化症相关的LEMD3变异。\n\n群体基因组分析显示，三人与黄河流域新石器时代晚期的粟作农人遗传连续。作者据此推断曾有人群由北向南进入淮河地区，此后与长江稻作相关人群的混合有限。",
-      "significance": "对保存极差的遗骸，古DNA可以同时给出性别、亲属关系和遗传变异，墓地中的家庭关系因而可以直接判定，不必只凭埋葬位置推测。祖源结论只来自一个家庭的三人，能否代表宋代淮河地区人群，需要更多样本检验。",
+      "significance": "对保存极差的遗骸，古DNA可以同时给出性别、亲属关系和遗传变异，墓地中的家庭关系因而可以直接判定，不必只凭埋葬位置推测。",
       "period": "宋元明",
       "kind": "研究论文",
       "material_type": "研究论文公开摘要",
@@ -93,7 +93,7 @@
           ]
         },
         {
-          "text": "对保存极差的遗骸，古DNA可以同时给出性别、亲属关系和遗传变异，墓地中的家庭关系因而可以直接判定，不必只凭埋葬位置推测。祖源结论只来自一个家庭的三人，能否代表宋代淮河地区人群，需要更多样本检验。",
+          "text": "对保存极差的遗骸，古DNA可以同时给出性别、亲属关系和遗传变异，墓地中的家庭关系因而可以直接判定，不必只凭埋葬位置推测。",
           "supports": [
             {
               "quote": "we successfully determined their genetic ancestry and obtained reliable genetic sex identification using a genetic approach",
@@ -118,7 +118,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "8d45fff43debf317c88e1d69a610650afc15e4ba2cd6c7f2918fed8bae7fcc34",
+        "record_digest": "bfbf27579a21eba3f3ffe74166d3a3820176d7a78a124ba58bb3b396e7da26eb",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
@@ -136,7 +136,7 @@
       "publication": "《文物》2026年第10期",
       "headline": "长沙窑纹样转变被解释为客商更替",
       "core": "论文从装饰技法和纹样演变入手，结合发掘地层，讨论唐代长沙窑市场重心的变化。作者认为长沙窑前期以外销为主：早段模印贴花多见胡人乐舞等粟特文化元素，另有褐绿彩连珠纹；晚段出现大量褐绿彩绘，贴花多见椰枣纹。\n\n作者将早、晚两段分别归于粟特商人和阿拉伯商人主导。后期转为内外销并重，内销产品借用外销产品的装饰技法，并作适配性调整。",
-      "significance": "研究把纹样当作市场与客商的指标，又以地层排定早晚，使装饰风格的变化可以与贸易对象的更替相对照。纹样题材与商人群体的对应是作者的解释。",
+      "significance": "研究把纹样当作市场与客商的指标，又以地层排定早晚，使装饰风格的变化可以与贸易对象的更替相对照。",
       "period": "隋唐",
       "kind": "研究论文",
       "material_type": "研究论文摘要（期刊官网公布）",
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "text": "研究把纹样当作市场与客商的指标，又以地层排定早晚，使装饰风格的变化可以与贸易对象的更替相对照。纹样题材与商人群体的对应是作者的解释。",
+          "text": "研究把纹样当作市场与客商的指标，又以地层排定早晚，使装饰风格的变化可以与贸易对象的更替相对照。",
           "supports": [
             {
               "quote": "从长沙窑最具特色的装饰技法和纹样演变视角,结合发掘地层来考察,可以窥见其市场重心变迁及其转型机理",
@@ -234,7 +234,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "37e2e9e4f263c73b0244767184930c9b871c94c891473ca2cb0d4cd5c0c9798e",
+        "record_digest": "d3e374a5ebfb80c078a5a4d8ec8f7b16a5cc4adc088e6a5b04aeaea8fd317e1b",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
@@ -251,7 +251,7 @@
       "publication": "《文物》2026年第10期",
       "headline": "周原M11被推断为殷遗民墓",
       "core": "2014年，周原考古队在凤雏建筑基址群西南的董家东发掘区清理西周墓IIC3M11。该墓为竖穴土坑墓，设腰坑和二层台，一椁两棺，二层台和椁盖上有殉牲，腰坑殉狗；出土铜器、陶器、原始瓷器、玉器等70余件（组），其中有较多铭文铜器。\n\n发掘者依据铜器与陶器特征，将墓葬定在西周早中期之际，并据铭文和葬俗推断墓主为昔鸡，与周王室关系密切，族属为殷遗民。",
-      "significance": "M11位于凤雏城址区中心。若墓主族属的判断成立，周原核心区内殷遗民葬在何处、与凤雏建筑群是什么关系，就可以落到具体发掘区上讨论；年代明确、保存完好的M11也可作为西周早中期之际器用制度的比较单位。",
+      "significance": "M11位于凤雏城址区中心。按发掘者的判断，周原核心区内殷遗民葬在何处、与凤雏建筑群是什么关系，就可以落到具体发掘区上讨论；年代明确、保存完好的M11也可作为西周早中期之际器用制度的比较单位。",
       "period": "商周",
       "kind": "发掘简报",
       "material_type": "发掘简报摘要（期刊官网公布）",
@@ -314,7 +314,7 @@
           ]
         },
         {
-          "text": "M11位于凤雏城址区中心。若墓主族属的判断成立，周原核心区内殷遗民葬在何处、与凤雏建筑群是什么关系，就可以落到具体发掘区上讨论；年代明确、保存完好的M11也可作为西周早中期之际器用制度的比较单位。",
+          "text": "M11位于凤雏城址区中心。按发掘者的判断，周原核心区内殷遗民葬在何处、与凤雏建筑群是什么关系，就可以落到具体发掘区上讨论；年代明确、保存完好的M11也可作为西周早中期之际器用制度的比较单位。",
           "supports": [
             {
               "quote": "M11位于周原凤雏城址区中心位置",
@@ -339,7 +339,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "7697c4a6b5fcb6b0efb2d9438cf887dcaffccf65e9a8f6e07597c40a41bdb2a1",
+        "record_digest": "4397c873c66b11d8eea72b6b8f4d875bdbea0e5f5d4dff75cbfe5b74d9782303",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
@@ -356,7 +356,7 @@
       "publication": "Archaeometry，2026年10月25日在线发表",
       "headline": "拉巴特玻璃珠来自多个产区",
       "core": "研究以LA-ICP-MS分析乌兹别克斯坦拉巴特墓地出土的19枚月氏时期玻璃珠，年代为公元前2世纪至公元1世纪。样品中识别出泡碱玻璃、植物灰玻璃、钾玻璃和1枚早期IPAN玻璃。\n\n微量元素指向东地中海、西亚和南亚等多个来源，也可能有中亚本地产品。作者认为北巴克特里亚已纳入跨区域的丝绸之路网络，同时说明本地生产的证据有限。",
-      "significance": "一处墓地的19枚珠子包含多种配方和产地，使“交流”落实到可测的原料来源上。作者的“贸易汇聚区”判断依据的是产地多样性；墓地人群得到的是成品珠，还是在本地加工输入的玻璃，还需要生产遗存来回答。",
+      "significance": "一处墓地的19枚珠子包含多种配方和产地，使“交流”落实到可测的原料来源上。",
       "period": "战国秦汉",
       "kind": "研究论文",
       "material_type": "研究论文公开摘要",
@@ -419,7 +419,7 @@
           ]
         },
         {
-          "text": "一处墓地的19枚珠子包含多种配方和产地，使“交流”落实到可测的原料来源上。作者的“贸易汇聚区”判断依据的是产地多样性；墓地人群得到的是成品珠，还是在本地加工输入的玻璃，还需要生产遗存来回答。",
+          "text": "一处墓地的19枚珠子包含多种配方和产地，使“交流”落实到可测的原料来源上。",
           "supports": [
             {
               "quote": "Natron, plant ash, potash glass, and one Early IPAN glass were identified",
@@ -444,7 +444,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "1c71d30a703632f05753ae93b42373a77d37fcd70c34be39095e2d480b266d7d",
+        "record_digest": "86e899b5656ba00b852f308fa98f08da5882df50ff61ad86feee769016907dc4",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
@@ -567,7 +567,7 @@
       "publication": "Archaeological and Anthropological Sciences，2026年10月24日在线发表",
       "headline": "广西晚更新世遗址见装柄工具与赭石",
       "core": "广西Bubing盆地Xinlipoding遗址的年代约为距今2.5万至0.9万年。石器以小型化石器为主，不同于当地的砾石工具传统；技术—类型、微痕和残留物分析识别出装柄复合工具和使用赭石的证据。\n\n作者认为这一技术模式可能源自华南更早的晚更新世遗址，并结合盆地内年代较晚的遗址，提出晚更新世晚期至全新世早期石器技术演变的初步框架。",
-      "significance": "作者指出，华南晚更新世石器技术区内差异明显，至今缺少稳固的演变框架。小型化石器、装柄和赭石出现在同一组合，又接入同一盆地的后续序列，为讨论砾石工具传统之外的技术变化提供了一个有年代的节点。技术来源的推测，还要靠更早遗址中的同类证据检验。",
+      "significance": "作者指出，华南晚更新世石器技术区内差异明显，至今缺少稳固的演变框架。小型化石器、装柄和赭石出现在同一组合，又接入同一盆地的后续序列，为讨论砾石工具传统之外的技术变化提供了一个有年代的节点。",
       "period": "旧石器",
       "kind": "研究论文",
       "material_type": "研究论文公开摘要",
@@ -635,7 +635,7 @@
           ]
         },
         {
-          "text": "作者指出，华南晚更新世石器技术区内差异明显，至今缺少稳固的演变框架。小型化石器、装柄和赭石出现在同一组合，又接入同一盆地的后续序列，为讨论砾石工具传统之外的技术变化提供了一个有年代的节点。技术来源的推测，还要靠更早遗址中的同类证据检验。",
+          "text": "作者指出，华南晚更新世石器技术区内差异明显，至今缺少稳固的演变框架。小型化石器、装柄和赭石出现在同一组合，又接入同一盆地的后续序列，为讨论砾石工具传统之外的技术变化提供了一个有年代的节点。",
           "supports": [
             {
               "quote": "a coherent framework for technological evolution and a systematic regional distribution of lithic technologies have not yet been firmly established",
@@ -655,7 +655,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "21a60aef796cc85e8c5a1a3724d5fff278c3107dc033755233e9103c00c3b217",
+        "record_digest": "d4664580e08184c53fb3625864432766e49d9acb1b40d914d84a8b5d113bdcd3",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
@@ -672,7 +672,7 @@
       "publication": "Humanities and Social Sciences Communications，2026年10月26日在线发表",
       "headline": "结葡萄赛神节或有狄奥尼索斯渊源",
       "core": "论文讨论唐代归义军时期敦煌的结葡萄赛神节。这一节庆以农业丰收和葡萄祭祀为中心，作者综合敦煌写本、图像和仪式比较进行分析。\n\n作者认为，这一节庆似乎回响着希腊狄奥尼索斯崇拜的影响，传播可能以粟特人为中介；它是狄奥尼索斯象征在中国农业与宇宙观体系中的本地化重述。",
-      "significance": "研究把一个地方农事节庆作为外来象征本地化的个案，关注外来元素如何被纳入本地观念，而不只是有无影响。作者对传播用的是“似乎”“可能”，要坐实这条路径，还需要写本中的节庆细节和粟特人参与的直接材料。",
+      "significance": "研究把一个地方农事节庆作为外来象征本地化的个案，关注外来元素如何被纳入本地观念，而不只是有无影响。",
       "period": "隋唐",
       "kind": "研究论文",
       "material_type": "研究论文公开摘要",
@@ -740,7 +740,7 @@
           ]
         },
         {
-          "text": "研究把一个地方农事节庆作为外来象征本地化的个案，关注外来元素如何被纳入本地观念，而不只是有无影响。作者对传播用的是“似乎”“可能”，要坐实这条路径，还需要写本中的节庆细节和粟特人参与的直接材料。",
+          "text": "研究把一个地方农事节庆作为外来象征本地化的个案，关注外来元素如何被纳入本地观念，而不只是有无影响。",
           "supports": [
             {
               "quote": "this paper argues that the festival represents a localized rearticulation of Dionysian symbolism within the Chinese agrarian and cosmological system",
@@ -760,7 +760,7 @@
         "reviewer_type": "model",
         "reviewer": "Cursor Agent（本任务）",
         "reviewed_at": "2026-10-30",
-        "record_digest": "c4380f8582127a16e57d9e3a3414e303886831b22a872c9119f55a7eaf925be3",
+        "record_digest": "214592dba011027e5a8bb3aa9ffbc6ee8a8ab4d6e4ca03810e55dffe40fd0049",
         "claims_supported": true,
         "uncertainty_preserved": true,
         "scope_confirmed": true,
