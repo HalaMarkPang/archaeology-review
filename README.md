@@ -2,7 +2,9 @@
 
 考古-周刊编选新近公布的考古材料、研究论文与理论讨论，介绍其主要发现、研究背景与学术意义。
 
-网站：[考古-周刊](https://halamarkpang.github.io/archaeology-review/)。本期按目录逐篇阅读，可按时代筛选、检索正文，并在页首面板切换刊期；筛选后按结果顺序翻篇，配图可点击查看原图。「往期」以卡片收录历史刊期，支持跨期检索，从文章返回时保留检索条件与浏览位置。每条均附原文链接与来源核验说明。
+网站：[本期阅读](https://halamarkpang.github.io/archaeology-review/) · [往期与检索](https://halamarkpang.github.io/archaeology-review/archive/index.html)
+
+本期按目录逐篇阅读，可按时代筛选、检索正文，并在页首面板切换刊期；筛选后按结果顺序翻篇，配图可点击查看原图。「往期」以卡片收录历史刊期，支持跨期检索，从文章返回时保留检索条件与浏览位置。每条均附原文链接与来源核验说明。
 
 ## 收录范围
 
@@ -32,14 +34,16 @@
 
 首期已完成验证，覆盖 2026 年 9 月 1 日至 10 月 14 日，收录材料与研究 31 条，单独保留原有范围。
 
-选文与写作要求见[编选规范](config/research-policy.md)，稿件格式与复核要求见[模型稿与证据合同](docs/editorial-contract.md)。
+选文与写作要求见[编选规范](config/research-policy.md)，稿件格式与复核要求见[撰写与复核说明](docs/editorial-contract.md)。
 
 <details>
 <summary>维护说明：本地预览、采集与发布</summary>
 
 ### 定时运行
 
-每周的采集、撰写、复核与发布由 Cursor 自动化在云端执行，运行时刻即 `config/discovery.json` 中 `schedule` 所设时刻（现为每周五 12:00，北京时间）。调整运行时刻，须同时修改该设置与 Cursor 自动化的定时，二者不会自动同步。GitHub Actions 中的采集任务不另设定时，仅供手动补跑。
+周度任务通过 Cursor 自动化触发，约定为每周五 12:00（北京时间）。`config/discovery.json` 中的 `schedule` 用于计算资料收录窗口，不会自行创建定时任务。调整运行时刻，须同时修改该设置与 Cursor 自动化的定时，二者不会自动同步。
+
+GitHub Actions 中的采集任务仅供手动补跑，负责收集资料与记录候选状态；逐条撰写和复核另行完成，未复核的材料不发布为新刊期。
 
 ### 本地预览
 
@@ -53,6 +57,18 @@ python3 -m http.server 8000 --directory site
 ```
 
 浏览器访问 `http://localhost:8000`。站内检索随网页一并生成，检索结果定位至对应刊期的条目。
+
+### 封面与配图
+
+新增刊期封面时，在 `config/covers.json` 填写图片、图注及原始出处。添加封面或正文配图后，先生成用于网页的小图，再构建检查：
+
+```bash
+python3 -m pip install Pillow
+python3 scripts/optimize_images.py
+python3 scripts/build.py
+```
+
+原图、生成的小图与 `config/image-assets.json` 一并提交。网页按屏幕大小加载小图，点击正文图片仍可查看原图；线上构建无需安装 Pillow。图片来源、许可与维护要求见[页面图片与图标](docs/assets.md)。
 
 ### 采集与撰写准备
 
@@ -70,7 +86,7 @@ python3 scripts/review.py
 
 在 GitHub Actions 中手动运行采集所产生的原文材料，可在该次运行页面下载，附件名以 `editorial-packet-` 开头，保留 14 天。完整摘要与补充原文仅用于撰写和复核，不提交至公开仓库。
 
-稿件与复核文件按[模型稿与证据合同](docs/editorial-contract.md)准备。采集脚本不调用模型服务；撰写所用工具由维护者选定。
+稿件与复核文件按[撰写与复核说明](docs/editorial-contract.md)准备。采集脚本不调用模型服务；撰写所用工具由维护者选定。
 
 ### 导入与发布
 
@@ -99,6 +115,9 @@ python3 scripts/build.py
 | `.cache/` | 撰写所用原文、模型稿与复核文件，不提交至公开仓库 |
 | `templates/` | 网页模板 |
 | `static/` | 网页样式、交互脚本、图标与配图 |
+| `config/covers.json` | 往期卡片的封面、图注与出处 |
+| `config/image-assets.json` | 自动生成的网页用图及尺寸对应表 |
+| `docs/runs/` | 各期执行、上线与维护记录 |
 
 ### 检索设置
 
