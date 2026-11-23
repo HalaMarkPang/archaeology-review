@@ -4,7 +4,7 @@
 <div class="archive">
   <header class="site-header">
     <a class="brand" href="../index.html" aria-label="考古-周刊首页">{{ brand_mark() }}<span>考古-周刊</span></a>
-    <nav aria-label="主导航"><a class="nav-latest" href="../index.html">本期</a><a class="archive-pill" href="../index.html" aria-label="关闭往期，返回本期">往期 {{ icon('x') }}</a></nav>
+    <nav aria-label="主导航"><a class="nav-latest" href="../index.html">本期</a><span class="archive-pill" aria-current="page">往期</span></nav>
   </header>
   <main class="archive-main" id="main" tabindex="-1">
     <div class="archive-heading"><h1>往期</h1>{% if issues %}<div class="archive-year">{{ issues[0].year }}</div>{% endif %}
