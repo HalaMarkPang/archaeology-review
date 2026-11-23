@@ -1,1 +1,15 @@
 {% macro icon(name) -%}<img class="icon" src="{{ base }}static/icons/{{ name }}.svg" alt="" aria-hidden="true">{%- endmacro %}
+
+{% macro photo(src, alt, sizes, lazy=true, priority='auto') -%}
+{% set asset=image_asset(src) -%}
+<img src="{{ base }}{{ asset.src }}" alt="{{ alt }}"{% if asset.variants %} srcset="{% for variant in asset.variants %}{{ base }}{{ variant.src }} {{ variant.width }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ sizes }}" width="{{ asset.width }}" height="{{ asset.height }}"{% endif %}{% if lazy %} loading="lazy"{% endif %} decoding="async" fetchpriority="{{ priority }}" draggable="false">
+{%- endmacro %}
+
+{% macro brand_mark() -%}
+<svg class="brand-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 38" fill="currentColor" aria-hidden="true">
+  <path d="M1 2h9v3.2H6.6V27H10v3.2H1V27h2.6V5.2H1V2z"/>
+  <path fill-rule="evenodd" d="M6.6 2H15.6c6.4 0 10.2 3.7 10.2 8.6 0 5-3.9 8.6-10.2 8.6H6.6V2zm2.8 3.2v9.8h5.6c3.6 0 5.8-2 5.8-4.9s-2.2-4.9-5.8-4.9H9.4z"/>
+  <path fill-rule="evenodd" d="M28 16a12 12 0 1 0 24 0 12 12 0 1 0-24 0zm4.2 0a7.8 7.8 0 1 1 15.6 0 7.8 7.8 0 1 1-15.6 0z"/>
+  <path d="M46.2 22.4 60.8 36.2h-4.3L43.4 24.6z"/>
+</svg>
+{%- endmacro %}

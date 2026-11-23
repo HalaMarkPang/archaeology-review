@@ -19,6 +19,8 @@ def emphasize(text):
     return Markup(safe)
 ENV = Environment(loader=FileSystemLoader(ROOT / "templates"),autoescape=select_autoescape(["html","xml"]),trim_blocks=True,lstrip_blocks=True)
 ENV.filters["emphasize"]=emphasize
+IMAGE_ASSETS=json.loads((ROOT/'config/image-assets.json').read_text(encoding='utf-8')) if (ROOT/'config/image-assets.json').exists() else {}
+ENV.globals['image_asset']=lambda src: IMAGE_ASSETS.get(src,{'src':src})
 def display_span(period):
     parts=re.split(r"\s*[—–]\s*|\s+-\s+", period or "")
     def zh(token):

@@ -16,3 +16,11 @@
 `static/covers/cream-paper.png`与`mustard-paper.png`为模型生成的装饰性纸张纹理，仅用于页面背景，不表示考古材料。
 
 `static/icons/`采用[Feather](https://github.com/feathericons/feather)图标，MIT许可文本随图标保存在`static/icons/LICENSE.txt`。
+
+## 网页用图
+
+页面加载经过压缩的WebP副本，按屏幕宽度选择合适尺寸；原始图片保留，正文的“查看原图”仍指向原文件。压缩不补绘、修改或重排图像内容。
+
+新增封面或正文配图后，可在安装Pillow的本地环境运行`python3 scripts/optimize_images.py`，生成WebP副本和`config/image-assets.json`，再构建并检查网页。生成文件随仓库提交，线上构建无需额外安装图像工具。尚无压缩副本的配图按原路径正常显示。
+
+左上角标识沿用原有SVG轮廓，Q的斜柄保留放大镜造型；不依赖系统字体显示“PQ”。

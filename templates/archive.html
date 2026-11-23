@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% from "macros.html" import icon with context %}
+{% from "macros.html" import icon, photo, brand_mark with context %}
 {% block content %}
 <div class="archive">
   <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="考古-周刊首页"><span class="monogram">PQ</span><span>考古-周刊</span></a>
+    <a class="brand" href="../index.html" aria-label="考古-周刊首页">{{ brand_mark() }}<span>考古-周刊</span></a>
     <nav aria-label="主导航"><a class="nav-latest" href="../index.html">本期</a><a class="archive-pill" href="../index.html" aria-label="关闭往期，返回本期">往期 {{ icon('x') }}</a></nav>
   </header>
   <main class="archive-main" id="main" tabindex="-1">
@@ -14,7 +14,7 @@
     <section class="shelf shelf-grid" aria-label="往期刊期" data-archive-shelf>
     {% for item in issues %}
       <a class="issue-card card-{{ loop.index0 % 3 }}{% if item.cover.first %} first-issue{% endif %}" href="../issues/{{ item.id }}.html" aria-label="翻开{{ item.label }}，{{ item.records|length }}篇">
-      {% if item.cover.src %}<div class="cover-photo{% if item.cover.bronze %} bronze-photo{% endif %}{% if item.cover.portrait %} cover-portrait{% endif %}"><img src="../{{ item.cover.src }}" alt="{{ item.cover.alt }}"{% if loop.index > 3 %} loading="lazy"{% endif %} draggable="false"></div><div class="cover-caption"><span>{{ item.cover.caption }}</span><span>图源：{{ item.cover.credit }}</span></div>
+      {% if item.cover.src %}<div class="cover-photo{% if item.cover.bronze %} bronze-photo{% endif %}{% if item.cover.portrait %} cover-portrait{% endif %}">{{ photo(item.cover.src, item.cover.alt, '(max-width:600px) calc(100vw - 70px), (max-width:900px) 42vw, 29vw', lazy=not loop.first, priority='high' if loop.first else 'auto') }}</div><div class="cover-caption"><span>{{ item.cover.caption }}</span><span>图源：{{ item.cover.credit }}</span></div>
       {% else %}<div class="cover-type"><p>考古-周刊</p><p class="cover-date">{{ item.label }}</p><h3>{{ item.records[0].headline or item.records[0].title }}</h3></div>{% endif %}
       <div class="card-content"><h2>{{ item.label }}</h2><p class="issue-meta">{{ item.year }} · {% if item.cover.first %}首期 · {% endif %}{{ item.records|length }}篇</p>{% if item.cover.headlines %}<div class="card-headlines">{% for line in item.cover.headlines %}<p>{{ line }}</p>{% endfor %}</div>{% endif %}<span class="open-issue">翻开本期 {{ icon('arrow-up-right') }}</span></div>
       </a>

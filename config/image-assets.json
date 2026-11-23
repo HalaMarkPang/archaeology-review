@@ -1,0 +1,118 @@
+{
+  "static/covers/2026-11-06.jpg": {
+    "src": "static/covers/2026-11-06-1100w.webp",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "src": "static/covers/2026-11-06-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/covers/2026-11-06-1100w.webp",
+        "width": 1100
+      }
+    ]
+  },
+  "static/covers/2026-11-13.png": {
+    "src": "static/covers/2026-11-13-600w.webp",
+    "width": 600,
+    "height": 337,
+    "variants": [
+      {
+        "src": "static/covers/2026-11-13-600w.webp",
+        "width": 600
+      }
+    ]
+  },
+  "static/covers/2026-11-20.png": {
+    "src": "static/covers/2026-11-20-912w.webp",
+    "width": 912,
+    "height": 1256,
+    "variants": [
+      {
+        "src": "static/covers/2026-11-20-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/covers/2026-11-20-912w.webp",
+        "width": 912
+      }
+    ]
+  },
+  "static/covers/shimao-huangchengtai.png": {
+    "src": "static/covers/shimao-huangchengtai-1063w.webp",
+    "width": 1063,
+    "height": 595,
+    "variants": [
+      {
+        "src": "static/covers/shimao-huangchengtai-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/covers/shimao-huangchengtai-1063w.webp",
+        "width": 1063
+      }
+    ]
+  },
+  "static/covers/wenwu-2026-10-cover.jpg": {
+    "src": "static/covers/wenwu-2026-10-cover-1100w.webp",
+    "width": 1280,
+    "height": 1796,
+    "variants": [
+      {
+        "src": "static/covers/wenwu-2026-10-cover-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/covers/wenwu-2026-10-cover-1100w.webp",
+        "width": 1100
+      }
+    ]
+  },
+  "static/figures/m51-chamber.png": {
+    "src": "static/figures/m51-chamber-1080w.webp",
+    "width": 1080,
+    "height": 720,
+    "variants": [
+      {
+        "src": "static/figures/m51-chamber-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/figures/m51-chamber-1080w.webp",
+        "width": 1080
+      }
+    ]
+  },
+  "static/figures/m51-horse.png": {
+    "src": "static/figures/m51-horse-1080w.webp",
+    "width": 1080,
+    "height": 720,
+    "variants": [
+      {
+        "src": "static/figures/m51-horse-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/figures/m51-horse-1080w.webp",
+        "width": 1080
+      }
+    ]
+  },
+  "static/figures/m51-lamp.png": {
+    "src": "static/figures/m51-lamp-1080w.webp",
+    "width": 1080,
+    "height": 720,
+    "variants": [
+      {
+        "src": "static/figures/m51-lamp-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "static/figures/m51-lamp-1080w.webp",
+        "width": 1080
+      }
+    ]
+  }
+}
