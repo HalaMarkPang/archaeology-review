@@ -7,7 +7,7 @@
   <div class="issue-picker" id="issue-picker" popover="auto" role="dialog" aria-labelledby="issue-picker-title" data-issue-picker>
     <div class="issue-picker-heading"><h2 id="issue-picker-title">选择刊期</h2><button type="button" aria-label="关闭刊期列表" popovertarget="issue-picker" popovertargetaction="hide" data-picker-close>{{ icon('x') }}</button></div>
     <nav class="issue-picker-list" aria-label="刊期列表">{% for item in issues|default([issue]) %}<a href="{{ base }}issues/{{ item.id }}.html" class="issue-option{% if item.id == issue.id %} is-current{% endif %}"{% if item.id == issue.id %} aria-current="page"{% endif %} data-issue-option><span><span class="issue-option-date">{{ item.label }}</span><span class="issue-option-meta">{{ item.year }}年 · {% if item.cover.first %}首期 · {% endif %}{{ item.records|length }}篇</span></span>{% if item.id == issue.id %}<span class="issue-option-current">阅读中</span>{% endif %}</a>{% endfor %}</nav>
-    <a class="issue-picker-all" href="{{ base }}archive/index.html" data-archive-return>查看全部往期 {{ icon('arrow-up-right') }}</a>
+    <a class="issue-picker-all" href="{{ base }}archive/index.html">查看全部往期 {{ icon('arrow-up-right') }}</a>
   </div>
   <div class="reader-layout">
     <aside class="reader-toc" aria-label="本期目录" id="reader-toc"><div class="toc-heading"><span>本期目录</span><span data-toc-count aria-live="polite">{{ issue.records|length }}篇</span></div>
