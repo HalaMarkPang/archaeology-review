@@ -77,6 +77,9 @@ body:not(.js) .mobile-toc-button{display:none}body:not(.js) .reader-toc{visibili
 
 .shelf-grid .cover-photo.cover-portrait{aspect-ratio:.86}.cover-portrait img{object-position:center}.cover-caption>span:first-child{min-width:0;white-space:normal;overflow-wrap:anywhere}.cover-caption>span:last-child{flex-shrink:0}
 
+.page-archive .archive{padding-bottom:24px}.archive-guide{display:flex;align-items:center;gap:10px;margin:12px 0 0;padding-left:3px;color:var(--cream);font-size:17px;line-height:1.6}.archive-guide .icon{width:19px;height:19px;filter:brightness(0) invert(.92)}
+@media(max-width:600px){.archive-guide{font-size:14px;margin-top:15px;padding-left:2px}.archive-guide .icon{width:17px;height:17px}}
+
 /* 刊期切换使用站内面板，保留原有纸张与墨色。 */
 .issue-switch{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:10px;transition:background .16s}
 .issue-switch:hover,.issue-switch[aria-expanded=true]{background:#eeece2}.issue-current{padding:0}.issue-switch .icon{position:static;width:16px;height:16px;transition:transform .16s}.issue-switch[aria-expanded=true]>.icon{transform:rotate(180deg)}
