@@ -34,6 +34,13 @@ def display_span(period):
 def prepare(issue):
     item=dict(issue)
     item["display_span"]=display_span(item.get("period") or "")
+    stamp=item.get('date') or item.get('id') or re.split(r'\s*[—–]\s*',item.get('period',''))[-1]
+    item['year']=stamp[:4]
+    item['records_count']=len(item['records'])
+    item['label']=f"{int(stamp[5:7])}.{stamp[8:10]}" if re.fullmatch(r'\d{4}-\d{2}-\d{2}',stamp) else stamp
+    item['cover']=COVERS.get(item.get('id'),{})
+    if item['cover'].get('first'):item['label']='9.01—10.14'
+    item['reader_label']=item['label']+(' · 首期' if item['cover'].get('first') else '')
     groups=[]
     for genre in CONFIG["genres"]:
         records=[r for r in issue["records"] if r["kind"]==genre and r["period"]!=STANDALONE_GROUP]
@@ -47,6 +54,7 @@ EDITION={
     "periods":[row["label"] for row in CONFIG.get("periods") or []],
     "theory":STANDALONE_GROUP,
 }
+COVERS=json.loads((ROOT/'config/covers.json').read_text(encoding='utf-8')) if (ROOT/'config/covers.json').exists() else {}
 def load_issues():
     issues=[]
     for path in (ROOT/"content"/"issues").glob("*.json"):
@@ -77,15 +85,15 @@ def main():
     latest=formal[0] if formal else None
     sf=ROOT/"content"/"status.json"
     status=json.loads(sf.read_text(encoding="utf-8")) if sf.exists() else {"date":"尚未执行","message":"尚无正式刊期","candidates":0,"published":0}
-    if latest: render("issue.html",OUT/"index.html",issue=latest,edition=EDITION,base="",title="本期",location="本期",page="home")
+    if latest: render("issue.html",OUT/"index.html",issue=latest,issues=formal,edition=EDITION,base="",title="本期",location="本期",page="home")
     else:render("landing.html",OUT/"index.html",base="",title="考古-周刊",location="首页",page="home",status=status)
     for issue in issues:
-        render("issue.html",OUT/"issues"/f"{issue['id']}.html",issue=issue,edition=EDITION,base="../",title=issue["issue_no"],location="研究精选",page="issue")
+        render("issue.html",OUT/"issues"/f"{issue['id']}.html",issue=issue,issues=formal,edition=EDITION,base="../",title=issue["issue_no"],location="研究精选",page="issue")
     render("archive.html",OUT/"archive"/"index.html",issues=formal,samples=[x for x in issues if x.get("is_sample")],base="../",title="往期归档",location="往期",page="archive")
     index=[]
     for issue in formal:
         for r in issue["records"]:
-            index.append({"title":r.get("headline") or r["title"],"original_title":r["title"],"citation":r["authors"]+" · "+r["publication"],"body":re.sub(r"\*\*|__","",r["core"]+"\n\n"+r["significance"]),"url":f"issues/{issue['id']}.html#{r['id']}"})
+            index.append({"title":r.get("headline") or r["title"],"original_title":r["title"],"citation":r["authors"]+" · "+r["publication"],"body":re.sub(r"\*\*|__","",r["core"]+"\n\n"+r["significance"]),"url":f"issues/{issue['id']}.html#{r['id']}","issue_id":issue['id'],"issue_label":issue['label'],"period":r['period'],"kind":r['kind']})
     (OUT/"search-index.json").write_text(json.dumps(index,ensure_ascii=False),encoding="utf-8")
     (OUT/".nojekyll").touch()
     print(f"Generated {len(formal)} formal issues and {len(issues)-len(formal)} samples")

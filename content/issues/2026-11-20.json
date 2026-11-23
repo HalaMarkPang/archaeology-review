@@ -1,0 +1,774 @@
+{
+  "id": "2026-11-20",
+  "date": "2026-11-20",
+  "issue_no": "考古-周刊 · 2026-11-20",
+  "period": "2026-11-13 — 2026-11-20",
+  "source_window": {
+    "start": "2026-11-13",
+    "end": "2026-11-20",
+    "start_at": "2026-11-13T12:00:00+08:00",
+    "end_at": "2026-11-20T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "start_exclusive": true,
+    "end_inclusive": true
+  },
+  "intro": "本期编选在固定周度窗口内公布的考古材料与研究。",
+  "is_sample": false,
+  "records": [
+    {
+      "id": "5430cf0371efbe14",
+      "title": "Rainforest adaptation in late Homo erectus from southern China",
+      "doi": "10.1038/s41586-026-11155-6",
+      "authors": "Westaway, K. E.; Joannes-Boyau, R.; Liao, W.; Shao, Q.; Yu, W.; Quinn, M.; Bacon, A.-M.; Liang, H.; Bourgon, N.; Zhao, J.-x.; Roberts, P.; Kono, R.; Pan, Y.; Yang, L.; Wang, Y.; Jin, C.; Wu, Z.; Murray, S.; Zanolli, C.; Demeter, F.; Welker, F.; Ásmundsdóttir, R. D.; Fu, Q.; Balter, V.; Wang, W.; Zhang, Y.",
+      "published_date": "2026-11-18",
+      "url": "https://doi.org/10.1038/s41586-026-11155-6",
+      "publication": "Nature，2026-11-18",
+      "headline": "直立人曾栖居华南雨林",
+      "core": "研究分析广西两处洞穴的9枚古人类牙齿，其中8枚被形态学与遗传研究鉴定为直立人。作者整合5种测年方法取得的43个年代数据，将这批材料的年代限定在距今32.4万—18.4万年。\n\n牙齿与沉积物的同位素、微量元素资料显示，这些直立人生活在闭合雨林环境中。作者据此认为，它们具有较强的生态适应性与移动能力。",
+      "significance": "这项发现把中国可靠确认的晚期直立人记录推进到比约40万年前更晚的阶段，也直接修正了该物种偏好开阔林地、难以利用密闭雨林的认识。华南材料显示，雨林适应并非现代人独有，直立人的生态能力不能仅按爪哇开阔环境中的发现概括。",
+      "period": "旧石器",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "核读Nature公开摘要及正文中年代、环境讨论段；未核验补充数据与测年模型。此处年代为模型所限范围，不视为连续居住时长。",
+      "evidence": [
+        "资料公布日期为2026-11-18；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "科技考古",
+      "claims": [
+        {
+          "text": "直立人曾栖居华南雨林",
+          "supports": [
+            {
+              "quote": "closed rainforest ecosystems",
+              "url": "https://www.nature.com/articles/s41586-026-11155-6",
+              "source_hash": "d86d298add0e86b168e0fc190b572ea60a91a2a4532254a4f89bce4df1bb373d"
+            }
+          ]
+        },
+        {
+          "text": "研究分析广西两处洞穴的9枚古人类牙齿，其中8枚被形态学与遗传研究鉴定为直立人。作者整合5种测年方法取得的43个年代数据，将这批材料的年代限定在距今32.4万—18.4万年。",
+          "supports": [
+            {
+              "quote": "between 324 and 184",
+              "url": "https://www.nature.com/articles/s41586-026-11155-6",
+              "source_hash": "d86d298add0e86b168e0fc190b572ea60a91a2a4532254a4f89bce4df1bb373d"
+            }
+          ]
+        },
+        {
+          "text": "牙齿与沉积物的同位素、微量元素资料显示，这些直立人生活在闭合雨林环境中。作者据此认为，它们具有较强的生态适应性与移动能力。",
+          "supports": [
+            {
+              "quote": "long-term mobility and ecological flexibility",
+              "url": "https://www.nature.com/articles/s41586-026-11155-6",
+              "source_hash": "d86d298add0e86b168e0fc190b572ea60a91a2a4532254a4f89bce4df1bb373d"
+            }
+          ]
+        },
+        {
+          "text": "这项发现把中国可靠确认的晚期直立人记录推进到比约40万年前更晚的阶段，也直接修正了该物种偏好开阔林地、难以利用密闭雨林的认识。华南材料显示，雨林适应并非现代人独有，直立人的生态能力不能仅按爪哇开阔环境中的发现概括。",
+          "supports": [
+            {
+              "quote": "challenges the assumptions over the ecological preferences",
+              "url": "https://www.nature.com/articles/s41586-026-11155-6",
+              "source_hash": "d86d298add0e86b168e0fc190b572ea60a91a2a4532254a4f89bce4df1bb373d"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "29a979fc57e08f7f78800874d0644ca424f54661cb68e49b71ee9e70fb05d946",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对9牙中8枚被鉴定、43年代与5测年方法、32.4万至18.4万年模型范围；未写成连续居住时长。生态偏好修正为论文明确论证。"
+      }
+    },
+    {
+      "id": "68c0038117df8b47",
+      "title": "Tracking rice domestication and the consolidation of rice farming in the Neolithic Taihu Lake region: archaeobotanical evidence from the Banqiaotou site, lower Yangtze, China",
+      "doi": "10.1007/s12520-026-02597-0",
+      "authors": "Yuyao Wu, Donglei Cao, Meng Liu, Kaikai Yan, Can Wang",
+      "published_date": "2026-11-14",
+      "url": "https://doi.org/10.1007/s12520-026-02597-0",
+      "publication": "Archaeological and Anthropological Sciences，2026-11-14",
+      "headline": "太湖稻作发展并非齐步推进",
+      "core": "作者分析浙江北部Banqiaotou遗址马家浜、崧泽和良渚阶段的120份浮选样品，发现植物遗存以稻为主。驯化型小穗基盘比例在马家浜、崧泽材料中分别为57.20%和69.86%，良渚时期H10这一处堆积中为81.63%。结合区域资料，作者将太湖稻作农业的确立理解为长期、地区差异明显的过程。",
+      "significance": "这些分期数据把稻在植物组合中的地位与驯化性状的比例联系起来，使稻作农业的确立可以按具体遗址、阶段和堆积分别讨论。它呈现的是不同地点逐步巩固稻作的过程，并非全区域在同一时刻完成转变。",
+      "period": "新石器",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "依据公开摘要撰写，未核对全文。摘要由出版社页面取得。",
+      "evidence": [
+        "资料公布日期为2026-11-14；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "科技考古",
+      "claims": [
+        {
+          "text": "太湖稻作发展并非齐步推进",
+          "supports": [
+            {
+              "quote": "protracted and spatially heterogeneous",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02597-0",
+              "source_hash": "34b84db61f659ae40ea43b39f2d4661d908240724a8655abf679d8e27eb102cb"
+            }
+          ]
+        },
+        {
+          "text": "作者分析浙江北部Banqiaotou遗址马家浜、崧泽和良渚阶段的120份浮选样品，发现植物遗存以稻为主。驯化型小穗基盘比例在马家浜、崧泽材料中分别为57.20%和69.86%，良渚时期H10这一处堆积中为81.63%。结合区域资料，作者将太湖稻作农业的确立理解为长期、地区差异明显的过程。",
+          "supports": [
+            {
+              "quote": "120 flotation samples",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02597-0",
+              "source_hash": "34b84db61f659ae40ea43b39f2d4661d908240724a8655abf679d8e27eb102cb"
+            }
+          ]
+        },
+        {
+          "text": "这些分期数据把稻在植物组合中的地位与驯化性状的比例联系起来，使稻作农业的确立可以按具体遗址、阶段和堆积分别讨论。它呈现的是不同地点逐步巩固稻作的过程，并非全区域在同一时刻完成转变。",
+          "supports": [
+            {
+              "quote": "development of early rice farming",
+              "url": "https://link.springer.com/article/10.1007/s12520-026-02597-0",
+              "source_hash": "34b84db61f659ae40ea43b39f2d4661d908240724a8655abf679d8e27eb102cb"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "5c04eab47d34d6c82aedd3390bf2241c6fb0bc28d867cea465f4b96d0f6467f4",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对120浮选样品和三个比例；81.63%限定为良渚H10堆积，未当作整个遗址或全区均值。原名Banqiaotou未自行译定汉字。"
+      }
+    },
+    {
+      "id": "fb013581c17cd4a7",
+      "title": "Characterization of Thin‐Walled Bronze “Fu” with Tin‐Rich Layer from Warring States Tombs in Pujiang, China",
+      "doi": "10.1111/arcm.70250",
+      "authors": "Luman Jiang, Jiahui Tang, Guiping Zhang, Lingtong Zhao, Zhangyan Li, Junman Huang, Ning Wang, Pei Li, Tao Yang, Jie Sun, Lijuan Zhao, Yongjiao Song",
+      "published_date": "2026-11-15",
+      "url": "https://doi.org/10.1111/arcm.70250",
+      "publication": "Archaeometry，2026-11-15",
+      "headline": "巴蜀薄壁铜器承载能力偏低",
+      "core": "研究对象是一件战国时期巴蜀文化薄壁青铜器（原文称“Fu”）。器物为铜、锡、铅三元合金，具有以氧化亚铜、孔雀石和二氧化锡为主的三层腐蚀结构；内部孔隙与缺陷约占总体积的2.24%，该样品试验最大载荷低于8牛顿。作者据此提出迫切的保护需求。",
+      "significance": "器表富锡腐蚀层的成分与内部疏松程度被分别测出，说明表层材质特征和器体的整体保存状态需要区分。这件样品的保护判断因此有了内部结构与实际承载表现的共同依据。",
+      "period": "战国秦汉",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "依据公开摘要撰写，未核对全文。摘要与在线发表日期取自出版社提交至Crossref的元数据；出版社正文页访问受限。",
+      "evidence": [
+        "资料公布日期为2026-11-15；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "科技考古",
+      "claims": [
+        {
+          "text": "巴蜀薄壁铜器承载能力偏低",
+          "supports": [
+            {
+              "quote": "poor mechanical properties",
+              "url": "https://doi.org/10.1111/arcm.70250",
+              "source_hash": "815e03deff3a8a0eeab1d2c8432dc977aba3fa95fec7571e3e9f7dc87b4f9ae4"
+            }
+          ]
+        },
+        {
+          "text": "研究对象是一件战国时期巴蜀文化薄壁青铜器（原文称“Fu”）。器物为铜、锡、铅三元合金，具有以氧化亚铜、孔雀石和二氧化锡为主的三层腐蚀结构；内部孔隙与缺陷约占总体积的2.24%，该样品试验最大载荷低于8牛顿。作者据此提出迫切的保护需求。",
+          "supports": [
+            {
+              "quote": "corrosion structure dominated by",
+              "url": "https://doi.org/10.1111/arcm.70250",
+              "source_hash": "815e03deff3a8a0eeab1d2c8432dc977aba3fa95fec7571e3e9f7dc87b4f9ae4"
+            }
+          ]
+        },
+        {
+          "text": "器表富锡腐蚀层的成分与内部疏松程度被分别测出，说明表层材质特征和器体的整体保存状态需要区分。这件样品的保护判断因此有了内部结构与实际承载表现的共同依据。",
+          "supports": [
+            {
+              "quote": "urgent need for conservation",
+              "url": "https://doi.org/10.1111/arcm.70250",
+              "source_hash": "815e03deff3a8a0eeab1d2c8432dc977aba3fa95fec7571e3e9f7dc87b4f9ae4"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "c7cab82afe57ae2b9fd5f8ad186c6c0b72b7504890db0639b6aa5425ece94d39",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对合金、三层腐蚀、2.24%孔隙缺陷和小于8N载荷仅属该样品试验。不猜Fu中文器名，删除无必要的生僻地名译定。"
+      }
+    },
+    {
+      "id": "e0bcaf79c7f4347e",
+      "title": "Genetics, Diet, and Geographic Origins of Late Neolithic Human Sacrificial Tombs in the Middle Yellow River Valley: Evidence From the Qingliangsi Site, China",
+      "doi": "10.1002/oa.70188",
+      "authors": "Baoshuai Zhang, Jiajing Zheng, Guanghui Zhang, Panxin Du, Hailiang Meng, Kongyang Zhu, Rui Wang, Xiaomin Yang, Tianyou Bai, Yu Xu, Anchuan Fan, Chuan‐Chao Wang, Shaoqing Wen",
+      "published_date": "2026-11-15",
+      "url": "https://doi.org/10.1002/oa.70188",
+      "publication": "International Journal of Osteoarchaeology，2026-11-15",
+      "headline": "清凉寺殉葬者或含外来人口",
+      "core": "研究分析山西清凉寺M356墓主与3名殉葬者的古DNA、碳氮同位素和锶同位素，分别比较遗传背景、饮食与地理来源。4人的遗传背景接近；其中一名殉葬者的锶值高于当地基线，被作者判断为可能的非本地迁入者。\n\n结合既有资料，同葬墓主的动物蛋白摄入高于殉葬者与单人墓墓主。作者主要以内部社会分层解释清凉寺的大规模殉葬，同时认为其中也体现有限的跨区域互动。",
+      "significance": "这组材料把遗传背景、居住地区与社会地位分开核对。4人遗传背景接近，与一人可能迁入并不矛盾；墓主和殉葬者的饮食差别，又为讨论内部阶层差异增加了独立线索。",
+      "period": "新石器",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "依据公开摘要撰写，未核对全文。摘要与在线发表日期取自出版社提交至Crossref的元数据；出版社正文页访问受限。",
+      "evidence": [
+        "资料公布日期为2026-11-15；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "科技考古",
+      "claims": [
+        {
+          "text": "清凉寺殉葬者或含外来人口",
+          "supports": [
+            {
+              "quote": "likely a nonlocal migrant",
+              "url": "https://doi.org/10.1002/oa.70188",
+              "source_hash": "7910e1d96405e2afbcd6f914633170290cb83934e179224cf1800d4139b6c918"
+            }
+          ]
+        },
+        {
+          "text": "研究分析山西清凉寺M356墓主与3名殉葬者的古DNA、碳氮同位素和锶同位素，分别比较遗传背景、饮食与地理来源。4人的遗传背景接近；其中一名殉葬者的锶值高于当地基线，被作者判断为可能的非本地迁入者。",
+          "supports": [
+            {
+              "quote": "genetic affinity among the four individuals",
+              "url": "https://doi.org/10.1002/oa.70188",
+              "source_hash": "7910e1d96405e2afbcd6f914633170290cb83934e179224cf1800d4139b6c918"
+            }
+          ]
+        },
+        {
+          "text": "结合既有资料，同葬墓主的动物蛋白摄入高于殉葬者与单人墓墓主。作者主要以内部社会分层解释清凉寺的大规模殉葬，同时认为其中也体现有限的跨区域互动。",
+          "supports": [
+            {
+              "quote": "primarily sustained by internal social stratification",
+              "url": "https://doi.org/10.1002/oa.70188",
+              "source_hash": "7910e1d96405e2afbcd6f914633170290cb83934e179224cf1800d4139b6c918"
+            }
+          ]
+        },
+        {
+          "text": "这组材料把遗传背景、居住地区与社会地位分开核对。4人遗传背景接近，与一人可能迁入并不矛盾；墓主和殉葬者的饮食差别，又为讨论内部阶层差异增加了独立线索。",
+          "supports": [
+            {
+              "quote": "distinct group differences",
+              "url": "https://doi.org/10.1002/oa.70188",
+              "source_hash": "7910e1d96405e2afbcd6f914633170290cb83934e179224cf1800d4139b6c918"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "284784f11f2804c01a1fac417a09cca6f35853d40662a9585262d5d761476124",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对M356四人、遗传背景相近不等于亲属、一名殉葬者可能非本地。饮食比较注明结合既有资料，未推广为全部殉葬者的确定出生地。"
+      }
+    },
+    {
+      "id": "10a20e8aa06d842c",
+      "title": "The Light of Spirit 神: Ritual Sacrifice and Self-Cultivation in Early China",
+      "doi": "10.1017/eac.2026.10044",
+      "authors": "Christopher Yang",
+      "published_date": "2026-11-19",
+      "url": "https://doi.org/10.1017/eac.2026.10044",
+      "publication": "Early China，2026-11-19",
+      "headline": "早期养生论述沿用祭祀语言",
+      "core": "Christopher Yang比较战国晚期至帝国早期文献中的“光”意象：神灵以光亮回应祭祀，修养身体中的气、精、神，也被表述为使内在之神发光。作者结合马王堆医书、《庄子》《淮南子》，论证这些养生论述沿用了祭祀的语言与逻辑，并说明同一意象进入身体修养语境后的不同含义。",
+      "significance": "马王堆医书中的“神”因此能与祭祀文献中的神灵作具体的语言比较。作者把身体修养放回早期宗教表达中，说明养生文本怎样借“光”描述内在精神被滋养和显现的状态。",
+      "period": "战国秦汉",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "依据公开摘要撰写，未核对全文。摘要与在线发表日期取自出版社提交至Crossref的元数据；出版社正文页访问受限。",
+      "evidence": [
+        "资料公布日期为2026-11-19；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "早期养生论述沿用祭祀语言",
+          "supports": [
+            {
+              "quote": "logic and language of ritual sacrifice",
+              "url": "https://doi.org/10.1017/eac.2026.10044",
+              "source_hash": "46036d4d3c6ff718f51f8fc9548c6965ee59110cb38a51bc34f81d081608c045"
+            }
+          ]
+        },
+        {
+          "text": "Christopher Yang比较战国晚期至帝国早期文献中的“光”意象：神灵以光亮回应祭祀，修养身体中的气、精、神，也被表述为使内在之神发光。作者结合马王堆医书、《庄子》《淮南子》，论证这些养生论述沿用了祭祀的语言与逻辑，并说明同一意象进入身体修养语境后的不同含义。",
+          "supports": [
+            {
+              "quote": "excavated medical manuscripts from Mawangdui",
+              "url": "https://doi.org/10.1017/eac.2026.10044",
+              "source_hash": "46036d4d3c6ff718f51f8fc9548c6965ee59110cb38a51bc34f81d081608c045"
+            }
+          ]
+        },
+        {
+          "text": "马王堆医书中的“神”因此能与祭祀文献中的神灵作具体的语言比较。作者把身体修养放回早期宗教表达中，说明养生文本怎样借“光”描述内在精神被滋养和显现的状态。",
+          "supports": [
+            {
+              "quote": "motif of light",
+              "url": "https://doi.org/10.1017/eac.2026.10044",
+              "source_hash": "46036d4d3c6ff718f51f8fc9548c6965ee59110cb38a51bc34f81d081608c045"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "f0c61de61bad032bdd17cd7d05fc5f0ce762d508bfd12c32ce9a20614a5ab5a2",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对光意象、祭祀与精气神修养的联系、马王堆与传世文本范围；归思想与文献研究，不冒充田野新发现或考古学理论。"
+      }
+    },
+    {
+      "id": "ad7f7e2e3d1a969f",
+      "title": "四川遂宁桃花河遗址",
+      "doi": "",
+      "authors": "国家文物局（发布）；郑喆轩（成果介绍）",
+      "published_date": "2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "publication": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "headline": "桃花河揭露旧石器营地分区",
+      "core": "四川遂宁桃花河遗址主体年代约为距今30万—5万年。发掘出土石制品1.3万余件，并在不同时段活动面中识别出砾石铺设场地、石器加工场和集中贮藏区等遗迹。石制品以定型化大石片砍斫器为特色，随阶段出现尺寸趋小、剥片和修理更复杂的变化。",
+      "significance": "铺砾、加工与贮藏留下不同的空间痕迹，使早期人群怎样安排营地活动成为可以直接讨论的问题。这组东亚中更新世旷野材料保留的，既有工具技术，也有场所组织。",
+      "period": "旧石器",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据正式发布的考古成果介绍撰写，未核对完整发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-19；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "桃花河揭露旧石器营地分区",
+          "supports": [
+            {
+              "quote": "遗迹类型多样,功能分区清楚",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "四川遂宁桃花河遗址主体年代约为距今30万—5万年。发掘出土石制品1.3万余件，并在不同时段活动面中识别出砾石铺设场地、石器加工场和集中贮藏区等遗迹。石制品以定型化大石片砍斫器为特色，随阶段出现尺寸趋小、剥片和修理更复杂的变化。",
+          "supports": [
+            {
+              "quote": "遗址出土石制品1.3万余件",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "铺砾、加工与贮藏留下不同的空间痕迹，使早期人群怎样安排营地活动成为可以直接讨论的问题。这组东亚中更新世旷野材料保留的，既有工具技术，也有场所组织。",
+          "supports": [
+            {
+              "quote": "首次系统揭露的居址—营地类遗迹组合",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "8a4d4777302d15e510761501549e90c742fe376d26bde1abeb01687f893d50ea",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对30万至5万年主体范围、1.3万余石制品和铺砾加工贮藏分区；未把整个范围当作连续定居或套用现代空间规划概念。"
+      }
+    },
+    {
+      "id": "28034c2a762a5f14",
+      "title": "浙江杭州良渚反山遗址建筑遗迹等发现，为探讨良渚古国王权的礼仪性表达和制度化发展提供了新的考古证据",
+      "doi": "",
+      "authors": "国家文物局（发布）；王宁远（成果介绍）",
+      "published_date": "2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "publication": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "headline": "反山院落围护墓地与礼仪空间",
+      "core": "本次公布的反山新材料重点在于总体布局：土墩外围设院墙，院落东西约180米、南北约140米，围护面积约2.5万平方米；它与同一土垄上另外5个类似院落呈串珠状分布。测年显示，院落与反山王陵墓地同期建设，并延用至良渚晚期。墓葬区、礼仪空间与外围工程由此构成一个有边界的整体。",
+      "significance": "反山的高等级性质除了出土玉器与墓葬规模，还体现于圈定墓地和礼仪活动的院落空间。院墙与墓地同期的关系，使墓葬、建筑及土垄水利背景能够放在良渚都邑规划中一起理解。",
+      "period": "新石器",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "本条补充11月公布的院墙、测年与整体布局，不重复10月23日刊期的建筑复原条目。仅核读正式成果发布稿，未复核测年原始数据。",
+      "evidence": [
+        "资料公布日期为2026-11-19；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "建筑考古",
+      "substantive_update": true,
+      "claims": [
+        {
+          "text": "反山院落围护墓地与礼仪空间",
+          "supports": [
+            {
+              "quote": "反山遗址具有独立院落结构",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "本次公布的反山新材料重点在于总体布局：土墩外围设院墙，院落东西约180米、南北约140米，围护面积约2.5万平方米；它与同一土垄上另外5个类似院落呈串珠状分布。测年显示，院落与反山王陵墓地同期建设，并延用至良渚晚期。墓葬区、礼仪空间与外围工程由此构成一个有边界的整体。",
+          "supports": [
+            {
+              "quote": "测年显示院落与反山王陵墓地同期建设并沿用至良渚晚期",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "反山的高等级性质除了出土玉器与墓葬规模，还体现于圈定墓地和礼仪活动的院落空间。院墙与墓地同期的关系，使墓葬、建筑及土垄水利背景能够放在良渚都邑规划中一起理解。",
+          "supports": [
+            {
+              "quote": "贵族墓地与水利设施的结构性关联",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "f8b322bb413b3dbce075c549875ed2871d691ee5dfc3e8c2f125b9322f4b6a8f",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对180×140米、2.5万平方米及同期院墙测年；明确为10月建筑条目的实质布局补充，不重复或升级享殿假说。"
+      }
+    },
+    {
+      "id": "04ef777dfaff6483",
+      "title": "江西九江荞麦岭遗址群岭头上遗址",
+      "doi": "",
+      "authors": "国家文物局（发布）；饶华松（成果介绍）",
+      "published_date": "2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "publication": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "headline": "岭头上发现早商冶炼遗存",
+      "core": "江西九江岭头上遗址面积约6万平方米，发现新石器时代晚期墓地、玉石器加工遗存，以及早商居址和冶炼遗存。商代材料以中原商文化因素为主，兼见本地因素；坩埚、炉壁残块、铜渣与铜块共同指向铜冶炼活动。发掘者将其与商代向南开发金属资源联系起来。",
+      "significance": "具有中原商文化特征的居址与金属生产遗存出现在同一处聚落，使长江沿线的文化交流可以与具体生产活动联系讨论。对商代南方资源开发的认识，在这里有了可定位的冶炼地点。",
+      "period": "商周",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据正式发布的考古成果介绍撰写，未核对完整发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-19；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "岭头上发现早商冶炼遗存",
+          "supports": [
+            {
+              "quote": "商代遗存主要为居址、冶炼遗存",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "江西九江岭头上遗址面积约6万平方米，发现新石器时代晚期墓地、玉石器加工遗存，以及早商居址和冶炼遗存。商代材料以中原商文化因素为主，兼见本地因素；坩埚、炉壁残块、铜渣与铜块共同指向铜冶炼活动。发掘者将其与商代向南开发金属资源联系起来。",
+          "supports": [
+            {
+              "quote": "出土与青铜冶炼相关的坩埚、炉壁残块及铜渣、铜块",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        },
+        {
+          "text": "具有中原商文化特征的居址与金属生产遗存出现在同一处聚落，使长江沿线的文化交流可以与具体生产活动联系讨论。对商代南方资源开发的认识，在这里有了可定位的冶炼地点。",
+          "supports": [
+            {
+              "quote": "中原与长江中游地区文化交流与资源开发控制的密切关系",
+              "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+              "source_hash": "5050686238c91cf637a0ffa41c06e618e2522c5f67acfdc3ec60e58fcfba5909"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "e87959bbff6d62af349ea6baf75ff81f5f172a84f3ec7997f3413acc978dc5df",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对6万平方米、晚期新石器与早商两阶段、坩埚炉壁铜渣；商王朝资源开发保留为发掘者联系解释。"
+      }
+    },
+    {
+      "id": "1be85d96eb93af58",
+      "title": "湖北云梦老虎墩墓地取得重要收获",
+      "doi": "",
+      "authors": "赵军、高一致、章菁",
+      "published_date": "2026-11-18",
+      "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+      "publication": "湖北省文物考古研究院，2026-11-18",
+      "headline": "秦简记录基层机构武备",
+      "core": "湖北云梦老虎墩墓地清理秦汉墓葬113座，其中40座饱水墓保存了大量漆木器。M64、M74、M116三墓出土622个编号的简牍，内容包含基层武备、女子道德教育与数术等。墓地年代跨战国晚期至西汉初期。\n\n其中50枚守御器簿竹简列出沙羡县所辖十余处亭、障的名称，并记录部分基层守御单位的粮草、金属物资、防御设施、人员及车辆、武器配置。另有23个编号的女子教化文本，以及日书、杂祝方等材料。",
+      "significance": "秦县以下机构的人员和物资配置获得了可逐项核对的记录，基层军事管理因而有了与律令性质不同的簿籍材料。女子教化与日常祷祝文本同时出现，也使制度史与地方生活经验能够在这批出土资料中联系起来。",
+      "period": "战国秦汉",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "核读发掘单位11月18日完整成果发布稿；简牍数量按公布的“编号”计，不当作完整竹简支数。未取得释文全集与正式发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-18；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "秦简记录基层机构武备",
+          "supports": [
+            {
+              "quote": "首次发现的秦县所辖亭一级机构的守御器簿",
+              "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+              "source_hash": "d431a5acda94849258a95503e12111a4c14f7ed974c8a8adc2282d7ede7eb867"
+            }
+          ]
+        },
+        {
+          "text": "湖北云梦老虎墩墓地清理秦汉墓葬113座，其中40座饱水墓保存了大量漆木器。M64、M74、M116三墓出土622个编号的简牍，内容包含基层武备、女子道德教育与数术等。墓地年代跨战国晚期至西汉初期。",
+          "supports": [
+            {
+              "quote": "三座墓葬共出土622个编号简牍",
+              "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+              "source_hash": "d431a5acda94849258a95503e12111a4c14f7ed974c8a8adc2282d7ede7eb867"
+            }
+          ]
+        },
+        {
+          "text": "其中50枚守御器簿竹简列出沙羡县所辖十余处亭、障的名称，并记录部分基层守御单位的粮草、金属物资、防御设施、人员及车辆、武器配置。另有23个编号的女子教化文本，以及日书、杂祝方等材料。",
+          "supports": [
+            {
+              "quote": "记录了赤丘、步东两亭的粮草和铜等物资储备规模",
+              "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+              "source_hash": "d431a5acda94849258a95503e12111a4c14f7ed974c8a8adc2282d7ede7eb867"
+            }
+          ]
+        },
+        {
+          "text": "秦县以下机构的人员和物资配置获得了可逐项核对的记录，基层军事管理因而有了与律令性质不同的簿籍材料。女子教化与日常祷祝文本同时出现，也使制度史与地方生活经验能够在这批出土资料中联系起来。",
+          "supports": [
+            {
+              "quote": "深化研究秦汉时期军事管理制度、社会基层治理",
+              "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+              "source_hash": "d431a5acda94849258a95503e12111a4c14f7ed974c8a8adc2282d7ede7eb867"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "static/covers/2026-11-20.png",
+          "alt": "老虎墩M105出土立人凤形勺",
+          "caption": "老虎墩M105出土立人凤形勺。图源：湖北省文物考古研究院成果发布稿图五。",
+          "source_url": "https://www.hbkgy.com/yjy_bydt/p/13194.html"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "ffc18d7cea6b48a7a524112ae4a797c9557848341522302853c92f61d1564363",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对113墓、40饱水墓、622个编号、50枚器簿与23个编号教化材料；不把编号数当完整简支数，不推定具体墓主官职。图五器物身份已核对。"
+      }
+    },
+    {
+      "id": "cc29e8e185299bc8",
+      "title": "讲座纪要｜科技视角下的云梦郑家湖考古",
+      "doi": "",
+      "authors": "罗运兵（主讲）；陈珏（纪要整理）",
+      "published_date": "2026-11-17",
+      "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+      "publication": "湖南省文物考古研究院，2026-11-17",
+      "headline": "郑家湖材料连起迁徙与葬俗",
+      "core": "罗运兵以郑家湖C区2021年发掘的116座秦文化墓葬为例，介绍漆木器、纺织品保护和17项检测的配合。报告将墓葬形制、秦楚风格随葬品、同位素及历史背景联系起来，讨论个体的来源与生活经历。\n\n例如，报告者把M257墓主解释为北方出生、幼年来到江汉平原，M277墓主则在江汉地区出生、终老。同一墓地中的不同移动史，与秦、楚风格器物共存的现象一起，被用于说明战国末至汉初的人群交往。",
+      "significance": "器物风格与墓主迁徙经历由不同材料支撑：前者依据组合与工艺，后者依据同位素及相关个体资料。把它们放回同一墓葬，报告能具体说明文化交融怎样发生在个体生活中。",
+      "period": "战国秦汉",
+      "kind": "学术演讲",
+      "material_type": "会议纪要",
+      "source_status": "已核对会议纪要",
+      "limits": "核读11月17日纪要，讲座举行于11月13日；所述主要发掘发生于2021年。本条按纪要公开时间收录。纪要中寄生虫计数与百分比不一致，本条未采用该比例，也未把墓主婚姻关系等推测写成确定身份。",
+      "evidence": [
+        "资料公布日期为2026-11-17；按其实际发表或公开日期收录。",
+        "正文所据材料性质：会议纪要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "科技考古",
+      "claims": [
+        {
+          "text": "郑家湖材料连起迁徙与葬俗",
+          "supports": [
+            {
+              "quote": "利用多种同位素检测重建了个体迁移行为和生活史",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+              "source_hash": "7031f5fe314288f0294759f90ff34f9f1bcaf0799b3048962d35e96e397dacc2"
+            }
+          ]
+        },
+        {
+          "text": "罗运兵以郑家湖C区2021年发掘的116座秦文化墓葬为例，介绍漆木器、纺织品保护和17项检测的配合。报告将墓葬形制、秦楚风格随葬品、同位素及历史背景联系起来，讨论个体的来源与生活经历。",
+          "supports": [
+            {
+              "quote": "进行了人骨考古、古DNA(人/动物)、动物考古、同位素分析、植物考古等十七项检测分析",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+              "source_hash": "7031f5fe314288f0294759f90ff34f9f1bcaf0799b3048962d35e96e397dacc2"
+            }
+          ]
+        },
+        {
+          "text": "例如，报告者把M257墓主解释为北方出生、幼年来到江汉平原，M277墓主则在江汉地区出生、终老。同一墓地中的不同移动史，与秦、楚风格器物共存的现象一起，被用于说明战国末至汉初的人群交往。",
+          "supports": [
+            {
+              "quote": "她在江汉平原出生、终老,是一位见证了秦朝兴亡的贵妇人",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+              "source_hash": "7031f5fe314288f0294759f90ff34f9f1bcaf0799b3048962d35e96e397dacc2"
+            }
+          ]
+        },
+        {
+          "text": "器物风格与墓主迁徙经历由不同材料支撑：前者依据组合与工艺，后者依据同位素及相关个体资料。把它们放回同一墓葬，报告能具体说明文化交融怎样发生在个体生活中。",
+          "supports": [
+            {
+              "quote": "结合科技检测、随葬物品与历史背景,复原出了部分墓主人的身份等级和人生轨迹",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+              "source_hash": "7031f5fe314288f0294759f90ff34f9f1bcaf0799b3048962d35e96e397dacc2"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "71650e2057615eb89662ad2329a32c95a4cd836034bbbbf5591b29fdfddb75de",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对116墓、17项检测及报告者对M257与M277的个体解释；迁徙仍为报告者判断，不将婚姻身份和有矛盾的寄生虫百分比纳入正文。按11月17日纪要公开日收录。"
+      }
+    }
+  ]
+}

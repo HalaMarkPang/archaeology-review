@@ -1,0 +1,408 @@
+{
+  "id": "2026-11-13",
+  "date": "2026-11-13",
+  "issue_no": "考古-周刊 · 2026-11-13",
+  "period": "2026-11-06 — 2026-11-13",
+  "source_window": {
+    "start": "2026-11-06",
+    "end": "2026-11-13",
+    "start_at": "2026-11-06T12:00:00+08:00",
+    "end_at": "2026-11-13T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "start_exclusive": true,
+    "end_inclusive": true
+  },
+  "intro": "本期编选在固定周度窗口内公布的考古材料与研究。",
+  "is_sample": false,
+  "records": [
+    {
+      "id": "82d0dfaf12bebab5",
+      "title": "南老君堂遗址考古发现",
+      "doi": "",
+      "authors": "北京市文物局（发布）",
+      "published_date": "2026-11-11",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+      "publication": "北京市文物局考古成果介绍，2026-11-11",
+      "headline": "南老君堂发现三重环壕",
+      "core": "延庆南老君堂遗址现存面积约30万平方米。北京市考古研究院等单位自2024年调查、勘探和发掘，确认这里存在龙山时期三重基本平行的环壕；遗存还包括新石器时代中期、雪山一期文化及大坨头文化等阶段。龙山遗存中兼见内蒙古中南部、晋中、中原和海岱的文化因素。",
+      "significance": "这处大型环壕聚落把延庆盆地的区域文化联系与聚落组织放在同一地点观察。较长的遗存序列同时给出了分辨这些联系先后变化的材料，延庆在北方史前文化互动中的位置因此有了更具体的考古基础。",
+      "period": "新石器",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据11月11日公布的成果介绍收录；所涉报告于10月31日作出。仅述该遗址分项，未核对完整发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-11；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "南老君堂发现三重环壕",
+          "supports": [
+            {
+              "quote": "确认该遗址存在龙山时期三重基本平行的环壕",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        },
+        {
+          "text": "延庆南老君堂遗址现存面积约30万平方米。北京市考古研究院等单位自2024年调查、勘探和发掘，确认这里存在龙山时期三重基本平行的环壕；遗存还包括新石器时代中期、雪山一期文化及大坨头文化等阶段。龙山遗存中兼见内蒙古中南部、晋中、中原和海岱的文化因素。",
+          "supports": [
+            {
+              "quote": "内涵最为丰富的龙山时期遗存",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        },
+        {
+          "text": "这处大型环壕聚落把延庆盆地的区域文化联系与聚落组织放在同一地点观察。较长的遗存序列同时给出了分辨这些联系先后变化的材料，延庆在北方史前文化互动中的位置因此有了更具体的考古基础。",
+          "supports": [
+            {
+              "quote": "初步梳理出延庆盆地自新石器时代中期以来的文化发展脉络",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "static/covers/2026-11-13.png",
+          "alt": "南老君堂遗址发掘现场",
+          "caption": "南老君堂遗址发掘现场。图源：北京市文物局成果介绍。",
+          "source_url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "5a04641dca749d6767c763d3581958c1e53b29e1d9c4501d7edc290bbb023bf3",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对30万平方米、龙山三重环壕和多期遗存；未把其他阶段全部归入龙山。按11月11日文稿公布日记录。"
+      }
+    },
+    {
+      "id": "96e57a8a2efc1646",
+      "title": "琉璃河遗址西周聚落结构新识",
+      "doi": "",
+      "authors": "安妮娜（成果介绍）",
+      "published_date": "2026-11-11",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+      "publication": "北京市文物局考古成果介绍，2026-11-11",
+      "headline": "琉璃河内外城或属统一规划",
+      "core": "琉璃河联合考古队通过地表高程模型、勘探与发掘，复核内城墙、内城壕，并发现外城墙和外城壕。研究者推测聚落范围约6.6平方千米，认为内、外城是同一次城市规划的产物。\n\n内城大型夯土建筑的分布突破了此前划定的“宫殿区”，内城外新见多处小型墓地；黄土坡北则为包含燕侯墓地的高等级墓葬集中区。作者据此重新讨论城址功能分区与墓地布局。",
+      "significance": "新发现调整了过去按局部发掘划出的空间边界：大型建筑并不限于原定“宫殿区”，新墓群也使原有墓地分区不再适用。城墙、建筑与不同等级墓地被纳入同一聚落尺度后，燕国早期都邑的社会结构可以依据整体空间关系讨论。",
+      "period": "商周",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据11月11日正式公布的分项成果介绍撰写；10月31日作报告，11月2日曾有简要新闻披露，本刊未重复收入初报。范围与功能解释保留研究者推测程度。",
+      "evidence": [
+        "资料公布日期为2026-11-11；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "建筑考古",
+      "claims": [
+        {
+          "text": "琉璃河内外城或属统一规划",
+          "supports": [
+            {
+              "quote": "内外城为同一次城市规划设计的产物",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        },
+        {
+          "text": "琉璃河联合考古队通过地表高程模型、勘探与发掘，复核内城墙、内城壕，并发现外城墙和外城壕。研究者推测聚落范围约6.6平方千米，认为内、外城是同一次城市规划的产物。",
+          "supports": [
+            {
+              "quote": "新发现外城墙和外城壕,据此将城址划分为内、外城",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        },
+        {
+          "text": "内城大型夯土建筑的分布突破了此前划定的“宫殿区”，内城外新见多处小型墓地；黄土坡北则为包含燕侯墓地的高等级墓葬集中区。作者据此重新讨论城址功能分区与墓地布局。",
+          "supports": [
+            {
+              "quote": "其分布突破此前划定的\"宫殿区\"",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        },
+        {
+          "text": "新发现调整了过去按局部发掘划出的空间边界：大型建筑并不限于原定“宫殿区”，新墓群也使原有墓地分区不再适用。城墙、建筑与不同等级墓地被纳入同一聚落尺度后，燕国早期都邑的社会结构可以依据整体空间关系讨论。",
+          "supports": [
+            {
+              "quote": "新发现多处小型墓地,其中新见墓葬群",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+              "source_hash": "c9c37d9580aa7734b11246d9d0f1476ca755b3df9a0df3204b04cb9eb17bf8cc"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "df8ebc14cad5b2a2738e6f8bc192586c59653606a5f3f6e8a3b4b5ff6008c0ae",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对6.6平方千米为推测范围、内外城规划为研究者判断，标题补或字。宫殿区与墓区边界变化均由原稿明确提出。"
+      }
+    },
+    {
+      "id": "5ff59359305aac52",
+      "title": "我校“文明起源与早期国家”团队在《考古学报》发表学术论文探讨商周变革模式",
+      "doi": "",
+      "authors": "西北大学（论文作者：刘威、豆海锋）",
+      "published_date": "2026-11-09",
+      "url": "https://www.nwu.edu.cn/info/1061/22831.htm",
+      "publication": "西北大学成果介绍；所涉论文刊于《考古学报》2026年第4期，2026-11-09",
+      "headline": "腰坑不宜单独判定族属",
+      "core": "刘威、豆海锋系统比较泾渭地区近千座西周早期墓葬，认为周初葬俗兼有延续、杂糅与创新。洞室墓延续本地传统，部分墓室设施又吸收商文化习俗，不能将不同葬俗一概归为从殷墟传入。\n\n腰坑常被用于辨识殷遗民墓葬，但东阳有二层台殉人墓却不见腰坑。作者以这些组合差异说明，单一指标不足以判定墓主族属；墓葬等级制度与随人群交融变化的地方风俗，也应分开理解。",
+      "significance": "研究直接限定了腰坑作为族属标记的用法：同属周初墓葬，殉人、腰坑与其他设施并不总是成套出现。对商周人群融合的解释因而需要依据葬俗组合及地域差异，而不能由某一项设施直接对应某一族群。",
+      "period": "商周",
+      "kind": "研究论文",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "核读西北大学11月9日成果介绍，未取得《考古学报》论文全文；收录日期指成果介绍公布日，不推定期刊论文的具体首发日。",
+      "evidence": [
+        "资料公布日期为2026-11-09；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "腰坑不宜单独判定族属",
+          "supports": [
+            {
+              "quote": "说明不能仅凭单一葬俗指标简单判定墓主族属",
+              "url": "https://www.nwu.edu.cn/info/1061/22831.htm",
+              "source_hash": "512a8059623a8d85a5c1fcd4824ca7adc394afc8cac0e85e0640cf663b5f9c7a"
+            }
+          ]
+        },
+        {
+          "text": "刘威、豆海锋系统比较泾渭地区近千座西周早期墓葬，认为周初葬俗兼有延续、杂糅与创新。洞室墓延续本地传统，部分墓室设施又吸收商文化习俗，不能将不同葬俗一概归为从殷墟传入。",
+          "supports": [
+            {
+              "quote": "洞室墓并非源自殷墟商文化",
+              "url": "https://www.nwu.edu.cn/info/1061/22831.htm",
+              "source_hash": "512a8059623a8d85a5c1fcd4824ca7adc394afc8cac0e85e0640cf663b5f9c7a"
+            }
+          ]
+        },
+        {
+          "text": "腰坑常被用于辨识殷遗民墓葬，但东阳有二层台殉人墓却不见腰坑。作者以这些组合差异说明，单一指标不足以判定墓主族属；墓葬等级制度与随人群交融变化的地方风俗，也应分开理解。",
+          "supports": [
+            {
+              "quote": "东阳墓地出现的二层台殉人墓葬均不见腰坑",
+              "url": "https://www.nwu.edu.cn/info/1061/22831.htm",
+              "source_hash": "512a8059623a8d85a5c1fcd4824ca7adc394afc8cac0e85e0640cf663b5f9c7a"
+            }
+          ]
+        },
+        {
+          "text": "研究直接限定了腰坑作为族属标记的用法：同属周初墓葬，殉人、腰坑与其他设施并不总是成套出现。对商周人群融合的解释因而需要依据葬俗组合及地域差异，而不能由某一项设施直接对应某一族群。",
+          "supports": [
+            {
+              "quote": "说明不能仅凭单一葬俗指标简单判定墓主族属",
+              "url": "https://www.nwu.edu.cn/info/1061/22831.htm",
+              "source_hash": "512a8059623a8d85a5c1fcd4824ca7adc394afc8cac0e85e0640cf663b5f9c7a"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "1c0408291e8b232093ddcadd54266b751e3af4039cdb0450e2749b6bba07495a",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对近千墓比较、洞室墓本地传统和东阳殉人墓不见腰坑；未据此否定10月刊期中结合铭文和葬俗的个别墓主人判断。仅据西北大学成果介绍。"
+      }
+    },
+    {
+      "id": "c3ef591a9d6b6092",
+      "title": "“考古中国”重大项目康保兴隆遗址取得新发现",
+      "doi": "",
+      "authors": "龚正龙（报道）",
+      "published_date": "2026-11-07",
+      "url": "http://he.people.com.cn/n2/2026/1107/c192235-41744307.html",
+      "publication": "河北日报／人民网，2026-11-07",
+      "headline": "兴隆遗址呈现渐进定居过程",
+      "core": "河北康保兴隆遗址新确认的2号地点出土两座半地穴式房址，并揭露逾百平方米的露天石器加工场。1号地点距今约1.16万至1万年的营地则分早、晚两期：早期以细石器为主，晚期出现磨棒与陶片。\n\n遗址还发现成组排列的室外灶，邻近窖穴出土炭化黍、狍子和鱼骨，年代约为距今7800—7700年。研究者将这些不同时段的材料解释为从流动狩猎采集，经半定居，走向低强度农业与混合生业的演变。",
+      "significance": "兴隆的意义在于把定居和农业的形成区分为有时间层次的过程：较稳定的营地、房址与加工场，以及后来黍和多类动物资源的组合，分别呈现居住方式与生业变化。坝上新石器化因此具有可比较的分期材料，而非一次突然替换。",
+      "period": "新石器",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "核对人民网所载河北日报完整报道。报道汇总多个年代阶段，不将2号地点的房址直接归入1号地点最早的营地年代。",
+      "evidence": [
+        "资料公布日期为2026-11-07；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "兴隆遗址呈现渐进定居过程",
+          "supports": [
+            {
+              "quote": "逐步从高流动性狩猎采集生活转向半定居状态",
+              "url": "http://he.people.com.cn/n2/2026/1107/c192235-41744307.html",
+              "source_hash": "216c716c994b2be3513f5363c4d4571155e1a513ca8d48bb5d8e6b617d7aa57c"
+            }
+          ]
+        },
+        {
+          "text": "河北康保兴隆遗址新确认的2号地点出土两座半地穴式房址，并揭露逾百平方米的露天石器加工场。1号地点距今约1.16万至1万年的营地则分早、晚两期：早期以细石器为主，晚期出现磨棒与陶片。",
+          "supports": [
+            {
+              "quote": "该地点出土两座半地穴式房址",
+              "url": "http://he.people.com.cn/n2/2026/1107/c192235-41744307.html",
+              "source_hash": "216c716c994b2be3513f5363c4d4571155e1a513ca8d48bb5d8e6b617d7aa57c"
+            }
+          ]
+        },
+        {
+          "text": "遗址还发现成组排列的室外灶，邻近窖穴出土炭化黍、狍子和鱼骨，年代约为距今7800—7700年。研究者将这些不同时段的材料解释为从流动狩猎采集，经半定居，走向低强度农业与混合生业的演变。",
+          "supports": [
+            {
+              "quote": "该遗迹年代距今约7800至7700年",
+              "url": "http://he.people.com.cn/n2/2026/1107/c192235-41744307.html",
+              "source_hash": "216c716c994b2be3513f5363c4d4571155e1a513ca8d48bb5d8e6b617d7aa57c"
+            }
+          ]
+        },
+        {
+          "text": "兴隆的意义在于把定居和农业的形成区分为有时间层次的过程：较稳定的营地、房址与加工场，以及后来黍和多类动物资源的组合，分别呈现居住方式与生业变化。坝上新石器化因此具有可比较的分期材料，而非一次突然替换。",
+          "supports": [
+            {
+              "quote": "最终孕育出低强度的农业生产",
+              "url": "http://he.people.com.cn/n2/2026/1107/c192235-41744307.html",
+              "source_hash": "216c716c994b2be3513f5363c4d4571155e1a513ca8d48bb5d8e6b617d7aa57c"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "bfc5d3fcfe71f29c6a2718203b77bb3ac437cc7b5013e33376c84b48514efad6",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "区分1号地点早晚营地、2号地点房址和约7800至7700年窖穴材料；将连续材料改为分期材料，避免推定无间断居住。完整核读人民网河北日报原文。"
+      }
+    },
+    {
+      "id": "9e1210270f7e14d6",
+      "title": "A study on the function of “隹 (惟)”: A case study of Feng Xu zhi Ming in the Tsinghua Bamboo Slips (V)",
+      "doi": "10.1177/25138502261495948",
+      "authors": "Seri Shin",
+      "published_date": "2026-11-07",
+      "url": "https://doi.org/10.1177/25138502261495948",
+      "publication": "Journal of Chinese Writing Systems，2026-11-07",
+      "headline": "“惟”被释为共识标记",
+      "core": "Seri Shin分析清华简《封许之命》中“隹”（惟、唯）的句法位置，以及它与“亦”“则”等词的共现。作者将相关句式理解为带标记的话题结构：先提出说话双方共同承认的对象或前提，再作说明；篇中“惟”四见，多用于判断表达。研究还将这些受命文辞与铜器册命铭文及相关传世文本比较，讨论其形成的语言环境。",
+      "significance": "把“惟”与交谈双方的预设联系起来，能够具体说明册命文辞如何组织已知事实与随后给出的判断。对这篇出土文本而言，句式和用词成为辨认受命语境、比较不同文本之间关系的证据。",
+      "period": "战国秦汉",
+      "kind": "研究论文",
+      "material_type": "期刊论文公开摘要",
+      "source_status": "已核对公开摘要",
+      "limits": "依据公开摘要撰写，未核对全文。摘要与在线发表日期取自出版社提交至Crossref的元数据；出版社正文页访问受限。",
+      "evidence": [
+        "资料公布日期为2026-11-07；按其实际发表或公开日期收录。",
+        "正文所据材料性质：期刊论文公开摘要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "“惟”被释为共识标记",
+          "supports": [
+            {
+              "quote": "shared beliefs and presupposed premises",
+              "url": "https://doi.org/10.1177/25138502261495948",
+              "source_hash": "90d4a6afec9fcc0b6bccd1876afc606f6d7e7cc59a40176de234019b05487b2c"
+            }
+          ]
+        },
+        {
+          "text": "Seri Shin分析清华简《封许之命》中“隹”（惟、唯）的句法位置，以及它与“亦”“则”等词的共现。作者将相关句式理解为带标记的话题结构：先提出说话双方共同承认的对象或前提，再作说明；篇中“惟”四见，多用于判断表达。研究还将这些受命文辞与铜器册命铭文及相关传世文本比较，讨论其形成的语言环境。",
+          "supports": [
+            {
+              "quote": "appearing four times in Feng Xu zhi Ming",
+              "url": "https://doi.org/10.1177/25138502261495948",
+              "source_hash": "90d4a6afec9fcc0b6bccd1876afc606f6d7e7cc59a40176de234019b05487b2c"
+            }
+          ]
+        },
+        {
+          "text": "把“惟”与交谈双方的预设联系起来，能够具体说明册命文辞如何组织已知事实与随后给出的判断。对这篇出土文本而言，句式和用词成为辨认受命语境、比较不同文本之间关系的证据。",
+          "supports": [
+            {
+              "quote": "interrelationships among different transmitted versions",
+              "url": "https://doi.org/10.1177/25138502261495948",
+              "source_hash": "90d4a6afec9fcc0b6bccd1876afc606f6d7e7cc59a40176de234019b05487b2c"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "d8d48788852a890edbbd6c14c7658bc5e1baa03df5bfe350c9e505b436677175",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对四见、话题结构、双方共享预设及铜器册命文辞比较；题名用被释表明语言解释，未编造旧说或直接补写古文例句。"
+      }
+    }
+  ]
+}

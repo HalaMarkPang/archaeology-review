@@ -1,0 +1,318 @@
+{
+  "id": "2026-11-06",
+  "date": "2026-11-06",
+  "issue_no": "考古-周刊 · 2026-11-06",
+  "period": "2026-10-30 — 2026-11-06",
+  "source_window": {
+    "start": "2026-10-30",
+    "end": "2026-11-06",
+    "start_at": "2026-10-30T12:00:00+08:00",
+    "end_at": "2026-11-06T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "start_exclusive": true,
+    "end_inclusive": true
+  },
+  "intro": "本期编选在固定周度窗口内公布的考古材料与研究。",
+  "is_sample": false,
+  "records": [
+    {
+      "id": "867555c0985c5e3d",
+      "title": "一系列考古研究成果公布 北京首次发现隋代长城遗存",
+      "doi": "",
+      "authors": "王广燕（报道）",
+      "published_date": "2026-11-02",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+      "publication": "北京日报／首都之窗，2026-11-02",
+      "headline": "大岭沟确认隋代长城遗存",
+      "core": "北京市考古研究院在昌平大岭沟早期长城戍堡遗址发掘800平方米，出土北朝、隋、金时期文物60余件（套）。研究者以隋五铢和具有隋代器形、制作工艺特征的瓷器为关键证据，结合历史文献，判定遗址主体年代为北齐、隋代，金代仍有沿用。",
+      "significance": "这项断代把北京早期长城的使用延续到隋代，地方防御体系的讨论因而有了可定位、可断代的实物节点。其依据是发掘出的钱币与瓷器组合，而非仅凭地面墙体形态判断。",
+      "period": "隋唐",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据正式发布的考古成果介绍撰写，未核对完整发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-02；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "field": "建筑考古",
+      "claims": [
+        {
+          "text": "大岭沟确认隋代长城遗存",
+          "supports": [
+            {
+              "quote": "主体时代为北齐、隋代,金代仍有一定的延用",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "北京市考古研究院在昌平大岭沟早期长城戍堡遗址发掘800平方米，出土北朝、隋、金时期文物60余件（套）。研究者以隋五铢和具有隋代器形、制作工艺特征的瓷器为关键证据，结合历史文献，判定遗址主体年代为北齐、隋代，金代仍有沿用。",
+          "supports": [
+            {
+              "quote": "一件具有典型隋代特征的瓷器",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "这项断代把北京早期长城的使用延续到隋代，地方防御体系的讨论因而有了可定位、可断代的实物节点。其依据是发掘出的钱币与瓷器组合，而非仅凭地面墙体形态判断。",
+          "supports": [
+            {
+              "quote": "对研究北京早期长城的年代、位置、走向、军事防御体系具有重要价值",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "static/covers/2026-11-06.jpg",
+          "alt": "大岭沟早期长城戍堡遗址",
+          "caption": "大岭沟早期长城戍堡遗址。武亦彬摄，图源：北京日报／首都之窗。",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "259272152aceedcda1adc1ee3d1b672ac6c56c0a28153900912bd5e6055a15db",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对北齐、隋主体年代与金代沿用；钱币和瓷器为报道所列断代证据。题名未扩大到整段长城的统一年代。"
+      }
+    },
+    {
+      "id": "144013ba0ccee230",
+      "title": "西大桥遗址考古发现填补空白",
+      "doi": "",
+      "authors": "王广燕（报道）",
+      "published_date": "2026-11-02",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+      "publication": "北京日报／首都之窗（西大桥分项），2026-11-02",
+      "headline": "西大桥发现五千年前居址",
+      "core": "北京密云西大桥遗址2026年两期发掘清理各类遗迹301处，其中56处属于距今约5000年的新石器时代遗存。成果介绍者徐旻指出，这批发现补上了燕山南麓新石器时代居址类遗迹的空白。",
+      "significance": "西大桥使燕山南麓史前文化的讨论有了居住活动的材料。密云位于辽西、冀北与北京平原之间，这些居址把区域文化联系落实到具体的聚落，而不只是分散出土的器物。",
+      "period": "新石器",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据正式发布的考古成果介绍撰写，未核对完整发掘报告。",
+      "evidence": [
+        "资料公布日期为2026-11-02；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "西大桥发现五千年前居址",
+          "supports": [
+            {
+              "quote": "该新石器时代遗址年代距今5000年前后",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "北京密云西大桥遗址2026年两期发掘清理各类遗迹301处，其中56处属于距今约5000年的新石器时代遗存。成果介绍者徐旻指出，这批发现补上了燕山南麓新石器时代居址类遗迹的空白。",
+          "supports": [
+            {
+              "quote": "其中,新石器时代遗址清理出56处遗迹",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "西大桥使燕山南麓史前文化的讨论有了居住活动的材料。密云位于辽西、冀北与北京平原之间，这些居址把区域文化联系落实到具体的聚落，而不只是分散出土的器物。",
+          "supports": [
+            {
+              "quote": "串联辽西、冀北与北京平原的古代文化脉络的重要发现",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "77c921ad86a443587ba09daa8ae07d2956cb975903f0a0f6976737a18555a156",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对301处为全期遗迹、56处为新石器遗迹，未混用统计范围。意义限于居址材料与区域联系。"
+      }
+    },
+    {
+      "id": "d8218ec6be1b2f14",
+      "title": "3艘北方地区体量最大古船出土",
+      "doi": "",
+      "authors": "王广燕（报道）",
+      "published_date": "2026-11-02",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+      "publication": "北京日报／首都之窗（丰台沉船分项），2026-11-02",
+      "headline": "丰台出土三艘汉晋沉船",
+      "core": "北京市考古研究院在丰台万泉寺村改造项目中发掘出3艘汉晋时期平底木板船及相关河道遗存。发掘于2025年11月至12月进行，本次公布其考古收获。研究者将它们称为目前中国北方发现的体量最大、结构最完整的内河古船。",
+      "significance": "船体与古河道一同保存，使北京汉晋时期的内河航运可以依据船只结构和埋藏位置共同讨论。木板船保留的构造细节，也把交通史与造船技术史联系起来。",
+      "period": "魏晋南北朝",
+      "kind": "发掘动态",
+      "material_type": "新闻披露",
+      "source_status": "已核对新闻披露",
+      "limits": "据11月2日成果报道撰写；不采用后续报道中的具体连接工艺与跨区域传播推测。遗存跨汉晋，页面暂归魏晋南北朝。",
+      "evidence": [
+        "资料公布日期为2026-11-02；按其实际发表或公开日期收录。",
+        "正文所据材料性质：新闻披露。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "丰台出土三艘汉晋沉船",
+          "supports": [
+            {
+              "quote": "发掘出3艘汉晋时期沉船及相关河道遗存",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "北京市考古研究院在丰台万泉寺村改造项目中发掘出3艘汉晋时期平底木板船及相关河道遗存。发掘于2025年11月至12月进行，本次公布其考古收获。研究者将它们称为目前中国北方发现的体量最大、结构最完整的内河古船。",
+          "supports": [
+            {
+              "quote": "3艘保存较好的平底木板船",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        },
+        {
+          "text": "船体与古河道一同保存，使北京汉晋时期的内河航运可以依据船只结构和埋藏位置共同讨论。木板船保留的构造细节，也把交通史与造船技术史联系起来。",
+          "supports": [
+            {
+              "quote": "华北地区汉晋时期水上交通考古的重大突破",
+              "url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+              "source_hash": "d6c43167307fc29794dabfbf36a9e4de61534701c37a11f1cf4c0b61cb435d9c"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "7168d493f4fc643e29d990782c6438b16871c04e383036293113588772508e35",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对3船、汉晋、2025年发掘与2026年成果公开。已删去对整个华北此前仅有文字证据的过度表述；跨期归类写明。"
+      }
+    },
+    {
+      "id": "e4ee461c803e213a",
+      "title": "讲座纪要｜湖南新石器时代考古的回顾与前瞻",
+      "doi": "",
+      "authors": "郭伟民（主讲）；符雅洁（纪要整理）",
+      "published_date": "2026-11-03",
+      "url": "https://www.hnkgs.com/front/toReadNews.do?id=9433",
+      "publication": "湖南省文物考古研究院，2026-11-03",
+      "headline": "区域考古不能停在排年分类",
+      "core": "郭伟民回顾湖南新石器时代考古从建立文化序列，到研究聚落、环境与农业，再到多学科协作的转变。他指出，时空框架虽已建立，工作却集中于环洞庭湖地区；文化因素分析仍有依经验判断的倾向，经济技术、社会组织与精神信仰之间的联系也缺少充分整合。\n\n讲座把问题追到资料形成的环节：遗迹、地层与打破关系辨识不准确，单位标注不统一，会直接影响后续整理和解释。作者主张严格执行田野规程，在传统地层学、类型学工作基础上组织多学科合作，使记录、材料分析与研究问题衔接起来。",
+      "significance": "对实际工作而言，文化分期是继续解释社会过程的基础，记录质量则是这一基础的前提。讲座所强调的改变，是把规范记录、多学科研究和现场保护作为同一考古项目中的相互关联工作，避免仅完成器物分类便结束解释。",
+      "period": "考古学理论",
+      "kind": "学术演讲",
+      "material_type": "会议纪要",
+      "source_status": "已核对会议纪要",
+      "limits": "核读研究院11月3日发布的讲座纪要；讲座实际举行于10月28日，按纪要公布时间收录，不将历史回顾中的遗址材料视为本周新发现。",
+      "evidence": [
+        "资料公布日期为2026-11-03；按其实际发表或公开日期收录。",
+        "正文所据材料性质：会议纪要。"
+      ],
+      "generation": {
+        "model": "GPT-6（Codex 本任务）",
+        "prompt_version": "research-policy-2026-10-30/editorial-contract/backfill-2026-11-20",
+        "generated_at": "2026-11-20T18:47:39+08:00"
+      },
+      "claims": [
+        {
+          "text": "区域考古不能停在排年分类",
+          "supports": [
+            {
+              "quote": "经济技术、社会组织、精神意识三方面整合研究不足",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9433",
+              "source_hash": "b7e7e15ac0720ffe62619b8d013da5ce0f8692064ecf0f9a7ac3a773c0518ea3"
+            }
+          ]
+        },
+        {
+          "text": "郭伟民回顾湖南新石器时代考古从建立文化序列，到研究聚落、环境与农业，再到多学科协作的转变。他指出，时空框架虽已建立，工作却集中于环洞庭湖地区；文化因素分析仍有依经验判断的倾向，经济技术、社会组织与精神信仰之间的联系也缺少充分整合。",
+          "supports": [
+            {
+              "quote": "文化因素分析经验主义思想严重",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9433",
+              "source_hash": "b7e7e15ac0720ffe62619b8d013da5ce0f8692064ecf0f9a7ac3a773c0518ea3"
+            }
+          ]
+        },
+        {
+          "text": "讲座把问题追到资料形成的环节：遗迹、地层与打破关系辨识不准确，单位标注不统一，会直接影响后续整理和解释。作者主张严格执行田野规程，在传统地层学、类型学工作基础上组织多学科合作，使记录、材料分析与研究问题衔接起来。",
+          "supports": [
+            {
+              "quote": "其直接影响资料记录的客观性,为后续资料整理与考古研究埋下隐患",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9433",
+              "source_hash": "b7e7e15ac0720ffe62619b8d013da5ce0f8692064ecf0f9a7ac3a773c0518ea3"
+            }
+          ]
+        },
+        {
+          "text": "对实际工作而言，文化分期是继续解释社会过程的基础，记录质量则是这一基础的前提。讲座所强调的改变，是把规范记录、多学科研究和现场保护作为同一考古项目中的相互关联工作，避免仅完成器物分类便结束解释。",
+          "supports": [
+            {
+              "quote": "考古发掘与文物保护同步开展",
+              "url": "https://www.hnkgs.com/front/toReadNews.do?id=9433",
+              "source_hash": "b7e7e15ac0720ffe62619b8d013da5ce0f8692064ecf0f9a7ac3a773c0518ea3"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer_type": "model",
+        "reviewer": "GPT-6（Codex 本任务，最终稿逐篇复核）",
+        "reviewed_at": "2026-11-20T18:48:47+08:00",
+        "record_digest": "3dc31d5a7b254d022008cee2773f58348e862dab578258658408c67f70c4bc02",
+        "claims_supported": true,
+        "uncertainty_preserved": true,
+        "scope_confirmed": true,
+        "sources_checked": true,
+        "review_note": "核对郭伟民讲座的学科史、记录问题与多学科合作论述；实践启示只保留作者明确强调的工作关系。按11月3日纪要公开时间收录。"
+      }
+    }
+  ]
+}

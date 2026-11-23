@@ -1,0 +1,67 @@
+{
+  "2026-10-30": {
+    "src": "static/covers/wenwu-2026-10-cover.jpg",
+    "alt": "周原M11出土铜觥，《文物》2026年第10期封面配图",
+    "caption": "周原M11出土铜觥",
+    "credit": "《文物》",
+    "source_url": "https://www.wenwu.com/newsinfo/11369093.html",
+    "bronze": true,
+    "headlines": []
+  },
+  "2026-10-23": {
+    "src": "static/covers/shimao-huangchengtai.png",
+    "alt": "石峁皇城台石砌台地",
+    "caption": "石峁皇城台",
+    "credit": "Antiquity",
+    "source_url": "https://www.cambridge.org/core/journals/antiquity/article/excavations-of-the-city-of-shimao-and-its-monuments/AD1050E0DB5579F9DE2835ED5489752A",
+    "headlines": [
+      "反山东侧建筑复原",
+      "石峁报告述评"
+    ]
+  },
+  "2026-10-14": {
+    "src": "static/figures/m51-chamber.png",
+    "alt": "长安樱花一路M51墓室出土三彩器物",
+    "caption": "",
+    "credit": "央视新闻",
+    "source_url": "http://kaogu.cssn.cn/xwzx/kgdt/202609/t20260920_6068139.shtml",
+    "headlines": [
+      "长安樱花一路M51出土成组三彩"
+    ],
+    "first": true
+  },
+  "2026-11-06": {
+    "src": "static/covers/2026-11-06.jpg",
+    "alt": "昌平大岭沟早期长城戍堡遗址",
+    "caption": "大岭沟早期长城戍堡遗址",
+    "credit": "北京日报·武亦彬",
+    "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202611/t20261102_4927422.html",
+    "headlines": [
+      "大岭沟隋代长城",
+      "丰台汉晋沉船"
+    ]
+  },
+  "2026-11-13": {
+    "src": "static/covers/2026-11-13.png",
+    "alt": "南老君堂遗址发掘现场",
+    "caption": "南老君堂遗址发掘现场",
+    "credit": "北京市文物局",
+    "source_url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/744158672/index.html",
+    "headlines": [
+      "周初葬俗与族属判别",
+      "兴隆遗址渐进定居"
+    ]
+  },
+  "2026-11-20": {
+    "src": "static/covers/2026-11-20.png",
+    "alt": "老虎墩M105出土立人凤形勺",
+    "caption": "老虎墩M105立人凤形勺",
+    "credit": "湖北省文物考古研究院",
+    "source_url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+    "portrait": true,
+    "headlines": [
+      "老虎墩新出秦简",
+      "直立人的雨林适应"
+    ]
+  }
+}

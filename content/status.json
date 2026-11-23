@@ -1,20 +1,28 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-20",
   "state": "published",
   "mode": "reviewed_drafts",
   "source_window": {
-    "start": "2026-10-23",
-    "end": "2026-10-30",
-    "start_at": "2026-10-23T12:00:00+08:00",
-    "end_at": "2026-10-30T12:00:00+08:00",
+    "start": "2026-11-13",
+    "end": "2026-11-20",
+    "start_at": "2026-11-13T12:00:00+08:00",
+    "end_at": "2026-11-20T12:00:00+08:00",
     "timezone": "Asia/Shanghai",
     "start_exclusive": true,
     "end_inclusive": true
   },
-  "candidates": 4330,
-  "qualified_recommendations": 7,
-  "published": 7,
+  "candidates": 2812,
+  "qualified_recommendations": 10,
+  "published": 10,
   "warnings": [
+    "《考古》：覆盖尚未核完（no_verified_next_link）",
+    "《考古学报》：覆盖尚未核完（no_verified_next_link）",
+    "OPENALEX_API_KEY未配置，未检索OpenAlex",
+    "文物出版社工作动态：覆盖尚未核完（no_verified_next_link）",
+    "文物出版社：覆盖尚未核完（no_verified_next_link）",
+    "文物出版社资讯：覆盖尚未核完（no_verified_next_link）",
+    "中国考古网学术论文：覆盖尚未核完（no_verified_next_link）",
+    "北京大学考古文博学院：覆盖尚未核完（page_budget）",
     "公众号「北京大学考古文博学院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「东南文化」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「杜伦考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
@@ -49,73 +57,246 @@
     "公众号「海岱考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「成都文物考古研究院」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
     "公众号「大众考古」仅作搜索补充，尚未核完账号列表：ValueError: 页面未识别到有效搜索结果",
-    "Crossref Paleolithic China archaeology: partial (page_budget)",
-    "Crossref Neolithic China Yangshao Longshan archaeology: partial (page_budget)",
-    "Crossref Shang Zhou oracle bone bronze inscription archaeology: partial (page_budget)",
-    "Crossref Warring States Qin Han archaeology China: partial (page_budget)",
-    "Crossref Six Dynasties Northern Wei archaeology China: partial (page_budget)",
+    "Crossref 考古学报: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref 考古与文物: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref 考古: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref 文物: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref Antiquity: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref Journal of Archaeological Method and Theory: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref World Archaeology: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C)",
+    "Crossref Paleolithic China archaeology: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Paleolithic+China+archaeology&filter=from-pub-)",
+    "Crossref Neolithic China Yangshao Longshan archaeology: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Neolithic+China+Yangshao+Longshan+archaeology&)",
+    "Crossref Shang Zhou oracle bone bronze inscription archaeology: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Shang+Zhou+oracle+bone+bronze+inscription+arch)",
+    "Crossref Warring States Qin Han archaeology China: failed (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Warring+States+Qin+Han+archaeology+China&filte)",
+    "Crossref Six Dynasties Northern Wei archaeology China: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Six+Dynasties+Northern+Wei+archaeology+China&f)",
     "Crossref Tang dynasty archaeology Chang'an: partial (page_budget)",
-    "Crossref Song Yuan Ming archaeology China: partial (page_budget)",
+    "Crossref Song Yuan Ming archaeology China: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Song+Yuan+Ming+archaeology+China&filter=from-p)",
     "Crossref archaeological science isotope radiocarbon China: partial (page_budget)",
-    "Crossref architectural archaeology China palace city: partial (page_budget)",
-    "Crossref mural sculpture tomb figurine archaeology China Dunhuang: partial (page_budget)",
-    "Crossref archaeological theory China: partial (page_budget)",
-    "Crossref Chinese archaeological theory settlement: partial (page_budget)",
+    "Crossref architectural archaeology China palace city: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=architectural+archaeology+China+palace+city&fi)",
+    "Crossref mural sculpture tomb figurine archaeology China Dunhuang: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=mural+sculpture+tomb+figurine+archaeology+Chin)",
+    "Crossref archaeological theory China: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=archaeological+theory+China&filter=from-pub-da)",
+    "Crossref Chinese archaeological theory settlement: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Chinese+archaeological+theory+settlement&filte)",
     "Crossref archaeological interpretation China: partial (page_budget)",
     "Crossref history of Chinese archaeology: partial (page_budget)",
     "Crossref social archaeology China: partial (page_budget)",
     "Crossref comparative archaeology China: partial (page_budget)",
-    "Crossref Chinese archaeology: partial (page_budget)",
-    "Crossref China archaeological excavation: partial (page_budget)",
-    "OPENALEX_API_KEY未配置，未检索OpenAlex",
-    "文物出版社工作动态：覆盖尚未核完（no_verified_next_link）",
-    "《考古》：覆盖尚未核完（no_verified_next_link）",
-    "《考古学报》：覆盖尚未核完（no_verified_next_link）",
-    "文物出版社：覆盖尚未核完（no_verified_next_link）",
-    "文物出版社资讯：覆盖尚未核完（no_verified_next_link）",
-    "中国考古网学术论文：覆盖尚未核完（no_verified_next_link）",
-    "北京大学考古文博学院：覆盖尚未核完（page_budget）"
+    "Crossref Chinese archaeology: partial (HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Chinese+archaeology&filter=from-pub-date%3A202)",
+    "Crossref China archaeological excavation: partial (page_budget)"
   ],
   "coverage": [
     {
-      "source": "Crossref",
-      "query": "Paleolithic China archaeology",
+      "source": "《考古》",
+      "url": "http://kaogu.cssn.cn/xsqy/xskw/kg/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "《考古学报》",
+      "url": "http://kaogu.cssn.cn/xsqy/xskw/kgxb/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "OpenAlex",
+      "status": "skipped",
+      "reason": "missing_key"
+    },
+    {
+      "source": "文物出版社",
+      "url": "https://www.wenwu.com/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "文物出版社工作动态",
+      "url": "https://www.wenwu.com/gzdt",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "文物出版社资讯",
+      "url": "https://www.zgwwcbcm.com/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "中国考古网学术论文",
+      "url": "http://kaogu.cssn.cn/xsqy/kycg/xslw/",
+      "pages": 1,
+      "status": "partial",
+      "reason": "no_verified_next_link"
+    },
+    {
+      "source": "北京大学考古文博学院",
+      "url": "https://archaeology.pku.edu.cn/xyzx/xwdt.htm",
       "pages": 5,
-      "retrieved": 500,
       "status": "partial",
       "reason": "page_budget"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古学报",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
+    },
+    {
+      "source": "Crossref",
+      "query": "Paleolithic China archaeology",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Paleolithic+China+archaeology&filter=from-pub-"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古与文物",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
     },
     {
       "source": "Crossref",
       "query": "Neolithic China Yangshao Longshan archaeology",
-      "pages": 5,
-      "retrieved": 500,
-      "status": "partial",
-      "reason": "page_budget"
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Neolithic+China+Yangshao+Longshan+archaeology&"
+    },
+    {
+      "source": "Crossref",
+      "query": "考古",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
     },
     {
       "source": "Crossref",
       "query": "Shang Zhou oracle bone bronze inscription archaeology",
-      "pages": 5,
-      "retrieved": 500,
-      "status": "partial",
-      "reason": "page_budget"
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Shang+Zhou+oracle+bone+bronze+inscription+arch"
+    },
+    {
+      "source": "Crossref",
+      "query": "文物",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
     },
     {
       "source": "Crossref",
       "query": "Warring States Qin Han archaeology China",
-      "pages": 5,
-      "retrieved": 500,
-      "status": "partial",
-      "reason": "page_budget"
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Warring+States+Qin+Han+archaeology+China&filte"
+    },
+    {
+      "source": "Crossref",
+      "query": "华夏考古",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Early China",
+      "pages": 2,
+      "retrieved": 122,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Antiquity",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Archaeological Science",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Archaeometry",
+      "pages": 1,
+      "retrieved": 2,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Field Archaeology",
+      "pages": 1,
+      "retrieved": 35,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "南方文物",
+      "pages": 1,
+      "retrieved": 8,
+      "status": "complete",
+      "reason": "response_exhausted"
     },
     {
       "source": "Crossref",
       "query": "Six Dynasties Northern Wei archaeology China",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 4,
+      "retrieved": 400,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Six+Dynasties+Northern+Wei+archaeology+China&f"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Archaeological Method and Theory",
+      "pages": 0,
+      "retrieved": 0,
+      "status": "failed",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
+    },
+    {
+      "source": "Crossref",
+      "query": "东南文化",
+      "pages": 1,
+      "retrieved": 13,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "江汉考古",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "中原文物",
+      "pages": 1,
+      "retrieved": 40,
+      "status": "complete",
+      "reason": "response_exhausted"
     },
     {
       "source": "Crossref",
@@ -127,11 +308,43 @@
     },
     {
       "source": "Crossref",
-      "query": "Song Yuan Ming archaeology China",
-      "pages": 5,
-      "retrieved": 500,
+      "query": "World Archaeology",
+      "pages": 1,
+      "retrieved": 100,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?filter=from-pub-date%3A2026-11-13%2Cuntil-pub-date%3A2026-11-20%2C"
+    },
+    {
+      "source": "Crossref",
+      "query": "Cambridge Archaeological Journal",
+      "pages": 1,
+      "retrieved": 34,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Journal of Anthropological Archaeology",
+      "pages": 1,
+      "retrieved": 0,
+      "status": "complete",
+      "reason": "response_exhausted"
+    },
+    {
+      "source": "Crossref",
+      "query": "Song Yuan Ming archaeology China",
+      "pages": 2,
+      "retrieved": 200,
+      "status": "partial",
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Song+Yuan+Ming+archaeology+China&filter=from-p"
+    },
+    {
+      "source": "Crossref",
+      "query": "敦煌研究",
+      "pages": 1,
+      "retrieved": 38,
+      "status": "complete",
+      "reason": "response_exhausted"
     },
     {
       "source": "Crossref",
@@ -144,34 +357,34 @@
     {
       "source": "Crossref",
       "query": "architectural archaeology China palace city",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 3,
+      "retrieved": 300,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=architectural+archaeology+China+palace+city&fi"
     },
     {
       "source": "Crossref",
       "query": "mural sculpture tomb figurine archaeology China Dunhuang",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 2,
+      "retrieved": 200,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=mural+sculpture+tomb+figurine+archaeology+Chin"
     },
     {
       "source": "Crossref",
       "query": "archaeological theory China",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 1,
+      "retrieved": 100,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=archaeological+theory+China&filter=from-pub-da"
     },
     {
       "source": "Crossref",
       "query": "Chinese archaeological theory settlement",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 1,
+      "retrieved": 100,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Chinese+archaeological+theory+settlement&filte"
     },
     {
       "source": "Crossref",
@@ -208,10 +421,10 @@
     {
       "source": "Crossref",
       "query": "Chinese archaeology",
-      "pages": 5,
-      "retrieved": 500,
+      "pages": 1,
+      "retrieved": 100,
       "status": "partial",
-      "reason": "page_budget"
+      "reason": "HTTPSConnectionPool(host='api.crossref.org', port=443): Max retries exceeded with url: /works?query.bibliographic=Chinese+archaeology&filter=from-pub-date%3A202"
     },
     {
       "source": "Crossref",
@@ -222,216 +435,70 @@
       "reason": "page_budget"
     },
     {
-      "source": "Crossref",
-      "query": "考古学报",
-      "pages": 1,
-      "retrieved": 58,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "Nature，2026-11-18",
+      "url": "https://doi.org/10.1038/s41586-026-11155-6",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "考古与文物",
-      "pages": 1,
-      "retrieved": 47,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "Archaeological and Anthropological Sciences，2026-11-14",
+      "url": "https://doi.org/10.1007/s12520-026-02597-0",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "考古",
-      "pages": 1,
-      "retrieved": 0,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "Archaeometry，2026-11-15",
+      "url": "https://doi.org/10.1111/arcm.70250",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "文物",
-      "pages": 1,
-      "retrieved": 24,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "International Journal of Osteoarchaeology，2026-11-15",
+      "url": "https://doi.org/10.1002/oa.70188",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "华夏考古",
-      "pages": 1,
-      "retrieved": 0,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "Early China，2026-11-19",
+      "url": "https://doi.org/10.1017/eac.2026.10044",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "Early China",
-      "pages": 1,
-      "retrieved": 94,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "Antiquity",
-      "pages": 1,
-      "retrieved": 4,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "Journal of Archaeological Science",
-      "pages": 1,
-      "retrieved": 0,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "国家文物局微信公众号成果发布稿／博物馆头条，2026-11-19",
+      "url": "https://news.museum.cn/article/7c283f80470f413aa67e7c84aebd7c87",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "Archaeometry",
-      "pages": 1,
-      "retrieved": 3,
-      "status": "complete",
-      "reason": "response_exhausted"
+      "source": "湖北省文物考古研究院，2026-11-18",
+      "url": "https://www.hbkgy.com/yjy_bydt/p/13194.html",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     },
     {
-      "source": "Crossref",
-      "query": "Journal of Field Archaeology",
-      "pages": 1,
-      "retrieved": 34,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "南方文物",
-      "pages": 1,
-      "retrieved": 24,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "Journal of Archaeological Method and Theory",
-      "pages": 4,
-      "retrieved": 317,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "东南文化",
-      "pages": 1,
-      "retrieved": 24,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "江汉考古",
-      "pages": 1,
-      "retrieved": 0,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "中原文物",
-      "pages": 1,
-      "retrieved": 42,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "World Archaeology",
-      "pages": 5,
-      "retrieved": 421,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "Cambridge Archaeological Journal",
-      "pages": 1,
-      "retrieved": 27,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "Journal of Anthropological Archaeology",
-      "pages": 1,
-      "retrieved": 0,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "Crossref",
-      "query": "敦煌研究",
-      "pages": 1,
-      "retrieved": 34,
-      "status": "complete",
-      "reason": "response_exhausted"
-    },
-    {
-      "source": "OpenAlex",
-      "status": "skipped",
-      "reason": "missing_key"
-    },
-    {
-      "source": "文物出版社工作动态",
-      "url": "https://www.wenwu.com/gzdt",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "《考古》",
-      "url": "http://kaogu.cssn.cn/xsqy/xskw/kg/",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "《考古学报》",
-      "url": "http://kaogu.cssn.cn/xsqy/xskw/kgxb/",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "文物出版社",
-      "url": "https://www.wenwu.com/",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "文物出版社资讯",
-      "url": "https://www.zgwwcbcm.com/",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "中国考古网学术论文",
-      "url": "http://kaogu.cssn.cn/xsqy/kycg/xslw/",
-      "pages": 1,
-      "status": "partial",
-      "reason": "no_verified_next_link"
-    },
-    {
-      "source": "北京大学考古文博学院",
-      "url": "https://archaeology.pku.edu.cn/xyzx/xwdt.htm",
-      "pages": 5,
-      "status": "partial",
-      "reason": "page_budget"
+      "source": "湖南省文物考古研究院，2026-11-17",
+      "url": "https://www.hnkgs.com/front/toReadNews.do?id=9437",
+      "status": "read_article",
+      "reason": "逐条核读本条公开材料；不表示所在栏目或账号已全部核完。"
     }
   ],
   "message": "已发布完成复核的新刊期。",
   "latest_issue": {
-    "id": "2026-10-30",
-    "records": 7,
-    "window": "2026-10-23 — 2026-10-30"
+    "id": "2026-11-20",
+    "records": 10,
+    "window": "2026-11-13 — 2026-11-20"
   }
 }

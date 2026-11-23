@@ -1,10 +1,26 @@
 {% extends "base.html" %}
+{% from "macros.html" import icon with context %}
 {% block content %}
-<header class="page-head"><h1>往期</h1></header>
-<div class="search-row"><label class="sr-only" for="site-search">检索全部文献</label><input class="search" id="site-search" placeholder="检索题名、作者或正文" type="search" autocomplete="off" data-global-search="../search-index.json"></div>
-<div id="global-results" aria-live="polite" class="global-results"></div>
-<section class="issue-list">
-  {% for item in issues %}<a class="archive-row" href="../issues/{{ item.id }}.html"><time>{{ item.date }}</time><span>{{ item.issue_no }}</span><span class="count">{{ item.records|length }}篇</span></a>{% endfor %}
-</section>
-{% if samples %}<section class="issue-list samples">{% for item in samples %}<a class="archive-row" href="../issues/{{ item.id }}.html"><time>{{ item.date }}</time><span>{{ item.issue_no }}</span><span class="count">样刊</span></a>{% endfor %}</section>{% endif %}
+<div class="archive">
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="考古-周刊首页"><span class="monogram">PQ</span><span>考古-周刊</span></a>
+    <nav aria-label="主导航"><a class="nav-latest" href="../index.html">本期</a><a class="archive-pill" href="../index.html" aria-label="关闭往期，返回本期">往期 {{ icon('x') }}</a></nav>
+  </header>
+  <main class="archive-main" id="main" tabindex="-1">
+    <div class="archive-heading"><h1>往期</h1>{% if issues %}<div class="archive-year">{{ issues[0].year }}</div>{% endif %}
+      <div class="search-area"><form class="search-pill" role="search" data-search-form>{{ icon('search') }}<label class="sr-only" for="site-search">检索所有刊期文献</label><input id="site-search" placeholder="检索文献" type="search" autocomplete="off" data-global-search="../search-index.json"><button class="clear-search" type="button" aria-label="清空检索" data-search-clear hidden>{{ icon('x') }}</button></form></div>
+    </div>
+    <section class="search-results" data-search-results aria-label="检索结果" hidden><div class="results-top"><h2>检索结果 <span data-search-count aria-live="polite"></span></h2><button type="button" data-search-close><span>返回往期</span>{{ icon('x') }}</button></div><div class="result-list" data-result-list></div><div class="search-empty" data-search-empty hidden><h3>没有匹配的文献</h3><p>试试遗址、器物、作者或研究主题。</p></div></section>
+    <section class="shelf shelf-grid" aria-label="往期刊期" data-archive-shelf>
+    {% for item in issues %}
+      <a class="issue-card card-{{ loop.index0 % 3 }}{% if item.cover.first %} first-issue{% endif %}" href="../issues/{{ item.id }}.html" aria-label="翻开{{ item.label }}，{{ item.records|length }}篇">
+      {% if item.cover.src %}<div class="cover-photo{% if item.cover.bronze %} bronze-photo{% endif %}{% if item.cover.portrait %} cover-portrait{% endif %}"><img src="../{{ item.cover.src }}" alt="{{ item.cover.alt }}"{% if loop.index > 3 %} loading="lazy"{% endif %} draggable="false"></div><div class="cover-caption"><span>{{ item.cover.caption }}</span><span>图源：{{ item.cover.credit }}</span></div>
+      {% else %}<div class="cover-type"><p>考古-周刊</p><p class="cover-date">{{ item.label }}</p><h3>{{ item.records[0].headline or item.records[0].title }}</h3></div>{% endif %}
+      <div class="card-content"><h2>{{ item.label }}</h2><p class="issue-meta">{{ item.year }} · {% if item.cover.first %}首期 · {% endif %}{{ item.records|length }}篇</p>{% if item.cover.headlines %}<div class="card-headlines">{% for line in item.cover.headlines %}<p>{{ line }}</p>{% endfor %}</div>{% endif %}<span class="open-issue">翻开本期 {{ icon('arrow-up-right') }}</span></div>
+      </a>
+    {% endfor %}
+    </section>
+  </main>
+  <footer class="archive-footer"><span class="archive-total">{{ issues|length }}期 · {{ issues|sum(attribute='records_count') }}篇</span><span>选择一期，开始阅读 {{ icon('arrow-right') }}</span></footer>
+</div>
 {% endblock %}

@@ -1,62 +1,32 @@
 {% extends "base.html" %}
+{% from "macros.html" import icon with context %}
 {% block content %}
-<section class="hero" id="top">
-  <div class="hero-copy">
-    <h1 class="lines">
-      <span class="line"><span data-line style="--i:0">考古-周刊</span></span>
-      <span class="line"><span data-line style="--i:1">{{ issue.display_span }}</span></span>
-    </h1>
-  </div>
-  <img class="hero-ding" src="{{ base }}static/figures/houmuwu.png?v=4" alt="">
-</section>
-<section class="facts" aria-label="本期规模">
-  <p><strong>{{ issue.records|length }}</strong><span>篇</span></p>
-  {% for group in issue.groups %}<p><strong>{{ group.records|length }}</strong><span>{{ group.label }}</span></p>{% endfor %}
-</section>
-<div class="tools">
-  <div class="filters" aria-label="时代">
-    <button class="filter active" data-filter="全部" aria-pressed="true">全部</button>
-    {% set present = issue.records|map(attribute='period')|list %}
-    {% for era in edition.periods + [edition.theory] if era in present %}
-    <button class="filter" data-filter="{{ era }}" aria-pressed="false">{{ era }}</button>
-    {% endfor %}
-  </div>
-  <div class="search-row"><label class="sr-only" for="record-search">检索本期文献</label><input id="record-search" class="search" data-record-search placeholder="检索本期文献" type="search"></div>
-  <p class="match-count" role="status">显示 <span data-count>{{ issue.records|length }}</span> / {{ issue.records|length }} 篇</p>
-</div>
-<p class="empty" data-empty>没有匹配的文献</p>
-<div class="issue-layout">
-  <div>
-    {% for group in issue.groups %}
-    <section class="genre" data-genre>
-      <h2 class="genre-title">{{ group.label }}</h2>
-      {% for r in group.records %}
-      <article class="record" id="{{ r.id }}" data-record data-period="{{ r.period }}">
-        <div class="record-header"><div class="tags"><span class="tag">{{ r.period }}</span>{% if r.field and r.field != r.period %}<span class="tag">{{ r.field }}</span>{% endif %}</div></div>
-        <h3>{{ r.headline or r.title }}</h3>
-        {% if r.headline %}<p class="citation">{{ r.title }}</p>{% endif %}
-        <p class="citation">{{ r.authors }} · {{ r.publication }}</p>
-        {% for para in r.core.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}
-        {% set commentary_label = '对研究实践的启示' if r.period == edition.theory else '研究意义' %}
-        <div class="significance" aria-label="{{ commentary_label }}"><p class="significance-label">{{ commentary_label }}</p>{% for para in r.significance.split('\n\n') %}<p>{{ para|emphasize }}</p>{% endfor %}</div>
-        {% if r.images %}<div class="plates">{% for im in r.images %}<figure class="plate"><img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}" loading="lazy"><figcaption>{{ im.caption }}</figcaption></figure>{% endfor %}</div>{% endif %}
-        <details class="source-note">
-          <summary>来源与核验</summary>
-          <p>{{ r.material_type }} · {{ r.source_status }}</p>
-          <p>{{ r.limits }}</p>
-          {% if r.verification_note %}<p>{{ r.verification_note }}</p>{% endif %}
-          {% if r.significance_review and r.significance_review.basis_title %}<p>补充依据：<a href="{{ r.significance_review.basis_url }}" target="_blank" rel="noopener noreferrer">{{ r.significance_review.basis_title }}</a></p>{% endif %}
-          {% if r.evidence %}<ul>{% for point in r.evidence %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}
-        </details>
-        <a class="out-link" href="{{ r.url }}" target="_blank" rel="noopener noreferrer">原文</a>
+<section class="reader reader-page" data-issue-reader>
+  <div class="reading-progress" data-reading-progress aria-hidden="true"></div>
+  <header class="reader-header"><a class="return-button" href="{{ base }}archive/index.html" aria-label="返回往期">{{ icon('arrow-left') }}<span>返回往期</span></a><div class="reader-brand"><span class="reader-wordmark">考古-周刊</span><span class="reader-separator">/</span><label class="issue-switch"><span class="issue-current" aria-hidden="true">{{ issue.reader_label }}</span><select aria-label="切换刊期" data-issue-select>{% for item in issues|default([issue]) %}<option value="{{ base }}issues/{{ item.id }}.html"{% if item.id == issue.id %} selected{% endif %}>{{ item.reader_label }}</option>{% endfor %}</select>{{ icon('chevron-down') }}</label></div><a class="close-reader icon-button" href="{{ base }}archive/index.html" aria-label="关闭阅读">{{ icon('x') }}</a></header>
+  <div class="reader-layout">
+    <aside class="reader-toc" aria-label="本期目录" id="reader-toc"><div class="toc-heading"><span>本期目录</span><span>{{ issue.records|length }}篇</span></div>
+      <div class="period-filters" aria-label="按时代筛选目录"><button type="button" data-filter="全部" aria-pressed="true">全部</button>{% set present=issue.records|map(attribute='period')|list %}{% for period in edition.periods+[edition.theory] if period in present %}<button type="button" data-filter="{{ period }}" aria-pressed="false">{{ period }}</button>{% endfor %}</div>
+      <form class="toc-search" role="search" data-toc-search-form>{{ icon('search') }}<label class="sr-only" for="record-search">检索本期文献</label><input type="search" id="record-search" placeholder="检索本期" data-record-search autocomplete="off"></form><p class="toc-empty" data-toc-empty hidden>没有匹配的文献</p>
+      <ol>{% for r in issue.records %}<li data-toc-row data-period="{{ r.period }}"><a href="#{{ r.id }}" data-toc-id="{{ r.id }}"{% if loop.first %} class="selected" aria-current="true"{% endif %}><span class="toc-index">{{ '%02d'|format(loop.index) }}</span><span>{{ r.headline or r.title }}</span></a></li>{% endfor %}</ol>
+      {% if issue.cover.source_url %}<a class="cover-source" href="{{ issue.cover.source_url }}" target="_blank" rel="noopener noreferrer">封面图片来源 {{ icon('external-link') }}</a>{% endif %}
+    </aside>
+    <main class="reading-scroll" id="main" tabindex="-1" data-reading-scroll>
+    {% for r in issue.records %}
+      <article class="article-wrap" id="{{ r.id }}" data-article data-period="{{ r.period }}">
+        <div class="article-kicker"><span>{{ r.period }}</span>{% if r.field and r.field != r.period %}<span>{{ r.field }}</span>{% endif %}<span>{{ r.material_type or r.kind }}</span><span class="article-counter">{{ '%02d'|format(loop.index) }} / {{ '%02d'|format(issue.records|length) }}</span></div>
+        <h1 class="article-title">{{ r.headline or r.title }}</h1><div class="article-byline"><span>{{ r.authors }}</span><span>{{ r.publication }}</span></div>
+        <section class="article-section core"><h2>主要内容</h2>{% for para in r.core.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}</section>
+        {% set label='对研究实践的启示' if r.period == edition.theory else '研究意义' %}<section class="article-section significance" aria-label="{{ label }}"><h2>{{ label }}</h2>{% for para in r.significance.split('\n\n') if para.strip() %}<p>{{ para|emphasize }}</p>{% endfor %}</section>
+        {% if r.images %}<div class="plates">{% for im in r.images %}<figure class="plate"><a href="{{ base }}{{ im.src }}" target="_blank" rel="noopener noreferrer" aria-label="查看原图：{{ im.alt }}"><img src="{{ base }}{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a><figcaption>{{ im.caption }} <a href="{{ im.source_url }}" target="_blank" rel="noopener noreferrer">图源</a></figcaption></figure>{% endfor %}</div>{% endif %}
+        <div class="source-reference"><span>原文</span><p>{{ r.title }}</p><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">阅读原始资料 {{ icon('arrow-up-right') }}</a></div>
+        <details class="verification"><summary>来源与核验 <span>{{ r.source_status }}</span>{{ icon('chevron-down') }}</summary><div><p>{{ r.material_type }} · {{ r.source_status }}</p><p>{{ r.limits }}</p>{% if r.verification_note %}<p>{{ r.verification_note }}</p>{% endif %}{% if r.significance_review and r.significance_review.basis_title %}<p>补充依据：<a href="{{ r.significance_review.basis_url }}" target="_blank" rel="noopener noreferrer">{{ r.significance_review.basis_title }}</a></p>{% endif %}{% if r.evidence %}<ul>{% for point in r.evidence %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}</div></details>
+        <nav class="article-navigation" aria-label="切换文章">{% if not loop.first %}<a href="#{{ issue.records[loop.index0-1].id }}" data-article-link>{{ icon('arrow-left') }}<span><small>上一篇</small>{{ issue.records[loop.index0-1].headline or issue.records[loop.index0-1].title }}</span></a>{% else %}<span class="nav-boundary">已是本期第一篇</span>{% endif %}{% if not loop.last %}<a href="#{{ issue.records[loop.index0+1].id }}" data-article-link><span><small>下一篇</small>{{ issue.records[loop.index0+1].headline or issue.records[loop.index0+1].title }}</span>{{ icon('arrow-right') }}</a>{% else %}<span class="nav-boundary">已读至本期最后一篇</span>{% endif %}</nav>
+        <p class="reading-end">考古-周刊 · {{ issue.reader_label }}</p>
       </article>
-      {% endfor %}
-    </section>
     {% endfor %}
+    </main>
   </div>
-  <aside class="toc" aria-label="本期目录">
-    {% for group in issue.groups %}<div data-toc-group><p class="toc-label">{{ group.label }}</p>{% for r in group.records %}<a href="#{{ r.id }}" data-toc-id="{{ r.id }}">{{ r.headline or r.title }}</a>{% endfor %}</div>{% endfor %}
-  </aside>
-</div>
-<footer class="close"><div class="close-inner"><div><p class="close-kicker">考古-周刊</p><p class="close-issue">{{ issue.display_span }}</p></div><nav class="close-nav" aria-label="页尾"><a href="#top">页首</a><a href="{{ base }}archive/index.html">往期</a></nav></div></footer>
+  <button type="button" class="mobile-toc-button" data-mobile-toc aria-expanded="false" aria-controls="reader-toc">{{ icon('list') }}<span>本期目录</span></button><button type="button" class="back-top icon-button" data-back-top aria-label="返回文章顶部" hidden>{{ icon('arrow-up') }}</button>
+</section>
 {% endblock %}
