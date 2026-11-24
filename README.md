@@ -182,6 +182,3 @@ archaeology-review/
 
 勘误与资料线索可通过 Issue 提交。已发布刊期的更正记入 `content/corrections/`，并同步更新复核记录。
 
-## 许可证
-
-本仓库尚未指定许可证。配图权利属于各原作者或发布单位，来源标注不代表另行授予开放许可；图标采用 [Feather](https://github.com/feathericons/feather)，遵循其 MIT 许可。
